@@ -1,0 +1,34 @@
+{
+    "name_input": "Anastasia",
+    "datetime": "2022-09-13 13:51:44",
+    "address": "85.142.179.62",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": -1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2109,
+            "index": 173,
+            "ID": 41923858,
+            "Question": "\"\"\"create a list containing each two adjacent letters in string `word` as its elements\"\"\"\n   ",
+            "Answer": "[word[i:i + 2] for i in range(0, len(word), 2)]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 174,
+            "index": 174,
+            "ID": 41923858,
+            "Question": "\"\"\"Get a list of pairs from a string `word` using lambda function\"\"\"",
+            "Answer": "\nimport re\ns = \"I am a dog\"\nre.findall(r'\\w+', s)\nre.findall(r'\\w+', s)\nre.findall(r'\\w+', s)\nre.findall(r'\\w+', s)\nre.findall(r'\\w+', s)\nre.findall(r'\\w+', s)\nre.findall(r'\\w+', s)\nre.findall(r'\\w+', s)\nre.find",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

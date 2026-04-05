@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:29:58",
+    "address": "10.199.12.55",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 1,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 2275,
+            "index": 203,
+            "ID": 65716394,
+            "Question": "Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ",
+            "Answer": "\nI think the answer is yes, but I'm not sure. I would recommend that you use a virtualenv to install the packages you want to use. Then you can simply run the script with the virtualenv.\n\nA:\n\nYou can use the virtualenv to install packages.\n\nA:\n\nYou can use virtualenv to install packages.\n\nA:\n\nYou can use virtualenv to install packages.\n\nA:\n\nYou can use virtualenv to install packages.\n\nA:\n\nYou can use virtualenv to install packages.\n\nA:\n\nYou can",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        },
+        {
+            "level_0": 4422,
+            "index": 1357,
+            "ID": 65716394,
+            "Question": "Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ",
+            "Answer": "' '##lib. resources in python 3. 7 and newer ( backported as importlib _ resources for older versions of python ), this can eliminate the need to use the older and less efficient pkg _ resources package.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

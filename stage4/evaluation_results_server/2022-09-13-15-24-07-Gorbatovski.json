@@ -1,0 +1,34 @@
+{
+    "name_input": "Gorbatovski",
+    "datetime": "2022-09-13 15:24:07",
+    "address": "77.234.193.10",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 116,
+            "index": 116,
+            "ID": 1450897,
+            "Question": "\"\"\"get digits only from a string `aas30dsa20` using lambda function\"\"\"",
+            "Answer": "\nimport re\nre.findall(r'\\d+', aas30dsa20)\nre.findall(r'\\d+', aas30dsa20)\nre.findall(r'\\d+', aas30dsa20)\nre.findall(r'\\d+', aas30dsa20)\nre.findall(r'\\d+', aas30dsa20)\nre.findall(r'\\d+', aas30dsa20)\nre.findall(r'\\d+",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2058,
+            "index": 116,
+            "ID": 1450897,
+            "Question": "\"\"\"get digits only from a string `aas30dsa20` using lambda function\"\"\"\n   ",
+            "Answer": "re.findall('\\\\d+', aas30dsa20)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

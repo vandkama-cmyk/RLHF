@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:42:30",
+    "address": "10.199.12.55",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": -1,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2849,
+            "index": 782,
+            "ID": 69393968,
+            "Question": "Is there a way to not have to specify the user when connecting with psycogp2?. So just passing in the host and db name and not having to specify the user like: host=blabla.co port=7000 dbname=ff_db instead of: host=blabla.co port=7000 dbname=ff_db user=some_user The .pgpass file already has the user specified so I feel passing this in is redundant. ",
+            "Answer": "\nYes, you can use the pgpass file to specify the user. \nYou can use the pgpass file to specify the user, but you can't use the pgpass file to specify the host. \nYou can use the pgpass file to specify the host, but you can't use the pgpass file to specify the dbname. \nYou can use the pgpass file to specify the dbname, but you can't use the pgpass file to specify the user. \nYou can use the pgpass file to specify the user, but you can't use the pgpass file to specify the host",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        },
+        {
+            "level_0": 15523,
+            "index": 6058,
+            "ID": 69393968,
+            "Question": "Is there a way to not have to specify the user when connecting with psycogp2?. So just passing in the host and db name and not having to specify the user like: host=blabla.co port=7000 dbname=ff_db instead of: host=blabla.co port=7000 dbname=ff_db user=some_user The .pgpass file already has the user specified so I feel passing this in is redundant. ",
+            "Answer": "imap4. uid ( command, arg [,... ] )  execute command args with messages identified by uid, rather than message number. returns response appropriate to command. at least one argument must be supplied ; if none are provided, the server will return an error and an exception will be raised. imap4. unsubscribe ( mailbox )  unsubscribe from old mailbox.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

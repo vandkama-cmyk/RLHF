@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 15:58:30",
+    "address": "188.187.74.97",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 2302,
+            "index": 374,
+            "ID": 8687018,
+            "Question": "\"\"\"replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass.\"\"\"\n   ",
+            "Answer": "re.sub('a', 'b', 'obama')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 2711,
+            "index": 374,
+            "ID": 8687018,
+            "Question": "Python string replace two things at once?",
+            "Answer": "    print(\"obama\".replace(\"a\", \"b\").replace(\"b\", \"a\"))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

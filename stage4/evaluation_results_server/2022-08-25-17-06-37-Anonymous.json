@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:06:37",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": -1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2730,
+            "index": 792,
+            "ID": 62083669,
+            "Question": "\"\"\"run a loop by interlinking two lists\"\"\"",
+            "Answer": "\nfor i in range(10):\n    for j in range(10):\n        print(i, j)\n\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 4660,
+            "index": 792,
+            "ID": 62083669,
+            "Question": "\"\"\"run a loop by interlinking two lists\"\"\"",
+            "Answer": "\nfor i in range(len(list1)):\n    for j in range(len(list2)):\n        print(list1[i], list2[j])\n    print(\"\\n\")\n    \nfor i in range(len(list1)):\n    for j in range(len(list2)):\n        print(list2[j], list1[i])\n    print(\"\\n\")\n    \nfor i in range(len(list1)):\n    for j in range(len(list2)):\n        print(list1[",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        }
+    ]
+}

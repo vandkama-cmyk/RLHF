@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:21:39",
+    "address": "5.18.203.79",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": 1,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 2045,
+            "index": 103,
+            "ID": 9138112,
+            "Question": "\"\"\"loop over a list `mylist` if sublists length equals 3\"\"\"\n   ",
+            "Answer": "[x for x in mylist if len(x) == 3]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 1076,
+            "index": 103,
+            "ID": 9138112,
+            "Question": "\"\"\"loop over a list `mylist` if sublists length equals 3\"\"\"",
+            "Answer": "\nfor i in range(len(mylist)):\n    if len(mylist[i]) == 3:\n        print(mylist[i])\n        break\n    else:\n        continue\nelse:\n    print(\"No sublists of length 3\")\nprint(\"Done\")\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

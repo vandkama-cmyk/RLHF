@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:45:05",
+    "address": "95.161.223.140",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 187,
+            "index": 187,
+            "ID": 32675861,
+            "Question": "\"\"\"copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'\"\"\"",
+            "Answer": "\ndf['B'] = df['B'].apply(lambda x: x.replace(',',''))\ndf['D'] = df['B'].apply(lambda x: x.replace(',',''))\ndf\ndf.to_csv('new_file.csv', index=False)\ndf.to_csv('new_file.csv', index=False)\ndf.to_csv('new_file.csv', index=False)\ndf.to_csv('new_file.csv', index=False)\ndf.to_csv('new_file",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2123,
+            "index": 187,
+            "ID": 32675861,
+            "Question": "\"\"\"copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'\"\"\"\n   ",
+            "Answer": "df['D'] = df['B']\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

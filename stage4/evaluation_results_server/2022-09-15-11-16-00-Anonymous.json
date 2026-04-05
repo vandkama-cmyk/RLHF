@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 11:16:00",
+    "address": "188.243.182.141",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 0,
+    "consistent_R": -2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 2543,
+            "index": 167,
+            "ID": 678236,
+            "Question": "How to get the filename without the extension from a path in Python?",
+            "Answer": "    import os\n\n    def func(filename):\n\n        return os.path.splitext(filename)[0]\n\n    return func\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1629,
+            "index": 167,
+            "ID": 678236,
+            "Question": "\"\"\"get the filename without the extension from file 'hemanth.txt'\"\"\"",
+            "Answer": "\nos.path.splitext('hemanth.txt')[0]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

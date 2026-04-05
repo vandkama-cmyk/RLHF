@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:08:59",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 13454,
+            "index": 3989,
+            "ID": 68677411,
+            "Question": "File dependend DAG execution. I build a DAG that begins with the download of a file over the SFTPOperator, I save it and proceed with accessing and processing it, with a PythonOperator. I had no issues with this approach at all, till I started to scale up my celery-workers from 1 to 2. Now I run in to the problem of a file that isn't available in both workers. How do I solve it? Do I download the file over the SFTPHook and combine these Tasks? Can I constrain the spread on to different workers? kind regards, CreedsCode ",
+            "Answer": "The logging module's filehandler class and its subclasses watchedfilehandler, rotatingfilehandler, and timedrotatingfilehandler now have an optional delay parameter to their constructors. if delay is true, opening of the log file is opened.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 1745,
+            "index": 513,
+            "ID": 68677411,
+            "Question": "File dependend DAG execution. I build a DAG that begins with the download of a file over the SFTPOperator, I save it and proceed with accessing and processing it, with a PythonOperator. I had no issues with this approach at all, till I started to scale up my celery-workers from 1 to 2. Now I run in to the problem of a file that isn't available in both workers. How do I solve it? Do I download the file over the SFTPHook and combine these Tasks? Can I constrain the spread on to different workers? kind regards, CreedsCode ",
+            "Answer": "\n  How do I solve it? Do I download the file over the SFTPHook and combine these Tasks?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        }
+    ]
+}

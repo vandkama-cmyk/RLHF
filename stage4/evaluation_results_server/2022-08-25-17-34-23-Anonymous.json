@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:34:23",
+    "address": "10.199.12.115",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 7660,
+            "index": 386,
+            "ID": 4356842,
+            "Question": "\"\"\"return a 401 unauthorized in django\"\"\"",
+            "Answer": "\n         return Response(\n             {\n                 \"detail\": \"Not authenticated. Please log in to continue.\"\n             },\n             status=status.HTTP_401_UNAUTHORIZED\n         )",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN VANILLA"
+        },
+        {
+            "level_0": 6700,
+            "index": 386,
+            "ID": 4356842,
+            "Question": "\"\"\"return a 401 unauthorized in django\"\"\"",
+            "Answer": "\nresponse = HttpResponse(status=401)\nresponse['Content-Type'] = 'application/json'\nreturn response\n\nA:\n\nYou can use the following code to return a 401 Unauthorized response in django:\nfrom django.http import HttpResponse\ndef my_view(request):\n    response = HttpResponse(status=401)\n    response['Content-Type'] = 'application/json'\n    return response\n\nA:\n\nYou can use django-allauth for authentication.\nfrom allauth.account.",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

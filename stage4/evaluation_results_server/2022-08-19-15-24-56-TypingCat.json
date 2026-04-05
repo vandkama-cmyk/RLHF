@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-19 15:24:56",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2602,
+            "index": 660,
+            "ID": 61025042,
+            "Question": "\"\"\"use Instagram API in Python to upload images to my own account\"\"\"",
+            "Answer": "\nrequests.post('https://api.instagram.com/v1/media/{media_id}/upload',\n              json={'media_id': '{media_id}'},\n  `content-type`='multipart/form-data')\n\nI get the following error:\n{'error': 'invalid_request', 'error_description': 'Invalid request'}\n\nA:\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1624,
+            "index": 660,
+            "ID": 61025042,
+            "Question": "\"\"\"use Instagram API in Python to upload images to my own account\"\"\"",
+            "Answer": "\nimport requests\nimport json\nurl = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS_TOKEN'\nresponse = requests.get(url)\ndata = json.loads(response.text)\nfor media in data['data']:\n    print media['source']\n    print media['owner']['username']\n    print media['owner']['profile_image_url']\n    print media['owner']['full_name']\n    print",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        }
+    ]
+}

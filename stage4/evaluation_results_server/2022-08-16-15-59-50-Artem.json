@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:59:50",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 6606,
+            "index": 3541,
+            "ID": 68493225,
+            "Question": "How to speed up large test-suite run duration using pytest?. I have a pytest test-suite which contains over 30,000 test cases. When I run it, it takes over 10 hours to run. However, when I cut the number of test cases down to 1,000, it completes in 39 seconds! Any idea on what is going on here? The test cases are very simple, just calling one function which is doing no I/O (no network calls, DB calls etc). Any help would be great! Best, Dave. ",
+            "Answer": "' 'when counts argument is not none. bpo - 42934 : use tracebackexception \u2019 s new compact param in testresult to reduce time and memory consumed by traceback formatting. bpo - 38250 : add randbytes ( ) to random. _ _ all _ _. bpo - 38250 : [ enum ] flags consisting of a single bit are now considered canonical, and will be the only flags returned from listing and iterating",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 13685,
+            "index": 4220,
+            "ID": 68493225,
+            "Question": "How to speed up large test-suite run duration using pytest?. I have a pytest test-suite which contains over 30,000 test cases. When I run it, it takes over 10 hours to run. However, when I cut the number of test cases down to 1,000, it completes in 39 seconds! Any idea on what is going on here? The test cases are very simple, just calling one function which is doing no I/O (no network calls, DB calls etc). Any help would be great! Best, Dave. ",
+            "Answer": "' '##ple ( test, formatted _ err ) to the instance \u2019 s failures attribute, where formatted _ err is a formatted traceback derived from err. addskip ( test, reason )  called when the test case test is skipped. reason is the reason the test gave for skipping. the default implementation appends a tuple ( test, reason ) to the instance \u2019 s failures attribute, where formatted _ err is a formatted traceback",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

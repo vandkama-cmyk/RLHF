@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 17:15:50",
+    "address": "10.199.12.90",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 11573,
+            "index": 2108,
+            "ID": 68721469,
+            "Question": "How to fill/blur the inside of bounding box in YOLO object detection?. I have used YOLOv4 to detect objects in an image now I want to blur those objects or superimpose black color inside the bounding box. How can I do that using OpenCV or some other library? ",
+            "Answer": "' ') fill the shape drawn after the last call to begin _ fill ( ). whether or not overlap regions for self - intersecting polygons or multiple shapes are filled depends on the operating system graphics, type of overlap, and number of overlaps. for example, the turtle star above may be either all yellow or have some white regions.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 2335,
+            "index": 263,
+            "ID": 68721469,
+            "Question": "How to fill/blur the inside of bounding box in YOLO object detection?. I have used YOLOv4 to detect objects in an image now I want to blur those objects or superimpose black color inside the bounding box. How can I do that using OpenCV or some other library? ",
+            "Answer": "\nYou can use the following code to blur the bounding box:\n\nimport cv2\nimport numpy as np\n\nimg = cv2.imread('image.jpg')\n\ngray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)\n\nbbox = cv2.boundingRect(gray)\n\nbbox = cv2.minArea(bbox)\n\nbbox = cv2.cvtColor(bbox, cv2.COLOR_BGR2GRAY)\n\nb",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        }
+    ]
+}

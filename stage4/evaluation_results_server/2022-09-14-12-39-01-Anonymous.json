@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 12:39:01",
+    "address": "14.137.139.192",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 150,
+            "index": 150,
+            "ID": 24242433,
+            "Question": "\"\"\"convert a raw string `raw_byte_string` into a normal string\"\"\"",
+            "Answer": "\nimport string\nraw_byte_string = '\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 148,
+            "index": 148,
+            "ID": 24242433,
+            "Question": "\"\"\"decode string \"\\\\x89\\\\n\" into a normal string\"\"\"",
+            "Answer": "\nimport re\ns = \"\\\\x89\\\\n\"\nre.sub(r'[\\x80-\\xFF]', '', s)\ns = re.sub(r'[\\x80-\\xFF]', '', s)\ns = s.decode('utf-8')\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\ns\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

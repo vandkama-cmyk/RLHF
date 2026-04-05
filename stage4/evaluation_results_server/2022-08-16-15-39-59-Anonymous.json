@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:39:59",
+    "address": "10.199.12.115",
+    "comparison_slider": 1,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 543,
+            "index": 74,
+            "ID": 34280147,
+            "Question": "\"\"\"print a list `l` and move first 3 elements to the end of the list\"\"\"",
+            "Answer": "\nprint(l[3:])\nl[3:] = l[:3]\n",
+            "CSV_PATH": "pred_test_conala.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN FINETUNED"
+        },
+        {
+            "level_0": 73,
+            "index": 74,
+            "ID": 34280147,
+            "Question": "\"\"\"print a list `l` and move first 3 elements to the end of the list\"\"\"",
+            "Answer": "\n     print(l)\n     l.extend(l[:3])\n     print(l)",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN VANILLA"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:51:05",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 15374,
+            "index": 5909,
+            "ID": 66940302,
+            "Question": "Matplotlib plot function output differs from seaborn's lineplot. I want to plot a PDF function given data which follows a normal distribution. Mainly I followed this link. Now, if I am working on the data created like on that website (x=np.linspace()) and I plot it with either seaborn.lineplot() or matplotlib.pyplot.plot(), I get a normal curve as shown on the website linked above. But when I do this with my own data (which I believe is normal, but with a lot more data points) instead of initializing it with np.linspace I get a clear normal curve with seaborn's lineplot and a messy normal curve with matplotlib's plot function. I have tried to look for default arguments on both functions but couldn't find any (except estimator) which would cause this behavior. The estimator argument of Seaborn's lineplot was the only argument that looked like it could do something like this but setting it to None did not make any difference (and it kind of makes sense I think since the y value is always same for a specific x so averaging out will produce the same value). I used to think both functions are the same, but then why do they have different output? ",
+            "Answer": "The _ _ wrapped _ _ attributes of the _ _ function are not inherited by the _ _ wrapped _ _ attributes. The _ _ wrapped _ _ attributes of the _ _ function are not inherited by the _ _ wrapped _ _ attributes of the _ _ wrapped _ _ functions. The _ _ wrapped _ _ attributes are not inherited by the _ _ wrapped _ _ attributes of the _ _ wrapped _ _",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 15380,
+            "index": 5915,
+            "ID": 66940302,
+            "Question": "Matplotlib plot function output differs from seaborn's lineplot. I want to plot a PDF function given data which follows a normal distribution. Mainly I followed this link. Now, if I am working on the data created like on that website (x=np.linspace()) and I plot it with either seaborn.lineplot() or matplotlib.pyplot.plot(), I get a normal curve as shown on the website linked above. But when I do this with my own data (which I believe is normal, but with a lot more data points) instead of initializing it with np.linspace I get a clear normal curve with seaborn's lineplot and a messy normal curve with matplotlib's plot function. I have tried to look for default arguments on both functions but couldn't find any (except estimator) which would cause this behavior. The estimator argument of Seaborn's lineplot was the only argument that looked like it could do something like this but setting it to None did not make any difference (and it kind of makes sense I think since the y value is always same for a specific x so averaging out will produce the same value). I used to think both functions are the same, but then why do they have different output? ",
+            "Answer": "You can use tp _ init and tp _ _ init functions. Just name them _ _ new _ _ or _ _ init _ _ as appropriate.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

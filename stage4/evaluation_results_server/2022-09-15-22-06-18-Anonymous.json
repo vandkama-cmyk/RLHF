@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 22:06:18",
+    "address": "14.137.139.192",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2639,
+            "index": 287,
+            "ID": 7373219,
+            "Question": "Attribute getters in python",
+            "Answer": "    def func(obj, attr):\n\n        return getattr(obj, attr)\n\n    return func\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1260,
+            "index": 287,
+            "ID": 7373219,
+            "Question": "\"\"\"get attribute 'attr' from object `obj`\"\"\"",
+            "Answer": "\nobj.attr\nobj.attr\nobj.attr.attr\nobj.attr.attr.attr\nobj.attr.attr.attr.attr\nobj.attr.attr.attr.attr.attr\nobj.attr.attr.attr.attr.attr.attr\nobj.attr.attr.attr.attr.attr.attr.attr\nobj.attr.attr.attr.attr.attr.attr.attr.attr\nobj.attr.attr.attr.attr.attr.attr.attr.attr.attr\nobj.attr.attr.attr.attr.attr.attr.attr",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

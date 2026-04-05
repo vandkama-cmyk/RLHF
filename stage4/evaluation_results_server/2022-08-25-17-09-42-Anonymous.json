@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:09:42",
+    "address": "10.81.192.36",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1564,
+            "index": 598,
+            "ID": 60285734,
+            "Question": "\"\"\"get a random 4 digit number in python, from 0000-9999\"\"\"",
+            "Answer": "\nimport random\nrandom.randint(0, 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 582,
+            "index": 598,
+            "ID": 60285734,
+            "Question": "\"\"\"get a random 4 digit number in python, from 0000-9999\"\"\"",
+            "Answer": "\nimport random\nimport string\nimport sys\n\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO VANILLA"
+        }
+    ]
+}

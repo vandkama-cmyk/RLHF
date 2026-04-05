@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:41:51",
+    "address": "185.24.52.32",
+    "comparison_slider": 1,
+    "consistent_L": 2,
+    "correct_L": 1,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 290,
+            "index": 290,
+            "ID": 28986489,
+            "Question": "\"\"\"Python Pandas: How to replace a characters in a column of a dataframe?\"\"\"",
+            "Answer": "\ndf.replace(old_string, new_string)\ndf.replace(old_string, new_string, regex=True)\ndf.replace(old_string, new_string, regex=False)\ndf.replace(old_string, new_string, regex=None)\ndf.replace(old_string, new_string, regex=None, inplace=True)\ndf.replace(old_string, new_string, regex=None, inplace=False)\ndf.replace(old_string, new_string, regex=None, inplace=",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2221,
+            "index": 290,
+            "ID": 28986489,
+            "Question": "\"\"\"Python Pandas: How to replace a characters in a column of a dataframe?\"\"\"\n   ",
+            "Answer": "df['column_name'].str.replace('a', 'b')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Vadim",
+    "datetime": "2022-08-17 16:22:43",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2994,
+            "index": 100,
+            "ID": 30693804,
+            "Question": "\"\"\"remove all non-alphanumeric characters except space from a string `text` and lower it\"\"\"",
+            "Answer": "\n     return re.sub(r'[^\\w\\s]', '', text).lower()",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN VANILLA"
+        },
+        {
+            "level_0": 3934,
+            "index": 100,
+            "ID": 30693804,
+            "Question": "\"\"\"remove all non-alphanumeric characters except space from a string `text` and lower it\"\"\"",
+            "Answer": "\n\nimport re\n\nfrom pygments.lexer import Lexer, bygroups, byname, byattributes, byattributes_list, \\\n    byattributes_list_item, byattributes_list_item_list, byattributes_list_item_list_item\nfrom pygments.token import Text, Comment, Keyword, Name, Punctuation, Operator, \\\n    String, Literal, Generic, Whitespace, Punctuation, NameGroup, NameGroup_List, \\\n    NameGroup_List_Item, Name",
+            "CSV_PATH": "pred_test_gptneo.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO VANILLA"
+        }
+    ]
+}

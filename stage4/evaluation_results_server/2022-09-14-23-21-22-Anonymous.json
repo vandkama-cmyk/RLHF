@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:21:22",
+    "address": "213.152.165.107",
+    "comparison_slider": -1,
+    "consistent_L": -2,
+    "correct_L": 0,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 722,
+            "index": 232,
+            "ID": 638048,
+            "Question": "\"\"\"How do I sum the first value in each tuple in a list of tuples in Python?\"\"\"",
+            "Answer": "\nsum(x[0] for x in list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1691,
+            "index": 232,
+            "ID": 638048,
+            "Question": "\"\"\"How do I sum the first value in each tuple in a list of tuples in Python?\"\"\"",
+            "Answer": "\nsum(x[0] for x in list_of_tuples)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

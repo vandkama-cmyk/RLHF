@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:32:55",
+    "address": "10.199.12.55",
+    "comparison_slider": 2,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 11071,
+            "index": 1606,
+            "ID": 65716394,
+            "Question": "Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ",
+            "Answer": "' 'directory \u201d will have precedence over the one next to the executable, so a user, who may not have write access to the. ini file next to the launcher, can override commands in that global. ini file.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 11073,
+            "index": 1608,
+            "ID": 65716394,
+            "Question": "Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ",
+            "Answer": "The python launcher for windows is a utility which aids in locating and executing of different python versions. it allows scripts ( or the command - line ) to indicate a preference for a specific python version, and will locate and execute that version. unlike the path variable, the launcher will correctly select the most appropriate version of python. it will prefer per - user installations over system - wide ones, and orders by language version.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

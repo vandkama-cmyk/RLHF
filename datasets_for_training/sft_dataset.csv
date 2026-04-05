@@ -1,0 +1,2024 @@
+question,best_answer,model_tag,source_json,datetime
+"How to plot maximal intensity projection of images in same directory. I have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample ? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me know if you have any clue in order to solve my issue ? ","
+  How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample?",T2T GPTNEO FINETUNED,2022-08-16-13-24-32-Anonymous.json,2022-08-16 13:24:32
+"How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ","If you are developing the classes yourself, a more proper object - oriented style is to define methods on the classes that encapsulate a particular behaviour, instead of checking the object ’ s class and doing a different thing based on what class it is. for example, if you have a function that does something: def search ( obj ) : if isinstr(isinstr(isinstr(isinstr(isinstr(isinstr(isinst",PIPELINE T,2022-08-16-13-25-20-Anonymous.json,2022-08-16 13:25:20
+"how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ","' '##94 therefore the best possible approximation to 1 / 10 in 754 double precision is : 7205759403792794 / 2 * * 56 dividing both the numerator and denominator by two reduces the fraction to : 3602879701896397 / 2 * * 55 Note that since we rounded up, this is actually a little bit larger than 1 / 10 ; if we had not rounded up, the quotient would have been a little bit larger than 1 / 10 ; if",PIPELINE T+B,2022-08-16-13-26-21-Anonymous.json,2022-08-16 13:26:21
+"Get nodes within 1km walking distance of a GPS location OSMNX. Given a (lat,lng) point and an all type OSMNX network, how can I find which nodes in the graph are within 1km walking distance from the point? I was thinking about calculating the great circle distance between each node and the point and checking whether it is at most 1km, but I do not believe this will be very accurate since the topology of the network will be ignored. ","' 'once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror if called without calling prepare ( ) previously.''once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror",PIPELINE T,2022-08-16-13-27-36-Sergey Kovalchuk.json,2022-08-16 13:27:36
+"Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ","
+I think the answer is yes, but I'm not sure. I would recommend that you use a virtualenv to install the packages you want to use. Then you can simply run the script with the virtualenv.
+
+A:
+
+You can use the virtualenv to install packages.
+
+A:
+
+You can use virtualenv to install packages.
+
+A:
+
+You can use virtualenv to install packages.
+
+A:
+
+You can use virtualenv to install packages.
+
+A:
+
+You can use virtualenv to install packages.
+
+A:
+
+You can",T2T GPTNEO VANILLA,2022-08-16-13-29-58-Sergey Kovalchuk.json,2022-08-16 13:29:58
+Is there a way to set a float for the single step of a pyqt5 scrollbar?. I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01? ,"
+  I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01?",T2T GPTNEO FINETUNED,2022-08-16-13-31-10-Sergey Kovalchuk.json,2022-08-16 13:31:10
+"""""""get a list from a list `lst` with values mapped into a dictionary `dct`""""""","
+     return {k: v for k, v in zip(lst, dct)}",T2C CODEGEN VANILLA,2022-08-16-13-31-58-Sergey Kovalchuk.json,2022-08-16 13:31:58
+"""""""split a list in first column  into multiple columns keeping other columns as well in pandas data frame""""""","
+
+import pandas as pd
+import numpy as np
+
+",T2C GPTNEO VANILLA,2022-08-16-13-32-20-Sergey Kovalchuk.json,2022-08-16 13:32:20
+"Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ","The python launcher for windows is a utility which aids in locating and executing of different python versions. it allows scripts ( or the command - line ) to indicate a preference for a specific python version, and will locate and execute that version. unlike the path variable, the launcher will correctly select the most appropriate version of python. it will prefer per - user installations over system - wide ones, and orders by language version.",PIPELINE T+B,2022-08-16-13-32-55-Sergey Kovalchuk.json,2022-08-16 13:32:55
+"Why is 5D in hex represented as bytearray(b']')?. For example if you represent 5D in a bytearray you get bytearray(b']'), but I don't understand why. Is it because of ASCII and if so, how is Python handling all the ASCII Characters? ","' 'a number : > > > oct ( 42 )'052'> > > future _ builtins. oct ( 42 )'0o52'> > > bin ( 173 )'0b10101101'the int ( ) and long ( ) builtins will now accept the “ 0o ” and “ 0b ” prefixes when base - 8 or base - 2 are requested, or when the base argument is zero ( signalling that the base used should be determined from",PIPELINE T+B,2022-08-16-13-34-05-Sergey Kovalchuk.json,2022-08-16 13:34:05
+Build Flask App that fetch data from postgres database without page reload. I have a flask web app that shows data from sqlalchemy to the user. I want the app to fetch any new data when it is added to the database automatically without further ado from the client-side (something like news feeds). How do I achieve that. I know that I should use socket.io but don't know-how. All examples in google are about chat app. It would be very helpful if somebody could give me the roadmap to do it. The front end in js and the backend is in flask python. any help will be appreciated! Thanks ,"uwsgi and gunicorn have a built-in function that can be used to handle client requests. If you want to use a file - based handler, you can use the uwsgi module to do the work for you: https://docs.python.org/3/library/uwsgi.html#uwsgi.executor",PIPELINE T+B,2022-08-16-13-35-47-Sergey Kovalchuk.json,2022-08-16 13:35:47
+"How to save the moving graphs in the jupyter notebook into the pdf?. I have tried saving the notebook which has moving graphs in form of pdf but the pdf doesn't show any moving graphs, is it possible to save the moving graphs in form of pdf? ","
+
+You can save the notebook as a pdf by using the save as pdf button in the notebook.
+
+You can also save the notebook as a pdf by using the save as pdf button in the notebook.
+
+You can also save the notebook as a pdf by using the save as pdf button in the notebook.
+
+You can also save the notebook as a pdf by using the save as pdf button in the notebook.
+
+You can also save the notebook as a pdf by using the save as pdf button in the notebook.
+
+You can also save the notebook as a pdf by using the save as pdf button in",T2T GPTNEO VANILLA,2022-08-16-13-36-47-Sergey Kovalchuk.json,2022-08-16 13:36:47
+"How to stop a thread and restart it - python. How can I stop a thread from running and then restart it when called, havent been able to get a solid answer on this. Thanks in advance. ","' '##ask ( 2 ) and pthread _ sigmask ( 3 ) for further information. see also pause ( ), sigpending ( ) and sigwait ( ). new in version 3. 3. signal. setitimer ( which, seconds, interval = 0. 0 ) sets given interval timer ( one of signal. itimer _ real, signal. itimer _ virtual or signal. itimer _ prof ) specified by which to fire after seconds (",PIPELINE T+B,2022-08-16-13-38-05-Sergey Kovalchuk.json,2022-08-16 13:38:05
+"How can I change my default Python version, that if I type python in the terminal python 3 gets executed?. Can somebody help me? I tried to change my python version with the alias but I got a permission denied. What can I do? I'm on a mac. ","sys. exec _ prefix'/ usr' is a placeholder for the version of python, for example 3. 2 ; abiflags will be replaced by the value of sys. abiflags or the empty string for platforms which don ’ t define abi flags ; dist. sys. exec _ prefix'/ usr'",PIPELINE T+B,2022-08-16-13-39-05-Sergey Kovalchuk.json,2022-08-16 13:39:05
+"Getting connected partitions using METIS. I am using Metis on Python to partition a networkx graph I have. My objective is to get partitions that have an almost equal sum of node weights, which Metis does perfectly. However, a constraint I want to respect is that nodes in the same partition should be connected (have edges in common), which Metis doesn't do. Is there a way or a parameter to ensure that? ","if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string",PIPELINE T+B,2022-08-16-13-40-44-Sergey Kovalchuk.json,2022-08-16 13:40:44
+Is there a way to not have to specify the user when connecting with psycogp2?. So just passing in the host and db name and not having to specify the user like: host=blabla.co port=7000 dbname=ff_db instead of: host=blabla.co port=7000 dbname=ff_db user=some_user The .pgpass file already has the user specified so I feel passing this in is redundant. ,"
+Yes, you can use the pgpass file to specify the user. 
+You can use the pgpass file to specify the user, but you can't use the pgpass file to specify the host. 
+You can use the pgpass file to specify the host, but you can't use the pgpass file to specify the dbname. 
+You can use the pgpass file to specify the dbname, but you can't use the pgpass file to specify the user. 
+You can use the pgpass file to specify the user, but you can't use the pgpass file to specify the host",T2T GPTNEO VANILLA,2022-08-16-13-42-30-Sergey Kovalchuk.json,2022-08-16 13:42:30
+"""""""create a list containing each two adjacent letters in string `word` as its elements""""""","
+     return [word[i:i+2] for i in range(len(word)-1)]
+
+",T2C CODEGEN VANILLA,2022-08-16-13-43-39-Sergey Kovalchuk.json,2022-08-16 13:43:39
+"How to Use ""Pythonic"" YOLOv5 from PyTorch. I'm interested in training a YOLOv5 model. Currently, I'm using Roboflow to annotate and export the data into YOLOv5 format. I'm also using Roboflow's Colab Notebook for YOLOv5. However, I'm not familiar with many of the commands used in the Roboflow Colab Notebook. I found on here that there appears to be a much more Pythonic way of using and manipulating the YOLOv5 model, which I would be much more familiar with. My questions regarding this are as follows:  Is there an online resource that can show me how to train the YOLOv5 and extract results after importing the model from PyTorch with the Pythonic version (perhaps a snippet of code right here on StackOverflow would help)? The official documentation that I could find (here) also uses the non-Pythonic method for the model. Is there any important functionality I would lose if I were to switch to this Pythonic method of using YOLOv5? I found nothing in the documentation that suggests otherwise, but would I need to export my data in a different format from Roboflow for the data to be able to train the Pythonic model? Similar to question 1), is there anywhere that can guide me how to use the trained model on test images? Do I simply do prediction=model(my_image.jpg)? What if I want predictions on multiple images at once?  Any guidance would be appreciated. Thanks! ","
+  Is there an online resource that can show me how to train the YOLOv5 and extract results after importing the model from PyTorch with the Pythonic version (perhaps a snippet of code right here on StackOverflow would help)?",T2T GPTNEO FINETUNED,2022-08-16-13-44-27-Sergey Kovalchuk.json,2022-08-16 13:44:27
+"Generating uniform random numbers between two large integers in fortran90/95 or Python. I want to generate some uniform random numbers between [2E16, 5E20] in fortran90/95 or Python. I know that if R is a random number between zero and one (0R1), we can transform R to [A, B] as: R = (b-a)*r + a. But when I use this algorithm to generate some random numbers between [2E16, 5E20], most of generated random numbers are very close to 5E20. I know why this is occurred, it is because of that, the term B-A is approximately equal to B (because B is so bigger than A), and most of the generated random numbers are placed within the magnitude of B or B/10 (I mean it was very close to B). How can I solve this problem? One solution that I tried to apply is that, I split the [2E16, 5E20] interval into smaller intervals, such as: [2e16, 2e17], [2e17, 2e18], [2e18, 2e19], [2e19, 2e20], [2e20, 5e20]. And I generated some random numbers between each of the above intervals. Is there any other solutions? Is my solution correct? ","
+  I know why this is occurred, it is because of that, the term B-A is approximately equal to B (because B is so bigger than A), and most of the generated random numbers are placed within the magnitude of B or B/10 (I mean it was very close to B). How can I solve this problem?",T2T GPTNEO FINETUNED,2022-08-16-13-46-19-Sergey Kovalchuk.json,2022-08-16 13:46:19
+"How can I classify a dataset after one-hot encoding the target class?. I want to Classify a dataset with kernel machine. The Target-Class has 5 different values and I want to one-hot encoding it. After that I have 5 Target-Columns. I do the Training 5 times, one time per Target-Column. Now I want to classify a new sample. I classify the Sample 5 times using the 5 Trainig-model I got. At the end I look which Prediction has the maximum value over the 5 predictions and then I classify the sample according to the Class with the maximum prediction. I am not sure that I am doing the right thing. How can I do that in the right way? ",' '( self ) :... return list ( self. keylist )...,PIPELINE T,2022-08-16-13-47-06-Sergey Kovalchuk.json,2022-08-16 13:47:06
+"PyCharm Code Completion for files outside project directory. my python application imports other python packages in other locations on the filesystem dynamically at runtime. It then calls certain functions in these packages and supplies data objects from the main application. The issue is that coding these external packages there is no code completion in regard to the main apps code. Because these data objects are only supplied at runtime, as are their classes (which are already imported by then main app when calling the package) the package itself cannot reference them in any way (circular import). Since the package doesnt know about the objects up until it's running, Code Completion can't suggest any methods of these objects for example either. Is there any way for me to provide PyCharms Code Completion with a reference to the main application, so it can autocomplete my code? By this I mean suggestions for objects of the classes of my main app, autocomplete for native python packages works fine of course. The packages are imported by dynamically adding their path to the path variable, I tried to also add them to the interpreter path, however this did not work. ","' 'is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.''is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.",PIPELINE T,2022-08-16-15-09-10-Anonymous.json,2022-08-16 15:09:10
+"How to automate the process of running an excel model, 100,000 times, with different inputs in Python?. So I have a complex financial model on excel for a given set of input. Now I want to run the same model on 100,000 other sets of input and save it. Is there any libraries I should look into? I just have to change the inputs. Any guidance will be appreciated. TIA! ","You can use auto-numbering and named fields, as in the second example above. ( contributed by eric smith ; bpo - 5237. ) complex numbers now correctly support usage with format ( ), and default to being right - aligned. specifying a precision or comma - separation applies to both the real and imaginary parts of the number, but a specified field width and alignment is applied to the whole of the resulting 1. 5 + 3j output. ( contributed by eric smith ; bpo -",PIPELINE T,2022-08-16-15-13-13-Anonymous.json,2022-08-16 15:13:13
+"Deleting Excess Rows in Python with Pandas. I have a python script that restructures our organization's data into a different shape using python's pylightxl. But this script only works with excel files with less than 5000 rows of data, which is the standard format. But some files go up to 65000 rows, with unnecessary data after the 5000 index. What i want is to delete the excess rows after 5000th index. Pylightxl cannot do this. Only pandas can, I've scoured the internet on deleting rows using pandas but the answers I've found so far havenot benefitted me. The question is how can i delete excess rows using python pandas (the limit of which we may not know, it can go up to 200000), but the cut-off index is 5000 rows. If you know another python way other than pandas, do answer as well. ","
+import pandas as pd
+import numpy as np
+
+df = pd.read_excel('C:\\Users\\user\\Desktop\\test.xlsx')
+
+df.columns = ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9', 'col10', 'col11', 'col12', 'col13', 'col14', 'col15', 'col16', 'col17', 'col18', 'col19', 'col20', '",T2T GPTNEO VANILLA,2022-08-16-15-29-36-Anonymous.json,2022-08-16 15:29:36
+"Running a tester file in the VSC terminal - ModuleNotFoundError. I have made a tester file to check my other files are implementing correctly, however I can only get an output by clicking run on the file  (top right green arrow). When I type 'python Test.py' in the terminal I get :  Fatal Python error: initsite: Failed to import the site module ModuleNotFoundError: No module named 'site' Current thread 0x0000000102c0ce00 (most recent call first):  I assume this is an environment issue for my terminal? I am in the correct folder (one above Test.py). Any ideas how I can change this? Thanks! ","
+  I assume this is an environment issue for my terminal?",T2T GPTNEO FINETUNED,2022-08-16-15-32-25-Anonymous.json,2022-08-16 15:32:25
+"Raspberry PI - Python Network NAME. I've made a small info / kiosk system where a user can scan a QR code on the screen to connect with the raspberry pi. On the screen (next to the QR code) I want to put the name of the network (because you have to be on the same network to have the interaction). How can I print the name of the network (wifi or cable) on the screen, the IP address is not the issue, neither the hostname. I am just struggling with the name of the network where the Pi is connected too.. Thanks ","' '. ip _ address ( ) factory function, which automatically determines whether to create an ipv4 or ipv6 address based on the passed in value: &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipad",PIPELINE T+B,2022-08-16-15-37-43-Anonymous.json,2022-08-16 15:37:43
+"""""""parse tab-delimited CSV file 'text.txt' into a list""""""","
+
+import csv
+import sys
+
+",T2C CODEGEN VANILLA,2022-08-16-15-38-29-Anonymous.json,2022-08-16 15:38:29
+"""""""print a list `l` and move first 3 elements to the end of the list""""""","
+     print(l)
+     l.extend(l[:3])
+     print(l)",T2C CODEGEN VANILLA,2022-08-16-15-39-59-Anonymous.json,2022-08-16 15:39:59
+"""""""Python split a string using regex""""""","
+re.split('\\W+', 'This is a string with words')
+
+",T2C CODEGEN FINETUNED,2022-08-16-15-45-18-Anonymous.json,2022-08-16 15:45:18
+"Is there any function in which .wav file will generate. I am stuck on the .wav file extension, I used gtts method to convert text into the speech and save the file and it is working perfectly but the problem is gtts only support the .mp3 extension but I need the output file with .wav extension. So I am question is, if any function like gtts to convert text into speech and save the file with .wav extension? or anyone who already done work on this module. Please share your opinion. Thanks ","' '##s = audioop. findmax ( outputdata, 800 ) # one tenth second out _ test = outputdata [ pos * 2 : ] in _ test = inputdata [ pos * 2 : ] ipos, factor = audioop. findfit ( in _ test, out _ test ) # optional ( for better cancellation ) : # factor = audioop. findfactor ( in _ test [ ipos * 2 : ipos * 2 + len (",PIPELINE T,2022-08-16-15-46-45-Artem.json,2022-08-16 15:46:45
+"Is there a torchsummary equivalent in Tensorflow?. I am using GPU to run some very large deep learning models on a dataset of size 55GB. If I use a batch size greater than 1, I get a resource exhausted error. Even with a batch size of 1, I get segmentation faults. GPU memory is 10GB and Server has 32GB of RAM. Is there a way that I could know how large the data (batch size of 1) will occupy in the GPU? I am using tf.Keras to fit models. Is there a torchsummary equivalent in TensorFlow? ","python's api has many different types of APIs.''- sized arenas, but never freed arenas. with this patch, python will free arenas when they ’ re empty. The net effect is that on some platforms, when you allocate many objects, python ’ s memory usage may actually drop when you delete them and the memory may be returned to the operating system. ( implemented by evan jones, and reworked by tim peters. ) Note that",PIPELINE T+B,2022-08-16-15-48-01-Anonymous.json,2022-08-16 15:48:01
+"i want to compile .py to .exe. i want to compile .py to .exe. But when i do so the exe files is too big. Is there a solution?? i want the exe to be a smaller i know that  python was not meant to be compiled, executables made from python are bound to be large , but the problem is i have learnt python like 3 years, and now i want to make apps/games for windows. i can't just install python on every device?? i want to make it small i learnt that there is something called executable-packing?? using tools like crinkler how can we do that with python with pyinstaller or cx_freeze ",ccompiler is a built-in class that can be used for all the compile / link steps in building a single project.,PIPELINE T,2022-08-16-15-48-33-Artem.json,2022-08-16 15:48:33
+live updates of google trends api python. Hi I played with pytrends for few hours and wonder if there is a way to get live updates and not only historical value of specific keyword? I want to train model that use the google trends but what can I do if I don't have live data. Any websocket or something similar will be appreciated ,"' '5 > > > p. y = 0. 5 > > > print ( _ _ ('message with coordinates : (  point. x :. 2f,  point. y :. 2f  ) ',... point = p ) message with coordinates : ( 0. 50, 0. 50 ) > > > > from wherever import dollarmessage as _ _ > > print ( _ _ ('message with $ num $ what ',",PIPELINE T+B,2022-08-16-15-49-13-Artem.json,2022-08-16 15:49:13
+"""""""open a 'gnome' terminal from python script and run  'sudo apt-get update' command.""""""","
+os.system('gnome')
+os.system('sudo apt-get update')
+
+",T2C CODEGEN FINETUNED,2022-08-16-15-50-12-Artem.json,2022-08-16 15:50:12
+"Matplotlib plot function output differs from seaborn's lineplot. I want to plot a PDF function given data which follows a normal distribution. Mainly I followed this link. Now, if I am working on the data created like on that website (x=np.linspace()) and I plot it with either seaborn.lineplot() or matplotlib.pyplot.plot(), I get a normal curve as shown on the website linked above. But when I do this with my own data (which I believe is normal, but with a lot more data points) instead of initializing it with np.linspace I get a clear normal curve with seaborn's lineplot and a messy normal curve with matplotlib's plot function. I have tried to look for default arguments on both functions but couldn't find any (except estimator) which would cause this behavior. The estimator argument of Seaborn's lineplot was the only argument that looked like it could do something like this but setting it to None did not make any difference (and it kind of makes sense I think since the y value is always same for a specific x so averaging out will produce the same value). I used to think both functions are the same, but then why do they have different output? ",The _ _ wrapped _ _ attributes of the _ _ function are not inherited by the _ _ wrapped _ _ attributes. The _ _ wrapped _ _ attributes of the _ _ function are not inherited by the _ _ wrapped _ _ attributes of the _ _ wrapped _ _ functions. The _ _ wrapped _ _ attributes are not inherited by the _ _ wrapped _ _ attributes of the _ _ wrapped _ _,PIPELINE T+B,2022-08-16-15-51-05-Artem.json,2022-08-16 15:51:05
+"discord.py get user ""about me"" section. I was wondering if it was possible using discord.py to get the about me section of a given user. I did not find anything in the API documentation so I'm asking here to be sure. ","' 'the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords. use keyword - only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.",PIPELINE T+B,2022-08-16-15-54-15-Artem.json,2022-08-16 15:54:15
+"Get embed footer from reaction message. I want the person who used the command to be able to delete the result. I have put the user's ID in the footer of the embed, and my question is: how do I get that data from the message where the user reacted to. reaction.message.embed.footer doesn't work. I currently don't have code as I was trying to get that ID first. Thanks in advance! ",Asyncio. basetransport. get _ extra _ info ( ) now returns a safe to use socket object when ‘ socket ’ is passed to the name parameter. ( contributed by yury selivanov in bpo - 37027. ) the function asyncio. basetransport. get _ extra _ info ( ) now returns a safe to use socket object when ‘ socket ’ is passed to the name parameter. ( contributed by yury selivanov in bpo -,PIPELINE T,2022-08-16-15-55-17-Artem.json,2022-08-16 15:55:17
+Auto run python scripts on pycharm while opening. I want to auto run the python script when I open it from the terminal so that I won't have to press the run button From the terminal I want to open the file as : pycharm-community main.py How do I auto run it while it opens? ,"ide is running. if you want to run python scripts from the terminal window or from the finder you first need an editor to create your script. macos comes with a number of standard unix command line editors, vim and emacs among them. if you want a more mac - like editor, bbedit or textwrangler from bare bones software ( see http : / / www. barebones. com / products / bbedit / index. html. html.",PIPELINE T+B,2022-08-16-15-56-30-Artem.json,2022-08-16 15:56:30
+"Merge two dataframes based on date column and Id column. I have two data frames df and df1, I want to merge based on the date also based on Id column, df looks like     arrival input_fid     01-01-2021 719   02-01-2021 719   02-01-2021 599   02-01-2021 599   02-01-2021 479   01-01-2021 359   04-01-2021 359     df1 looks like     date input_fid prcp     02-01-2021 479 0.44   01-01-2021 359 0.14   02-01-2021 599 0.33   03-01-2021 599 0.24   02-01-2021 719 0.08   01-01-2021 719 0.02   04-01-2021 359 0.10     The expected result is,     arrival input_fid prcp     01-01-2021 719 0.02   02-01-2021 719 0.08   02-01-2021 599 0.33   04-01-2021 359 0.10   02-01-2021 479 0.10   01-01-2021 359 0.14   04-01-2021 359 0.10     I am not sure how to get that using two different columns. ","' 'itermonthdays2 ( year, month )  return an iterator for the month month in the year year similar to itermonthdates ( ), but not restricted by the datetime. date range. days returned will be tuples consisting of a day of the month number and a week day number.''itermonthdays3 ( year, month )  return an iterator for the month month in the year year similar to itermonthdates ( ), but not restricted by the datetime. date",PIPELINE T,2022-08-16-15-57-24-Artem.json,2022-08-16 15:57:24
+"Django button in admin. On user form view, add button Login As, that button will execute functionality that we login as that user. Only admins can see/execute this functionality. This is my question, how this to make? ",django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.djan,PIPELINE T,2022-08-16-15-58-09-Artem.json,2022-08-16 15:58:09
+What does the python runtime environment mean?. I was reading this article about the sys module in python And I came across this line:  The sys module in Python provides various functions and variables that are used to manipulate different parts of the Python runtime environment. It allows operating on the interpreter as it provides access to the variables and functions that interact strongly with the interpreter.  Can someone explain what this means? I don't get it ,"''the type of the trace function registered using pyeval _ setprofile ( ) and pyeval _ settrace ( ). the first parameter is the object passed to the registration function as obj, frame is the frame object to which the event pertains, what is one of the constants pytrace _ call, pytrace _ exception, pytrace _ line, pytrace _ return, pytrace _ c _ call, py",PIPELINE T+B,2022-08-16-15-59-07-Artem.json,2022-08-16 15:59:07
+"How to speed up large test-suite run duration using pytest?. I have a pytest test-suite which contains over 30,000 test cases. When I run it, it takes over 10 hours to run. However, when I cut the number of test cases down to 1,000, it completes in 39 seconds! Any idea on what is going on here? The test cases are very simple, just calling one function which is doing no I/O (no network calls, DB calls etc). Any help would be great! Best, Dave. ","' 'when counts argument is not none. bpo - 42934 : use tracebackexception ’ s new compact param in testresult to reduce time and memory consumed by traceback formatting. bpo - 38250 : add randbytes ( ) to random. _ _ all _ _. bpo - 38250 : [ enum ] flags consisting of a single bit are now considered canonical, and will be the only flags returned from listing and iterating",PIPELINE T,2022-08-16-15-59-50-Artem.json,2022-08-16 15:59:50
+"""""""Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`""""""","
+     return sum([int(i) for i in strings])",T2C CODEGEN VANILLA,2022-08-16-16-01-00-Artem.json,2022-08-16 16:01:00
+"How to pass data in body of a get request in python?. So i have a hash that i want to pass in the body of get request i am currently using requests library from python, i am doing something like this in my code. I am using falcon framework. requests.get(url, headers=head, data=json.dumps({user_id: 436186})) is it the right approach to pass the data in body of get request? Because i am not able to hit the api and getting 400 from the other side i suspect it's because of data not being able to pass in the get request. Or is there some other library which has the support? ","This password manager extends httppasswordmgrwithdefaultrealm to support tracking uris for which authentication credentials should always be sent. httppasswordmgrwithpriorauth. add _ password ( realm, uri, user, passwd, is _authenticated = false )  realm, uri, user, passwd are as for httppasswordmgr. add _ password ( ). is _authenticated sets the initial value of the is _authenticated = false )",PIPELINE T+B,2022-08-16-16-02-02-Artem.json,2022-08-16 16:02:02
+"How to use decision trees for survival analysis?. I have a problem understanding und applying Decision Trees for Survival Analysis in Python. I have a dataset, with the variables age, weight, size of tumor, volume, ... (all floats) and I want to know if there is a correlation with the overall survival(also a float). But how can I apply Decision Trees for that? In the literature, I only saw examples where y_train must be a categorical variable (such as 0 or 1, benign or malignant, ...) but it does not work on continuous variables like floats. However I want to create a decision tree, so that in the end you can find out that with a tumor size of  xx and a volume of yy your predictes overall survival is about  zzz. Can someone help me out with my problem? Does anyone has an idea where to read more about this topic? ","
+I have a dataset, with the variables age, weight, size of tumor, volume,... (all floats) and I want to know if there is a correlation with the overall survival(also a float). But how can I apply Decision Trees for that? In the literature, I only saw examples where y_train must be a categorical variable (such as 0 or 1, benign or malignant,...) but it does not work on continuous variables like floats. However I want to create a decision tree, so that in the end you can find out that with a tumor size of  xx and a volume of yy",T2T GPTNEO VANILLA,2022-08-16-16-03-16-Artem.json,2022-08-16 16:03:16
+"Extract multiple frames from camera using ROS. How do I extract multiple frames from a video streaming using ROS ? I subscribed to my camera topic : self.image_sub = rospy.Subscriber('/bebop2/image_raw',Image, self.image_callback) And then : frame = self.bridge.imgmsg_to_cv2(msg,desired_encoding='bgr8') This way I have the actual frame from my streaming. How can I store N frames (the actual and previous ones) ? ","
+  How can I store N frames (the actual and previous ones)?",T2T GPTNEO FINETUNED,2022-08-16-16-03-49-Artem.json,2022-08-16 16:03:49
+"How to make the python program work in the background. how can i make my program run silently when running? I would like it to leave no trace and nothing to appear visually, in C# we say '' Silent Load '', but I don't know how it works in Python obs : i use pycharm for coding ","' '( 0l ) ; pyobject _ print ( item, stdout, 0 ) ; pyobject _ decref ( item ) ;... The second case of problems with a borrowed reference is a variant involving threads. normally, multiple threads in the c debugger to figure out why his _ _ del _ _ ( ) methods would fail... The second case of problems with a borrowed reference is a variant involving threads.",PIPELINE T+B,2022-08-16-16-03-52-Artem.json,2022-08-16 16:03:52
+"""""""remove all non-alphanumeric characters except space from a string `text` and lower it""""""","
+re.sub('[^a-zA-Z0-9 ]+', '', text)
+
+",T2C CODEGEN FINETUNED,2022-08-16-16-05-17-Artem.json,2022-08-16 16:05:17
+"File dependend DAG execution. I build a DAG that begins with the download of a file over the SFTPOperator, I save it and proceed with accessing and processing it, with a PythonOperator. I had no issues with this approach at all, till I started to scale up my celery-workers from 1 to 2. Now I run in to the problem of a file that isn't available in both workers. How do I solve it? Do I download the file over the SFTPHook and combine these Tasks? Can I constrain the spread on to different workers? kind regards, CreedsCode ","The logging module's filehandler class and its subclasses watchedfilehandler, rotatingfilehandler, and timedrotatingfilehandler now have an optional delay parameter to their constructors. if delay is true, opening of the log file is opened.",PIPELINE T+B,2022-08-16-16-08-59-Artem.json,2022-08-16 16:08:59
+In pygame how can i create a data struct that keeps track of resizing events and the coordinates of objects?. I'm looking to keep my mouse events in sync with my objects after resizing the screen. I'm told I need to create a data structure to keep track of:  Resizing events  New coordinates to match the resize   How can I accomplish this using simple algebraic equations and integrate it into a resize event for accurate updating? ,You can use ttk.windows to display a single window at a time: ttk.windows.windows.set(' '),PIPELINE T+B,2022-08-16-16-11-39-Artem.json,2022-08-16 16:11:39
+"The dash_html_components package is deprecated. Please replace `import dash_html_components as html. I am trying to use dash 2.0, I also replaced import style in my all files but the problem is occurring in-dash bootstrap, Is there any method by which I can upgrade dash bootstrap for smoother use in dash 2.0 rather than manually changing.  /home/sarim/Desktop/biz-pulse-vm-20210727T040204Z-001/biz-pulse-vm/venv/lib/python3.8/site-packages/dash_bootstrap_components/_table.py:5:  UserWarning: The dash_html_components package is deprecated. Please replace import dash_html_components as html with from dash import html import dash_html_components as html  /home/sarim/Desktop/biz-pulse-vm-20210727T040204Z-001/biz-pulse-vm/venv/lib/python3.8/site-packages/dash_extensions/enrich.py:7:  UserWarning: The dash_core_components package is deprecated. Please replace import dash_core_components as dcc with from dash import dcc import dash_core_components as dcc ",The xmllib module was added in python 1. 5. 2 as part of the python documentation. The xmllib module was added in python 1. 5. 2 as part of the python documentation. The xmllib module was added in python 1. 5. 2 as part of the python documentation. The xmllib module was added in python 1. 5. 2 as part of the python documentation.,PIPELINE T,2022-08-16-16-12-31-Artem.json,2022-08-16 16:12:31
+"How do you import and use Spark-Koalas in palantir-foundry. How can I -- in Palantir-foundry -- import and use the Koalas: pandas API for Apache Spark open source python package. I know that you can import packages that don't exist through Code Repo and have done this, can I do this same process for Koalas package or do I need to follow another route? ","' 'names in the 1st are not yet available, because the first module is busy importing the 2nd. in this case, if the second module is only used in one function, then the import can easily be moved into that function. by the time the import is called, the first module will have finished initializing, and the second module can do its import.",PIPELINE T,2022-08-16-16-12-55-Artem.json,2022-08-16 16:12:55
+"lambda function of undertermined number of arguments. I am new to use python for programming. I want to create a function of list without determined number of arguments. My task is as follows: if I input s=5 and idx=[2,3] with numerical values [0.3, 0.7], it means that I have to create a list [t0, t1, 0.3, 0.7, t4]. The list can be treated as a function of three variables t0, t1, and t4. I guess I may need to use *args, but I do not how to do it in general. ","' '* 2 ) this gives you a list that contains 5 lambdas that calculate x * * 2. you might expect that, when called, they would return, respectively, 0, 1, 4, 9, and 16 however, when you actually try you will see that they all return 16: &gt;&gt;&gt; x * * 2 &gt;&gt;&gt; x * * 2 &gt;&gt;&gt; x * * 2 &gt;&gt;&gt",PIPELINE T,2022-08-16-16-13-54-Artem.json,2022-08-16 16:13:54
+how to set correct batch_size and steps_per_epoch in keras?. I have 20000 RGB images. I set batch_Size = 1 (due to GPU capacity). So now does it mean the model weights are changing with one-by-one pictures or it depends on the steps_per_epoch? How should I set the steps_per_epoch and epochs for using all of 20000 images to be involved in training in different epochs? ,"
+    batch_size = 1 (due to GPU capacity)",T2T GPTNEO FINETUNED,2022-08-16-16-14-18-Artem.json,2022-08-16 16:14:18
+"Do I need a setup.cfg if I have a setup.py?. I use setuptools to build my python package. I was using just a setup.py file, but I added a pyproject.toml in accordance with this tutorial, which appears to have been recently updated to include that file. What I can't tell from that tutorial or this one, is whether I need to have a setup.cfg if I'm still using setup.py, and if so, what should be in it. It does show a file tree with both, but then implies that file structure is only indicative with (for people using primarily setup.cfg)  If you create a setup.py file, this will enable direct interaction with setup.py (which generally should be avoided), and editable installs. This file used to be required, but can be omitted in modern setuptools.  ","''simple example : more metadata, and the specification of pure python modules by package, rather than by module. This is important since the distutils consist of a couple of dozen modules split into ( so far ) two packages ; an explicit list of every module would be tedious to generate and difficult to maintain.",PIPELINE T+B,2022-08-16-16-14-55-Artem.json,2022-08-16 16:14:55
+"Using python to create a ChatBot in GupShup Bot Builder. I'm trying to create a chatbot using gupshup, but I don't have much experience with JS, and for my implementation, it will be easier to code in python, but I'm not finding any material about it. Is it possible to develop a ChatBot with python using GupShup? Thanks ","
+
+Yes, it is possible to develop a chatbot with python using GupShup.
+
+Steps to follow:
+
+Download GupShup Bot Builder.
+Install GupShup Bot Builder.
+Download the python code from the GupShup website.
+Copy the downloaded python code to your project directory.
+Run the python code.
+
+Steps to follow:
+
+Download GupShup Bot Builder.
+Install GupShup Bot Builder.
+Download the python code from the GupShup website.
+Copy the downloaded python code to your project directory.
+Run",T2T GPTNEO VANILLA,2022-08-16-16-17-13-Artem.json,2022-08-16 16:17:13
+Django remove all default migration. Is there a way to remove all default django migration? My app doesn't use any of the default migration so I think it's a good idea to remove all unused migration ,"' '##logrecordfactory ( record _ factory ) this pattern allows different libraries to chain factories together, and as long as they don ’ t overwrite each other ’ s attributes or unintentionally overwrite the attributes provided as standard, there should be no surprises. However, it should be borne in mind that each link in the chain adds run - time overhead to all logging operations, and the technique should only be used when the use of a filter does not provide the desired result.",PIPELINE T+B,2022-08-16-16-17-43-Artem.json,2022-08-16 16:17:43
+"Is it possible to write python code inside Flutter using Android Studio?. I'm working on Flutter project in Android Studio platform and I faced a problem with how to write and run python API code inside my Flutter project without letting it as a backend code in another platform? since when I run my Flutter project that connected with python API code in another platform as a backend using post method, it's worked with the emulator but it does not work with my physical android device. So is there any recommend solution for either the first problem or the second. Thanks. ",bpo - 30389 : adds detection of visual studio 2017 to distutils on windows. bpo - 31358 : zlib is no longer available on windows.,PIPELINE T,2022-08-16-16-18-27-Artem.json,2022-08-16 16:18:27
+"Heikin Ashi without a stock's entire history?. I'm trying to loop through hundreds of stock tickers, calculating the most recent Heikin-Ashi open and close value for each. However, you need the previous HA open and close to calculate the current HA open. Is there any way to do this without having to deal with a stock's entire history? ","
+  Is there any way to do this without having to deal with a stock's entire history?",T2T GPTNEO FINETUNED,2022-08-16-16-18-56-Artem.json,2022-08-16 16:18:56
+"How can I classify a dataset after one-hot encoding the target class?. I want to Classify a dataset with kernel machine. The Target-Class has 5 different values and I want to one-hot encoding it. After that I have 5 Target-Columns. I do the Training 5 times, one time per Target-Column. Now I want to classify a new sample. I classify the Sample 5 times using the 5 Trainig-model I got. At the end I look which Prediction has the maximum value over the 5 predictions and then I classify the sample according to the Class with the maximum prediction. I am not sure that I am doing the right thing. How can I do that in the right way? ",' '( self ) :... return list ( self. keylist )...,PIPELINE T,2022-08-16-16-19-32-Artem.json,2022-08-16 16:19:32
+"""""""Get the integer location of a key `bob` in a pandas data frame""""""","
+     return data.index.get_loc(bob)",T2C CODEGEN VANILLA,2022-08-16-16-20-04-Artem.json,2022-08-16 16:20:04
+"""""""append elements of a set `b` to a list `a`""""""","
+[i for i in b]
+",T2C CODEGEN FINETUNED,2022-08-16-16-55-41-Artem.json,2022-08-16 16:55:41
+"How to get word embeddings back from Keras?. Say you create your own custom word embeddings in the process of some arbitrary task, say text classification. How do you get a dictionary like structure of {word: vector} back from Keras? embeddings_layer.get_weights() gives you the raw embeddings...but it's unclear which word corresponds to what vector element. ","
+You can use the embeddings_layer.get_weights() method to get the weights of the embeddings layer. You can then use the weights to create your own custom word embeddings.
+
+A:
+
+You can use the embeddings_layer.get_weights() method to get the weights of the embeddings layer. You can then use the weights to create your own custom word embeddings.
+
+",T2T GPTNEO VANILLA,2022-08-16-17-13-39-Artem.json,2022-08-16 17:13:39
+"Why don't Python packages come with documentation, like R?. When you download a package to R, they always come with the documentation, which is very handy and lets you use the Help panel from RStudio offline. Why is not the same with python packages? Is it not possible to do the same from the Spyder Help panel? You need to be online to access the documentation. ",' '##c object structures slot type typedefs examples supporting cyclic garbage collection controlling the garbage collector state api and abi versioning distributing python modules key terms open source licensing and collaboration installing the tools reading the python packaging user guide how do i...?... choose a name for my project?... create and distribute binary extensions?... install pip in versions of python prior to python 3. 4?... install packages just for the current user?...,PIPELINE T,2022-08-16-17-14-11-Artem.json,2022-08-16 17:14:11
+How to fill/blur the inside of bounding box in YOLO object detection?. I have used YOLOv4 to detect objects in an image now I want to blur those objects or superimpose black color inside the bounding box. How can I do that using OpenCV or some other library? ,"
+You can use the following code to blur the bounding box:
+
+import cv2
+import numpy as np
+
+img = cv2.imread('image.jpg')
+
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+bbox = cv2.boundingRect(gray)
+
+bbox = cv2.minArea(bbox)
+
+bbox = cv2.cvtColor(bbox, cv2.COLOR_BGR2GRAY)
+
+b",T2T GPTNEO VANILLA,2022-08-16-17-15-50-Artem.json,2022-08-16 17:15:50
+"Why does Google Cloud Compute Engine IP differ from the static one I have reserved?. I have set a static IP address for my Google Cloud Compute Engine. When I go to the network details of the engine, it tells it is 34.88.xx.xx However - when I now run a test python script in the cloud shell, it tells me that the requests comes from an IP that is 34.91.xx.xx It looks like I should not run the script on the Shell but somehow run it in the compute engine. Hard to figure out how that could be done. ","
+The IP address of the Compute Engine is not the same as the IP address that you have reserved.
+
+A:
+
+The IP address of the Compute Engine is not the same as the IP address that you have reserved.
+
+The IP address of the Compute Engine is 34.88.xx.xx.
+
+The IP address of the Compute Engine is 34.88.xx.xx.
+
+The IP address of the Compute Engine is 34.88.xx.xx.
+
+The IP address of the Compute Engine is 34.88.xx.xx.
+
+The",T2T GPTNEO VANILLA,2022-08-16-17-18-27-Artem.json,2022-08-16 17:18:27
+"""""""set pythonpath in python script.""""""","
+sys.path.insert(0, '.')
+
+",T2C CODEGEN FINETUNED,2022-08-16-17-19-38-Artem.json,2022-08-16 17:19:38
+"How to close chrome manually and do .quit() automatically. My script is in python with selenium is to login automatically on some site and after(i use chrome like any browser), I want when I finish to use chrome (when I close it), automatically close the chromedriver.exe else the chromedriver.exe is all time running. ","' '. if block raises an exception, the _ _ exit _ _ ( type, value, traceback ) is called with the exception details, the same values returned by sys. exc _ info ( ). the method''. if block raises an exception, the _ _ exit _ _ ( type, value, traceback ) is called with the exception details, the same values returned by sys. exc _ info ( ). the method ’ s return value controls whether the exception is",PIPELINE T+B,2022-08-16-17-22-07-Artem.json,2022-08-16 17:22:07
+"How do built in macros on Emulators work?. I'm building a script to automate some stuff on my Android emulator I'm currently using pyautogui to do it tho it would be nice if there was some sort of way I can directly interact with the emulator without it relying on my mouse I know there's an option using ADB but that requires the android to be rooted a lot of android emulators like Nox, Bluestacks, LDplayer have built-in macros that don't require the device to be rooted. How do these emulators send commands to the emulator is that something I can tap into and send commands through that instead? ","You can use c + + to extend python with c. c + + ''1. extending python with c or c + +  it is quite easy to add new built - in modules to python, if you know how to program in c. such extension modules can do two things that can ’ t be done directly in python : they can implement new built - in object types, and they can call c library functions and system calls.''",PIPELINE T,2022-08-16-17-22-35-Anonymous.json,2022-08-16 17:22:35
+"Can not install cleverhans version 3.1.0. I am trying to install cleverhans verion 3.1.0 but getting following error pip install cleverhans==3.1.0 Note: you may need to restart the kernel to use updated packages. ERROR: Could not find a version that satisfies the requirement cleverhans==3.1.0 (from versions: 2.1.0, 3.0.0, 3.0.0.post0, 3.0.1) ERROR: No matching distribution found for cleverhans==3.1.0 I want to access random_lp_vector method in 3.1.0 version which I am unable to access if I try in 3.0.1 also Is there any option available for adversarial training in the latest version which is 4.0.0 Please kindly help ","The - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.",PIPELINE T+B,2022-08-16-17-26-58-Anonymous.json,2022-08-16 17:26:58
+How do I get rid of the '$' in the destination folder so I can download Anaconda?. Im trying to download Anaconda on Windows 10 but there is an error in the destination folder due to a '$' . I changed the username on my PC but it still doesn't change on the destination folder. How can I change the '$'? ,"You can do this using the built-in installer module.
+
+import installer
+
+# install without downloading
+
+
+installation.py:
+
+install installer.py
+
+with open('your_installer.py', 'w') as f:
+    for i in range(10, 10):
+  ...
+
+",PIPELINE BART T+B,2022-08-17-15-41-45-Anonymous.json,2022-08-17 15:41:45
+"""""""view web page content that is generated using angular JS""""""","
+
+import os
+import json
+import logging
+import requests
+import time
+import re
+import urllib
+from datetime import datetime
+from flask import Flask, request, render_template, redirect, url_for, session, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_wtf",T2C-SO CODEGEN VANILLA,2022-08-17-15-43-30-Anonymous.json,2022-08-17 15:43:30
+"""""""get a random 4 digit number in python, from 0000-9999""""""","
+random.randint(0, 99999)
+",T2C-SO GPTNEO FINETUNED,2022-08-17-15-44-11-Vadim.json,2022-08-17 15:44:11
+"How to run and test a django cloned project from github in visual studio code?. I have cloned a random project and trying to run it in my local system. I am using visual studio code editor. After opening the extracted folder in editor, I have clicked on run. At this point in time, a new chrome browser is getting opened and its showing that the server is down. I tried setting up a virtual environment and by using the command - python manage.py runserver . Even though I am unable to test that project. Could I get some insights to get rid of this issue as early as possible please? ","' '##o - 15308 : add ‘ interrupt execution ’ (  c ) to shell menu. patch by roger serwy, updated by bayard randel. bpo - 27922 : stop idle tests from ‘ flashing ’ gui widgets on the screen. add version to title of idle help window.",PIPELINE T5 T+B,2022-08-17-15-47-16-Vadim.json,2022-08-17 15:47:16
+"""""""put '..' in the paths that we put in the os.listdir parameter""""""","
+os.path.join('..', '..')
+
+",T2C-SO CODEGEN FINETUNED,2022-08-17-15-48-55-Vadim.json,2022-08-17 15:48:55
+"""""""use relative path in Python""""""","
+os.path.join(os.path.dirname(__file__), '..', '..', '..')
+
+",T2C-SO CODEGEN FINETUNED,2022-08-17-15-49-57-Anonymous.json,2022-08-17 15:49:57
+"""""""extract string from python list""""""","
+
+import re
+import sys
+import os
+import json
+import argparse
+import logging
+import subprocess
+import numpy as np
+import pandas as pd
+from tqdm import tqdm
+from collections import defaultdict
+from itertools import chain
+from multiprocessing import Pool
+from functools import partial
+from pprint import pprint
+
+import utils
+from utils import *
+
+logger = logging.getLogger(__name__)
+
+def get_args():
+     parser = argparse.ArgumentParser()
+     parser",T2C-SO CODEGEN VANILLA,2022-08-17-15-51-47-Vadim.json,2022-08-17 15:51:47
+"""""""move values from pandas columns with dicts into new columns containing just the value""""""","
+df.apply(lambda x: {k: v for k, v in x.items() if isinstance(v, dict)}, axis=1)
+df.apply(lambda x: {k: v for k, v in x.items() if isinstance(v, dict)}, axis=1)
+df.apply(lambda x: {k: v for k, v in x.items() if isinstance(v, dict)}, axis=1)
+df.apply(lambda x: {k: v for k, v in x.items() if isinstance(v",T2C-SO CODEGEN FINETUNED,2022-08-17-16-04-55-Vadim.json,2022-08-17 16:04:55
+"""""""regex, find ""n""s only in the middle of string `s`""""""","
+re.findall('(?<=n)(?=n)', s)
+
+",T2C-CONALA CODEGEN FINETUNED,2022-08-17-16-14-45-Vadim.json,2022-08-17 16:14:45
+"Disection of re 're.compile(r""^[a-zA-Z][\w_]{2,23}[^_]$"")'. I'm new to python programming and doing some challenges to improve my coding; I encounter the following regular expression: (r^[a-zA-Z][\w_]{2,23}[^_]$). Doing some research, I understand this: r = The expression is a raw string (not sure what this mean entirely) ^[a-zA-Z] = This tells me that the string must start with a letter [\w_]{2,23} = the body of the string from val[2] to val[23] must be alphanumeric [^_]$ = the end must be an underscore If my research is correct, I don't understand why the [\w_] contains an underscore on it. I thought for alphanumerics must be only [\w]. If I'm wrong, help me to clarify it. ","''is neither in a character class or preceded by an unescaped backslash.''s neither in a character class or preceded by an unescaped backslash. for example, here's a re that uses re. verbose ; see how much easier it is to read? charref = re.compile ( r "" "" "" & [ # ] # start of a numeric entity reference ( 0 [ 0 - 7 ] + # octal form | [",PIPELINE T5 T,2022-08-17-16-16-26-Vadim.json,2022-08-17 16:16:26
+"""""""check the pattern of a column in a dataframe""""""","
+df.columns[df.columns.str.contains('^(\\d+)$')]
+
+",T2C-SO GPTNEO FINETUNED,2022-08-17-16-17-19-Vadim.json,2022-08-17 16:17:19
+"""""""remove all non-alphanumeric characters except space from a string `text` and lower it""""""","
+     return re.sub(r'[^\w\s]', '', text).lower()",T2C-CONALA CODEGEN VANILLA,2022-08-17-16-22-43-Vadim.json,2022-08-17 16:22:43
+"""""""Print new line character as `\n` in a string `foo\nbar`""""""","
+print('foo\nbar')
+",T2C-CONALA CODEGEN FINETUNED,2022-08-17-16-29-27-Vadim.json,2022-08-17 16:29:27
+"""""""Remove duplicate words from a string `text` using regex""""""","
+     return re.sub(r'(\w)\1+', r'\1', text)",T2C-CONALA CODEGEN VANILLA,2022-08-17-16-32-51-Vadim.json,2022-08-17 16:32:51
+"""""""open a browser tab after GET and POST requests in python""""""","
+
+import os
+import sys
+import urllib.request
+import webbrowser
+
+",T2C-SO CODEGEN VANILLA,2022-08-17-16-33-10-Fedor.json,2022-08-17 16:33:10
+"How to disable SQLAlchemy lazy loads on detached instance relationships?. I've developed a JDO-like Fetch Group feature in Python with SQLAlchemy to control the pruning of object graphs for marshalling web service responses. During this process I detach the instances using session.expunge(entity) The issue is that when the JSON marshaller or pydantic accesses an instance attribute relationship which was not loaded yet, even though the instance is detached, the SQLAlchemy lazy loading still kicks in for that attribute and fails because the instance is not bound to a session anymore (obviously): DetachedInstanceError(Parent instance MyClass at 0x1439051f0 is not bound to a Session; lazy load operation of attribute 'relation' cannot proceed) So, my first question, is why are the lazy loaders not disabled when an instance is detached as it doesn't make sense to me. Secondly, if that is a feature, how can I disable or work-around lazy loaders to prevent this error and let the  attribute relationship in question appear None to the marshaller? I have found that setting self.__dict__['relation'] = None helps in some circumstance in fooling the lazy loaders in not kicking in but it does not always work unfortunately... ","The first argument to the callback signifies what kind of operation is to be authorized. The second and third argument will be arguments or none depending on the first argument. The 4th argument is a list of values, which is a list of values. The first argument is a list of values. The second argument is a list of values. The third argument is a list of values. The fourth argument is a list of values. The fourth argument is a list of values. The fourth argument is a list of values. The first argument is a list of values. The first argument is",PIPELINE T5 T,2022-08-17-16-55-44-Fedor.json,2022-08-17 16:55:44
+"How can I get Custom Payload as string. I have a Dialogflow CX agent that returns a Custom payload. My client is a Python application using the dialogflowcx_v3beta1 SDK to call DetectIntent. The application needs to forward the custom payload in JSON format to another application, but I have been unable to find a way to convert the structured payload to JSON. There is no schema associated with the custom payload, which could be literally any valid JSON, and because it will simply be forwarded to another component, the application has no reason to interpret the content in any way. Is there a way to serialize the custom payload to JSON? ","You can use pickle.dump to dump the pickled object to the open file:
+
+import pickle
+
+with open('file.txt', 'r') as f:
+    pickled_object = pickle(f)
+
+
+Then you can dump it to the pickle module.
+",PIPELINE BART T,2022-08-17-16-57-59-Fedor.json,2022-08-17 16:57:59
+"""""""make an xml file open cv readable""""""","
+open('test.xml', 'r')
+
+",T2C-SO CODEGEN FINETUNED,2022-08-17-17-00-38-Fedor.json,2022-08-17 17:00:38
+"""""""return the number of different values in pandas dataframe as an integer""""""","
+df.apply(lambda x: len(set(x)))
+
+",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-19-15-16-20-TypingCat.json,2022-08-19 15:16:20
+"""""""find intersection data between series `s1` and series `s2`""""""","
+s1.intersection(s2)
+
+A:
+
+You can use pandas.Series.intersection with a list of Series as the argument:
+s1.intersection(s2, axis=0)
+
+A:
+
+You can use pandas.Series.intersection with a list of Series as the argument:
+s1.intersection(s2, axis=0)
+
+A:
+
+You can use pandas.Series.intersection with a list of Series as the argument:
+s1.intersection(s2, axis=0)
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-08-19-15-18-23-TypingCat.json,2022-08-19 15:18:23
+"""""""encode `Decimal('3.9')` to a JSON string""""""","
+     return json.dumps(decimal_to_json(decimal))",T2C-CONALA CODEGEN VANILLA,2022-08-19-15-20-57-TypingCat.json,2022-08-19 15:20:57
+"""""""use Instagram API in Python to upload images to my own account""""""","
+requests.post('https://api.instagram.com/v1/media/{media_id}/upload',
+              json={'media_id': '{media_id}'},
+  `content-type`='multipart/form-data')
+
+I get the following error:
+{'error': 'invalid_request', 'error_description': 'Invalid request'}
+
+A:
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-19-15-24-56-TypingCat.json,2022-08-19 15:24:56
+"""""""download the latest dataset(.csv) with an automatic Python script from Nasdaq""""""","
+import urllib2
+url = 'http://www.nasdaq.com/symbol/aapl/historical'
+response = urllib2.urlopen(url)
+data = response.read()
+with open('aapl.csv', 'w') as f:
+    f.write(data)
+print 'Downloaded aapl.csv'
+",T2C-SO CODEGEN FINETUNED-SO,2022-08-19-15-25-49-TypingCat.json,2022-08-19 15:25:49
+"""""""stop asking for input after reaching a specific amount of elements in a list""""""","
+list(itertools.islice(it, len(it)))
+
+",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-19-15-37-54-TypingCat.json,2022-08-19 15:37:54
+"""""""save variable into a file (like print but into file)""""""","
+import pickle
+pickle.dump(variable, file)
+file.close()
+file = open(""file.txt"", ""w"")
+pickle.dump(variable, file)
+file.close()
+file = open(""file.txt"", ""r"")
+variable = pickle.load(file)
+file.close()
+print variable
+file = open(""file.txt"", ""w"")
+pickle.dump(variable, file)
+file.close()
+file = open(""file.txt"", ""r"")
+variable = pickle.load(file)
+file.",T2C-SO CODEGEN FINETUNED-SO,2022-08-19-15-38-57-TypingCat.json,2022-08-19 15:38:57
+"""""""count most frequent 100 words in column 'text' of dataframe `df`""""""","
+df['text'].apply(lambda x: x.split()).apply(lambda x: collections.Counter(x)).apply(lambda x: x.most_common(100))
+df['text'].apply(lambda x: x.split()).apply(lambda x: collections.Counter(x)).apply(lambda x: x.most_common(100))
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-08-19-15-42-13-TypingCat.json,2022-08-19 15:42:13
+"""""""read from files which has tfrec extension in tensorflow""""""","
+tf.io.gfile.GFile('/tmp/tfrec.tfrec', 'rb').read()
+
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-19-16-20-02-Anonymous.json,2022-08-19 16:20:02
+"""""""print elements of list `list` seperated by tabs `\t`""""""","
+
+import sys
+
+def print_elements_of_list_separated_by_tabs(list, tabsize=8):
+    """"""print elements of list `list` separated by tabs `\t`""""""
+    for element in list:
+        print(element, end=tabsize)
+
+if __name__ == ""__main__"":
+    print_elements_of_list_separated_by_tabs([1, 2, 3, 4, 5, 6, 7, 8, 9])",T2C-CONALA GPTNEO VANILLA,2022-08-19-16-21-16-Anonymous.json,2022-08-19 16:21:16
+"""""""count a list of words from a list in python""""""","
+
+import re
+import sys
+import os
+import time
+import random
+import string
+import itertools
+
+from collections import defaultdict
+from collections import Counter
+
+from. import _
+
+",T2C-SO GPTNEO VANILLA,2022-08-19-16-22-39-Anonymous.json,2022-08-19 16:22:39
+"""""""obtain data from a public google sheets using python""""""","
+service.spreadsheets().values('Sheet1')
+
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-19-16-23-30-Anonymous.json,2022-08-19 16:23:30
+"""""""convert a date which maybe in any format to a specific format in python""""""","
+datetime.datetime.strptime('01/01/2000', '%d/%m/%Y')
+
+",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-19-16-24-51-Anonymous.json,2022-08-19 16:24:51
+"""""""convert scalar `x` to array""""""","
+x = np.array(x)
+
+print(x)
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-08-19-16-25-30-Anonymous.json,2022-08-19 16:25:30
+"""""""create a flattened list from multi-levels using recursion in Python""""""","
+[item for sublist in [[1, 2, 3], [4, 5, 6]] for item in sublist]
+",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-22-10-03-00-Anonymous.json,2022-08-22 10:03:00
+"""""""generate all possibilities of objects of 2 dimensions""""""","
+[(x, y) for x in range(3) for y in range(3)]
+
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-22-12-34-10-Anonymous.json,2022-08-22 12:34:10
+"""""""get this type of output in python in string""""""","
+print(type(output))
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-22-12-34-53-Anonymous.json,2022-08-22 12:34:53
+"""""""read a file line by line from S3 parquet, filter and save line by line to another S3 bucket""""""","
+import boto3
+import pandas as pd
+import io
+import pandas.io.parquet as pq
+import boto3.s3
+import boto3.session
+def read_file(filename):
+    s3 = boto3.client('s3')
+    bucket = s3.get_bucket('my_bucket')
+    file = bucket.get_key(filename)
+    reader = pq.ParquetReader(file)
+    for line in reader:
+    ",T2C-SO GPTNEO FINETUNED-SO,2022-08-22-12-45-22-Anonymous.json,2022-08-22 12:45:22
+"""""""get probability and label prediction at the same time using sklearn""""""","
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import f1_score
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error",T2C-SO GPTNEO FINETUNED-SO,2022-08-22-12-45-48-Anonymous.json,2022-08-22 12:45:48
+"""""""Round number `answer` to 2 precision after the decimal point""""""","
+answer = int(input(""Enter a number: ""))
+answer = round(answer, 2)
+print(""Your answer is: "", answer)
+",T2C-CONALA GPTNEO FINETUNED-SO,2022-08-22-12-46-27-Anonymous.json,2022-08-22 12:46:27
+"""""""count non zero values in each column in pandas data frame""""""","
+df.groupby(['A', 'B', 'C'])['D'].transform('count')
+
+df.groupby(['A', 'B', 'C'])['D'].transform('sum')
+
+df.groupby(['A', 'B', 'C'])['D'].transform('sum')
+
+df.groupby(['A', 'B', 'C'])['D'].transform('sum')
+
+df.groupby(['A', 'B', 'C'])['D'].transform('sum')
+
+df.",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-08-23-11-14-47-Anonymous.json,2022-08-23 11:14:47
+"""""""get the last key of dictionary `dict`""""""","
+dict.pop('key')
+
+print(dict.keys())
+
+Output:
+['key', 'key2', 'key3', 'key4']
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-08-23-11-36-58-Anonymous.json,2022-08-23 11:36:58
+"""""""search for string that matches regular expression pattern '(?<!Distillr)\\\\AcroTray\\.exe' in string 'C:\\SomeDir\\AcroTray.exe'""""""","
+re.search('(?<!Distillr)\\\\AcroTray\\.exe', 'C:\\SomeDir\\AcroTray.exe')
+
+A:
+
+You can use re.findall() to find all matches in a string:
+re.findall('(?<!Distillr)\\\\AcroTray\\.exe', 'C:\\SomeDir\\AcroTray.exe')
+
+This will return a list of all matches in the string 'C:\\SomeDir\\AcroTray.exe'.
+If you want to find",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-08-23-11-37-31-Anonymous.json,2022-08-23 11:37:31
+"""""""use 2 numpy arrays as dataset for denoising autoencoder, and further split them into train and test sets""""""","
+np.random.shuffle(np.concatenate((x_train, x_test)))
+np.random.shuffle(np.concatenate((y_train, y_test)))
+x_train, x_test, y_train, y_test = x_train[:int(len(x_train) * 0.8)], x_train[int(len(x_train) * 0.8):], y_train[:int(len(y_train) * 0.8)], y_train[int(len(y",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-23-13-35-40-Anonymous.json,2022-08-23 13:35:40
+"""""""Split a string `x` by last occurrence of character `-`""""""","
+x.split('-')[-1]
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-08-23-13-36-03-Anonymous.json,2022-08-23 13:36:03
+"""""""filter a dataframe for a given time range""""""","
+df.loc[(df['Date'] >= '2010-01-01') & (df['Date'] <= '2010-12-31')]
+df.loc[(df['Date'] >= '2011-01-01') & (df['Date'] <= '2011-12-31')]
+df.loc[(df['Date'] >= '2012-01-01') & (df['Date'] <= '2012-12-31')]
+df.loc[(df['Date'] >= '2013-01-01') & (df['Date'] <= '2013-12",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-24-12-34-26-TypingCat.json,2022-08-24 12:34:26
+"""""""print top words from wordcloud""""""","
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import Tf",T2C-SO GPTNEO FINETUNED-SO,2022-08-24-12-34-54-TypingCat.json,2022-08-24 12:34:54
+"""""""get open price for NASDAQ in IBKR python API""""""","
+
+import json
+import logging
+import os
+import time
+import urllib
+
+from django.conf import settings
+from django.core.exceptions import ImproperlyConfigured
+from django.core.files.uploadedfile import SimpleUploadedFile
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.core.paginator import PaginatorResult
+from django.core.paginator import PaginatorPagination
+from django.core.paginator import PaginatorPagination
+from",T2C-SO GPTNEO VANILLA,2022-08-24-12-35-14-TypingCat.json,2022-08-24 12:35:14
+"""""""create a document with horizontal page orientation using google doc api""""""","
+service.files().create(body=open('test.html', 'rb'))
+
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-24-12-37-22-TypingCat.json,2022-08-24 12:37:22
+"""""""write a python program to print the sum of a string of numbers that are separated by a comma""""""","
+print(sum(map(int, input().split(','))))
+",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-25-17-04-44-Anonymous.json,2022-08-25 17:04:44
+"""""""run a loop by interlinking two lists""""""","
+for i in range(len(list1)):
+    for j in range(len(list2)):
+        print(list1[i], list2[j])
+    print(""\n"")
+    
+for i in range(len(list1)):
+    for j in range(len(list2)):
+        print(list2[j], list1[i])
+    print(""\n"")
+    
+for i in range(len(list1)):
+    for j in range(len(list2)):
+        print(list1[",T2C-SO CODEGEN FINETUNED-SO,2022-08-25-17-06-37-Anonymous.json,2022-08-25 17:06:37
+"""""""get a list of installed windows fonts using python""""""","
+[(name, size, style) for name, size, style in list(font.families()) if style =='regular']
+",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-25-17-07-39-Anonymous.json,2022-08-25 17:07:39
+"""""""allow spaces in the default django user model username""""""","
+User.username = 'username'
+
+A:
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-25-17-07-40-Anonymous.json,2022-08-25 17:07:40
+"""""""get a random 4 digit number in python, from 0000-9999""""""","
+import random
+random.randint(0, 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",T2C-SO GPTNEO FINETUNED-SO,2022-08-25-17-09-42-Anonymous.json,2022-08-25 17:09:42
+"""""""run a python file on button click in tkinter""""""","
+
+import tkinter as tk
+from tkinter import ttk
+from tkinter import messagebox
+import os
+import sys
+import subprocess
+import time
+import threading
+import queue
+import logging
+import logging.handlers
+import logging.config
+import logging.handlers
+import logging.config
+import logging.handlers
+import logging.config
+import logging.config
+import logging.config
+import logging.config
+import logging.config
+import logging.config
+import logging.config
+import logging.config
+import logging.config
+import logging.config
+import",T2C-SO CODEGEN VANILLA,2022-08-25-17-11-33-Anonymous.json,2022-08-25 17:11:33
+"""""""find a value within nested json 'data' where the key inside another key 'B' is unknown.""""""","
+import json
+data = json.loads(data)
+print(data['B']['C']['D'])
+",T2C-CONALA CODEGEN FINETUNED-SO,2022-08-25-17-13-04-Anonymous.json,2022-08-25 17:13:04
+"""""""treat a `networkx.digraph` as un-directed""""""","
+import networkx as nx
+G = nx.Graph()
+G.add_edge(1, 2)
+G.add_edge(1, 3)
+G.add_edge(2, 3)
+G.add_edge(3, 4)
+G.add_edge(4, 5)
+G.add_edge(5, 6)
+G.add_edge(6, 7)
+G.add_edge(7, 8)
+G.add_edge(8, 9)
+G.add_edge(9, 10)
+G.",T2C-SO GPTNEO FINETUNED-SO,2022-08-25-17-18-50-Anonymous.json,2022-08-25 17:18:50
+"""""""converting two lists `[1, 2, 3]` and `[4, 5, 6]` into a matrix""""""","
+     matrix = []
+     for i in range(len(matrix_a)):
+         matrix.append([])
+         for j in range(len(matrix_b)):
+             matrix[i].append(matrix_a[i] * matrix_b[j])
+     return matrix",T2C-CONALA CODEGEN VANILLA,2022-08-25-17-20-33-Anonymous.json,2022-08-25 17:20:33
+"""""""send pytest coverage report via email""""""","
+
+from __future__ import absolute_import
+
+import os
+import sys
+import time
+import unittest
+
+from pip._vendor import pkg_resources
+from pip._vendor.packaging.utils import canonicalize_name
+from pip._vendor.packaging.version import parse as parse_version
+from pip._vendor.requests.adapters import HTTPAdapter
+from pip._vendor.requests.packages.urllib3 import urlopen
+from pip._vendor.requests.packages.urllib3.exceptions import InsecureRequestWarning",T2C-SO GPTNEO VANILLA,2022-08-25-17-26-46-Anonymous.json,2022-08-25 17:26:46
+"""""""open widget, have it do something, and close by itself""""""","
+
+import os
+import sys
+import time
+import tkinter as tk
+from tkinter import ttk
+from tkinter import filedialog
+from tkinter import messagebox
+
+from. import util
+from. import config
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import util
+from. import",T2C-SO CODEGEN VANILLA,2022-08-25-17-28-51-Anonymous.json,2022-08-25 17:28:51
+"""""""find which downscaling algorithm used""""""","
+import cv2
+import numpy as np
+img = cv2.imread('image.jpg',0)
+img = cv2.resize(img,(0,0),fx=0.5,fy=0.5)
+img = cv2.resize(img,(0,0),fx=2,fy=2)
+img = cv2.resize(img,(0,0),fx=4,fy=4)
+img = cv2.resize(img,(0,0),fx=8,fy",T2C-SO CODEGEN FINETUNED-SO,2022-08-25-17-30-17-Anonymous.json,2022-08-25 17:30:17
+"""""""return a 401 unauthorized in django""""""","
+         return Response(
+             {
+                 ""detail"": ""Not authenticated. Please log in to continue.""
+             },
+             status=status.HTTP_401_UNAUTHORIZED
+         )",T2C-CONALA CODEGEN VANILLA,2022-08-25-17-34-23-Anonymous.json,2022-08-25 17:34:23
+"""""""read string in sound with python without create mp3 file just with command line""""""","
+import os
+import sys
+import time
+import subprocess
+import threading
+import pygame
+from pygame.locals import *
+from pygame.compat import geterror
+from pygame.mixer import Sound, init, quit
+
+",T2C-SO CODEGEN VANILLA,2022-08-25-17-36-32-Anonymous.json,2022-08-25 17:36:32
+"""""""make the game restart (python turtle snake game)""""""","
+import turtle
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset()
+turtle.reset",T2C-SO CODEGEN FINETUNED-SO,2022-08-25-17-39-48-Anonymous.json,2022-08-25 17:39:48
+"""""""convert a date format (YYYY-MM-DD) to (YYYY,MM,DD) in Python""""""","
+datetime.datetime.strptime('2012-01-01', '%Y-%m-%d').strftime('%Y,%m,%d')
+
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-25-17-44-01-Anonymous.json,2022-08-25 17:44:01
+"""""""group a list of dicts `LD` into one dict by key""""""","
+     return {k: v for d in LD for k, v in d.items()}",T2C-CONALA CODEGEN VANILLA,2022-08-26-17-28-22-Anonymous.json,2022-08-26 17:28:22
+"""""""save a pandas dataframe to csv in overwrite mode""""""","
+df.to_csv('filename.csv', mode='a')
+df.to_csv('filename.csv', mode='w')
+df.to_csv('filename.csv', mode='a')
+df.to_csv('filename.csv', mode='w')
+df.to_csv('filename.csv', mode='a')
+df.to_csv('filename.csv', mode='w')
+df.to_csv('filename.csv', mode='a')
+df.to_csv('filename.csv', mode='w')
+df.to_csv('filename",T2C-SO GPTNEO FINETUNED-SO,2022-08-26-17-29-27-Anonymous.json,2022-08-26 17:29:27
+"""""""I get summary statistics by rows while using Pandas df.describe() ,""""""","
+df.describe(axis=1)
+
+",T2C-SO CODEGEN FINETUNED-CONALA,2022-08-26-18-18-08-TypingCat.json,2022-08-26 18:18:08
+"""""""run two different neural network on two GPUs""""""","
+
+import os
+import sys
+import time
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.autograd import Variable
+from torch.utils.data import DataLoader
+from torch.utils.data.distributed import DistributedDataParallel
+from torch.utils.data.distributed import DistributedDataLoader
+from torch.utils.data.distributed import DistributedSampler
+from torch.utils.data.distributed import DistributedBatchSampler
+from torch.utils.data.distributed",T2C-SO GPTNEO VANILLA,2022-08-26-18-18-31-TypingCat.json,2022-08-26 18:18:31
+"""""""check for NaN in any data structure in python""""""","
+import math
+import numpy as np
+x = np.array([1,2,3,4,5,6,7,8,9,10])
+x[x == math.nan]
+x[np.isnan(x)]
+x[np.isnan(x) == False]
+x[np.isnan(x) == True]
+x[np.isnan(x) == False]
+x[np.isnan(x) == False]
+x[np.isnan(x) == False]
+x[np.isnan(",T2C-SO CODEGEN FINETUNED-SO,2022-08-26-18-19-33-TypingCat.json,2022-08-26 18:19:33
+"""""""remove items from a list A that present in list B (with the removal of duplicates )""""""","
+     return [x for x in A if x not in B]",T2C-SO CODEGEN VANILLA,2022-08-26-18-20-21-TypingCat.json,2022-08-26 18:20:21
+"""""""select the last column of dataframe `df`""""""","
+df.iloc[:, -1]
+df.columns = df.iloc[:, -1]
+df.columns = df.columns.str.replace(' ', '_')
+df.columns = df.columns.str.replace('-', '_')
+df.columns = df.columns.str.replace('/', '_')
+df.columns = df.columns.str.replace('\\', '_')
+df.columns = df.columns.str.replace('(', '_')
+df.column",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-08-26-18-21-07-TypingCat.json,2022-08-26 18:21:07
+"""""""use K-fold cross validation in TensorFlow""""""","
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+kf = KFold(n_splits=5)
+for train_index, test_index in kf.split(X):
+    X_train, X_test = X[train_index], X[test_index]
+    y_train, y_test = y[train_index], y[test_index]
+    model.fit(X_train, y_train)
+    print(""Accuracy: %.2f""",T2C-SO CODEGEN FINETUNED-SO,2022-08-26-18-22-00-TypingCat.json,2022-08-26 18:22:00
+"""""""return the day of an inputed date""""""","
+     return date.weekday()",T2C-SO CODEGEN VANILLA,2022-08-26-18-23-43-TypingCat.json,2022-08-26 18:23:43
+"""""""remove items from a list A that present in list B (with the removal of duplicates )""""""","
+     return [x for x in A if x not in B]",T2C-SO CODEGEN VANILLA,2022-08-26-18-26-56-TypingCat.json,2022-08-26 18:26:56
+"""""""add a header to a csv file""""""","
+import csv
+file = open(""file.csv"", ""a"")
+writer = csv.writer(file)
+writer.writerow([""name"", ""age""])
+file.close()
+file = open(""file.csv"", ""a"")
+writer = csv.writer(file)
+writer.writerow([""name"", ""age""])
+file.close()
+file = open(""file.csv"", ""a"")
+writer = csv.writer(file)
+writer.writerow([""name"", ""age""])
+file.close()
+file = open",T2C-CONALA CODEGEN FINETUNED-SO,2022-08-26-19-42-31-Anonymous.json,2022-08-26 19:42:31
+"""""""extract text from a pdf file""""""","
+pdf.extractText(pdf.open('test.pdf'))
+
+",T2C-SO GPTNEO FINETUNED-CONALA,2022-08-26-19-44-32-Anonymous.json,2022-08-26 19:44:32
+"""""""find area coordinates of a invoice table in pdf file using python""""""","
+
+import os
+import sys
+import re
+import shutil
+import time
+import math
+import numpy as np
+import csv
+import argparse
+import os.path
+import csv
+import os
+import math
+import os
+import csv
+import argparse
+import os.path
+import csv
+import argparse
+import os.path
+import csv
+import argparse
+import os.path
+import csv
+import argparse
+import os.path
+import csv
+import argparse
+import os.path
+import csv
+import argparse
+import os",T2C-SO GPTNEO VANILLA,2022-08-26-19-45-41-Anonymous.json,2022-08-26 19:45:41
+"import itertools
+import ast
+import string
+import re
+import google
+
+def remove():
+    """"""remove all special characters, punctuation and spaces from a string `mystring` using regex""""""
+    ","re.sub('[^a-zA-Z0-9\s]', '', mystring)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-08-11-39-24-Anonymous.json,2022-09-08 11:39:24
+"""""""get json data from restful service 'url'""""""","
+import requests
+response = requests.get('http://www.example.com/api/v1/users/1')
+print(response.json())
+",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-08-11-40-29-Anonymous.json,2022-09-08 11:40:29
+"""""""create a static file in django""""""","
+from django.conf import settings
+from django.http import HttpResponse
+",T2C-SO CODEGEN FINETUNED-SO,2022-09-08-11-41-03-Anonymous.json,2022-09-08 11:41:03
+"""""""get all the classes in a module""""""","
+import inspect
+inspect.getmembers(module, inspect.isclass)
+[(name, obj) for name, obj in inspect.getmembers(module) if inspect.isclass(obj)]
+[obj for name, obj in inspect.getmembers(module) if inspect.isclass(obj)]
+[obj for name, obj in inspect.getmembers(module) if inspect.isclass(obj) and name!='module']
+[obj for name, obj in inspect.getmembers(module) if inspect.isclass(obj) and name!='module']
+[obj",T2C-SO CODEGEN FINETUNED-SO,2022-09-08-11-41-36-Anonymous.json,2022-09-08 11:41:36
+"""""""convert a hex-string representation to actual bytes""""""","
+bytes.hex('0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-08-11-42-57-Anonymous.json,2022-09-08 11:42:57
+"""""""use Postgresql Array field in Tortoise-ORM""""""","
+class User(Model):
+    name = CharField(max_length=50)
+    age = IntField()
+    friends = ArrayField(IntField())
+    friends.add_listener(on_set_value)
+    friends.add_listener(on_pre_save)
+    friends.add_listener(on_post_save)
+    friends.add_listener(on_pre_delete)
+    friends.add_listener(on_post_delete)
+    def __str__(self):
+        return self.name
+    ",T2C-SO CODEGEN FINETUNED-SO,2022-09-08-11-45-59-Anonymous.json,2022-09-08 11:45:59
+"import requests
+import subprocess
+import io
+import json
+import os
+
+def open():
+    """"""open a file `Output.txt` in append mode""""""
+    ","f = open('Output.txt', 'a')
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-08-11-47-32-Anonymous.json,2022-09-08 11:47:32
+"""""""get rid of None values in dictionary `kwargs`""""""
+   ","dict((k, v) for k, v in kwargs.items() if v is not None)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-08-13-09-28-Sergey Kovalchuk.json,2022-09-08 13:09:28
+How to find duplicate names using pandas?,"
+x['name'].value_counts().index[x['name'].value_counts() > 1]
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-08-13-10-35-Sergey Kovalchuk.json,2022-09-08 13:10:35
+"""""""unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`""""""
+   ","zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-12-12-07-41-Sergey Kovalchuk.json,2022-09-12 12:07:41
+String Slicing Python,"    s = ""This is a string with a comma,,""
+
+    print(s.rstrip("",""))
+",T2C-CONALA COPILOT,2022-09-12-12-08-20-Sergey Kovalchuk.json,2022-09-12 12:08:20
+"""""""erase all the contents of a file `filename`""""""
+   ","open(filename, 'w').close()
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-13-11-26-31-Anonymous.json,2022-09-13 11:26:31
+"""""""Split a string by a delimiter in python""""""","
+print(re.split('\\s+', 'a b c d e f g h i j k l m n o p q r s t u v w x y z'))
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-13-12-14-03-Anonymous.json,2022-09-13 12:14:03
+"""""""Extract brackets from string `s`""""""
+   ","re.findall('\\[(.*?)\\]', s)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-13-12-15-54-Arthur.json,2022-09-13 12:15:54
+"""""""Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal""""""","
+df['date'].apply(lambda x: x.toordinal())
+df['date'] = df['date'].apply(lambda x: x.toordinal())
+
+df['date'] = df['date'].apply(lambda x: datetime.datetime.fromordinal(x))
+df['date'] = df['date'].apply(lambda x: x.strftime('%Y-%m-%d'))
+df['date'] = df['date'].apply(lambda x: datetime.datetime.strptime(x, '",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-13-12-24-06-Arthur.json,2022-09-13 12:24:06
+"""""""Send a post request with raw data `DATA` and basic authentication with `username` and `password`""""""","
+request.post('http://httpbin.org/post', data=DATA, auth=('username', 'password'))
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-13-12-25-40-Arthur.json,2022-09-13 12:25:40
+determine the variable type,"    v = input(""Enter a number: "")
+
+    if v.isdigit():
+
+        print(""It's a digit"")
+
+    elif v.isalpha():
+
+        print(""It's a letter"")
+
+    else:
+
+        print(""It's a string"")
+
+    return v
+",T2C-CONALA COPILOT,2022-09-13-12-26-49-Arthur.json,2022-09-13 12:26:49
+"""""""convert unicode string u""{'code1':1,'code2':1}"" into dictionary""""""","    ustring = u""{'code1':1,'code2':1}""
+
+    print(ustring.encode(""utf-8"").decode(""utf-8""))
+",T2C-CONALA COPILOT,2022-09-13-13-38-32-Anastasia.json,2022-09-13 13:38:32
+"""""""replace all elements in array `A` that are not present in array `[1, 3, 4]` with zeros""""""","
+a = [1, 3, 4]
+a[a.index(1):] = [0] * (len(a) - a.index(1))
+print(a)
+a[a.index(1):] = [0] * (len(a) - a.index(1))
+",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-13-13-41-13-Anastasia.json,2022-09-13 13:41:13
+"""""""convert unicode string `s` to ascii""""""","
+s.encode('ascii', 'ignore')
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-13-13-43-00-Anastasia.json,2022-09-13 13:43:00
+"""""""join together with "","" elements inside a list indexed with 'category' within a dictionary `trans`""""""","
+for key, value in trans.items():
+    trans[key] = ','.join(value)
+print(trans)
+",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-13-13-49-14-Anastasia.json,2022-09-13 13:49:14
+Python how to write to a binary file?,"
+with open(newFile, 'wb') as f:
+    f.write(newFileBytes)
+    f.close()
+with open(newFile, 'rb') as f:
+    newFileBytes = f.read()
+    f.close()
+with open(newFile, 'wb') as f:
+    f.write(newFileBytes)
+    f.close()
+with open(newFile, 'rb') as f:
+    newFileBytes = f.read()
+    f.close()
+with open(newFile, 'wb') as f",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-13-13-50-24-Anastasia.json,2022-09-13 13:50:24
+"""""""create a list containing each two adjacent letters in string `word` as its elements""""""
+   ","[word[i:i + 2] for i in range(0, len(word), 2)]
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-13-13-51-44-Anastasia.json,2022-09-13 13:51:44
+"""""""get the last key of dictionary `dict`""""""
+   ","    def func(dict):
+
+        return list(dict.keys())[-1]
+
+    return func
+",T2C-CONALA COPILOT,2022-09-13-13-53-28-Anastasia.json,2022-09-13 13:53:28
+"""""""find all words in a string `mystring` that start with the `$` sign""""""","
+import re
+mystring = '$this is a $string'
+re.findall(r'\$\w+', mystring)
+re.findall(r'\$\w+', mystring)
+re.findall(r'\$\w+', mystring)
+re.findall(r'\$\w+', mystring)
+re.findall(r'\$\w+', mystring)
+re.findall(r'\$\w+', mystring)
+re.findall(r'\$\",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-13-15-20-37-Gorbatovski.json,2022-09-13 15:20:37
+"""""""convert list `[('Name', 'Joe'), ('Age', 22)]` into a dictionary""""""","
+dict(zip(['Name', 'Age'], [x[0] for x in lst]))
+dict(zip(['Name', 'Age'], [x[1] for x in lst]))
+dict(zip(['Name', 'Age'], [x[0] for x in lst]))[x[1] for x in lst]
+dict(zip(['Name', 'Age'], [x[1] for x in lst]))[x[0] for x in lst]
+dict(zip(['Name', 'Age",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-13-15-22-22-Gorbatovski.json,2022-09-13 15:22:22
+"""""""get digits only from a string `aas30dsa20` using lambda function""""""","re.findall('\\d+', aas30dsa20)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-13-15-24-07-Gorbatovski.json,2022-09-13 15:24:07
+"""""""converting list of strings `intstringlist` to list of integer `nums`""""""","
+intstringlist = [int(i) for i in stringlist]
+nums = [int(i) for i in stringlist]
+nums = [int(i) for i in stringlist]
+nums = [int(i) for i in stringlist]
+nums = [int(i) for i in stringlist]
+nums = [int(i) for i in stringlist]
+nums = [int(i) for i in stringlist]
+nums = [int(i) for i in stringlist]
+nums = [int(",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-13-15-25-01-Gorbatovski.json,2022-09-13 15:25:01
+"""""""reverse the list that contains 1 to 10""""""","[x for x in range(10, 0, -1)]
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-13-16-52-59-Anastasia.json,2022-09-13 16:52:59
+"""""""join together with "","" elements inside a list indexed with 'category' within a dictionary `trans`""""""","print(','.join(['{0}'.format(x) for x in list(trans['category'].values)]))
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-11-47-47-Sergey Kovalchuk.json,2022-09-14 11:47:47
+"""""""convert a raw string `raw_byte_string` into a normal string""""""","
+import re
+s = ""\\x89\\n""
+re.sub(r'[\x80-\xFF]', '', s)
+s = re.sub(r'[\x80-\xFF]', '', s)
+s = s.decode('utf-8')
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-12-39-01-Anonymous.json,2022-09-14 12:39:01
+"""""""modify sys.path for python module `subdir`""""""","
+import sys
+sys.path.append('subdir')
+import foo
+foo.bar()
+sys.path.remove('subdir')
+import foo
+foo.bar()
+sys.path.remove('subdir')
+import foo
+foo.bar()
+sys.path.remove('subdir')
+import foo
+foo.bar()
+sys.path.remove('subdir')
+import foo
+foo.bar()
+sys.path.remove('subdir')
+import foo
+foo.bar()
+sys.path.remove('subdir')
+import foo
+foo.bar",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-12-41-24-Anonymous.json,2022-09-14 12:41:24
+Removing an item from list matching a substring - Python,"    sents = [""@$\tThis is a test"", ""This is a test"", ""This is a test"", ""#This is a test"", ""This is a test""]
+
+    sents = [s for s in sents if not s.startswith(""#"")]
+
+    sents = [s for s in sents if not s.startswith(""@$\t"")]
+
+    print(sents)
+",T2C-CONALA COPILOT,2022-09-14-12-57-27-Sergey Kovalchuk.json,2022-09-14 12:57:27
+"""""""find the index of an element 'MSFT' in a list `stocks_list`""""""","    stocks_list = [""GOOG"", ""MSFT"", ""AAPL"", ""AMZN"", ""FB"", ""TWTR""]
+
+    print(stocks_list.index(""MSFT""))
+",T2C-CONALA COPILOT,2022-09-14-13-21-12-Anonymous.json,2022-09-14 13:21:12
+"""""""sum all elements of nested list `L`""""""","
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum(sum(L, []))
+sum",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-13-21-54-Anonymous.json,2022-09-14 13:21:54
+"""""""Create multidimensional array `matrix` with 3 rows and 2 columns in python""""""
+   ","matrix = np.zeros((3, 2))
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-13-22-32-Sergey Kovalchuk.json,2022-09-14 13:22:32
+Is there a function in Python to split a string without ignoring the spaces?,"    mystring = ""This is a string. It is split into separate strings.""
+
+    print(mystring.split())
+",T2C-CONALA COPILOT,2022-09-14-13-45-28-Anonymous.json,2022-09-14 13:45:28
+"""""""add a header to a csv file""""""","df.to_csv('myfile.csv', header=True)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-13-46-18-Anonymous.json,2022-09-14 13:46:18
+"""""""Sort a list of tuples `b` by third item in the tuple""""""","
+sorted(b, key=lambda x: x[2])
+
+This will sort the list `b` by the third item in each tuple in the list `b` in ascending order.
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-13-52-13-Anonymous.json,2022-09-14 13:52:13
+"""""""read a file `file` without newlines""""""","    file = input(""Enter a file name: "")
+
+    with open(file) as f:
+
+        print(f.read())
+
+    return file
+",T2C-CONALA COPILOT,2022-09-14-13-53-50-XXZ.json,2022-09-14 13:53:50
+"""""""generate all 2-element subsets of tuple `(1, 2, 3)`""""""","    print(tuple(itertools.combinations((1, 2, 3), 2)))
+",T2C-CONALA COPILOT,2022-09-14-13-55-05-XXZ.json,2022-09-14 13:55:05
+"""""""split a string `s` with into all strings of repeated characters""""""
+   ","re.findall('(.)\\1+', s)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-13-59-06-XXZ.json,2022-09-14 13:59:06
+"""""""convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`""""""","
+df = pd.DataFrame(sf.values.tolist(), columns=['email', 'list'])
+df['list'] = df['list'].apply(lambda x: json.loads(x))
+df['list'] = df['list'].apply(lambda x: list(x.values()))
+df['list'] = df['list'].apply(lambda x: list(map(int, x)))
+df['list'] = df['list'].apply(lambda x: list(map(str, x)))
+df['list'] = df['list",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-14-00-20-XXZ.json,2022-09-14 14:00:20
+"""""""rotate the xtick labels of matplotlib plot `ax` by `45` degrees to make long labels readable""""""","
+plt.xticks(rotation=45)
+plt.show()
+plt.savefig('my_plot.png')
+plt.close()
+plt.show()
+plt.savefig('my_plot.png')
+plt.close()
+plt.show()
+plt.savefig('my_plot.png')
+plt.close()
+plt.show()
+plt.savefig('my_plot.png')
+plt.close()
+plt.show()
+plt.savefig('my_plot",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-14-01-47-XXZ.json,2022-09-14 14:01:47
+"""""""Sort a list of tuples `b` by third item in the tuple""""""","
+b.sort(key=lambda x: x[2])
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-14-03-29-XXZ.json,2022-09-14 14:03:29
+"""""""delete all instances of a character 'i' in a string 'it is icy'""""""","
+re.sub('i', '', 'it is icy')
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-14-04-16-XXZ.json,2022-09-14 14:04:16
+"""""""create a DatetimeIndex containing 13 periods of the second friday of each month starting from date '2016-01-01'""""""","
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relativedelta
+from dateutil.relativedelta import relat",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-14-06-23-XXZ.json,2022-09-14 14:06:23
+"Python - how to convert a ""raw"" string into a normal string","    raw_byte_string = b""\x4a\x4b\x4c""
+
+    print(raw_byte_string.decode(""utf-8""))
+",T2C-CONALA COPILOT,2022-09-14-14-07-10-XXZ.json,2022-09-14 14:07:10
+"""""""Update datetime field in `MyModel` to be the existing `timestamp` plus 100 years""""""","
+from django.db import models
+from django.utils import timezone
+class MyModel(models.Model):
+    timestamp = models.DateTimeField(default=timezone.now)
+    def save(self, *args, **kwargs):
+        self.timestamp = timezone.now() + timezone.timedelta(days=100)
+        super(MyModel, self).save(*args, **kwargs)
+    def __str__(self):
+        return self.timestamp.strftime(""%Y-%m-%d %",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-14-08-01-XXZ.json,2022-09-14 14:08:01
+"""""""Append elements of a set to a list in Python""""""","a.extend(b)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-14-09-43-XXZ.json,2022-09-14 14:09:43
+"""""""convert a list  into a generator object""""""","
+def generator(lst):
+  for item in lst:
+    yield item
+g = generator([1,2,3])
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next(g)
+next",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-14-10-33-XXZ.json,2022-09-14 14:10:33
+"""""""concatenate items of list `l` with a space ' '""""""","print(' '.join(l))
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-14-10-56-XXZ.json,2022-09-14 14:10:56
+"""""""How to sort dictionaries by keys in Python""""""","
+sorted(list(o.items()), key=lambda x: x[0])
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-15-47-03-Anonymous.json,2022-09-14 15:47:03
+"""""""Sum the corresponding decimal values for binary values of each boolean element in list `x`""""""","
+sum(map(lambda x: x.decimal, x))
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-16-04-05-Artem.json,2022-09-14 16:04:05
+"""""""use `%s` operator to print variable values `str1` inside a string""""""","
+print('str1 = %s' % str1)
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-16-31-Anonymous.json,2022-09-14 23:16:31
+"""""""Extract brackets from string `s`""""""
+   ","re.findall('\\[(.*?)\\]', s)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-16-52-Anonymous.json,2022-09-14 23:16:52
+"""""""Google App Engine execute GQL query 'SELECT * FROM Schedule WHERE station = $1' with parameter `foo.key()`""""""
+   ","
+import gql
+class MyClass(gql.GqlQuery):
+    def __init__(self, *args, **kwargs):
+        super(MyClass, self).__init__(*args, **kwargs)
+        self.parameter = kwargs.get('parameter', None)
+    def execute(self, *args, **kwargs):
+        return super(MyClass, self).execute(*args, **kwargs)
+    def",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-19-33-Anonymous01.json,2022-09-14 23:19:33
+"""""""Iterate ove list `[1, 2, 3]` using list comprehension""""""","[x for x in [1, 2, 3]]
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-19-35-Anonymous.json,2022-09-14 23:19:35
+"""""""Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`""""""","
+[int(x) for x in ['', '3.4', '', '', '1.0']]
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-20-04-Anonymous01.json,2022-09-14 23:20:04
+"""""""decode string ""\\x89\\n"" into a normal string""""""","
+raw_string.decode('utf-8')
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-20-21-Anonymous01.json,2022-09-14 23:20:21
+"""""""add one to the hidden web element with id 'XYZ' with selenium python script""""""","
+driver.find_element_by_id('XYZ').clear()
+driver.find_element_by_id('XYZ').send_keys('one')
+driver.find_element_by_id('XYZ').send_keys('two')
+driver.find_element_by_id('XYZ').send_keys('three')
+driver.find_element_by_id('XYZ').send_keys('four')
+driver.find_element_by_id('XYZ').send_keys('five')
+driver.find_element_by_id('XY",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-20-27-Anonymous.json,2022-09-14 23:20:27
+"""""""How to delete all instances of a character in a string in python?""""""","
+re.sub('[^a-zA-Z0-9]', '', string)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-20-37-Anonymous01.json,2022-09-14 23:20:37
+"""""""convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`""""""","
+df = pd.DataFrame(sf.tolist(), columns=['email', 'list'])
+df['list'] = df['list'].apply(pd.Series)
+df['list'] = df['list'].apply(pd.Series)
+df['list'] = df['list'].apply(pd.Series)
+df['list'] = df['list'].apply(pd.Series)
+df['list'] = df['list'].apply(pd.Series)
+df['list'] = df['list'].apply(pd.Series)
+df",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-23-20-51-Anonymous01.json,2022-09-14 23:20:51
+"""""""Call a base class's class method `do` from derived class `Derived`""""""","
+Derived.do()
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-21-01-Anonymous.json,2022-09-14 23:21:01
+"""""""find intersection data between series `s1` and series `s2`""""""","
+s1.intersection(s2)
+
+A:
+
+You can use pandas.Series.intersection with a list of Series as the argument:
+s1.intersection(s2, axis=0)
+
+A:
+
+You can use pandas.Series.intersection with a list of Series as the argument:
+s1.intersection(s2, axis=0)
+
+A:
+
+You can use pandas.Series.intersection with a list of Series as the argument:
+s1.intersection(s2, axis=0)
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-21-01-Anonymous01.json,2022-09-14 23:21:01
+"""""""prepend the line '#test firstline\n' to the contents of file 'infile' and save as the file 'outfile'""""""","
+with open('infile', 'w') as f:
+    f.write('#test firstline\n')
+outfile = open('outfile', 'w')
+outfile.write('#test secondline\n')
+outfile.close()
+
+print(infile.read())
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-21-07-Anonymous01.json,2022-09-14 23:21:07
+"""""""capture final output of a chain of system commands `ps -ef | grep something | wc -l`""""""","
+print('\n'.join(map(str, ps.communicate())))
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-21-13-Anonymous01.json,2022-09-14 23:21:13
+"""""""call multiple bash function ‘vasp’ and ‘tee tee_output’ using ‘|’""""""","
+import os
+import sys
+",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-21-20-Anonymous01.json,2022-09-14 23:21:20
+"""""""How do I sum the first value in each tuple in a list of tuples in Python?""""""","
+sum(x[0] for x in list_of_tuples)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-21-22-Anonymous.json,2022-09-14 23:21:22
+loop over files,"    for filename in os.listdir('.'):
+
+        print(filename)
+",T2C-CONALA COPILOT,2022-09-14-23-21-32-Anonymous.json,2022-09-14 23:21:32
+"""""""loop over a list `mylist` if sublists length equals 3""""""
+   ","
+for i in range(len(mylist)):
+    if len(mylist[i]) == 3:
+        print(mylist[i])
+        break
+    else:
+        continue
+else:
+    print(""No sublists of length 3"")
+print(""Done"")
+
+",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-23-21-39-Anonymous01.json,2022-09-14 23:21:39
+"""""""find the first element of the tuple with the maximum second element in a list of tuples `lis`""""""","    lis = [(1, 2), (3, 4), (5, 6)]
+
+    print(max(lis, key=lambda x: x[1]))
+",T2C-CONALA COPILOT,2022-09-14-23-21-45-Anonymous.json,2022-09-14 23:21:45
+"""""""get an absolute file path of file 'mydir/myfile.txt'""""""","
+os.path.abspath('mydir/myfile.txt')
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-21-45-Anonymous01.json,2022-09-14 23:21:45
+"""""""convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to tuple""""""","
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple, tup))
+tuple(map(tuple",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-23-21-50-Anonymous01.json,2022-09-14 23:21:50
+"""""""extract ip address from an html string""""""","
+re.findall('[0-9]+(?:\.[0-9]+){3}', html)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-21-59-Anonymous01.json,2022-09-14 23:21:59
+"""""""reverse a priority queue `q` in python without using classes""""""","
+q.reverse()
+q.reverse()[::-1]
+q.reverse()[::-1]()
+q.reverse()[::-1]()()
+q.reverse()[::-1]()()()
+q.reverse()[::-1]()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-22-04-Anonymous01.json,2022-09-14 23:22:04
+"""""""unzip list `original`""""""
+   ","zip(*original)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-22-08-Anonymous01.json,2022-09-14 23:22:08
+"""""""read keyboard-input""""""","
+keyboard_input = raw_input('Keyboard input: ')
+print(keyboard_input)
+
+A:
+
+You can use a list comprehension to get the key pressed:
+keyboard_input = [x.lower() for x in keyboard_input.split()]
+
+A:
+
+You can use a list comprehension to get the key pressed:
+keyboard_input = [x.lower() for x in keyboard_input.split()]
+
+A:
+
+You can use a list comprehension to get the key pressed:
+keyboard_input = [x",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-22-14-Anonymous01.json,2022-09-14 23:22:14
+"""""""reverse the keys and values in a dictionary `myDictionary`""""""","
+myDictionary.items()[::-1].reverse()
+
+A:
+
+You can use list comprehension to do it:
+[(k, v) for k, v in myDictionary.items()]
+
+or
+[(k, v) for k, v in sorted(myDictionary.items())]
+
+or
+[(k, v) for k, v in sorted(myDictionary.items(), key=lambda x: x[1])]
+
+or
+[(k, v) for k, v in sorted(myDictionary.items(),",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-22-19-Anonymous01.json,2022-09-14 23:22:19
+Python Pandas: Get index of rows which column matches certain value,"    import numpy as np
+
+    arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+    print(arr[arr[:, 1] == 2])
+
+    print(arr[arr[:, 1] == 2].shape)
+
+    print(arr[arr[:, 1] == 2].shape[0])
+
+    print(arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1])
+
+    print(arr[arr[:, 1] == 2].shape[0] * arr[arr[:, 1] == 2].shape[1
+",T2C-CONALA COPILOT,2022-09-14-23-22-24-Anonymous01.json,2022-09-14 23:22:24
+"""""""Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal""""""","
+df['date'].apply(lambda x: x.toordinal())
+df['date'] = df['date'].apply(lambda x: x.toordinal())
+
+df['date'] = df['date'].apply(lambda x: datetime.datetime.fromordinal(x))
+df['date'] = df['date'].apply(lambda x: x.strftime('%Y-%m-%d'))
+df['date'] = df['date'].apply(lambda x: datetime.datetime.strptime(x, '",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-22-32-Anonymous01.json,2022-09-14 23:22:32
+"""""""How to convert a string from CP-1251 to UTF-8?""""""","
+import codecs
+print(codecs.decode('CP-1251', 'utf-8'))
+",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-22-34-Anonymous01.json,2022-09-14 23:22:34
+"""""""Iterate ove list `[1, 2, 3]` using list comprehension""""""","
+[x for x in [1, 2, 3]]""""""
+[1, 2, 3]""""""
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-22-36-Anonymous01.json,2022-09-14 23:22:36
+"""""""How do I sort a list of dictionaries by values of the dictionary in Python?""""""","
+sorted(my_dict.items(), key=lambda x: x[1])
+sorted(my_dict.values(), key=lambda x: x[1])
+sorted(my_dict.items(), key=lambda x: x[1], reverse=True)
+sorted(my_dict.values(), key=lambda x: x[1], reverse=True)
+sorted(my_dict.items(), key=lambda x: x[1], reverse=True, key=lambda x: x[0])
+sorted(my_dict.values(), key=",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-22-37-Anonymous01.json,2022-09-14 23:22:37
+Python -Remove Time from Datetime String,"    when = ""2020-01-01T00:00:00.000Z""
+
+    print(when[:10])
+",T2C-CONALA COPILOT,2022-09-14-23-22-42-Anonymous01.json,2022-09-14 23:22:42
+"""""""load data containing `utf-8` from file `new.txt` into numpy array `arr`""""""","
+arr = np.loadtxt('new.txt', delimiter=',', skiprows=1, dtype=None)
+
+arr = np.array(arr)
+
+arr = np.array(arr, dtype=None)
+
+arr = np.array(arr, dtype=None)
+
+arr = np.array(arr, dtype=None)
+
+arr = np.array(arr, dtype=None)
+
+arr = np.array(arr, dtype=None)
+
+arr = np.array(arr, dtype=None)
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-22-49-Anonymous01.json,2022-09-14 23:22:49
+"""""""subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'.""""""","
+ax.set_xticklabels(['H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H20', 'H",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-22-56-Anonymous01.json,2022-09-14 23:22:56
+How do you extract a url from a string using python?,"    myString = ""https://www.google.com""
+
+    print(myString.split(""/"")[2])
+",T2C-CONALA COPILOT,2022-09-14-23-23-00-Anonymous01.json,2022-09-14 23:23:00
+Append elements of a set to a list in Python,"    mySet = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+    myList = []
+
+    for i in mySet:
+
+        myList.append(i)
+
+    print(myList)
+",T2C-CONALA COPILOT,2022-09-14-23-23-07-Anonymous01.json,2022-09-14 23:23:07
+"""""""get an array of the mean of each two consecutive values in numpy array `x`""""""","
+import numpy as np
+mean_array = np.mean(x, axis=1)
+mean_array = np.insert(mean_array, 0, x[0])
+mean_array = np.insert(mean_array, len(mean_array), x[-1])
+mean_array = np.insert(mean_array, 0, x[0])
+mean_array = np.insert(mean_array, len(mean_array), x[-1])
+mean_array = np.insert(mean_array, 0, x[0])
+mean",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-23-23-30-Anonymous01.json,2022-09-14 23:23:30
+"""""""find all words in a string `mystring` that start with the `$` sign""""""
+   ","re.findall('\\$[^$]*', mystring)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-23-33-Anonymous01.json,2022-09-14 23:23:33
+"""""""add one to the hidden web element with id 'XYZ' with selenium python script""""""","
+driver.find_element_by_id('XYZ').click()
+driver.find_element_by_id('XYZ').click()
+driver.find_element_by_id('XYZ').click()
+driver.find_element_by_id('XYZ').click()
+driver.find_element_by_id('XYZ').click()
+driver.find_element_by_id('XYZ').click()
+driver.find_element_by_id('XYZ').click()
+driver.find_element_by_id('XYZ').click()",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-27-01-Anonymous.json,2022-09-14 23:27:01
+"""""""Remove all strings from a list a strings `sents` where the values starts with `@$\t` or `#`""""""","
+sents = [s for s in sents if s.startswith('@$\t') or s.startswith('#')]
+print(sents)
+
+Output:
+['@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-29-06-Anonymous.json,2022-09-14 23:29:06
+"""""""add an entry 'wuggah' at the beginning of list `myList`""""""","
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, wuggah]
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, wuggah]
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, wuggah]
+myList = [1, 2, 3, 4, 5, 6",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-29-46-Anonymous.json,2022-09-14 23:29:46
+"""""""find all matches of regex pattern '([a-fA-F\\d]{32})' in string `data`""""""","
+re.findall('([a-fA-F\\d]{32})', data)
+
+print(re.findall('([a-fA-F\\d]{32})', 'a b c d e f g h i j k l m n o p q r s t u v w x y z')[0])
+
+Output:
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l','m', 'n', 'o', 'p",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-30-12-Anonymous.json,2022-09-14 23:30:12
+"""""""Put the curser at beginning of the file""""""","
+file.seek(0)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-30-33-Anonymous.json,2022-09-14 23:30:33
+"""""""check if object `o` is a string""""""","
+isinstance(o, str)
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-30-53-Anonymous.json,2022-09-14 23:30:53
+"""""""replace all occurences of newlines `\n` with `<br>` in dataframe `df`""""""","
+df.replace('\n', '<br>')
+
+df
+
+Output:
+                                                                                                           ",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-31-14-Anonymous.json,2022-09-14 23:31:14
+"""""""get a list of all keys in Cassandra database `cf` with pycassa""""""","
+from pycassa.system.ttypes import ColumnDescriptor
+from pycassa.system.ttypes import ColumnFamilyDescriptor
+from pycassa.system.ttypes import ColumnDescriptor
+from pycassa.system.ttypes import ColumnDescriptor
+from pycassa.system.ttypes import ColumnDescriptor
+from pycassa.system.ttypes import ColumnDescriptor
+from pycassa.system.ttypes import ColumnDescriptor
+from pycassa.system.ttypes import ColumnDescript",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-23-31-38-Anonymous.json,2022-09-14 23:31:38
+Combining two numpy arrays to form an array with the largest value from each array,"    import numpy as np
+
+    arr1 = np.array([2, 3, 4])
+
+    arr2 = np.array([1, 5, 2])
+
+    print(np.maximum(arr1, arr2))
+",T2C-CONALA COPILOT,2022-09-14-23-32-04-Anonymous.json,2022-09-14 23:32:04
+"""""""argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`""""""
+   ","parser.add_argument('--version', action='version', version='%(prog)s 2.0')
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-32-25-Anonymous.json,2022-09-14 23:32:25
+"""""""separate words delimited by one or more spaces into a list""""""","
+import re
+re.split(r'\s+', 'one two three')
+re.split(r'\s+', 'one two three')[0]
+re.split(r'\s+', 'one two three')[1]
+re.split(r'\s+', 'one two three')[2]
+re.split(r'\s+', 'one two three')[3]
+re.split(r'\s+', 'one two three')[4]
+re.split(r'\s+', 'one two",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-23-33-07-Anonymous.json,2022-09-14 23:33:07
+"""""""python regex  to find all numbers and dots from 'text'""""""","
+import re
+text = ""one two three four five six seven eight nine""
+re.findall(r'\d+\.\d+', text)
+re.findall(r'\d+', text)
+re.findall(r'\d+', text)
+re.findall(r'\d+', text)
+re.findall(r'\d+', text)
+re.findall(r'\d+', text)
+re.findall(r'\d+', text)
+re.findall(r'\",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-33-18-Anonymous.json,2022-09-14 23:33:18
+"""""""create a datetime with the current date & time""""""","
+datetime.datetime.now()
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-40-59-Anonymous.json,2022-09-14 23:40:59
+"""""""Python Pandas: How to replace a characters in a column of a dataframe?""""""","df['column_name'].str.replace('a', 'b')
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-41-51-Anonymous.json,2022-09-14 23:41:51
+"""""""Removing duplicates in list `t`""""""","list(set(abracadabra))
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-43-42-Anonymous.json,2022-09-14 23:43:42
+"""""""average each two columns of array `data`""""""","
+data.mean(axis=1)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-14-23-44-51-Anonymous.json,2022-09-14 23:44:51
+"""""""copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'""""""","
+df['B'] = df['B'].apply(lambda x: x.replace(',',''))
+df['D'] = df['B'].apply(lambda x: x.replace(',',''))
+df
+df.to_csv('new_file.csv', index=False)
+df.to_csv('new_file.csv', index=False)
+df.to_csv('new_file.csv', index=False)
+df.to_csv('new_file.csv', index=False)
+df.to_csv('new_file",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-14-23-45-05-Anonymous.json,2022-09-14 23:45:05
+"""""""Find all numbers and dots from a string `text` using regex""""""","
+re.findall('\\d+\\.\\d+', text)
+
+This will return a list of numbers and dots separated by a comma.
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-45-13-Anonymous.json,2022-09-14 23:45:13
+python's re: return True if regex contains in the string,"    foobarrrr = ""foobarrrr""
+
+    print(re.search(""ba[rzd]"", foobarrrr))
+",T2C-CONALA COPILOT,2022-09-14-23-45-14-Anonymous.json,2022-09-14 23:45:14
+"""""""sort list `li` in descending order based on the date value in second element of each list in list `li`""""""
+   ","li.sort(key=lambda x: x[1], reverse=True)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-45-27-Anonymous.json,2022-09-14 23:45:27
+"""""""open a 'gnome' terminal from python script and run  'sudo apt-get update' command.""""""","
+import subprocess
+subprocess.call(['gnome-terminal', '--disable-factory', '--disable-factory-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-14-23-45-35-Anonymous.json,2022-09-14 23:45:35
+"""""""find maximal value in matrix `matrix`""""""
+   ","max(matrix.max(), matrix.min())
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-14-23-45-46-Anonymous.json,2022-09-14 23:45:46
+"""""""get rows of dataframe `df` that match regex '(Hel|Just)'""""""","
+df.apply(lambda x: x.str.contains('Hel|Just'))
+
+df.apply(lambda x: x.str.contains('Hel|Just'))
+
+df.apply(lambda x: x.str.contains('Hel|Just'))
+
+df.apply(lambda x: x.str.contains('Hel|Just'))
+
+df.apply(lambda x: x.str.contains('Hel|Just'))
+
+df.apply(lambda x: x.str.contains('Hel|Just'))
+
+df",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-14-23-51-08-Anonymous.json,2022-09-14 23:51:08
+"""""""get the index of an integer `1` from a list `lst` if the list also contains boolean items""""""","
+def index_of_1(lst):
+    for i, x in enumerate(lst):
+        if x == 1:
+            return i
+    return None
+print(index_of_1([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-15-00-31-46-Anonymous.json,2022-09-15 00:31:46
+"""""""replace spaces with underscore""""""
+   ","re.sub(' ', '_', 'hello')
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-00-31-49-Anonymous.json,2022-09-15 00:31:49
+"""""""split a string into a list of words and whitespace""""""","
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in words]
+words = [word.split() for word in",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-15-00-32-16-Anonymous.json,2022-09-15 00:32:16
+"""""""display the float `1/3*100` as a percentage""""""","
+print('{0:.2f}'.format(1/3*100))
+
+A:
+
+You can use float() to convert a float to a string:
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-15-00-32-20-Anonymous.json,2022-09-15 00:32:20
+"""""""remove key 'c' from dictionary `d`""""""","
+d = {'a':1, 'b':2, 'c':3}
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+d.pop('c')
+d
+",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-15-00-32-32-Anonymous.json,2022-09-15 00:32:32
+"""""""scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none""""""","
+plt.scatter(np.random.randn(100), np.random.randn(100), c='none', s=0)
+plt.show()
+
+A:
+
+You can use plt.scatter(x, y, c='none', s=0) to plot a scatter plot with x and y as the x and y coordinates of a random point in a 2D array.
+The s parameter is used to specify the color of the points.
+
+A:
+
+You can use plt.scatter(np.random.randn(100",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-15-00-32-33-Anonymous.json,2022-09-15 00:32:33
+"""""""Create 3d array of zeroes of size `(3,3,3)`""""""","
+np.zeros((3, 3, 3))
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-00-32-34-Anonymous.json,2022-09-15 00:32:34
+"""""""Calculate sum over all rows of 2D numpy array""""""
+   ","np.sum(a, axis=1)
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-00-32-35-Anonymous.json,2022-09-15 00:32:35
+How to get a 16bit Unsigned integer in python,"    print(int(input(""Enter an integer: "")))
+",T2C-CONALA COPILOT,2022-09-15-00-47-41-Anonymous.json,2022-09-15 00:47:41
+"""""""get list of values from dictionary 'mydict' w.r.t. list of keys 'mykeys'""""""","
+mydict = {'key1': 'value1', 'key2': 'value2'}
+mykeys = ['key1', 'key2']
+myvalues = [mydict[key] for key in mykeys]
+print(myvalues)
+",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-15-06-23-43-Anonymous.json,2022-09-15 06:23:43
+"""""""insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.""""""","
+long.file.name.jpg.replace('_a', '_suff', 1)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-07-48-11-Anonymous.json,2022-09-15 07:48:11
+"""""""download a file `url` over HTTP""""""","
+urllib.request.urlretrieve(url, 'file.txt')
+
+A:
+
+You can use urllib2.urlopen to download a file from a url:
+import urllib2
+urllib2.urlopen('http://www.google.com')
+
+or urllib.request.urlretrieve('http://www.google.com')
+
+A:
+
+You can use urllib.request.urlretrieve() to download a file from a url.
+url = 'http://www.google.com'
+urll",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-15-07-49-09-Anonymous.json,2022-09-15 07:49:09
+"""""""joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes""""""","pd.merge(df1, df2, on='Date_Time')
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-07-50-08-Anonymous.json,2022-09-15 07:50:08
+"""""""split a string into a list of words and whitespace""""""","
+[x.strip() for x in re.split('\\W+', 'a b c d e f g h i j k l m n o p q r s t u v w x y z')]
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-07-50-48-Anonymous.json,2022-09-15 07:50:48
+"""""""write dataframe `df`, excluding index, to a csv file""""""","
+df.to_csv('path/to/file.csv', index=False)
+df.to_csv('path/to/file.csv', index=False, header=False)
+df.to_csv('path/to/file.csv', index=False, header=False, mode='a')
+df.to_csv('path/to/file.csv', index=False, header=False, mode='a', mode='a')
+df.to_csv('path/to/file.csv', index=False, header=False, mode='a', mode",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-15-09-37-08-Anonymous.json,2022-09-15 09:37:08
+"""""""open a file `Output.txt` in append mode""""""","
+open('Output.txt', 'a')
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-15-10-02-20-Anonymous.json,2022-09-15 10:02:20
+"""""""remove symbols from a string `s`""""""","
+s = 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
+s = ''.join(c for c in s if c not in '!@#$%^&*()_+{}|:""<>?/.,;')
+s
+s = ''.join(c for c in s if c not in '!@#$%^&*()_+{}|:""<>?/.,;')
+s
+s = ''.join(c for c in s if c not in '",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-15-11-11-27-Anonymous.json,2022-09-15 11:11:27
+"""""""concatenate elements of list `b` by a colon "":""""""""
+   ","print(':'.join(b))
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-11-12-27-Anonymous.json,2022-09-15 11:12:27
+"""""""remove escape character from string ""\\a""""""""","
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\a"", """")
+s = s.replace(""\\",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-15-11-14-12-Anonymous.json,2022-09-15 11:14:12
+How to get the filename without the extension from a path in Python?,"    import os
+
+    def func(filename):
+
+        return os.path.splitext(filename)[0]
+
+    return func
+",T2C-CONALA COPILOT,2022-09-15-11-16-00-Anonymous.json,2022-09-15 11:16:00
+"""""""erase all the contents of a file `filename`""""""
+   ","open(filename, 'w').close()
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-12-21-09-Anonymous.json,2022-09-15 12:21:09
+"""""""get a list of all keys in Cassandra database `cf` with pycassa""""""","    import pycassa
+
+    from pycassa.pool import ConnectionPool
+
+    from pycassa.columnfamily import ColumnFamily
+
+    pool = ConnectionPool('Keyspace1')
+
+    cf = ColumnFamily(pool, 'Standard1')
+
+    keys = cf.get_range()
+
+    for key in keys:
+
+        print(key)
+",T2C-CONALA COPILOT,2022-09-15-13-39-36-Anonymous.json,2022-09-15 13:39:36
+"""""""How do I sort a list of dictionaries by values of the dictionary in Python?""""""","
+sorted(my_dict.items(), key=lambda x: x[1])
+sorted(my_dict.values(), key=lambda x: x[1])
+sorted(my_dict.items(), key=lambda x: x[1], reverse=True)
+sorted(my_dict.values(), key=lambda x: x[1], reverse=True)
+sorted(my_dict.items(), key=lambda x: x[1], reverse=True, key=lambda x: x[0])
+sorted(my_dict.values(), key=",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-15-15-54-09-Anonymous.json,2022-09-15 15:54:09
+"""""""replace spaces with underscore""""""","
+re.sub(' +', '_', string)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-15-55-04-Anonymous.json,2022-09-15 15:55:04
+"""""""find 10 largest differences between each respective elements of list `l1` and list `l2`""""""","
+def largest_difference(l1, l2):
+    return max([abs(l1[i] - l2[i]) for i in range(len(l1))])
+l1 = [1, 2, 3, 4, 5]
+l2 = [2, 3, 4, 5, 6]
+largest_difference(l1, l2)
+largest_difference(l2, l1)
+largest_difference(l1, l2)
+largest_difference(l2, l1)
+largest_difference(l1",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-15-15-56-41-Anonymous.json,2022-09-15 15:56:41
+"""""""replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass.""""""
+   ","    print(""obama"".replace(""a"", ""b"").replace(""b"", ""a""))
+",T2C-CONALA COPILOT,2022-09-15-15-58-30-Anonymous.json,2022-09-15 15:58:30
+"""""""Calculate sum over all rows of 2D numpy array""""""","
+sum(a[:, 0] for a in b)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-15-59-38-Anonymous.json,2022-09-15 15:59:38
+"""""""click a href button with text 'Send InMail' with selenium""""""","
+driver.find_element_by_link_text('Send in mail').click()
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-16-01-22-Anonymous.json,2022-09-15 16:01:22
+"""""""find the string in `your_string` between two special characters ""["" and ""]""""""""","
+re.findall('\\[.*\\]', your_string)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-16-02-17-Anonymous.json,2022-09-15 16:02:17
+"""""""Convert unix timestamp '1347517370' to formatted string '%Y-%m-%d %H:%M:%S'""""""","
+import datetime
+datetime.datetime.fromtimestamp(1347517370)
+datetime.datetime.fromtimestamp(1347517370).strftime('%Y-%m-%d %H:%M:%S')
+datetime.datetime.fromtimestamp(1347517370).strftime('%Y-%m-%d %H:%M:%S')
+datetime.datetime.fromtimestamp(1347517370).strftime('%Y-%m-%d %H:%M:%S')",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-15-16-03-07-Anonymous.json,2022-09-15 16:03:07
+"""""""write `newFileBytes` to a binary file `newFile`""""""","
+newFile.write(newFileBytes)
+newFile.close()
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-16-27-49-Anonymous.json,2022-09-15 16:27:49
+Download file from web in Python 3,"    import requests
+
+    url = input(""Enter the url: "")
+
+    file_name = input(""Enter the file name: "")
+
+    r = requests.get(url)
+
+    with open(file_name, 'wb') as f:
+
+        f.write(r.content)
+
+    print(""Downloaded successfully!"")
+
+    return r.status_code
+",T2C-CONALA COPILOT,2022-09-15-16-28-54-Anonymous.json,2022-09-15 16:28:54
+"""""""write the elements of list `lines` concatenated by special character '\n' to file `myfile`""""""
+   ","myfile.write('\n'.join(lines))
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-16-30-55-Anonymous.json,2022-09-15 16:30:55
+"""""""identify duplicate values in list `mylist`""""""","
+mylist.sort(key=lambda x: x[1])
+
+print(mylist)
+
+Output:
+[('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', '",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-15-16-32-00-Anonymous.json,2022-09-15 16:32:00
+"""""""make a barplot of data in column `group` of dataframe `df` colour-coded according to list `color`""""""","
+plt.bar(df.group, df.group, color=color)
+plt.show()
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-16-32-51-Anonymous.json,2022-09-15 16:32:51
+"""""""Sorting data in DataFrame Pandas""""""","
+df.sort_values(by=['col1','col2'], ascending=False)
+df.sort_values(by=['col1','col2'], ascending=True)
+df.sort_values(by=['col1','col2'], ascending=False, inplace=True)
+df.sort_values(by=['col1','col2'], ascending=False, inplace=True, axis=1)
+df.sort_values(by=['col1','col2'], ascending=False, inplace=True, axis=1,",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-15-16-33-01-Anonymous.json,2022-09-15 16:33:01
+"""""""split string `text` by "",""""""""","
+text = 'Hello, world!'
+text.split(',')
+['Hello', 'world!']
+text.split(',')[0]
+'Hello'
+text.split(',')[1]
+'world!'
+text.split(',')[2]
+'!'
+text.split(',')[3]
+'world!'
+text.split(',')[4]
+'!'
+text.split(',')[5]
+'world!'
+text.split(',')[6]
+'!'
+text.split(',')[7]",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-15-17-29-24-Anonymous.json,2022-09-15 17:29:24
+Open file in Python,"    with open('path', 'r') as f:
+
+        print(f.read())
+
+    return True
+",T2C-CONALA COPILOT,2022-09-15-17-30-27-Anonymous.json,2022-09-15 17:30:27
+"""""""Print new line character as `\n` in a string `foo\nbar`""""""
+   ","print('foo\nbar')
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-17-31-03-Anonymous.json,2022-09-15 17:31:03
+"""""""get a list containing the sum of each element `i` in list `l` plus the previous elements""""""","
+l = [1, 2, 3, 4, 5]
+sum(l[i] + l[i-1] for i in range(1, len(l)))
+sum(l[i] + l[i-1] for i in range(2, len(l)))
+sum(l[i] + l[i-1] for i in range(3, len(l)))
+sum(l[i] + l[i-1] for i in range(4, len(l)))
+sum(l[i] + l[i-1]",T2C-CONALA CODEGEN FINETUNED-SO,2022-09-15-17-31-39-Anonymous.json,2022-09-15 17:31:39
+Attribute getters in python,"    def func(obj, attr):
+
+        return getattr(obj, attr)
+
+    return func
+",T2C-CONALA COPILOT,2022-09-15-22-06-18-Anonymous.json,2022-09-15 22:06:18
+"""""""How can I parse a time string containing milliseconds in it with python?""""""","
+import datetime
+datetime.datetime.strptime('00:00:00', '%H:%M:%S')
+datetime.datetime.strptime('00:00:00', '%H:%M:%S.%f')
+datetime.datetime.strptime('00:00:00', '%H:%M:%S.%f.%f')
+datetime.datetime.strptime('00:00:00', '%H:%M:%S.%f.%f.%",T2C-CONALA GPTNEO FINETUNED-SO,2022-09-15-22-08-11-Anonymous.json,2022-09-15 22:08:11
+"""""""create a datetime with the current date & time""""""","datetime.datetime.now()
+
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-22-09-06-Anonymous.json,2022-09-15 22:09:06
+"""""""sum all elements of nested list `L`""""""","
+sum(map(sum, L))
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-15-22-09-48-Anonymous.json,2022-09-15 22:09:48
+"""""""remove a div with a id `main-content` using beautifulsoup""""""
+   ","soup.find('div', id='main-content')
+soup.find('div', id='main-content').decompose()
+",T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,2022-09-15-22-10-17-Anonymous.json,2022-09-15 22:10:17
+"""""""append list `a` to `c`""""""","
+c.extend(a)
+
+",T2C-CONALA CODEGEN FINETUNED-CONALA,2022-09-16-01-06-19-Anonymous.json,2022-09-16 01:06:19
+"""""""read keyboard-input""""""","
+keyboard_input = raw_input('Keyboard input: ')
+print(keyboard_input)
+
+A:
+
+You can use a list comprehension to get the key pressed:
+keyboard_input = [x.lower() for x in keyboard_input.split()]
+
+A:
+
+You can use a list comprehension to get the key pressed:
+keyboard_input = [x.lower() for x in keyboard_input.split()]
+
+A:
+
+You can use a list comprehension to get the key pressed:
+keyboard_input = [x",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-16-15-25-39-Anonymous.json,2022-09-16 15:25:39
+"""""""return `True` if string `foobarrrr` contains regex `ba[rzd]`""""""","
+re.search('ba[rzd]', foobarrrr) is None
+
+",T2C-CONALA GPTNEO FINETUNED-CONALA,2022-09-16-19-30-14-Anonymous.json,2022-09-16 19:30:14

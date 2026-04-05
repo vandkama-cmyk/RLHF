@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 13:46:18",
+    "address": "77.234.203.186",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 730,
+            "index": 240,
+            "ID": 15907200,
+            "Question": "\"\"\"add a header to a csv file\"\"\"",
+            "Answer": "\ncsv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)\ncsv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)\ncsv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)\ncsv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)\ncsv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)\ncsv.writer('file.csv",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2173,
+            "index": 240,
+            "ID": 15907200,
+            "Question": "\"\"\"add a header to a csv file\"\"\"\n   ",
+            "Answer": "df.to_csv('myfile.csv', header=True)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

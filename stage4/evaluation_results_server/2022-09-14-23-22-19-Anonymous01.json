@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:22:19",
+    "address": "5.18.203.79",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 814,
+            "index": 329,
+            "ID": 35945473,
+            "Question": "\"\"\"reverse the keys and values in a dictionary `myDictionary`\"\"\"",
+            "Answer": "\nmyDictionary.items()[::-1].reverse()\n\nA:\n\nYou can use list comprehension to do it:\n[(k, v) for k, v in myDictionary.items()]\n\nor\n[(k, v) for k, v in sorted(myDictionary.items())]\n\nor\n[(k, v) for k, v in sorted(myDictionary.items(), key=lambda x: x[1])]\n\nor\n[(k, v) for k, v in sorted(myDictionary.items(),",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1302,
+            "index": 329,
+            "ID": 35945473,
+            "Question": "\"\"\"reverse the keys and values in a dictionary `myDictionary`\"\"\"",
+            "Answer": "\ndict(zip(myDictionary.values(), myDictionary.keys()))\nmyDictionary = dict(zip(myDictionary.values(), myDictionary.keys()))\nmyDictionary = dict(zip(myDictionary.values(), myDictionary.keys()))\nmyDictionary = dict(zip(myDictionary.values(), myDictionary.keys()))\nmyDictionary = dict(zip(myDictionary.values(), myDictionary.keys()))\nmyDictionary = dict(zip(myDictionary.values(), myDictionary.keys()))",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

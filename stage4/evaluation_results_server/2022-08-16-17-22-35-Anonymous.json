@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 17:22:35",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 4906,
+            "index": 1841,
+            "ID": 69068138,
+            "Question": "How do built in macros on Emulators work?. I'm building a script to automate some stuff on my Android emulator I'm currently using pyautogui to do it tho it would be nice if there was some sort of way I can directly interact with the emulator without it relying on my mouse I know there's an option using ADB but that requires the android to be rooted a lot of android emulators like Nox, Bluestacks, LDplayer have built-in macros that don't require the device to be rooted. How do these emulators send commands to the emulator is that something I can tap into and send commands through that instead? ",
+            "Answer": "You can use c + + to extend python with c. c + + ''1. extending python with c or c + +  it is quite easy to add new built - in modules to python, if you know how to program in c. such extension modules can do two things that can \u2019 t be done directly in python : they can implement new built - in object types, and they can call c library functions and system calls.''",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 4904,
+            "index": 1839,
+            "ID": 69068138,
+            "Question": "How do built in macros on Emulators work?. I'm building a script to automate some stuff on my Android emulator I'm currently using pyautogui to do it tho it would be nice if there was some sort of way I can directly interact with the emulator without it relying on my mouse I know there's an option using ADB but that requires the android to be rooted a lot of android emulators like Nox, Bluestacks, LDplayer have built-in macros that don't require the device to be rooted. How do these emulators send commands to the emulator is that something I can tap into and send commands through that instead? ",
+            "Answer": "_ macros is a list of tuples to define explicitly a list of tuples to undef _ macros a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

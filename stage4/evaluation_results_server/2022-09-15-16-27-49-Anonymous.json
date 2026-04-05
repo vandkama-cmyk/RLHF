@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 16:27:49",
+    "address": "178.71.236.89",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -1,
+    "useful_L": -1,
+    "consistent_R": 0,
+    "correct_R": 1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 476,
+            "index": 476,
+            "ID": 18367007,
+            "Question": "\"\"\"write `newFileBytes` to a binary file `newFile`\"\"\"",
+            "Answer": "\nwith open('newFile', 'wb') as f:\n    f.write(newFileBytes)\nwith open('newFile', 'rb') as f:\n    f.read(newFileBytes)\nwith open('newFile', 'rb') as f:\n    f.read(newFileBytes)\nwith open('newFile', 'rb') as f:\n    f.read(newFileBytes)\nwith open('newFile', 'rb') as f:\n    f.read(newFileBytes)\nwith open",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1924,
+            "index": 476,
+            "ID": 18367007,
+            "Question": "\"\"\"write `newFileBytes` to a binary file `newFile`\"\"\"",
+            "Answer": "\nnewFile.write(newFileBytes)\nnewFile.close()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

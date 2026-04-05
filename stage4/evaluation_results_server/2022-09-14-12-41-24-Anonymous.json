@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 12:41:24",
+    "address": "14.137.139.192",
+    "comparison_slider": -1,
+    "consistent_L": -1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1035,
+            "index": 62,
+            "ID": 2354166,
+            "Question": "\"\"\"modify sys.path for python module `subdir`\"\"\"",
+            "Answer": "\nimport sys\nsys.path.append('subdir')\nimport foo\nfoo.bar()\nsys.path.remove('subdir')\nimport foo\nfoo.bar()\nsys.path.remove('subdir')\nimport foo\nfoo.bar()\nsys.path.remove('subdir')\nimport foo\nfoo.bar()\nsys.path.remove('subdir')\nimport foo\nfoo.bar()\nsys.path.remove('subdir')\nimport foo\nfoo.bar()\nsys.path.remove('subdir')\nimport foo\nfoo.bar",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 561,
+            "index": 61,
+            "ID": 2354166,
+            "Question": "\"\"\"Insert directory 'apps' into directory `__file__`\"\"\"",
+            "Answer": "\nos.mkdir('apps')\nos.mkdir('__file__')\nos.mkdir('apps/__file__')\n\nprint(os.path.join('apps', '__file__'))\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

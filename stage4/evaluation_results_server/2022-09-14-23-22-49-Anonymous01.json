@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:22:49",
+    "address": "5.18.203.79",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 914,
+            "index": 440,
+            "ID": 6375343,
+            "Question": "\"\"\"load data containing `utf-8` from file `new.txt` into numpy array `arr`\"\"\"",
+            "Answer": "\narr = np.loadtxt('new.txt', delimiter=',', skiprows=1, dtype=None)\n\narr = np.array(arr)\n\narr = np.array(arr, dtype=None)\n\narr = np.array(arr, dtype=None)\n\narr = np.array(arr, dtype=None)\n\narr = np.array(arr, dtype=None)\n\narr = np.array(arr, dtype=None)\n\narr = np.array(arr, dtype=None)\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1412,
+            "index": 440,
+            "ID": 6375343,
+            "Question": "\"\"\"load data containing `utf-8` from file `new.txt` into numpy array `arr`\"\"\"",
+            "Answer": "\narr = np.loadtxt('new.txt', dtype=np.float32)\narr.shape\narr.dtype\narr[0]\narr[1]\narr[2]\narr[3]\narr[4]\narr[5]\narr[6]\narr[7]\narr[8]\narr[9]\narr[10]\narr[11]\narr[12]\narr[13]\narr[14]\narr[15]\narr[16]\narr[17]\narr[18]\narr[19",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

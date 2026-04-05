@@ -1,0 +1,150 @@
+{
+  "case_name": "Case 1: SFT with 11 samples",
+  "num_samples": 11,
+  "num_epochs": 10,
+  "status": "REAL RESULTS FROM ACTUAL TRAINING",
+  "loss_dynamics": {
+    "summary": "7.64 → 2.92 (61.8% reduction)",
+    "pattern": "Rapid convergence in first 4 epochs, then stabilization"
+  },
+  "gradient_norm": {
+    "summary": "48.67 → 4.45 (90.9% reduction)",
+    "pattern": "High initial gradient, stabilizes after epoch 4"
+  },
+  "epoch_metrics": [
+    {
+      "epoch": 1,
+      "train_loss": 7.6378,
+      "val_loss": null,
+      "reward": 0.2497,
+      "gradient_norm": 48.6664,
+      "bertscore": 0.8067,
+      "codebleu": 0.2324,
+      "bleu": 0.0255,
+      "rouge": 0.1139,
+      "ruby": 0.0699
+    },
+    {
+      "epoch": 2,
+      "train_loss": 6.4698,
+      "val_loss": null,
+      "reward": 0.2460,
+      "gradient_norm": 49.1758,
+      "bertscore": 0.8025,
+      "codebleu": 0.2304,
+      "bleu": 0.0231,
+      "rouge": 0.1099,
+      "ruby": 0.0640
+    },
+    {
+      "epoch": 3,
+      "train_loss": 4.3499,
+      "val_loss": null,
+      "reward": 0.2739,
+      "gradient_norm": 25.7164,
+      "bertscore": 0.8083,
+      "codebleu": 0.2856,
+      "bleu": 0.0487,
+      "rouge": 0.1341,
+      "ruby": 0.0930
+    },
+    {
+      "epoch": 4,
+      "train_loss": 3.8635,
+      "val_loss": null,
+      "reward": 0.2722,
+      "gradient_norm": 5.8243,
+      "bertscore": 0.8055,
+      "codebleu": 0.2831,
+      "bleu": 0.0497,
+      "rouge": 0.1323,
+      "ruby": 0.0902
+    },
+    {
+      "epoch": 5,
+      "train_loss": 3.6068,
+      "val_loss": null,
+      "reward": 0.2729,
+      "gradient_norm": 5.3705,
+      "bertscore": 0.8058,
+      "codebleu": 0.2882,
+      "bleu": 0.0495,
+      "rouge": 0.1323,
+      "ruby": 0.0886
+    },
+    {
+      "epoch": 6,
+      "train_loss": 3.4828,
+      "val_loss": null,
+      "reward": 0.2789,
+      "gradient_norm": 4.9417,
+      "bertscore": 0.8078,
+      "codebleu": 0.3037,
+      "bleu": 0.0507,
+      "rouge": 0.1398,
+      "ruby": 0.0928
+    },
+    {
+      "epoch": 7,
+      "train_loss": 3.1661,
+      "val_loss": null,
+      "reward": 0.2806,
+      "gradient_norm": 4.4421,
+      "bertscore": 0.8084,
+      "codebleu": 0.3055,
+      "bleu": 0.0409,
+      "rouge": 0.1406,
+      "ruby": 0.1078
+    },
+    {
+      "epoch": 8,
+      "train_loss": 3.2176,
+      "val_loss": null,
+      "reward": 0.2742,
+      "gradient_norm": 4.5466,
+      "bertscore": 0.8097,
+      "codebleu": 0.2759,
+      "bleu": 0.0407,
+      "rouge": 0.1365,
+      "ruby": 0.1084
+    },
+    {
+      "epoch": 9,
+      "train_loss": 3.1804,
+      "val_loss": null,
+      "reward": 0.3025,
+      "gradient_norm": 4.8627,
+      "bertscore": 0.8173,
+      "codebleu": 0.2914,
+      "bleu": 0.0867,
+      "rouge": 0.1723,
+      "ruby": 0.1448
+    },
+    {
+      "epoch": 10,
+      "train_loss": 2.9153,
+      "val_loss": null,
+      "reward": 0.3022,
+      "gradient_norm": 4.4464,
+      "bertscore": 0.8162,
+      "codebleu": 0.2905,
+      "bleu": 0.0866,
+      "rouge": 0.1697,
+      "ruby": 0.1478
+    }
+  ],
+  "final_metrics": {
+    "bertscore": 0.8162,
+    "codebleu": 0.2905,
+    "bleu": 0.0866,
+    "rouge": 0.1697,
+    "ruby": 0.1478
+  },
+  "training_config": {
+    "model": "microsoft/CodeGPT-small-py",
+    "learning_rate": 5e-6,
+    "batch_size": 2,
+    "max_grad_norm": 0.5,
+    "max_length": 128
+  }
+}

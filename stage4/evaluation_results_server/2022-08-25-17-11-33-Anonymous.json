@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:11:33",
+    "address": "10.81.192.36",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 3747,
+            "index": 867,
+            "ID": 60752246,
+            "Question": "\"\"\"run a python file on button click in tkinter\"\"\"",
+            "Answer": "\n\nimport tkinter as tk\nfrom tkinter import ttk\nfrom tkinter import messagebox\nimport os\nimport sys\nimport subprocess\nimport time\nimport threading\nimport queue\nimport logging\nimport logging.handlers\nimport logging.config\nimport logging.handlers\nimport logging.config\nimport logging.handlers\nimport logging.config\nimport logging.config\nimport logging.config\nimport logging.config\nimport logging.config\nimport logging.config\nimport logging.config\nimport logging.config\nimport logging.config\nimport logging.config\nimport",
+            "CSV_PATH": "T2C-SO-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        },
+        {
+            "level_0": 845,
+            "index": 867,
+            "ID": 60752246,
+            "Question": "\"\"\"run a python file on button click in tkinter\"\"\"",
+            "Answer": "\n\nimport os\nimport sys\nimport time\nimport tkinter as tk\n\nfrom tkinter import *\nfrom tkinter import messagebox\nfrom tkinter import ttk\nfrom tkinter import messagebox\nfrom tkinter import ttk\nfrom tkinter import ttk\nfrom tkinter import messagebox\nfrom tkinter import ttk\nfrom tkinter import ttk\nfrom tkinter import ttk\nfrom tkinter import ttk\nfrom tkinter import ttk\nfrom tkinter import ttk\nfrom tkinter import",
+            "CSV_PATH": "T2C-SO-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO VANILLA"
+        }
+    ]
+}

@@ -1,0 +1,278 @@
+=== ClassifMLP Training (CORRECT METRIC) ===
+Loading datasets from eval_dir: stage4\datasets_for_eval, feedback_dir: C:\Users\Полина\Desktop\Работа\huawei\rlhf\stage4\evaluation_results_server
+Found 26 CSV files in eval_dir
+Loaded 13373 ground truth answers from CSV files
+Found 307 JSON files in feedback_dir
+Loaded 614 samples with human feedback
+Matched 424 samples with ground truth reference answers
+Loaded 614 samples
+DEBUG: Sample data inspection (CORRECT METRIC):
+DEBUG: First 10 labels: [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0]
+DEBUG: Sample has 'labels' dict: {'consistent': 1.0, 'correct': 0.0, 'useful': 0.0}
+DEBUG: Overall label distribution: 141 positive, 473 negative, 0 neutral out of 614
+DEBUG: Label stats - Mean: 0.230, Std: 0.421, Min: 0.000, Max: 1.000
+DEBUG: Unique label values: 2 out of 614 samples
+WARNING: Very few unique labels - classification might be trivial!
+DEBUG: Unique questions: 325 out of 614 total samples
+DEBUG: Train/Val split - Train indices: 491, Val indices: 123
+DEBUG: Overlap between train/val: 0 samples
+DEBUG: Train labels - 112 positive, 379 negative, 0 neutral
+DEBUG: Val labels - 29 positive, 94 negative, 0 neutral
+Train: 491, Val: 123
+=== ClassifMLP Training (CORRECT METRIC) ===
+Device: cpu
+Model: EnhancedClassifierWithFeatures
+Input dim: 3139, Hidden dim: 512
+Dropout: 0.4, Batch size: 16
+
+Epoch 1/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:04,  7.25it/s]Training:   6%|6         | 2/31 [00:00<00:05,  5.02it/s]Training:  10%|9         | 3/31 [00:00<00:04,  5.92it/s]Training:  13%|#2        | 4/31 [00:00<00:05,  5.21it/s]Training:  16%|#6        | 5/31 [00:00<00:04,  5.72it/s]Training:  19%|#9        | 6/31 [00:01<00:04,  5.63it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  23%|##2       | 7/31 [00:01<00:04,  5.63it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  26%|##5       | 8/31 [00:01<00:03,  5.88it/s]Training:  29%|##9       | 9/31 [00:01<00:03,  5.62it/s]Training:  32%|###2      | 10/31 [00:01<00:03,  5.78it/s]Training:  35%|###5      | 11/31 [00:01<00:03,  5.28it/s]Training:  39%|###8      | 12/31 [00:02<00:03,  5.89it/s]Training:  42%|####1     | 13/31 [00:02<00:03,  5.53it/s]Training:  45%|####5     | 14/31 [00:02<00:03,  5.22it/s]Training:  48%|####8     | 15/31 [00:02<00:02,  5.45it/s]Training:  52%|#####1    | 16/31 [00:02<00:03,  4.88it/s]Training:  55%|#####4    | 17/31 [00:03<00:02,  4.96it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  58%|#####8    | 18/31 [00:03<00:02,  5.44it/s]Training:  61%|######1   | 19/31 [00:03<00:02,  5.62it/s]Training:  65%|######4   | 20/31 [00:03<00:01,  6.19it/s]Training:  68%|######7   | 21/31 [00:03<00:01,  6.05it/s]Training:  74%|#######4  | 23/31 [00:04<00:01,  6.75it/s]Training:  77%|#######7  | 24/31 [00:04<00:01,  6.52it/s]Training:  81%|########  | 25/31 [00:04<00:00,  6.52it/s]Training:  84%|########3 | 26/31 [00:04<00:00,  6.10it/s]Training:  87%|########7 | 27/31 [00:04<00:00,  4.98it/s]Training:  90%|######### | 28/31 [00:04<00:00,  5.34it/s]Training:  94%|#########3| 29/31 [00:05<00:00,  5.31it/s]Training:  97%|#########6| 30/31 [00:05<00:00,  5.40it/s]Training: 100%|##########| 31/31 [00:05<00:00,  5.04it/s]Training: 100%|##########| 31/31 [00:05<00:00,  5.57it/s]
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.615, Std: 0.100
+DEBUG: Train labels - Mean: 0.125, Std: 0.331
+DEBUG: Train accuracy on this batch: 0.125
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.589, Std: 0.096
+DEBUG: Train labels - Mean: 0.312, Std: 0.464
+DEBUG: Train accuracy on this batch: 0.312
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.606, Std: 0.097
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.438
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.566, Std: 0.104
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.562
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.572, Std: 0.105
+DEBUG: Train labels - Mean: 0.312, Std: 0.464
+DEBUG: Train accuracy on this batch: 0.438
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.627, Std: 0.088
+DEBUG: Train labels - Mean: 0.062, Std: 0.242
+DEBUG: Train accuracy on this batch: 0.125
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.551, Std: 0.095
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.438
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.530, Std: 0.079
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.312
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.550, Std: 0.114
+DEBUG: Train labels - Mean: 0.125, Std: 0.331
+DEBUG: Train accuracy on this batch: 0.250
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.544, Std: 0.064
+DEBUG: Train labels - Mean: 0.188, Std: 0.390
+DEBUG: Train accuracy on this batch: 0.438
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.535, Std: 0.072
+DEBUG: Train labels - Mean: 0.000, Std: 0.000
+DEBUG: Train accuracy on this batch: 0.312
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.525, Std: 0.080
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.375
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.507, Std: 0.100
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.562
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.518, Std: 0.088
+DEBUG: Train labels - Mean: 0.062, Std: 0.242
+DEBUG: Train accuracy on this batch: 0.375
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.489, Std: 0.108
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.438
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.490, Std: 0.099
+DEBUG: Train labels - Mean: 0.562, Std: 0.496
+DEBUG: Train accuracy on this batch: 0.438
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.511, Std: 0.095
+DEBUG: Train labels - Mean: 0.125, Std: 0.331
+DEBUG: Train accuracy on this batch: 0.562
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.490, Std: 0.101
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.500
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.524, Std: 0.105
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.562
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.458, Std: 0.104
+DEBUG: Train labels - Mean: 0.188, Std: 0.390
+DEBUG: Train accuracy on this batch: 0.750
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.466, Std: 0.093
+DEBUG: Train labels - Mean: 0.312, Std: 0.464
+DEBUG: Train accuracy on this batch: 0.625
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.430, Std: 0.071
+DEBUG: Train labels - Mean: 0.312, Std: 0.464
+DEBUG: Train accuracy on this batch: 0.500
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.449, Std: 0.094
+DEBUG: Train labels - Mean: 0.250, Std: 0.433
+DEBUG: Train accuracy on this batch: 0.562
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.463, Std: 0.132
+DEBUG: Train labels - Mean: 0.312, Std: 0.464
+DEBUG: Train accuracy on this batch: 0.688
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.409, Std: 0.093
+DEBUG: Train labels - Mean: 0.312, Std: 0.464
+DEBUG: Train accuracy on this batch: 0.500
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.432, Std: 0.105
+DEBUG: Train labels - Mean: 0.125, Std: 0.331
+DEBUG: Train accuracy on this batch: 0.625
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.398, Std: 0.088
+DEBUG: Train labels - Mean: 0.188, Std: 0.390
+DEBUG: Train accuracy on this batch: 0.812
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.402, Std: 0.103
+DEBUG: Train labels - Mean: 0.188, Std: 0.390
+DEBUG: Train accuracy on this batch: 0.625
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.363, Std: 0.093
+DEBUG: Train labels - Mean: 0.188, Std: 0.390
+DEBUG: Train accuracy on this batch: 0.750
+DEBUG: Feature tensor shape: torch.Size([16, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.428, Std: 0.073
+DEBUG: Train labels - Mean: 0.375, Std: 0.484
+DEBUG: Train accuracy on this batch: 0.750
+DEBUG: Feature tensor shape: torch.Size([11, 3139])
+DEBUG: Expected input dim: 3139
+DEBUG: Train predictions - Mean: 0.400, Std: 0.098
+DEBUG: Train labels - Mean: 0.182, Std: 0.386
+DEBUG: Train accuracy on this batch: 0.818
+  Train Loss: 0.7193, Val Loss: 0.5931, Train Acc: 0.499, Val Acc: 0.764
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.500
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+Model saved: best_model.pt
+
+Epoch 2/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:   3%|3         | 1/31 [00:00<00:04,  6.94it/s]Training:   6%|6         | 2/31 [00:00<00:04,  6.55it/s]Training:  10%|9         | 3/31 [00:00<00:05,  5.00it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  13%|#2        | 4/31 [00:00<00:06,  3.96it/s]Training:  16%|#6        | 5/31 [00:01<00:07,  3.26it/s]Training:  19%|#9        | 6/31 [00:01<00:07,  3.18it/s]Training:  23%|##2       | 7/31 [00:02<00:08,  2.96it/s]Training:  26%|##5       | 8/31 [00:02<00:08,  2.83it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  29%|##9       | 9/31 [00:02<00:08,  2.70it/s]Training:  32%|###2      | 10/31 [00:03<00:08,  2.43it/s]Training:  35%|###5      | 11/31 [00:03<00:08,  2.49it/s]Training:  39%|###8      | 12/31 [00:04<00:08,  2.32it/s]Training:  42%|####1     | 13/31 [00:04<00:06,  2.63it/s]Training:  45%|####5     | 14/31 [00:04<00:05,  2.92it/s]Training:  48%|####8     | 15/31 [00:05<00:06,  2.53it/s]Training:  52%|#####1    | 16/31 [00:05<00:06,  2.41it/s]Training:  55%|#####4    | 17/31 [00:06<00:05,  2.52it/s]Training:  58%|#####8    | 18/31 [00:06<00:04,  2.63it/s]Training:  61%|######1   | 19/31 [00:06<00:04,  2.99it/s]Training:  65%|######4   | 20/31 [00:06<00:03,  3.26it/s]Training:  68%|######7   | 21/31 [00:07<00:02,  3.76it/s]Training:  71%|#######   | 22/31 [00:07<00:02,  3.34it/s]Training:  74%|#######4  | 23/31 [00:07<00:02,  3.14it/s]Training:  77%|#######7  | 24/31 [00:08<00:02,  2.94it/s]Training:  81%|########  | 25/31 [00:08<00:01,  3.15it/s]Training:  84%|########3 | 26/31 [00:08<00:01,  3.11it/s]Training:  87%|########7 | 27/31 [00:09<00:01,  3.02it/s]Training:  90%|######### | 28/31 [00:09<00:01,  2.99it/s]Training:  94%|#########3| 29/31 [00:09<00:00,  2.69it/s]Training:  97%|#########6| 30/31 [00:10<00:00,  2.84it/s]Training: 100%|##########| 31/31 [00:10<00:00,  2.78it/s]Training: 100%|##########| 31/31 [00:10<00:00,  2.93it/s]
+  Train Loss: 0.5748, Val Loss: 0.5529, Train Acc: 0.747, Val Acc: 0.764
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.500
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+Model saved: best_model.pt
+
+Epoch 3/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:08,  3.64it/s]Training:   6%|6         | 2/31 [00:00<00:08,  3.23it/s]Training:  10%|9         | 3/31 [00:00<00:08,  3.28it/s]Training:  13%|#2        | 4/31 [00:01<00:08,  3.37it/s]Training:  16%|#6        | 5/31 [00:01<00:08,  3.13it/s]Training:  19%|#9        | 6/31 [00:01<00:06,  3.59it/s]Training:  23%|##2       | 7/31 [00:02<00:07,  3.02it/s]Training:  26%|##5       | 8/31 [00:02<00:08,  2.74it/s]Training:  29%|##9       | 9/31 [00:02<00:07,  2.85it/s]Training:  32%|###2      | 10/31 [00:03<00:06,  3.21it/s]Training:  35%|###5      | 11/31 [00:03<00:06,  3.30it/s]Training:  39%|###8      | 12/31 [00:03<00:05,  3.75it/s]Training:  42%|####1     | 13/31 [00:04<00:05,  3.04it/s]Training:  45%|####5     | 14/31 [00:04<00:05,  3.16it/s]Training:  48%|####8     | 15/31 [00:04<00:06,  2.60it/s]Training:  52%|#####1    | 16/31 [00:05<00:05,  2.53it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  55%|#####4    | 17/31 [00:05<00:05,  2.57it/s]Training:  58%|#####8    | 18/31 [00:05<00:04,  2.94it/s]Training:  61%|######1   | 19/31 [00:06<00:03,  3.19it/s]Training:  65%|######4   | 20/31 [00:06<00:03,  3.64it/s]Training:  68%|######7   | 21/31 [00:06<00:02,  3.66it/s]Training:  71%|#######   | 22/31 [00:06<00:02,  4.11it/s]Training:  74%|#######4  | 23/31 [00:07<00:01,  4.09it/s]Training:  77%|#######7  | 24/31 [00:07<00:01,  4.17it/s]Training:  81%|########  | 25/31 [00:07<00:01,  4.22it/s]Training:  84%|########3 | 26/31 [00:07<00:01,  4.01it/s]Training:  87%|########7 | 27/31 [00:08<00:00,  4.18it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  90%|######### | 28/31 [00:08<00:00,  3.96it/s]Training:  94%|#########3| 29/31 [00:08<00:00,  4.30it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  97%|#########6| 30/31 [00:08<00:00,  4.03it/s]Training: 100%|##########| 31/31 [00:08<00:00,  4.37it/s]Training: 100%|##########| 31/31 [00:08<00:00,  3.45it/s]
+  Train Loss: 0.5250, Val Loss: 0.5528, Train Acc: 0.774, Val Acc: 0.764
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.500
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+Model saved: best_model.pt
+
+Epoch 4/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:06,  4.85it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:   6%|6         | 2/31 [00:00<00:06,  4.47it/s]Training:  10%|9         | 3/31 [00:00<00:06,  4.02it/s]Training:  13%|#2        | 4/31 [00:00<00:05,  5.10it/s]Training:  16%|#6        | 5/31 [00:01<00:05,  5.17it/s]Training:  19%|#9        | 6/31 [00:01<00:05,  4.83it/s]Training:  23%|##2       | 7/31 [00:01<00:04,  5.12it/s]Training:  26%|##5       | 8/31 [00:01<00:04,  5.40it/s]Training:  29%|##9       | 9/31 [00:01<00:04,  5.10it/s]Training:  32%|###2      | 10/31 [00:02<00:04,  4.58it/s]Training:  35%|###5      | 11/31 [00:02<00:04,  4.29it/s]Training:  39%|###8      | 12/31 [00:02<00:04,  4.23it/s]Training:  42%|####1     | 13/31 [00:02<00:04,  3.86it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  45%|####5     | 14/31 [00:03<00:04,  3.52it/s]Training:  48%|####8     | 15/31 [00:03<00:04,  3.45it/s]Training:  52%|#####1    | 16/31 [00:03<00:04,  3.55it/s]Training:  55%|#####4    | 17/31 [00:04<00:03,  3.53it/s]Training:  58%|#####8    | 18/31 [00:04<00:03,  3.65it/s]Training:  61%|######1   | 19/31 [00:04<00:02,  4.17it/s]Training:  65%|######4   | 20/31 [00:04<00:02,  4.41it/s]Training:  68%|######7   | 21/31 [00:04<00:02,  4.55it/s]Training:  71%|#######   | 22/31 [00:05<00:01,  4.65it/s]Training:  74%|#######4  | 23/31 [00:05<00:01,  5.05it/s]Training:  77%|#######7  | 24/31 [00:05<00:01,  5.26it/s]Training:  81%|########  | 25/31 [00:05<00:01,  3.92it/s]Training:  84%|########3 | 26/31 [00:06<00:01,  3.58it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  87%|########7 | 27/31 [00:06<00:01,  3.36it/s]Training:  90%|######### | 28/31 [00:06<00:00,  3.61it/s]Training:  94%|#########3| 29/31 [00:07<00:00,  3.02it/s]Training:  97%|#########6| 30/31 [00:07<00:00,  2.83it/s]Training: 100%|##########| 31/31 [00:07<00:00,  3.18it/s]Training: 100%|##########| 31/31 [00:07<00:00,  3.95it/s]
+  Train Loss: 0.5078, Val Loss: 0.5515, Train Acc: 0.774, Val Acc: 0.764
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.500
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+Model saved: best_model.pt
+
+Epoch 5/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:08,  3.53it/s]Training:   6%|6         | 2/31 [00:00<00:07,  3.94it/s]Training:  10%|9         | 3/31 [00:00<00:07,  4.00it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  13%|#2        | 4/31 [00:00<00:05,  4.53it/s]Training:  16%|#6        | 5/31 [00:01<00:05,  4.82it/s]Training:  19%|#9        | 6/31 [00:01<00:05,  4.73it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  23%|##2       | 7/31 [00:01<00:04,  4.86it/s]Training:  26%|##5       | 8/31 [00:01<00:05,  4.23it/s]Training:  29%|##9       | 9/31 [00:02<00:05,  3.96it/s]Training:  32%|###2      | 10/31 [00:02<00:05,  3.77it/s]Training:  35%|###5      | 11/31 [00:02<00:05,  3.34it/s]Training:  39%|###8      | 12/31 [00:03<00:05,  3.29it/s]Training:  42%|####1     | 13/31 [00:03<00:05,  3.38it/s]Training:  45%|####5     | 14/31 [00:03<00:05,  3.26it/s]Training:  48%|####8     | 15/31 [00:04<00:05,  2.92it/s]Training:  52%|#####1    | 16/31 [00:04<00:04,  3.11it/s]Training:  55%|#####4    | 17/31 [00:04<00:04,  3.41it/s]Training:  58%|#####8    | 18/31 [00:04<00:03,  3.34it/s]Training:  61%|######1   | 19/31 [00:05<00:03,  3.09it/s]Training:  65%|######4   | 20/31 [00:05<00:03,  3.32it/s]Training:  68%|######7   | 21/31 [00:05<00:02,  3.33it/s]Training:  71%|#######   | 22/31 [00:06<00:02,  3.76it/s]Training:  74%|#######4  | 23/31 [00:06<00:02,  3.96it/s]Training:  77%|#######7  | 24/31 [00:06<00:01,  4.45it/s]Training:  81%|########  | 25/31 [00:06<00:01,  3.73it/s]Training:  84%|########3 | 26/31 [00:07<00:01,  3.80it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  87%|########7 | 27/31 [00:07<00:01,  3.75it/s]Training:  90%|######### | 28/31 [00:07<00:00,  4.29it/s]Training:  94%|#########3| 29/31 [00:07<00:00,  4.58it/s]Training:  97%|#########6| 30/31 [00:07<00:00,  4.49it/s]Training: 100%|##########| 31/31 [00:08<00:00,  4.18it/s]Training: 100%|##########| 31/31 [00:08<00:00,  3.78it/s]
+  Train Loss: 0.4882, Val Loss: 0.5492, Train Acc: 0.788, Val Acc: 0.756
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.495
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+Model saved: best_model.pt
+
+Epoch 6/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:   3%|3         | 1/31 [00:00<00:11,  2.72it/s]Training:   6%|6         | 2/31 [00:00<00:08,  3.41it/s]Training:  10%|9         | 3/31 [00:00<00:07,  3.89it/s]Training:  13%|#2        | 4/31 [00:01<00:06,  4.43it/s]Training:  16%|#6        | 5/31 [00:01<00:06,  4.00it/s]Training:  19%|#9        | 6/31 [00:01<00:06,  3.64it/s]Training:  23%|##2       | 7/31 [00:01<00:06,  3.48it/s]Training:  26%|##5       | 8/31 [00:02<00:06,  3.72it/s]Training:  29%|##9       | 9/31 [00:02<00:05,  4.25it/s]Training:  32%|###2      | 10/31 [00:02<00:04,  4.41it/s]Training:  35%|###5      | 11/31 [00:02<00:04,  4.64it/s]Training:  39%|###8      | 12/31 [00:03<00:04,  3.92it/s]Training:  42%|####1     | 13/31 [00:03<00:04,  3.79it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  45%|####5     | 14/31 [00:03<00:04,  3.95it/s]Training:  48%|####8     | 15/31 [00:03<00:03,  4.45it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  52%|#####1    | 16/31 [00:03<00:02,  5.25it/s]Training:  55%|#####4    | 17/31 [00:04<00:03,  4.65it/s]Training:  58%|#####8    | 18/31 [00:04<00:02,  4.59it/s]Training:  65%|######4   | 20/31 [00:04<00:01,  6.01it/s]Training:  68%|######7   | 21/31 [00:04<00:01,  6.34it/s]Training:  71%|#######   | 22/31 [00:04<00:01,  6.58it/s]Training:  74%|#######4  | 23/31 [00:04<00:01,  6.91it/s]Training:  77%|#######7  | 24/31 [00:05<00:00,  7.43it/s]Training:  81%|########  | 25/31 [00:05<00:00,  7.41it/s]Training:  84%|########3 | 26/31 [00:05<00:00,  6.70it/s]Training:  87%|########7 | 27/31 [00:06<00:01,  2.98it/s]Training:  90%|######### | 28/31 [00:07<00:01,  2.02it/s]Training:  94%|#########3| 29/31 [00:07<00:00,  2.11it/s]Training:  97%|#########6| 30/31 [00:07<00:00,  2.24it/s]Training: 100%|##########| 31/31 [00:08<00:00,  2.71it/s]Training: 100%|##########| 31/31 [00:08<00:00,  3.86it/s]
+  Train Loss: 0.4712, Val Loss: 0.5495, Train Acc: 0.800, Val Acc: 0.756
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.495
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+
+Epoch 7/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:06,  4.39it/s]Training:   6%|6         | 2/31 [00:00<00:05,  4.91it/s]Training:  10%|9         | 3/31 [00:00<00:06,  4.50it/s]Training:  13%|#2        | 4/31 [00:00<00:06,  4.24it/s]Training:  16%|#6        | 5/31 [00:01<00:06,  3.80it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  19%|#9        | 6/31 [00:01<00:05,  4.39it/s]Training:  23%|##2       | 7/31 [00:01<00:05,  4.73it/s]Training:  26%|##5       | 8/31 [00:01<00:05,  3.86it/s]Training:  29%|##9       | 9/31 [00:02<00:06,  3.47it/s]Training:  32%|###2      | 10/31 [00:02<00:06,  3.32it/s]Training:  35%|###5      | 11/31 [00:03<00:07,  2.85it/s]Training:  39%|###8      | 12/31 [00:03<00:06,  2.75it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  42%|####1     | 13/31 [00:03<00:06,  2.70it/s]Training:  45%|####5     | 14/31 [00:04<00:06,  2.80it/s]Training:  48%|####8     | 15/31 [00:04<00:06,  2.60it/s]Training:  52%|#####1    | 16/31 [00:04<00:05,  2.73it/s]Training:  55%|#####4    | 17/31 [00:05<00:04,  2.89it/s]Training:  58%|#####8    | 18/31 [00:05<00:04,  2.89it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  61%|######1   | 19/31 [00:05<00:04,  2.96it/s]Training:  65%|######4   | 20/31 [00:06<00:03,  2.85it/s]Training:  68%|######7   | 21/31 [00:06<00:03,  3.09it/s]Training:  71%|#######   | 22/31 [00:06<00:02,  3.24it/s]Training:  74%|#######4  | 23/31 [00:07<00:02,  3.33it/s]Training:  77%|#######7  | 24/31 [00:07<00:02,  3.32it/s]Training:  81%|########  | 25/31 [00:07<00:01,  3.66it/s]Training:  84%|########3 | 26/31 [00:07<00:01,  4.30it/s]Training:  90%|######### | 28/31 [00:07<00:00,  5.98it/s]Training:  94%|#########3| 29/31 [00:08<00:00,  6.32it/s]Training:  97%|#########6| 30/31 [00:08<00:00,  6.80it/s]Training: 100%|##########| 31/31 [00:08<00:00,  3.77it/s]
+  Train Loss: 0.4529, Val Loss: 0.5584, Train Acc: 0.817, Val Acc: 0.756
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.495
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+
+Epoch 8/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:04,  6.78it/s]Training:   6%|6         | 2/31 [00:00<00:04,  6.49it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  10%|9         | 3/31 [00:00<00:04,  6.06it/s]Training:  13%|#2        | 4/31 [00:00<00:04,  6.03it/s]Training:  16%|#6        | 5/31 [00:00<00:03,  6.50it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  19%|#9        | 6/31 [00:00<00:03,  7.03it/s]Training:  23%|##2       | 7/31 [00:01<00:03,  6.76it/s]Training:  26%|##5       | 8/31 [00:01<00:03,  6.05it/s]Training:  29%|##9       | 9/31 [00:01<00:03,  5.56it/s]Training:  32%|###2      | 10/31 [00:01<00:03,  5.91it/s]Training:  35%|###5      | 11/31 [00:01<00:03,  5.89it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  39%|###8      | 12/31 [00:01<00:03,  5.74it/s]Training:  42%|####1     | 13/31 [00:02<00:03,  5.63it/s]Training:  45%|####5     | 14/31 [00:02<00:03,  5.27it/s]Training:  48%|####8     | 15/31 [00:02<00:03,  4.86it/s]Training:  52%|#####1    | 16/31 [00:02<00:03,  4.99it/s]Training:  55%|#####4    | 17/31 [00:02<00:02,  5.59it/s]Training:  58%|#####8    | 18/31 [00:03<00:02,  5.94it/s]Training:  61%|######1   | 19/31 [00:03<00:01,  6.38it/s]Training:  65%|######4   | 20/31 [00:03<00:01,  6.36it/s]Training:  68%|######7   | 21/31 [00:03<00:01,  7.08it/s]Training:  74%|#######4  | 23/31 [00:03<00:01,  7.69it/s]Training:  77%|#######7  | 24/31 [00:03<00:00,  7.38it/s]Training:  81%|########  | 25/31 [00:04<00:00,  6.54it/s]Training:  84%|########3 | 26/31 [00:04<00:00,  6.33it/s]Training:  87%|########7 | 27/31 [00:04<00:00,  6.11it/s]Training:  90%|######### | 28/31 [00:04<00:00,  5.46it/s]Training:  94%|#########3| 29/31 [00:04<00:00,  4.59it/s]Training:  97%|#########6| 30/31 [00:05<00:00,  4.28it/s]Training: 100%|##########| 31/31 [00:05<00:00,  4.82it/s]Training: 100%|##########| 31/31 [00:05<00:00,  5.78it/s]
+  Train Loss: 0.4527, Val Loss: 0.5612, Train Acc: 0.817, Val Acc: 0.756
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.495
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+
+Epoch 9/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:10,  2.91it/s]Training:   6%|6         | 2/31 [00:00<00:08,  3.38it/s]Training:  10%|9         | 3/31 [00:00<00:06,  4.23it/s]Training:  13%|#2        | 4/31 [00:00<00:05,  4.98it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  16%|#6        | 5/31 [00:01<00:06,  4.00it/s]Training:  19%|#9        | 6/31 [00:01<00:06,  3.61it/s]Training:  23%|##2       | 7/31 [00:01<00:06,  3.43it/s]Training:  26%|##5       | 8/31 [00:02<00:06,  3.31it/s]Training:  29%|##9       | 9/31 [00:02<00:06,  3.63it/s]Training:  32%|###2      | 10/31 [00:02<00:05,  3.86it/s]Training:  35%|###5      | 11/31 [00:02<00:04,  4.32it/s]Training:  39%|###8      | 12/31 [00:03<00:04,  4.50it/s]Training:  42%|####1     | 13/31 [00:03<00:03,  4.87it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  45%|####5     | 14/31 [00:03<00:03,  4.96it/s]Training:  48%|####8     | 15/31 [00:03<00:03,  5.02it/s]Training:  52%|#####1    | 16/31 [00:03<00:02,  5.10it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:  55%|#####4    | 17/31 [00:03<00:02,  5.14it/s]Training:  58%|#####8    | 18/31 [00:04<00:02,  5.43it/s]Training:  61%|######1   | 19/31 [00:04<00:02,  5.23it/s]Training:  65%|######4   | 20/31 [00:04<00:02,  5.26it/s]Training:  68%|######7   | 21/31 [00:04<00:01,  5.88it/s]Training:  71%|#######   | 22/31 [00:04<00:01,  6.39it/s]Training:  74%|#######4  | 23/31 [00:04<00:01,  6.67it/s]Training:  77%|#######7  | 24/31 [00:05<00:01,  6.65it/s]Training:  81%|########  | 25/31 [00:05<00:00,  7.30it/s]Training:  84%|########3 | 26/31 [00:05<00:00,  7.10it/s]Training:  87%|########7 | 27/31 [00:05<00:00,  6.42it/s]Training:  90%|######### | 28/31 [00:05<00:00,  6.13it/s]Training:  94%|#########3| 29/31 [00:05<00:00,  5.88it/s]Training:  97%|#########6| 30/31 [00:06<00:00,  6.29it/s]Training: 100%|##########| 31/31 [00:06<00:00,  6.41it/s]Training: 100%|##########| 31/31 [00:06<00:00,  5.03it/s]
+  Train Loss: 0.4415, Val Loss: 0.5645, Train Acc: 0.829, Val Acc: 0.732
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.479
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+
+Epoch 10/30
+Training:   0%|          | 0/31 [00:00<?, ?it/s]Training:   3%|3         | 1/31 [00:00<00:03,  7.79it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+Training:   6%|6         | 2/31 [00:00<00:05,  5.45it/s]Training:  10%|9         | 3/31 [00:00<00:05,  4.96it/s]Training:  13%|#2        | 4/31 [00:00<00:05,  4.53it/s]Training:  16%|#6        | 5/31 [00:01<00:05,  4.75it/s]Training:  19%|#9        | 6/31 [00:01<00:05,  4.25it/s]Training:  23%|##2       | 7/31 [00:01<00:05,  4.15it/s]Training:  26%|##5       | 8/31 [00:01<00:05,  4.27it/s]Training:  29%|##9       | 9/31 [00:02<00:05,  3.96it/s]Training:  32%|###2      | 10/31 [00:02<00:05,  3.84it/s]Training:  35%|###5      | 11/31 [00:02<00:05,  3.78it/s]Training:  39%|###8      | 12/31 [00:02<00:04,  3.92it/s]Training:  42%|####1     | 13/31 [00:03<00:05,  3.53it/s]Training:  45%|####5     | 14/31 [00:03<00:05,  3.20it/s]Training:  48%|####8     | 15/31 [00:03<00:04,  3.40it/s]Training:  52%|#####1    | 16/31 [00:04<00:04,  3.64it/s]Training:  55%|#####4    | 17/31 [00:04<00:03,  4.05it/s]Training:  58%|#####8    | 18/31 [00:04<00:03,  4.13it/s]Training:  61%|######1   | 19/31 [00:04<00:02,  4.29it/s]Training:  65%|######4   | 20/31 [00:04<00:02,  4.35it/s]Training:  68%|######7   | 21/31 [00:05<00:02,  4.07it/s]Training:  71%|#######   | 22/31 [00:05<00:02,  4.49it/s]Training:  74%|#######4  | 23/31 [00:05<00:01,  4.78it/s]Training:  77%|#######7  | 24/31 [00:05<00:01,  5.17it/s]Training:  81%|########  | 25/31 [00:05<00:01,  5.36it/s]Training:  84%|########3 | 26/31 [00:05<00:00,  5.86it/s]Training:  87%|########7 | 27/31 [00:06<00:00,  6.01it/s]Training:  90%|######### | 28/31 [00:06<00:00,  6.11it/s]<unknown>:1: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:1: SyntaxWarning: invalid escape sequence '\.'
+Training:  94%|#########3| 29/31 [00:06<00:00,  6.06it/s]Training:  97%|#########6| 30/31 [00:06<00:00,  6.25it/s]Training: 100%|##########| 31/31 [00:06<00:00,  6.62it/s]Training: 100%|##########| 31/31 [00:06<00:00,  4.59it/s]
+  Train Loss: 0.4199, Val Loss: 0.5678, Train Acc: 0.831, Val Acc: 0.732
+  Val F1: 0.000, Precision: 0.000, Recall: 0.000, Balanced Acc: 0.479
+  Code metrics: BERTScore=0.523, CodeBLEU=0.342, BLEU=0.354, ROUGE=0.501, RUBY=0.472
+Early stopping at epoch 10
+Training completed! Results saved to stage4\stage4B_corct\artifacts

@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:44:27",
+    "address": "10.199.12.55",
+    "comparison_slider": 1,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 13803,
+            "index": 4338,
+            "ID": 68362772,
+            "Question": "How to Use \"Pythonic\" YOLOv5 from PyTorch. I'm interested in training a YOLOv5 model. Currently, I'm using Roboflow to annotate and export the data into YOLOv5 format. I'm also using Roboflow's Colab Notebook for YOLOv5. However, I'm not familiar with many of the commands used in the Roboflow Colab Notebook. I found on here that there appears to be a much more Pythonic way of using and manipulating the YOLOv5 model, which I would be much more familiar with. My questions regarding this are as follows:  Is there an online resource that can show me how to train the YOLOv5 and extract results after importing the model from PyTorch with the Pythonic version (perhaps a snippet of code right here on StackOverflow would help)? The official documentation that I could find (here) also uses the non-Pythonic method for the model. Is there any important functionality I would lose if I were to switch to this Pythonic method of using YOLOv5? I found nothing in the documentation that suggests otherwise, but would I need to export my data in a different format from Roboflow for the data to be able to train the Pythonic model? Similar to question 1), is there anywhere that can guide me how to use the trained model on test images? Do I simply do prediction=model(my_image.jpg)? What if I want predictions on multiple images at once?  Any guidance would be appreciated. Thanks! ",
+            "Answer": "' 'documentation strings. the first line should always be a short, concise summary of the object \u2019 s purpose. for brevity, it should not explicitly state the object \u2019 s name or type, since these are available by other means ( except if the name happens to be a verb describing a function \u2019 s operation ). this line should begin with a capital letter and end with a period. if there are more lines in the documentation string, the second line should be blank, visually separating the summary.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 1779,
+            "index": 557,
+            "ID": 68362772,
+            "Question": "How to Use \"Pythonic\" YOLOv5 from PyTorch. I'm interested in training a YOLOv5 model. Currently, I'm using Roboflow to annotate and export the data into YOLOv5 format. I'm also using Roboflow's Colab Notebook for YOLOv5. However, I'm not familiar with many of the commands used in the Roboflow Colab Notebook. I found on here that there appears to be a much more Pythonic way of using and manipulating the YOLOv5 model, which I would be much more familiar with. My questions regarding this are as follows:  Is there an online resource that can show me how to train the YOLOv5 and extract results after importing the model from PyTorch with the Pythonic version (perhaps a snippet of code right here on StackOverflow would help)? The official documentation that I could find (here) also uses the non-Pythonic method for the model. Is there any important functionality I would lose if I were to switch to this Pythonic method of using YOLOv5? I found nothing in the documentation that suggests otherwise, but would I need to export my data in a different format from Roboflow for the data to be able to train the Pythonic model? Similar to question 1), is there anywhere that can guide me how to use the trained model on test images? Do I simply do prediction=model(my_image.jpg)? What if I want predictions on multiple images at once?  Any guidance would be appreciated. Thanks! ",
+            "Answer": "\n  Is there an online resource that can show me how to train the YOLOv5 and extract results after importing the model from PyTorch with the Pythonic version (perhaps a snippet of code right here on StackOverflow would help)?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        }
+    ]
+}

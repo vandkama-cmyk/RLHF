@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:33:18",
+    "address": "77.234.193.84",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 485,
+            "index": 485,
+            "ID": 356483,
+            "Question": "\"\"\"python regex  to find all numbers and dots from 'text'\"\"\"",
+            "Answer": "\nimport re\ntext = \"one two three four five six seven eight nine\"\nre.findall(r'\\d+\\.\\d+', text)\nre.findall(r'\\d+', text)\nre.findall(r'\\d+', text)\nre.findall(r'\\d+', text)\nre.findall(r'\\d+', text)\nre.findall(r'\\d+', text)\nre.findall(r'\\d+', text)\nre.findall(r'\\",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1456,
+            "index": 484,
+            "ID": 356483,
+            "Question": "\"\"\"Find all numbers and dots from a string `text` using regex\"\"\"",
+            "Answer": "\nimport re\nre.findall(r'\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+', text",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

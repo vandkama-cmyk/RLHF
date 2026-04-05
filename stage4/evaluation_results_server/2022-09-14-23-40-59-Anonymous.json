@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:40:59",
+    "address": "185.24.52.32",
+    "comparison_slider": 1,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 489,
+            "index": 489,
+            "ID": 10607688,
+            "Question": "\"\"\"create a datetime with the current date & time\"\"\"",
+            "Answer": "\ndatetime.datetime.now() + datetime.timedelta(days=1)\ndatetime.datetime.now() + datetime.timedelta(days=1) + datetime.timedelta(days=1)\ndatetime.datetime.now() + datetime.timedelta(days=1) + datetime.timedelta(days=1) + datetime.timedelta(days=1) + datetime.timedelta(days=1)\ndatetime.datetime.now() + datetime.timedelta(",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1936,
+            "index": 489,
+            "ID": 10607688,
+            "Question": "\"\"\"create a datetime with the current date & time\"\"\"",
+            "Answer": "\ndatetime.datetime.now()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

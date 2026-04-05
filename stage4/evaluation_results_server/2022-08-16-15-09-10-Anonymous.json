@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:09:10",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": 0,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 6449,
+            "index": 3384,
+            "ID": 69526900,
+            "Question": "PyCharm Code Completion for files outside project directory. my python application imports other python packages in other locations on the filesystem dynamically at runtime. It then calls certain functions in these packages and supplies data objects from the main application. The issue is that coding these external packages there is no code completion in regard to the main apps code. Because these data objects are only supplied at runtime, as are their classes (which are already imported by then main app when calling the package) the package itself cannot reference them in any way (circular import). Since the package doesnt know about the objects up until it's running, Code Completion can't suggest any methods of these objects for example either. Is there any way for me to provide PyCharms Code Completion with a reference to the main application, so it can autocomplete my code? By this I mean suggestions for objects of the classes of my main app, autocomplete for native python packages works fine of course. The packages are imported by dynamically adding their path to the path variable, I tried to also add them to the interpreter path, however this did not work. ",
+            "Answer": "' 'is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.''is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 6454,
+            "index": 3389,
+            "ID": 69526900,
+            "Question": "PyCharm Code Completion for files outside project directory. my python application imports other python packages in other locations on the filesystem dynamically at runtime. It then calls certain functions in these packages and supplies data objects from the main application. The issue is that coding these external packages there is no code completion in regard to the main apps code. Because these data objects are only supplied at runtime, as are their classes (which are already imported by then main app when calling the package) the package itself cannot reference them in any way (circular import). Since the package doesnt know about the objects up until it's running, Code Completion can't suggest any methods of these objects for example either. Is there any way for me to provide PyCharms Code Completion with a reference to the main application, so it can autocomplete my code? By this I mean suggestions for objects of the classes of my main app, autocomplete for native python packages works fine of course. The packages are imported by dynamically adding their path to the path variable, I tried to also add them to the interpreter path, however this did not work. ",
+            "Answer": "' '3. 9 : use bdist _ wheel ( wheel packages ) instead. builds a windows installer (. msi ) binary package. 9. 30. distutils. command. bdist _ rpm \u2014 build a binary distribution as a redhat rpm and srpm  9. 31. distutils. command. sdist \u2014 build a source distribution  9. 32. distutils. command. build \u2014 build all files of a package  9. 32",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

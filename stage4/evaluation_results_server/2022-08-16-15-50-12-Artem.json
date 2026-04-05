@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:50:12",
+    "address": "10.199.12.90",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 851,
+            "index": 396,
+            "ID": 7574841,
+            "Question": "\"\"\"open a 'gnome' terminal from python script and run  'sudo apt-get update' command.\"\"\"",
+            "Answer": "\nos.system('gnome')\nos.system('sudo apt-get update')\n\n",
+            "CSV_PATH": "pred_test_conala.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN FINETUNED"
+        },
+        {
+            "level_0": 381,
+            "index": 396,
+            "ID": 7574841,
+            "Question": "\"\"\"open a 'gnome' terminal from python script and run  'sudo apt-get update' command.\"\"\"",
+            "Answer": "\n\nimport os\nimport subprocess\nimport sys\nimport time\n\n",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN VANILLA"
+        }
+    ]
+}

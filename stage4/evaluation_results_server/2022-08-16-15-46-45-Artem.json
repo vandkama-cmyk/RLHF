@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:46:45",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 6177,
+            "index": 3112,
+            "ID": 65713613,
+            "Question": "Is there any function in which .wav file will generate. I am stuck on the .wav file extension, I used gtts method to convert text into the speech and save the file and it is working perfectly but the problem is gtts only support the .mp3 extension but I need the output file with .wav extension. So I am question is, if any function like gtts to convert text into speech and save the file with .wav extension? or anyone who already done work on this module. Please share your opinion. Thanks ",
+            "Answer": "' '##s = audioop. findmax ( outputdata, 800 ) # one tenth second out _ test = outputdata [ pos * 2 : ] in _ test = inputdata [ pos * 2 : ] ipos, factor = audioop. findfit ( in _ test, out _ test ) # optional ( for better cancellation ) : # factor = audioop. findfactor ( in _ test [ ipos * 2 : ipos * 2 + len (",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 6180,
+            "index": 3115,
+            "ID": 65713613,
+            "Question": "Is there any function in which .wav file will generate. I am stuck on the .wav file extension, I used gtts method to convert text into the speech and save the file and it is working perfectly but the problem is gtts only support the .mp3 extension but I need the output file with .wav extension. So I am question is, if any function like gtts to convert text into speech and save the file with .wav extension? or anyone who already done work on this module. Please share your opinion. Thanks ",
+            "Answer": "' 'tell ( ) and wave _ read. setpos ( ) methods. wave _ write. writeframesraw ( data )  write audio frames, without correcting nframes. changed in version 3. 4 : any bytes - like object is now accepted. it will raise an error if the output stream is not seekable and the total number of frames that have been written.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

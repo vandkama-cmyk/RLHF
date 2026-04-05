@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:23:07",
+    "address": "5.18.203.79",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2468,
+            "index": 66,
+            "ID": 4741537,
+            "Question": "Append elements of a set to a list in Python",
+            "Answer": "    mySet = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}\n\n    myList = []\n\n    for i in mySet:\n\n        myList.append(i)\n\n    print(myList)\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1039,
+            "index": 66,
+            "ID": 4741537,
+            "Question": "\"\"\"Append elements of a set to a list in Python\"\"\"",
+            "Answer": "\na = [1, 2, 3]\nb = [4, 5, 6]\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)\na\na.extend(b)",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

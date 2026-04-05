@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 00:32:20",
+    "address": "85.143.144.79",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 749,
+            "index": 260,
+            "ID": 5306756,
+            "Question": "\"\"\"display the float `1/3*100` as a percentage\"\"\"",
+            "Answer": "\nprint('{0:.2f}'.format(1/3*100))\n\nA:\n\nYou can use float() to convert a float to a string:\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2618,
+            "index": 260,
+            "ID": 5306756,
+            "Question": "how to show Percentage in python",
+            "Answer": "    print(str(round(1/3*100, 2)) + \"%\")\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

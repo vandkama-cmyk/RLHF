@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 16:28:54",
+    "address": "178.71.236.89",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -1,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 2755,
+            "index": 448,
+            "ID": 7243750,
+            "Question": "Download file from web in Python 3",
+            "Answer": "    import requests\n\n    url = input(\"Enter the url: \")\n\n    file_name = input(\"Enter the file name: \")\n\n    r = requests.get(url)\n\n    with open(file_name, 'wb') as f:\n\n        f.write(r.content)\n\n    print(\"Downloaded successfully!\")\n\n    return r.status_code\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1896,
+            "index": 448,
+            "ID": 7243750,
+            "Question": "\"\"\"download the file from url `url` and save it under file `file_name`\"\"\"",
+            "Answer": "\ndownload_file(url, file_name)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

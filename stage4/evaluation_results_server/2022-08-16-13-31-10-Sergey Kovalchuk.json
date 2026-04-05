@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:31:10",
+    "address": "10.199.12.55",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1710,
+            "index": 465,
+            "ID": 66541282,
+            "Question": "Is there a way to set a float for the single step of a pyqt5 scrollbar?. I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01? ",
+            "Answer": "\n  I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        },
+        {
+            "level_0": 6067,
+            "index": 3002,
+            "ID": 66541282,
+            "Question": "Is there a way to set a float for the single step of a pyqt5 scrollbar?. I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01? ",
+            "Answer": "You can use auto-numbering and named fields, as in the second example above. ( contributed by eric smith ; bpo - 5237. ) complex numbers now correctly support usage with format ( ), and default to being right - aligned. specifying a precision or comma - separation applies to both the real and imaginary parts of the number, but a specified field width and alignment is applied to the whole of the resulting 1. 5 + 3j output. ( contributed by eric smith ; bpo -",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

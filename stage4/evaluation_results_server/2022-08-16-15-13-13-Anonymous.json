@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:13:13",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": 1,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 7231,
+            "index": 4166,
+            "ID": 68392721,
+            "Question": "How to automate the process of running an excel model, 100,000 times, with different inputs in Python?. So I have a complex financial model on excel for a given set of input. Now I want to run the same model on 100,000 other sets of input and save it. Is there any libraries I should look into? I just have to change the inputs. Any guidance will be appreciated. TIA! ",
+            "Answer": "' '( ) method on complex objects. ( removed by meador inge and mark dickinson ; bpo - 5211. ) the str. format ( ) method now supports automatic numbering of the replacement fields. This makes using str. format ( ) more closely resemble using % s formatting.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 7228,
+            "index": 4163,
+            "ID": 68392721,
+            "Question": "How to automate the process of running an excel model, 100,000 times, with different inputs in Python?. So I have a complex financial model on excel for a given set of input. Now I want to run the same model on 100,000 other sets of input and save it. Is there any libraries I should look into? I just have to change the inputs. Any guidance will be appreciated. TIA! ",
+            "Answer": "You can use auto-numbering and named fields, as in the second example above. ( contributed by eric smith ; bpo - 5237. ) complex numbers now correctly support usage with format ( ), and default to being right - aligned. specifying a precision or comma - separation applies to both the real and imaginary parts of the number, but a specified field width and alignment is applied to the whole of the resulting 1. 5 + 3j output. ( contributed by eric smith ; bpo -",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

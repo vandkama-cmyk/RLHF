@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:30:53",
+    "address": "77.234.193.84",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 818,
+            "index": 333,
+            "ID": 1303243,
+            "Question": "\"\"\"check if object `o` is a string\"\"\"",
+            "Answer": "\nisinstance(o, str)\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2266,
+            "index": 335,
+            "ID": 1303243,
+            "Question": "\"\"\"check if `obj_to_test` is a string\"\"\"\n   ",
+            "Answer": "isinstance(obj_to_test, str)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

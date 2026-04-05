@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 13:21:12",
+    "address": "159.138.218.175",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1316,
+            "index": 343,
+            "ID": 1762484,
+            "Question": "\"\"\"find the index of an element 'MSFT' in a list `stocks_list`\"\"\"",
+            "Answer": "\nimport re\nre.search(r'\\bMSFT\\b',''.join(stocks_list)).start()\nre.search(r'\\bMSFT\\b',''.join(stocks_list)).end()\nre.search(r'\\bMSFT\\b',''.join(stocks_list)).group()\nre.search(r'\\bMSFT\\b',''.join(stocks_list)).group().start()\nre.search(r'\\bMSFT\\b',''.join(stocks_list)).group().end()\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 2689,
+            "index": 343,
+            "ID": 1762484,
+            "Question": "How to find the position of an element in a list , in Python?",
+            "Answer": "    stocks_list = [\"GOOG\", \"MSFT\", \"AAPL\", \"AMZN\", \"FB\", \"TWTR\"]\n\n    print(stocks_list.index(\"MSFT\"))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

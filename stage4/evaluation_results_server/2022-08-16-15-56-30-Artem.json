@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:56:30",
+    "address": "10.199.12.90",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 12050,
+            "index": 2585,
+            "ID": 65681422,
+            "Question": "Auto run python scripts on pycharm while opening. I want to auto run the python script when I open it from the terminal so that I won't have to press the run button From the terminal I want to open the file as : pycharm-community main.py How do I auto run it while it opens? ",
+            "Answer": "python gui toolkit is available from https://docs.python.org/2/library/gui.html#gui-programming-on-the-mac",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 12054,
+            "index": 2589,
+            "ID": 65681422,
+            "Question": "Auto run python scripts on pycharm while opening. I want to auto run the python script when I open it from the terminal so that I won't have to press the run button From the terminal I want to open the file as : pycharm-community main.py How do I auto run it while it opens? ",
+            "Answer": "ide is running. if you want to run python scripts from the terminal window or from the finder you first need an editor to create your script. macos comes with a number of standard unix command line editors, vim and emacs among them. if you want a more mac - like editor, bbedit or textwrangler from bare bones software ( see http : / / www. barebones. com / products / bbedit / index. html. html.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-23 11:36:58",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 7266,
+            "index": 478,
+            "ID": 16125229,
+            "Question": "\"\"\"get the last key of dictionary `dict`\"\"\"",
+            "Answer": "\ndict.pop('key')\n\nprint(dict.keys())\n\nOutput:\n['key', 'key2', 'key3', 'key4']\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 6792,
+            "index": 478,
+            "ID": 16125229,
+            "Question": "\"\"\"get the last key of dictionary `dict`\"\"\"",
+            "Answer": "\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict.keys()[-1]\ndict",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

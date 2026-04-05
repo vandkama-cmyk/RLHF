@@ -1,0 +1,34 @@
+{
+    "name_input": "Arthur",
+    "datetime": "2022-09-13 12:15:54",
+    "address": "178.66.156.248",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2200,
+            "index": 267,
+            "ID": 30766151,
+            "Question": "\"\"\"Extract brackets from string `s`\"\"\"\n   ",
+            "Answer": "re.findall('\\\\[(.*?)\\\\]', s)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 1726,
+            "index": 267,
+            "ID": 30766151,
+            "Question": "\"\"\"Extract brackets from string `s`\"\"\"",
+            "Answer": "\nre.findall('\\\\[(.*?)\\\\]', s)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

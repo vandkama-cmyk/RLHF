@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-08 11:45:59",
+    "address": "10.199.12.55",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 0,
+    "useful_L": -1,
+    "consistent_R": 2,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2658,
+            "index": 712,
+            "ID": 64161083,
+            "Question": "\"\"\"use Postgresql Array field in Tortoise-ORM\"\"\"",
+            "Answer": "\nclass User(Model):\n    name = CharField(max_length=50)\n    age = IntField()\n    friends = ArrayField(IntField())\n    friends.add_listener(on_set_value)\n    friends.add_listener(on_pre_save)\n    friends.add_listener(on_post_save)\n    friends.add_listener(on_pre_delete)\n    friends.add_listener(on_post_delete)\n    def __str__(self):\n        return self.name\n    ",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 3649,
+            "index": 712,
+            "ID": 64161083,
+            "Question": "\"\"\"use Postgresql Array field in Tortoise-ORM\"\"\"",
+            "Answer": "\ntortoise.connect('test_db')\n\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anastasia",
+    "datetime": "2022-09-13 13:38:32",
+    "address": "85.142.179.62",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": -1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 233,
+            "index": 233,
+            "ID": 14950260,
+            "Question": "\"\"\"convert unicode string u\"{'code1':1,'code2':1}\" into dictionary\"\"\"",
+            "Answer": "\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':1}\n{'code1':1,'code2':",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2595,
+            "index": 233,
+            "ID": 14950260,
+            "Question": "Convert unicode string dictionary into dictionary in python",
+            "Answer": "    ustring = u\"{'code1':1,'code2':1}\"\n\n    print(ustring.encode(\"utf-8\").decode(\"utf-8\"))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 16:02:17",
+    "address": "188.187.74.97",
+    "comparison_slider": 1,
+    "consistent_L": -1,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 918,
+            "index": 444,
+            "ID": 14716342,
+            "Question": "\"\"\"find the string in `your_string` between two special characters \"[\" and \"]\"\"\"\"",
+            "Answer": "\nyour_string.find('[', 2)\nyour_string.find(']', 2)\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1892,
+            "index": 444,
+            "ID": 14716342,
+            "Question": "\"\"\"find the string in `your_string` between two special characters \"[\" and \"]\"\"\"\"",
+            "Answer": "\nre.findall('\\\\[.*\\\\]', your_string)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

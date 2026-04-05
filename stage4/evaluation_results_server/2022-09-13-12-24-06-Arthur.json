@@ -1,0 +1,34 @@
+{
+    "name_input": "Arthur",
+    "datetime": "2022-09-13 12:24:06",
+    "address": "178.66.156.248",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1847,
+            "index": 393,
+            "ID": 20576618,
+            "Question": "\"\"\"Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal\"\"\"",
+            "Answer": "\ndf['date'].apply(lambda x: x.toordinal())\ndf['date'] = df['date'].apply(lambda x: x.toordinal())\n\ndf['date'] = df['date'].apply(lambda x: datetime.datetime.fromordinal(x))\ndf['date'] = df['date'].apply(lambda x: x.strftime('%Y-%m-%d'))\ndf['date'] = df['date'].apply(lambda x: datetime.datetime.strptime(x, '",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2321,
+            "index": 393,
+            "ID": 20576618,
+            "Question": "\"\"\"Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal\"\"\"\n   ",
+            "Answer": "df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')\n    df['date'] = df['date'].map(lambda x: x.toordinal())\n\ndef Convert():\n    \"\"\"Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal\"\"\"\n    df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')\n    df['date'] = df['date'].map(lambda x",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

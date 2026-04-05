@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:19:35",
+    "address": "5.18.163.156",
+    "comparison_slider": 1,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": -1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 165,
+            "index": 165,
+            "ID": 22365172,
+            "Question": "\"\"\"Iterate ove list `[1, 2, 3]` using list comprehension\"\"\"",
+            "Answer": "\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]\n[1, 2, 3]",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2101,
+            "index": 165,
+            "ID": 22365172,
+            "Question": "\"\"\"Iterate ove list `[1, 2, 3]` using list comprehension\"\"\"\n   ",
+            "Answer": "[x for x in [1, 2, 3]]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

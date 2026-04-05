@@ -1,0 +1,34 @@
+{
+    "name_input": "Gorbatovski",
+    "datetime": "2022-09-13 15:20:37",
+    "address": "77.234.193.10",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": 2,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1693,
+            "index": 234,
+            "ID": 11416772,
+            "Question": "\"\"\"find all words in a string `mystring` that start with the `$` sign\"\"\"",
+            "Answer": "\nre.findall('^\\\\$(\\\\w+)', mystring)\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1207,
+            "index": 234,
+            "ID": 11416772,
+            "Question": "\"\"\"find all words in a string `mystring` that start with the `$` sign\"\"\"",
+            "Answer": "\nimport re\nmystring = '$this is a $string'\nre.findall(r'\\$\\w+', mystring)\nre.findall(r'\\$\\w+', mystring)\nre.findall(r'\\$\\w+', mystring)\nre.findall(r'\\$\\w+', mystring)\nre.findall(r'\\$\\w+', mystring)\nre.findall(r'\\$\\w+', mystring)\nre.findall(r'\\$\\",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

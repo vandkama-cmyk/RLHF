@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-22 10:03:00",
+    "address": "10.199.12.90",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": -2,
+    "useful_L": -1,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 5428,
+            "index": 568,
+            "ID": 63534475,
+            "Question": "\"\"\"create a flattened list from multi-levels using recursion in Python\"\"\"",
+            "Answer": "\n[item for sublist in [[1, 2, 3], [4, 5, 6]] for item in sublist]\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2513,
+            "index": 568,
+            "ID": 63534475,
+            "Question": "\"\"\"create a flattened list from multi-levels using recursion in Python\"\"\"",
+            "Answer": "\nlist(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

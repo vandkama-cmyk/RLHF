@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 13:39:36",
+    "address": "109.167.205.3",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": 2,
+    "useful_L": -1,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1935,
+            "index": 488,
+            "ID": 2430539,
+            "Question": "\"\"\"get a list of all keys in Cassandra database `cf` with pycassa\"\"\"",
+            "Answer": "\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT * FROM cf')\ncqlsh.execute('SELECT",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2781,
+            "index": 488,
+            "ID": 2430539,
+            "Question": "How do I get all the keys that are stored in the Cassandra column family with pycassa?",
+            "Answer": "    import pycassa\n\n    from pycassa.pool import ConnectionPool\n\n    from pycassa.columnfamily import ColumnFamily\n\n    pool = ConnectionPool('Keyspace1')\n\n    cf = ColumnFamily(pool, 'Standard1')\n\n    keys = cf.get_range()\n\n    for key in keys:\n\n        print(key)\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

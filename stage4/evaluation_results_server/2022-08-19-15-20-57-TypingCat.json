@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-19 15:20:57",
+    "address": "10.199.126.142",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": -1,
+    "useful_L": -1,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 7574,
+            "index": 297,
+            "ID": 1960516,
+            "Question": "\"\"\"encode `Decimal('3.9')` to a JSON string\"\"\"",
+            "Answer": "\n     return json.dumps(decimal_to_json(decimal))",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN VANILLA"
+        },
+        {
+            "level_0": 9000,
+            "index": 297,
+            "ID": 1960516,
+            "Question": "\"\"\"encode `Decimal('3.9')` to a JSON string\"\"\"",
+            "Answer": "\n\nimport json\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO13-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO13 VANILLA"
+        }
+    ]
+}

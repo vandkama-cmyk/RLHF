@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-22 12:45:22",
+    "address": "10.199.12.90",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -2,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1662,
+            "index": 698,
+            "ID": 59851392,
+            "Question": "\"\"\"read a file line by line from S3 parquet, filter and save line by line to another S3 bucket\"\"\"",
+            "Answer": "\nimport boto3\nimport pandas as pd\nimport io\nimport pandas.io.parquet as pq\nimport boto3.s3\nimport boto3.session\ndef read_file(filename):\n    s3 = boto3.client('s3')\n    bucket = s3.get_bucket('my_bucket')\n    file = bucket.get_key(filename)\n    reader = pq.ParquetReader(file)\n    for line in reader:\n    ",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 681,
+            "index": 698,
+            "ID": 59851392,
+            "Question": "\"\"\"read a file line by line from S3 parquet, filter and save line by line to another S3 bucket\"\"\"",
+            "Answer": "\nimport boto3\nimport json\nimport os\nimport time\nimport sys\nimport logging\nimport datetime\nimport re\nimport logging\nimport datetime\nimport boto3\nimport boto3.s3\nimport boto3.s3.connection\nimport boto3.s3.connection_to_region\nimport boto3.s3.connection_to_region.connection_to_region_aws\nimport boto3.s3.connection_to_region.connection_to_region_aws.connection_to_region_aws_aws\nimport b",
+            "CSV_PATH": "T2C-SO-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO VANILLA"
+        }
+    ]
+}

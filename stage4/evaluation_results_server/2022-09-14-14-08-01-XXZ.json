@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 14:08:01",
+    "address": "77.234.203.186",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 134,
+            "index": 134,
+            "ID": 5871168,
+            "Question": "\"\"\"Update datetime field in `MyModel` to be the existing `timestamp` plus 100 years\"\"\"",
+            "Answer": "\nclass MyModel(models.Model):\n    created = models.DateTimeField(auto_now_add=True)\n    updated = models.DateTimeField(auto_now=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    updated_at_plus_100_years = models.DateTimeField(auto_now=True, blank=True)\n    updated_at_plus_100_years = models.DateTimeField(auto_now=True, blank=True)\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1107,
+            "index": 134,
+            "ID": 5871168,
+            "Question": "\"\"\"Update datetime field in `MyModel` to be the existing `timestamp` plus 100 years\"\"\"",
+            "Answer": "\nfrom django.db import models\nfrom django.utils import timezone\nclass MyModel(models.Model):\n    timestamp = models.DateTimeField(default=timezone.now)\n    def save(self, *args, **kwargs):\n        self.timestamp = timezone.now() + timezone.timedelta(days=100)\n        super(MyModel, self).save(*args, **kwargs)\n    def __str__(self):\n        return self.timestamp.strftime(\"%Y-%m-%d %",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

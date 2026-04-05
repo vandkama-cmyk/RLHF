@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:57:24",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 7018,
+            "index": 3953,
+            "ID": 68815442,
+            "Question": "Merge two dataframes based on date column and Id column. I have two data frames df and df1, I want to merge based on the date also based on Id column, df looks like     arrival input_fid     01-01-2021 719   02-01-2021 719   02-01-2021 599   02-01-2021 599   02-01-2021 479   01-01-2021 359   04-01-2021 359     df1 looks like     date input_fid prcp     02-01-2021 479 0.44   01-01-2021 359 0.14   02-01-2021 599 0.33   03-01-2021 599 0.24   02-01-2021 719 0.08   01-01-2021 719 0.02   04-01-2021 359 0.10     The expected result is,     arrival input_fid prcp     01-01-2021 719 0.02   02-01-2021 719 0.08   02-01-2021 599 0.33   04-01-2021 359 0.10   02-01-2021 479 0.10   01-01-2021 359 0.14   04-01-2021 359 0.10     I am not sure how to get that using two different columns. ",
+            "Answer": "' 'itermonthdays2 ( year, month )  return an iterator for the month month in the year year similar to itermonthdates ( ), but not restricted by the datetime. date range. days returned will be tuples consisting of a day of the month number and a week day number.''itermonthdays3 ( year, month )  return an iterator for the month month in the year year similar to itermonthdates ( ), but not restricted by the datetime. date",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 14197,
+            "index": 4732,
+            "ID": 68815442,
+            "Question": "Merge two dataframes based on date column and Id column. I have two data frames df and df1, I want to merge based on the date also based on Id column, df looks like     arrival input_fid     01-01-2021 719   02-01-2021 719   02-01-2021 599   02-01-2021 599   02-01-2021 479   01-01-2021 359   04-01-2021 359     df1 looks like     date input_fid prcp     02-01-2021 479 0.44   01-01-2021 359 0.14   02-01-2021 599 0.33   03-01-2021 599 0.24   02-01-2021 719 0.08   01-01-2021 719 0.02   04-01-2021 359 0.10     The expected result is,     arrival input_fid prcp     01-01-2021 719 0.02   02-01-2021 719 0.08   02-01-2021 599 0.33   04-01-2021 359 0.10   02-01-2021 479 0.10   01-01-2021 359 0.14   04-01-2021 359 0.10     I am not sure how to get that using two different columns. ",
+            "Answer": "' '##time.date (2003, 12, 2 ) > > > age = now. strftime ( \" % m - % d - % y. % d % b % y is a % a on the % d day of % b. \" )'12 - 02 - 03. 02 dec 2003 is a tuesday on the 02 day of december')",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 13:53:50",
+    "address": "77.234.203.186",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 758,
+            "index": 269,
+            "ID": 12330522,
+            "Question": "\"\"\"read a file `file` without newlines\"\"\"",
+            "Answer": "\nfile.read()\n\nprint(file.read())\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2622,
+            "index": 269,
+            "ID": 12330522,
+            "Question": "Reading a file without newlines",
+            "Answer": "    file = input(\"Enter a file name: \")\n\n    with open(file) as f:\n\n        print(f.read())\n\n    return file\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

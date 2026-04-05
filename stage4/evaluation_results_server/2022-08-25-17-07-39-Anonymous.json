@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:07:39",
+    "address": "10.81.192.36",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 4982,
+            "index": 116,
+            "ID": 64070050,
+            "Question": "\"\"\"get a list of installed windows fonts using python\"\"\"",
+            "Answer": "\n[(name, size, style) for name, size, style in list(font.families()) if style =='regular']\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2076,
+            "index": 116,
+            "ID": 64070050,
+            "Question": "\"\"\"get a list of installed windows fonts using python\"\"\"",
+            "Answer": "\nos.system('fonts')\n\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

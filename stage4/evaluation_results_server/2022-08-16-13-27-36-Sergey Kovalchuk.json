@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:27:36",
+    "address": "10.199.12.55",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 13237,
+            "index": 3772,
+            "ID": 66895732,
+            "Question": "Get nodes within 1km walking distance of a GPS location OSMNX. Given a (lat,lng) point and an all type OSMNX network, how can I find which nodes in the graph are within 1km walking distance from the point? I was thinking about calculating the great circle distance between each node and the point and checking whether it is at most 1km, but I do not believe this will be very accurate since the topology of the network will be ignored. ",
+            "Answer": "' '( fullcircle = 360. 0 )  parameters fullcircle \u2013 a number set angle measurement units, i. e. set number of \u201c degrees \u201d for a full circle. default value is 360 degrees. &gt;&gt;&gt; turtle. home ( 90) &gt;&gt;&gt; turtle. heading ( 90) &gt;&gt;&gt; turtle. heading ( 90) &gt;&gt;&gt; turtle.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 6216,
+            "index": 3151,
+            "ID": 66895732,
+            "Question": "Get nodes within 1km walking distance of a GPS location OSMNX. Given a (lat,lng) point and an all type OSMNX network, how can I find which nodes in the graph are within 1km walking distance from the point? I was thinking about calculating the great circle distance between each node and the point and checking whether it is at most 1km, but I do not believe this will be very accurate since the topology of the network will be ignored. ",
+            "Answer": "' 'once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror if called without calling prepare ( ) previously.''once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

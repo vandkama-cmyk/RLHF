@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 17:22:07",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 14617,
+            "index": 5152,
+            "ID": 65651883,
+            "Question": "How to close chrome manually and do .quit() automatically. My script is in python with selenium is to login automatically on some site and after(i use chrome like any browser), I want when I finish to use chrome (when I close it), automatically close the chromedriver.exe else the chromedriver.exe is all time running. ",
+            "Answer": "' '. if block raises an exception, the _ _ exit _ _ ( type, value, traceback ) is called with the exception details, the same values returned by sys. exc _ info ( ). the method''. if block raises an exception, the _ _ exit _ _ ( type, value, traceback ) is called with the exception details, the same values returned by sys. exc _ info ( ). the method \u2019 s return value controls whether the exception is",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 14620,
+            "index": 5155,
+            "ID": 65651883,
+            "Question": "How to close chrome manually and do .quit() automatically. My script is in python with selenium is to login automatically on some site and after(i use chrome like any browser), I want when I finish to use chrome (when I close it), automatically close the chromedriver.exe else the chromedriver.exe is all time running. ",
+            "Answer": "qtwidgets.addhandler is a built-in addhandler that will terminate the qthread when we exit app. abouttoquit. connect ( self. force__ quit ) # lay out all the widgets layout = qtwidgets.qvboxlayout ( self ) layout. addwidget ( self. work _ button ) layout. addwidget ( self. clear _ button ) layout. addwidget ( self. clear _ button ) layout. addwidget ( self. clear _ button )",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:31:38",
+    "address": "77.234.193.84",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 1460,
+            "index": 488,
+            "ID": 2430539,
+            "Question": "\"\"\"get a list of all keys in Cassandra database `cf` with pycassa\"\"\"",
+            "Answer": "\nfrom pycassa.system.ttypes import ColumnDescriptor\nfrom pycassa.system.ttypes import ColumnFamilyDescriptor\nfrom pycassa.system.ttypes import ColumnDescriptor\nfrom pycassa.system.ttypes import ColumnDescriptor\nfrom pycassa.system.ttypes import ColumnDescriptor\nfrom pycassa.system.ttypes import ColumnDescriptor\nfrom pycassa.system.ttypes import ColumnDescriptor\nfrom pycassa.system.ttypes import ColumnDescript",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 488,
+            "index": 488,
+            "ID": 2430539,
+            "Question": "\"\"\"get a list of all keys in Cassandra database `cf` with pycassa\"\"\"",
+            "Answer": "\nfrom cassandra.cluster import Cluster\ncluster = Cluster(['127.0.0.1'])\ncluster.connect()\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show keyspace')\ncluster.execute('show",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

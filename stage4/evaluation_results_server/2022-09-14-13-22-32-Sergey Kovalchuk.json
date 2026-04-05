@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-09-14 13:22:32",
+    "address": "159.138.218.175",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2115,
+            "index": 179,
+            "ID": 508657,
+            "Question": "\"\"\"Create multidimensional array `matrix` with 3 rows and 2 columns in python\"\"\"\n   ",
+            "Answer": "matrix = np.zeros((3, 2))\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 179,
+            "index": 179,
+            "ID": 508657,
+            "Question": "\"\"\"Create multidimensional array `matrix` with 3 rows and 2 columns in python\"\"\"",
+            "Answer": "\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nmatrix = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]\nmatrix = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]\nmatrix = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

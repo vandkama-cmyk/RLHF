@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 00:32:32",
+    "address": "85.143.144.79",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 32,
+            "index": 32,
+            "ID": 17665809,
+            "Question": "\"\"\"remove key 'c' from dictionary `d`\"\"\"",
+            "Answer": "\nd = {'a':1, 'b':2, 'c':3}\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\nd.pop('c')\nd\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2439,
+            "index": 32,
+            "ID": 17665809,
+            "Question": "Remove key from dictionary in Python returning new dictionary",
+            "Answer": "    def func(d):\n\n        del d['c']\n\n        return d\n\n    return func\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

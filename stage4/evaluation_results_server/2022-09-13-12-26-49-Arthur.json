@@ -1,0 +1,34 @@
+{
+    "name_input": "Arthur",
+    "datetime": "2022-09-13 12:26:49",
+    "address": "178.66.156.248",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2733,
+            "index": 409,
+            "ID": 402504,
+            "Question": "determine the variable type",
+            "Answer": "    v = input(\"Enter a number: \")\n\n    if v.isdigit():\n\n        print(\"It's a digit\")\n\n    elif v.isalpha():\n\n        print(\"It's a letter\")\n\n    else:\n\n        print(\"It's a string\")\n\n    return v\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1380,
+            "index": 407,
+            "ID": 402504,
+            "Question": "\"\"\"determine the type of variable `v`\"\"\"",
+            "Answer": "\ntype(v)\ntype(v) == int\ntype(v) == float\ntype(v) == str\ntype(v) == bool\ntype(v) == list\ntype(v) == tuple\ntype(v) == set\ntype(v) == dict\ntype(v) == NoneType\ntype(v) == type(None)\ntype(v) == object\ntype(v) == type(None)\ntype(v) == type(None)\ntype(v) == type(None)\ntype(v) == type(None)\ntype",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

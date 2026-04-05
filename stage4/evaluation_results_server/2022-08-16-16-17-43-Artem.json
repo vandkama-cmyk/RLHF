@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:17:43",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 9586,
+            "index": 121,
+            "ID": 70125841,
+            "Question": "Django remove all default migration. Is there a way to remove all default django migration? My app doesn't use any of the default migration so I think it's a good idea to remove all unused migration ",
+            "Answer": "' '##logrecordfactory ( record _ factory ) this pattern allows different libraries to chain factories together, and as long as they don \u2019 t overwrite each other \u2019 s attributes or unintentionally overwrite the attributes provided as standard, there should be no surprises. However, it should be borne in mind that each link in the chain adds run - time overhead to all logging operations, and the technique should only be used when the use of a filter does not provide the desired result.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 1394,
+            "index": 15,
+            "ID": 70125841,
+            "Question": "Django remove all default migration. Is there a way to remove all default django migration? My app doesn't use any of the default migration so I think it's a good idea to remove all unused migration ",
+            "Answer": "\n  Is there a way to remove all default django migration?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        }
+    ]
+}

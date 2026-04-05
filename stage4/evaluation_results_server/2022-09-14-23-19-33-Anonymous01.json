@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:19:33",
+    "address": "5.18.203.79",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 1,
+    "useful_L": -1,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 2022,
+            "index": 79,
+            "ID": 852055,
+            "Question": "\"\"\"Google App Engine execute GQL query 'SELECT * FROM Schedule WHERE station = $1' with parameter `foo.key()`\"\"\"\n   ",
+            "Answer": "db.execute('SELECT * FROM Schedule WHERE station = $1', 'foo.key()')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 79,
+            "index": 79,
+            "ID": 852055,
+            "Question": "\"\"\"Google App Engine execute GQL query 'SELECT * FROM Schedule WHERE station = $1' with parameter `foo.key()`\"\"\"",
+            "Answer": "\nimport gql\nclass MyClass(gql.GqlQuery):\n    def __init__(self, *args, **kwargs):\n        super(MyClass, self).__init__(*args, **kwargs)\n        self.parameter = kwargs.get('parameter', None)\n    def execute(self, *args, **kwargs):\n        return super(MyClass, self).execute(*args, **kwargs)\n    def",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:13:54",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 7050,
+            "index": 3985,
+            "ID": 69536803,
+            "Question": "lambda function of undertermined number of arguments. I am new to use python for programming. I want to create a function of list without determined number of arguments. My task is as follows: if I input s=5 and idx=[2,3] with numerical values [0.3, 0.7], it means that I have to create a list [t0, t1, 0.3, 0.7, t4]. The list can be treated as a function of three variables t0, t1, and t4. I guess I may need to use *args, but I do not how to do it in general. ",
+            "Answer": "' '* 2 ) this gives you a list that contains 5 lambdas that calculate x * * 2. you might expect that, when called, they would return, respectively, 0, 1, 4, 9, and 16 however, when you actually try you will see that they all return 16: &gt;&gt;&gt; x * * 2 &gt;&gt;&gt; x * * 2 &gt;&gt;&gt; x * * 2 &gt;&gt;&gt",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 7052,
+            "index": 3987,
+            "ID": 69536803,
+            "Question": "lambda function of undertermined number of arguments. I am new to use python for programming. I want to create a function of list without determined number of arguments. My task is as follows: if I input s=5 and idx=[2,3] with numerical values [0.3, 0.7], it means that I have to create a list [t0, t1, 0.3, 0.7, t4]. The list can be treated as a function of three variables t0, t1, and t4. I guess I may need to use *args, but I do not how to do it in general. ",
+            "Answer": "You can use the built-in'':'new - value ','b': 100 &gt;&gt;&gt;'':'new - value ','b': 100 &gt;&gt;&gt;'':'new - value ','b': 100 &gt;&gt;&gt;'':'new - value ','b': 100 &gt;&gt;",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

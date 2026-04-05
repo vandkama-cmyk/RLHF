@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-13 11:26:31",
+    "address": "159.138.218.18",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 1,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2038,
+            "index": 96,
+            "ID": 4914277,
+            "Question": "\"\"\"erase all the contents of a file `filename`\"\"\"\n   ",
+            "Answer": "open(filename, 'w').close()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 1563,
+            "index": 96,
+            "ID": 4914277,
+            "Question": "\"\"\"erase all the contents of a file `filename`\"\"\"",
+            "Answer": "\nos.remove(filename)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

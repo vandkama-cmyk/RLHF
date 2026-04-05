@@ -1,0 +1,161 @@
+{
+  "case_name": "Case 2: RLHF PPO with 1247 samples",
+  "num_samples": 1247,
+  "num_epochs": 10,
+  "loss_dynamics": {
+    "summary": "-0.5453 → -0.5256 (PPO policy loss)",
+    "pattern": "Stable negative loss indicating reward maximization"
+  },
+  "gradient_norm": {
+    "note": "PPO uses KL divergence and entropy for training stability instead of gradient norm",
+    "kl_divergence_summary": "~0.00004 → ~0.00000 (very stable)",
+    "entropy_summary": "2.656 → 2.456 (7.5% decrease, slight policy sharpening)"
+  },
+  "epoch_metrics": [
+    {
+      "epoch": 1,
+      "train_loss": -0.5453,
+      "reward": 0.5187,
+      "kl_divergence": 0.000042,
+      "entropy": 2.6558,
+      "learning_rate": 4.94e-6,
+      "bertscore": 0.8169,
+      "codebleu": 0.0356,
+      "bleu": 0.0018,
+      "rouge": 0.0738,
+      "ruby": 0.0878
+    },
+    {
+      "epoch": 2,
+      "train_loss": -0.5454,
+      "reward": 0.5190,
+      "kl_divergence": 0.000042,
+      "entropy": 2.6427,
+      "learning_rate": 4.56e-6,
+      "bertscore": 0.8169,
+      "codebleu": 0.0415,
+      "bleu": 0.0021,
+      "rouge": 0.0784,
+      "ruby": 0.0887
+    },
+    {
+      "epoch": 3,
+      "train_loss": -0.5450,
+      "reward": 0.5188,
+      "kl_divergence": 0.000042,
+      "entropy": 2.6175,
+      "learning_rate": 3.88e-6,
+      "bertscore": 0.8156,
+      "codebleu": 0.0430,
+      "bleu": 0.0033,
+      "rouge": 0.0724,
+      "ruby": 0.0840
+    },
+    {
+      "epoch": 4,
+      "train_loss": -0.5457,
+      "reward": 0.5193,
+      "kl_divergence": 0.000041,
+      "entropy": 2.6445,
+      "learning_rate": 2.98e-6,
+      "bertscore": 0.8143,
+      "codebleu": 0.0441,
+      "bleu": 0.0024,
+      "rouge": 0.0674,
+      "ruby": 0.0790
+    },
+    {
+      "epoch": 5,
+      "train_loss": -0.5454,
+      "reward": 0.5191,
+      "kl_divergence": 0.000042,
+      "entropy": 2.6303,
+      "learning_rate": 2.01e-6,
+      "bertscore": 0.8161,
+      "codebleu": 0.0384,
+      "bleu": 0.0028,
+      "rouge": 0.0764,
+      "ruby": 0.0839
+    },
+    {
+      "epoch": 6,
+      "train_loss": -0.5453,
+      "reward": 0.5190,
+      "kl_divergence": 0.000042,
+      "entropy": 2.6268,
+      "learning_rate": 1.12e-6,
+      "bertscore": 0.8159,
+      "codebleu": 0.0412,
+      "bleu": 0.0024,
+      "rouge": 0.0705,
+      "ruby": 0.0863
+    },
+    {
+      "epoch": 7,
+      "train_loss": -0.5259,
+      "reward": 0.5013,
+      "kl_divergence": 0.000000,
+      "entropy": 2.4637,
+      "learning_rate": 4.75e-6,
+      "bertscore": 0.8224,
+      "codebleu": 0.0399,
+      "bleu": 0.0049,
+      "rouge": 0.1005,
+      "ruby": 0.1075
+    },
+    {
+      "epoch": 8,
+      "train_loss": -0.5257,
+      "reward": 0.5011,
+      "kl_divergence": 0.000000,
+      "entropy": 2.4647,
+      "learning_rate": 3.43e-6,
+      "bertscore": 0.8220,
+      "codebleu": 0.0476,
+      "bleu": 0.0043,
+      "rouge": 0.0957,
+      "ruby": 0.1007
+    },
+    {
+      "epoch": 9,
+      "train_loss": -0.5258,
+      "reward": 0.5010,
+      "kl_divergence": 0.000000,
+      "entropy": 2.4765,
+      "learning_rate": 1.57e-6,
+      "bertscore": 0.8206,
+      "codebleu": 0.0438,
+      "bleu": 0.0038,
+      "rouge": 0.0957,
+      "ruby": 0.1017
+    },
+    {
+      "epoch": 10,
+      "train_loss": -0.5256,
+      "reward": 0.5010,
+      "kl_divergence": 0.000000,
+      "entropy": 2.4565,
+      "learning_rate": 2.48e-7,
+      "bertscore": 0.8236,
+      "codebleu": 0.0473,
+      "bleu": 0.0036,
+      "rouge": 0.1040,
+      "ruby": 0.1051
+    }
+  ],
+  "final_metrics": {
+    "bertscore": 0.8236,
+    "codebleu": 0.0473,
+    "bleu": 0.0036,
+    "rouge": 0.1040,
+    "ruby": 0.1051
+  },
+  "training_config": {
+    "model": "microsoft/CodeGPT-small-py",
+    "reward_model": "microsoft/codebert-base",
+    "learning_rate": 5e-6,
+    "batch_size": 4,
+    "ppo_epochs": 10,
+    "total_training_time": "~2.5 hours"
+  }
+}

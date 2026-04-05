@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:22:14",
+    "address": "5.18.203.79",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 535,
+            "index": 35,
+            "ID": 5404068,
+            "Question": "\"\"\"read keyboard-input\"\"\"",
+            "Answer": "\nkeyboard_input = raw_input('Keyboard input: ')\nprint(keyboard_input)\n\nA:\n\nYou can use a list comprehension to get the key pressed:\nkeyboard_input = [x.lower() for x in keyboard_input.split()]\n\nA:\n\nYou can use a list comprehension to get the key pressed:\nkeyboard_input = [x.lower() for x in keyboard_input.split()]\n\nA:\n\nYou can use a list comprehension to get the key pressed:\nkeyboard_input = [x",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 35,
+            "index": 35,
+            "ID": 5404068,
+            "Question": "\"\"\"read keyboard-input\"\"\"",
+            "Answer": "\nimport sys\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline()\nsys.stdin.readline",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-26 18:18:31",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 838,
+            "index": 860,
+            "ID": 60572343,
+            "Question": "\"\"\"run two different neural network on two GPUs\"\"\"",
+            "Answer": "\n\nimport os\nimport sys\nimport time\nimport numpy as np\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom torch.autograd import Variable\nfrom torch.utils.data import DataLoader\nfrom torch.utils.data.distributed import DistributedDataParallel\nfrom torch.utils.data.distributed import DistributedDataLoader\nfrom torch.utils.data.distributed import DistributedSampler\nfrom torch.utils.data.distributed import DistributedBatchSampler\nfrom torch.utils.data.distributed",
+            "CSV_PATH": "T2C-SO-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO VANILLA"
+        },
+        {
+            "level_0": 1823,
+            "index": 860,
+            "ID": 60572343,
+            "Question": "\"\"\"run two different neural network on two GPUs\"\"\"",
+            "Answer": "\nimport numpy as np\nimport tensorflow as tf\nimport tensorflow.contrib.eager as tfe\nimport tensorflow.contrib.eager.python_eager as tfe_py\nimport tensorflow.contrib.eager.python_eager.python_ops as tfe_py_ops\nimport tensorflow.contrib.eager.python_eager.python_ops.python_ops as tfe_py_ops\nimport tensorflow.contrib.eager.python_eager.python_ops.python",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:21:07",
+    "address": "5.18.203.79",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 695,
+            "index": 203,
+            "ID": 4454298,
+            "Question": "\"\"\"prepend the line '#test firstline\\n' to the contents of file 'infile' and save as the file 'outfile'\"\"\"",
+            "Answer": "\nwith open('infile', 'w') as f:\n    f.write('#test firstline\\n')\noutfile = open('outfile', 'w')\noutfile.write('#test secondline\\n')\noutfile.close()\n\nprint(infile.read())\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2571,
+            "index": 203,
+            "ID": 4454298,
+            "Question": "Prepend a line to an existing file in Python",
+            "Answer": "    infile = 'infile'\n\n    outfile = 'outfile'\n\n    with open(infile, 'r') as f:\n\n        lines = f.readlines()\n\n    with open(outfile, 'w') as f:\n\n        f.write('#test firstline\\n')\n\n        f.writelines(lines)\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

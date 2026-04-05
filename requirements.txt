@@ -1,0 +1,36 @@
+# Core Dependencies
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+
+# Training and RLHF
+trl>=0.4.0
+peft>=0.3.0
+accelerate>=0.20.0
+
+# Metrics
+bert-score>=0.3.13
+rouge-score>=0.1.2
+nltk>=3.8
+evaluate>=0.4.0
+codebleu>=0.7.0
+# RUBY (codegen-metrics): Python 3.9–3.12 recommended; on Windows install binary wheels for deps (e.g. editdistance)
+codegen-metrics>=0.2.0
+editdistance>=0.6.2
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+tqdm>=4.65.0
+loguru>=0.7.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Optional (for better performance)
+# flash-attn>=2.0.0  # Requires specific CUDA setup
+# bitsandbytes>=0.40.0  # For 8-bit quantization
+

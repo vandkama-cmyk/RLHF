@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:32:20",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1269,
+            "index": 361,
+            "ID": 40924332,
+            "Question": "\"\"\"split a list in first column  into multiple columns keeping other columns as well in pandas data frame\"\"\"",
+            "Answer": "\n\nimport pandas as pd\nimport numpy as np\n\n",
+            "CSV_PATH": "pred_test_gptneo.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2C GPTNEO VANILLA"
+        },
+        {
+            "level_0": 349,
+            "index": 361,
+            "ID": 40924332,
+            "Question": "\"\"\"split a list in first column  into multiple columns keeping other columns as well in pandas data frame\"\"\"",
+            "Answer": "\n\nimport pandas as pd\nimport numpy as np\nimport os\nimport sys\nimport argparse\nimport re\nimport glob\nimport shutil\nimport csv\nimport time\n\n",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN VANILLA"
+        }
+    ]
+}

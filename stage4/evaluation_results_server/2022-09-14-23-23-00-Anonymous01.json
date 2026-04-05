@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:23:00",
+    "address": "5.18.203.79",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2550,
+            "index": 176,
+            "ID": 9760588,
+            "Question": "How do you extract a url from a string using python?",
+            "Answer": "    myString = \"https://www.google.com\"\n\n    print(myString.split(\"/\")[2])\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 175,
+            "index": 175,
+            "ID": 9760588,
+            "Question": "\"\"\"extract a url from a string `myString`\"\"\"",
+            "Answer": "\nimport urllib\nmyString = \"http://www.example.com/my_page.html\"\nmyUrl = urllib.quote(myString)\nprint(myUrl)                                                                                     ",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

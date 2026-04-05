@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-17 15:43:30",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2379,
+            "index": 453,
+            "ID": 60610062,
+            "Question": "\"\"\"view web page content that is generated using angular JS\"\"\"",
+            "Answer": "\n\nimport os\nimport json\nimport logging\nimport requests\nimport time\nimport re\nimport urllib\nfrom datetime import datetime\nfrom flask import Flask, request, render_template, redirect, url_for, session, jsonify\nfrom flask_sqlalchemy import SQLAlchemy\nfrom flask_migrate import Migrate\nfrom flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user\nfrom werkzeug.security import generate_password_hash, check_password_hash\nfrom flask_wtf",
+            "CSV_PATH": "pred_codegen_vanilla_test.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        },
+        {
+            "level_0": 439,
+            "index": 453,
+            "ID": 60610062,
+            "Question": "\"\"\"view web page content that is generated using angular JS\"\"\"",
+            "Answer": "\nself.response.write(self.angular.toJson(self.data))\nself.response.end()\n\nA:\n",
+            "CSV_PATH": "pred_test__text_to_code.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED"
+        }
+    ]
+}

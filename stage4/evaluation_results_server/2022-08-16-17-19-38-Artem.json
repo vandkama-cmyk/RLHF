@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 17:19:38",
+    "address": "10.199.12.90",
+    "comparison_slider": -2,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 496,
+            "index": 23,
+            "ID": 3108285,
+            "Question": "\"\"\"set pythonpath in python script.\"\"\"",
+            "Answer": "\nsys.path.insert(0, '.')\n\n",
+            "CSV_PATH": "pred_test_conala.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN FINETUNED"
+        },
+        {
+            "level_0": 23,
+            "index": 23,
+            "ID": 3108285,
+            "Question": "\"\"\"set pythonpath in python script.\"\"\"",
+            "Answer": "\nimport os\nimport sys\nimport inspect\nimport importlib\nimport importlib.util\nimport importlib.machinery\nimport importlib.util\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.util\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.machinery\nimport importlib.machinery\n",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN VANILLA"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 13:52:13",
+    "address": "77.234.203.186",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 961,
+            "index": 487,
+            "ID": 7349646,
+            "Question": "\"\"\"Sort a list of tuples `b` by third item in the tuple\"\"\"",
+            "Answer": "\nsorted(b, key=lambda x: x[2])\n\nThis will sort the list `b` by the third item in each tuple in the list `b` in ascending order.\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 487,
+            "index": 487,
+            "ID": 7349646,
+            "Question": "\"\"\"Sort a list of tuples `b` by third item in the tuple\"\"\"",
+            "Answer": "\nb = [('a', 1), ('b', 2), ('c', 3)]\nb.sort(key=lambda x: x[1])\nb\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

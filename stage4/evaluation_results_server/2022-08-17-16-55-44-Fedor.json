@@ -1,0 +1,34 @@
+{
+    "name_input": "Fedor",
+    "datetime": "2022-08-17 16:55:44",
+    "address": "10.199.126.133",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 14026,
+            "index": 1665,
+            "ID": 67096969,
+            "Question": "How to disable SQLAlchemy lazy loads on detached instance relationships?. I've developed a JDO-like Fetch Group feature in Python with SQLAlchemy to control the pruning of object graphs for marshalling web service responses. During this process I detach the instances using session.expunge(entity) The issue is that when the JSON marshaller or pydantic accesses an instance attribute relationship which was not loaded yet, even though the instance is detached, the SQLAlchemy lazy loading still kicks in for that attribute and fails because the instance is not bound to a session anymore (obviously): DetachedInstanceError(Parent instance MyClass at 0x1439051f0 is not bound to a Session; lazy load operation of attribute 'relation' cannot proceed) So, my first question, is why are the lazy loaders not disabled when an instance is detached as it doesn't make sense to me. Secondly, if that is a feature, how can I disable or work-around lazy loaders to prevent this error and let the  attribute relationship in question appear None to the marshaller? I have found that setting self.__dict__['relation'] = None helps in some circumstance in fooling the lazy loaders in not kicking in but it does not always work unfortunately... ",
+            "Answer": "In the examples below, \u201c the attribute \u201d refers to the attribute whose name is the key of the property in the owner class \u2019 _ _ dictionary. The attribute is the key of the property in the owner class. The attribute is the key of the property in the owner class. The attribute is the key of the property in the owner class. The attribute is the key of the property in the owner class. The attribute is the key of the property in the owner class. The attribute is the key of the property in the owner class. The attribute is the",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T5 T+B"
+        },
+        {
+            "level_0": 7359,
+            "index": 1398,
+            "ID": 67096969,
+            "Question": "How to disable SQLAlchemy lazy loads on detached instance relationships?. I've developed a JDO-like Fetch Group feature in Python with SQLAlchemy to control the pruning of object graphs for marshalling web service responses. During this process I detach the instances using session.expunge(entity) The issue is that when the JSON marshaller or pydantic accesses an instance attribute relationship which was not loaded yet, even though the instance is detached, the SQLAlchemy lazy loading still kicks in for that attribute and fails because the instance is not bound to a session anymore (obviously): DetachedInstanceError(Parent instance MyClass at 0x1439051f0 is not bound to a Session; lazy load operation of attribute 'relation' cannot proceed) So, my first question, is why are the lazy loaders not disabled when an instance is detached as it doesn't make sense to me. Secondly, if that is a feature, how can I disable or work-around lazy loaders to prevent this error and let the  attribute relationship in question appear None to the marshaller? I have found that setting self.__dict__['relation'] = None helps in some circumstance in fooling the lazy loaders in not kicking in but it does not always work unfortunately... ",
+            "Answer": "The first argument to the callback signifies what kind of operation is to be authorized. The second and third argument will be arguments or none depending on the first argument. The 4th argument is a list of values, which is a list of values. The first argument is a list of values. The second argument is a list of values. The third argument is a list of values. The fourth argument is a list of values. The fourth argument is a list of values. The fourth argument is a list of values. The first argument is a list of values. The first argument is",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T5 T"
+        }
+    ]
+}

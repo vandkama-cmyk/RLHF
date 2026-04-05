@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-08 11:41:36",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 2279,
+            "index": 331,
+            "ID": 63791094,
+            "Question": "\"\"\"get all the classes in a module\"\"\"",
+            "Answer": "\nimport inspect\ninspect.getmembers(module, inspect.isclass)\n[(name, obj) for name, obj in inspect.getmembers(module) if inspect.isclass(obj)]\n[obj for name, obj in inspect.getmembers(module) if inspect.isclass(obj)]\n[obj for name, obj in inspect.getmembers(module) if inspect.isclass(obj) and name!='module']\n[obj for name, obj in inspect.getmembers(module) if inspect.isclass(obj) and name!='module']\n[obj",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 326,
+            "index": 331,
+            "ID": 63791094,
+            "Question": "\"\"\"get all the classes in a module\"\"\"",
+            "Answer": "\nimport inspect\ninspect.getmembers(module)\ninspect.getmembers(module, inspect.ismethod)\ninspect.getmembers(module, inspect.isclass)\ninspect.getmembers(module, inspect.isfunction)\ninspect.getmembers(module, inspect.ismethod)\ninspect.getmembers(module, inspect.isbuiltin)\ninspect.getmembers(module, inspect.isabstract)\ninspect.getmembers(module, inspect.isabstractclass)\ninspect.getmembers(module, inspect.isclass",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        }
+    ]
+}

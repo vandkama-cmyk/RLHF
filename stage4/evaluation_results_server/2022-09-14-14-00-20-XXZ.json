@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 14:00:20",
+    "address": "77.234.203.186",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1713,
+            "index": 254,
+            "ID": 26097916,
+            "Question": "\"\"\"convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`\"\"\"",
+            "Answer": "\ndf = pd.DataFrame(sf.values.tolist(), columns=['email', 'list'])\ndf['list'] = df['list'].apply(lambda x: json.loads(x))\ndf['list'] = df['list'].apply(lambda x: list(x.values()))\ndf['list'] = df['list'].apply(lambda x: list(map(int, x)))\ndf['list'] = df['list'].apply(lambda x: list(map(str, x)))\ndf['list'] = df['list",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 254,
+            "index": 254,
+            "ID": 26097916,
+            "Question": "\"\"\"convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`\"\"\"",
+            "Answer": "\ndf = df.set_index('email')\ndf.to_frame('list')\ndf.to_frame('list').columns\ndf.to_frame('list').columns.values\ndf.to_frame('list').columns.tolist()\ndf.to_frame('list').columns.tolist().values\ndf.to_frame('list').columns.tolist().tolist()\ndf.to_frame('list').columns.tolist().tolist().tolist()\ndf.to_frame('",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

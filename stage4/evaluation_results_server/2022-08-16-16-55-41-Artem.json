@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:55:41",
+    "address": "10.199.12.90",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1008,
+            "index": 65,
+            "ID": 4741537,
+            "Question": "\"\"\"append elements of a set `b` to a list `a`\"\"\"",
+            "Answer": "\n\nfrom itertools import product\nfrom operator import itemgetter\n\nfrom numpy.lib.stride_tricks import as_strided\nfrom numpy.lib.stride_tricks import as_strided_mask\nfrom numpy.lib.stride_tricks import as_masked_strided\nfrom numpy.lib.stride_tricks import as_masked_mask\nfrom numpy.lib.stride_tricks import as_masked_masked_strided\nfrom numpy.lib.stride_tricks import as",
+            "CSV_PATH": "pred_test_gptneo.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2C GPTNEO VANILLA"
+        },
+        {
+            "level_0": 534,
+            "index": 65,
+            "ID": 4741537,
+            "Question": "\"\"\"append elements of a set `b` to a list `a`\"\"\"",
+            "Answer": "\n[i for i in b]\n",
+            "CSV_PATH": "pred_test_conala.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN FINETUNED"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:29:36",
+    "address": "10.199.12.115",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -1,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 14854,
+            "index": 5389,
+            "ID": 65707676,
+            "Question": "Deleting Excess Rows in Python with Pandas. I have a python script that restructures our organization's data into a different shape using python's pylightxl. But this script only works with excel files with less than 5000 rows of data, which is the standard format. But some files go up to 65000 rows, with unnecessary data after the 5000 index. What i want is to delete the excess rows after 5000th index. Pylightxl cannot do this. Only pandas can, I've scoured the internet on deleting rows using pandas but the answers I've found so far havenot benefitted me. The question is how can i delete excess rows using python pandas (the limit of which we may not know, it can go up to 200000), but the cut-off index is 5000 rows. If you know another python way other than pandas, do answer as well. ",
+            "Answer": "' '. See also pep 342 - coroutines via enhanced generatorspep written by guido van rossum and phillip j. eby ; implemented by phillip j. eby. includes examples of some fancier uses of generators as coroutines.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 2764,
+            "index": 697,
+            "ID": 65707676,
+            "Question": "Deleting Excess Rows in Python with Pandas. I have a python script that restructures our organization's data into a different shape using python's pylightxl. But this script only works with excel files with less than 5000 rows of data, which is the standard format. But some files go up to 65000 rows, with unnecessary data after the 5000 index. What i want is to delete the excess rows after 5000th index. Pylightxl cannot do this. Only pandas can, I've scoured the internet on deleting rows using pandas but the answers I've found so far havenot benefitted me. The question is how can i delete excess rows using python pandas (the limit of which we may not know, it can go up to 200000), but the cut-off index is 5000 rows. If you know another python way other than pandas, do answer as well. ",
+            "Answer": "\nimport pandas as pd\nimport numpy as np\n\ndf = pd.read_excel('C:\\\\Users\\\\user\\\\Desktop\\\\test.xlsx')\n\ndf.columns = ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9', 'col10', 'col11', 'col12', 'col13', 'col14', 'col15', 'col16', 'col17', 'col18', 'col19', 'col20', '",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        }
+    ]
+}

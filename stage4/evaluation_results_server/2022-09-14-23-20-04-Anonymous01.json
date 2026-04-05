@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:20:04",
+    "address": "5.18.203.79",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1820,
+            "index": 363,
+            "ID": 25388796,
+            "Question": "\"\"\"Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`\"\"\"",
+            "Answer": "\n[int(x) for x in ['', '3.4', '', '', '1.0']]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2702,
+            "index": 363,
+            "ID": 25388796,
+            "Question": "Most efficient way to convert items of a list to int and sum them up",
+            "Answer": "    myList = ['', '3.4', '', '', '1.0']\n\n    print(sum([int(x) for x in myList if x.isdigit()]))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

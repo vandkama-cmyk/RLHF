@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:35:47",
+    "address": "10.199.12.55",
+    "comparison_slider": 2,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 9053,
+            "index": 5988,
+            "ID": 68301432,
+            "Question": "Build Flask App that fetch data from postgres database without page reload. I have a flask web app that shows data from sqlalchemy to the user. I want the app to fetch any new data when it is added to the database automatically without further ado from the client-side (something like news feeds). How do I achieve that. I know that I should use socket.io but don't know-how. All examples in google are about chat app. It would be very helpful if somebody could give me the roadmap to do it. The front end in js and the backend is in flask python. any help will be appreciated! Thanks ",
+            "Answer": "' '. contextmanager. patch by siddharth velankar. bpo - 26187 : test that sqlite3 trace callback is not called multiple times when schema is changing. indirectly fixed by switching to use sqlite3 _ prepare _ v2 ( ) in bpo - 9303. patch by aviv palivoda. bpo - 30017 : allowed calling the close ( ) method of the zip entry writer object multiple times. writing to a closed writer now always produces.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 16687,
+            "index": 7222,
+            "ID": 68301432,
+            "Question": "Build Flask App that fetch data from postgres database without page reload. I have a flask web app that shows data from sqlalchemy to the user. I want the app to fetch any new data when it is added to the database automatically without further ado from the client-side (something like news feeds). How do I achieve that. I know that I should use socket.io but don't know-how. All examples in google are about chat app. It would be very helpful if somebody could give me the roadmap to do it. The front end in js and the backend is in flask python. any help will be appreciated! Thanks ",
+            "Answer": "uwsgi and gunicorn have a built-in function that can be used to handle client requests. If you want to use a file - based handler, you can use the uwsgi module to do the work for you: https://docs.python.org/3/library/uwsgi.html#uwsgi.executor",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

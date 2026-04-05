@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:21:01",
+    "address": "5.18.203.79",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 509,
+            "index": 9,
+            "ID": 18079563,
+            "Question": "\"\"\"find intersection data between series `s1` and series `s2`\"\"\"",
+            "Answer": "\ns1.intersection(s2)\n\nA:\n\nYou can use pandas.Series.intersection with a list of Series as the argument:\ns1.intersection(s2, axis=0)\n\nA:\n\nYou can use pandas.Series.intersection with a list of Series as the argument:\ns1.intersection(s2, axis=0)\n\nA:\n\nYou can use pandas.Series.intersection with a list of Series as the argument:\ns1.intersection(s2, axis=0)\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1955,
+            "index": 9,
+            "ID": 18079563,
+            "Question": "\"\"\"find intersection data between series `s1` and series `s2`\"\"\"\n   ",
+            "Answer": "pd.merge(s1, s2, on='id', how='inner')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

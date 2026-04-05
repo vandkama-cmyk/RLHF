@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:03:16",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2569,
+            "index": 498,
+            "ID": 66800109,
+            "Question": "How to use decision trees for survival analysis?. I have a problem understanding und applying Decision Trees for Survival Analysis in Python. I have a dataset, with the variables age, weight, size of tumor, volume, ... (all floats) and I want to know if there is a correlation with the overall survival(also a float). But how can I apply Decision Trees for that? In the literature, I only saw examples where y_train must be a categorical variable (such as 0 or 1, benign or malignant, ...) but it does not work on continuous variables like floats. However I want to create a decision tree, so that in the end you can find out that with a tumor size of  xx and a volume of yy your predictes overall survival is about  zzz. Can someone help me out with my problem? Does anyone has an idea where to read more about this topic? ",
+            "Answer": "\nI have a dataset, with the variables age, weight, size of tumor, volume,... (all floats) and I want to know if there is a correlation with the overall survival(also a float). But how can I apply Decision Trees for that? In the literature, I only saw examples where y_train must be a categorical variable (such as 0 or 1, benign or malignant,...) but it does not work on continuous variables like floats. However I want to create a decision tree, so that in the end you can find out that with a tumor size of  xx and a volume of yy",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        },
+        {
+            "level_0": 13337,
+            "index": 3872,
+            "ID": 66800109,
+            "Question": "How to use decision trees for survival analysis?. I have a problem understanding und applying Decision Trees for Survival Analysis in Python. I have a dataset, with the variables age, weight, size of tumor, volume, ... (all floats) and I want to know if there is a correlation with the overall survival(also a float). But how can I apply Decision Trees for that? In the literature, I only saw examples where y_train must be a categorical variable (such as 0 or 1, benign or malignant, ...) but it does not work on continuous variables like floats. However I want to create a decision tree, so that in the end you can find out that with a tumor size of  xx and a volume of yy your predictes overall survival is about  zzz. Can someone help me out with my problem? Does anyone has an idea where to read more about this topic? ",
+            "Answer": "''statistics. mode ( data ) return the single most common data point from discrete or nominal data. the mode ( when it exists ) is the most typical value and serves as a measure of central location. if there are multiple modes with the same frequency, returns the first one encountered in the data. if the smallest or largest of those is desired instead, use min ( multimode ( data ) ) or max ( multimode ( data ) ) ). if the input data is empty, statistics. mode ( data ) returns the single most common",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

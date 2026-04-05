@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 11:14:12",
+    "address": "188.243.182.141",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 2,
+    "useful_L": -1,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 373,
+            "index": 373,
+            "ID": 40452956,
+            "Question": "\"\"\"remove escape character from string \"\\\\a\"\"\"\"",
+            "Answer": "\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\a\", \"\")\ns = s.replace(\"\\\\",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1346,
+            "index": 373,
+            "ID": 40452956,
+            "Question": "\"\"\"remove escape character from string \"\\\\a\"\"\"\"",
+            "Answer": "\nprint(s.replace(\"\\\\a\", \"\"))\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-24 12:37:22",
+    "address": "10.199.126.142",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 3157,
+            "index": 246,
+            "ID": 60324151,
+            "Question": "\"\"\"create a document with horizontal page orientation using google doc api\"\"\"",
+            "Answer": "\nimport os\nimport json\nimport requests\nimport logging\nimport datetime\nfrom. import utils\nfrom. import config\nfrom. import constants\nfrom. import utils\nfrom. import exceptions\nfrom. import utils\nfrom. import constants\nfrom. import utils\nfrom. import exceptions\nfrom. import constants\nfrom. import utils\nfrom. import constants\nfrom. import utils\nfrom. import exceptions\nfrom. import constants\nfrom. import utils\nfrom. import constants\nfrom. import utils\nfrom. import exceptions\nfrom. import constants\nfrom. import",
+            "CSV_PATH": "T2C-SO-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        },
+        {
+            "level_0": 2203,
+            "index": 246,
+            "ID": 60324151,
+            "Question": "\"\"\"create a document with horizontal page orientation using google doc api\"\"\"",
+            "Answer": "\nservice.files().create(body=open('test.html', 'rb'))\n\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

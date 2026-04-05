@@ -1,0 +1,221 @@
+{
+  "fold_results": [
+    {
+      "epoch": 30,
+      "train_loss": 1.249436378479004,
+      "val_loss": null,
+      "reward": 0.22755053883232995,
+      "gradient_norm": 4.750661860644241,
+      "bertscore": 0.0,
+      "codebleu": 0.662251655629139,
+      "bleu": 0.12615038918186156,
+      "rouge": 0.2303030303030303,
+      "ruby": 0.11904761904761907,
+      "learning_rate": 0.0,
+      "epoch_time": 5.934991121292114,
+      "entropy": 1.638854205608368,
+      "kl_from_uniform": 9.180944078601918,
+      "balanced_accuracy": 1.0
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.255516529083252,
+      "val_loss": null,
+      "reward": 0.13302185418708912,
+      "gradient_norm": 4.707413883912797,
+      "bertscore": 0.0,
+      "codebleu": 0.4485981308411215,
+      "bleu": 0.002379035639639018,
+      "rouge": 0.14746543778801843,
+      "ruby": 0.06666666666666665,
+      "learning_rate": 0.0,
+      "epoch_time": 5.204563856124878,
+      "entropy": 1.648226261138916,
+      "kl_from_uniform": 9.17157202307137,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.1104373931884766,
+      "val_loss": null,
+      "reward": 0.10579710144927537,
+      "gradient_norm": 4.5797874057399035,
+      "bertscore": 0.0,
+      "codebleu": 0.0,
+      "bleu": 0.0,
+      "rouge": 0.02898550724637681,
+      "ruby": 0.5,
+      "learning_rate": 0.0,
+      "epoch_time": 7.494676828384399,
+      "entropy": 1.5311527252197266,
+      "kl_from_uniform": 9.28864555899056,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.1781888604164124,
+      "val_loss": null,
+      "reward": 0.0,
+      "gradient_norm": 4.670449531065321,
+      "bertscore": 0.0,
+      "codebleu": 0.0,
+      "bleu": 0.0,
+      "rouge": 0.0,
+      "ruby": 0.0,
+      "learning_rate": 0.0,
+      "epoch_time": 7.678288459777832,
+      "entropy": 1.6088449954986572,
+      "kl_from_uniform": 9.210953288711629,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.4605591297149658,
+      "val_loss": null,
+      "reward": 0.11345357147576074,
+      "gradient_norm": 5.235755149271354,
+      "bertscore": 0.0,
+      "codebleu": 0.33333333333333337,
+      "bleu": 0.006313839777387303,
+      "rouge": 0.13513513513513514,
+      "ruby": 0.09248554913294793,
+      "learning_rate": 0.0,
+      "epoch_time": 7.600216627120972,
+      "entropy": 1.8676156997680664,
+      "kl_from_uniform": 8.95218258444222,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.2186922132968903,
+      "val_loss": null,
+      "reward": 0.09774927043207218,
+      "gradient_norm": 4.864633854843741,
+      "bertscore": 0.0,
+      "codebleu": 0.27184466019417475,
+      "bleu": 0.009184122179650884,
+      "rouge": 0.19047619047619047,
+      "ruby": 0.017241379310344862,
+      "learning_rate": 0.0,
+      "epoch_time": 7.34787130355835,
+      "entropy": 1.6793463230133057,
+      "kl_from_uniform": 9.14045196119698,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.194338470697403,
+      "val_loss": null,
+      "reward": 0.0,
+      "gradient_norm": 4.868713621648965,
+      "bertscore": 0.0,
+      "codebleu": 0.0,
+      "bleu": 0.0,
+      "rouge": 0.0,
+      "ruby": 0.0,
+      "learning_rate": 0.0,
+      "epoch_time": 7.420957088470459,
+      "entropy": 1.65216064453125,
+      "kl_from_uniform": 9.167637639679036,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.0548993349075317,
+      "val_loss": null,
+      "reward": 0.15,
+      "gradient_norm": 4.7975835724412645,
+      "bertscore": 0.0,
+      "codebleu": 0.0,
+      "bleu": 0.0,
+      "rouge": 0.0,
+      "ruby": 0.75,
+      "learning_rate": 0.0,
+      "epoch_time": 7.351455211639404,
+      "entropy": 1.5548598170280457,
+      "kl_from_uniform": 9.26493846718224,
+      "balanced_accuracy": 1.0
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.395412564277649,
+      "val_loss": null,
+      "reward": 0.08959966830395324,
+      "gradient_norm": 4.9270854031451226,
+      "bertscore": 0.0,
+      "codebleu": 0.24870466321243523,
+      "bleu": 0.003214598698761823,
+      "rouge": 0.11055276381909548,
+      "ruby": 0.08552631578947367,
+      "learning_rate": 0.0,
+      "epoch_time": 7.48016881942749,
+      "entropy": 1.7628970742225647,
+      "kl_from_uniform": 9.056901209987721,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.0824937522411346,
+      "val_loss": null,
+      "reward": 0.007833333333333335,
+      "gradient_norm": 4.320704242856738,
+      "bertscore": 0.0,
+      "codebleu": 0.02666666666666666,
+      "bleu": 5.718582534414415e-17,
+      "rouge": 0.0,
+      "ruby": 0.012499999999999956,
+      "learning_rate": 0.0,
+      "epoch_time": 7.586843490600586,
+      "entropy": 1.4866389036178589,
+      "kl_from_uniform": 9.333159380592427,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "epoch": 30,
+      "train_loss": 1.0967888236045837,
+      "val_loss": null,
+      "reward": 0.11399809946429577,
+      "gradient_norm": 4.3559061319699905,
+      "bertscore": 0.0,
+      "codebleu": 0.3804878048780488,
+      "bleu": 0.004544639163736276,
+      "rouge": 0.11009174311926605,
+      "ruby": 0.07486631016042777,
+      "learning_rate": 0.0,
+      "epoch_time": 7.5866265296936035,
+      "entropy": 1.4532081484794617,
+      "kl_from_uniform": 9.366590135730824,
+      "balanced_accuracy": 0.5
+    }
+  ],
+  "summary": {
+    "bertscore": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "codebleu": {
+      "mean": 0.21562608315953813,
+      "std": 0.21757414074173653
+    },
+    "bleu": {
+      "mean": 0.01379878405827608,
+      "std": 0.03565020681799176
+    },
+    "rouge": {
+      "mean": 0.0866372552624648,
+      "std": 0.08087270363351862
+    },
+    "ruby": {
+      "mean": 0.15621216728249818,
+      "std": 0.23053671248076116
+    },
+    "reward": {
+      "mean": 0.09445485795255544,
+      "std": 0.06642824364645486
+    },
+    "balanced_accuracy": {
+      "mean": 0.5909090909090909,
+      "std": 0.19284730395996752
+    }
+  }
+}

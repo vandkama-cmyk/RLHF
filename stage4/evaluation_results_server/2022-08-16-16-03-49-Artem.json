@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:03:49",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1870,
+            "index": 696,
+            "ID": 68108469,
+            "Question": "Extract multiple frames from camera using ROS. How do I extract multiple frames from a video streaming using ROS ? I subscribed to my camera topic : self.image_sub = rospy.Subscriber('/bebop2/image_raw',Image, self.image_callback) And then : frame = self.bridge.imgmsg_to_cv2(msg,desired_encoding='bgr8') This way I have the actual frame from my streaming. How can I store N frames (the actual and previous ones) ? ",
+            "Answer": "\n  How can I store N frames (the actual and previous ones)?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        },
+        {
+            "level_0": 2763,
+            "index": 696,
+            "ID": 68108469,
+            "Question": "Extract multiple frames from camera using ROS. How do I extract multiple frames from a video streaming using ROS ? I subscribed to my camera topic : self.image_sub = rospy.Subscriber('/bebop2/image_raw',Image, self.image_callback) And then : frame = self.bridge.imgmsg_to_cv2(msg,desired_encoding='bgr8') This way I have the actual frame from my streaming. How can I store N frames (the actual and previous ones) ? ",
+            "Answer": "\nI have a function that extracts the frames from the camera. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the frames in a list. I have a function that stores the",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        }
+    ]
+}

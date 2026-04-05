@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:07:40",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 4043,
+            "index": 172,
+            "ID": 62982279,
+            "Question": "\"\"\"allow spaces in the default django user model username\"\"\"",
+            "Answer": "\nUser.USERNAME_FIELD = 'username'\nUser.REQUIRED_FIELDS = []\nUser.objects.create_user(username='user', password='password')\nUser.objects.create_user(username='user', password='password')\nUser.objects.create_user(username='user', password='password')\nUser.objects.create_user(username='user', password='password')\nUser.objects.create_user(username='user', password='password')\nUser.objects.create_user(username='user', password='password')\nUser.",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 2130,
+            "index": 172,
+            "ID": 62982279,
+            "Question": "\"\"\"allow spaces in the default django user model username\"\"\"",
+            "Answer": "\nUser.username = 'username'\n\nA:\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

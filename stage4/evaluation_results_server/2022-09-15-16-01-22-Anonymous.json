@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 16:01:22",
+    "address": "188.187.74.97",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 1662,
+            "index": 200,
+            "ID": 19601086,
+            "Question": "\"\"\"click a href button with text 'Send InMail' with selenium\"\"\"",
+            "Answer": "\ndriver.find_element_by_link_text('Send in mail').click()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2134,
+            "index": 198,
+            "ID": 19601086,
+            "Question": "\"\"\"click a href button 'Send' with selenium\"\"\"\n   ",
+            "Answer": "driver.find_element_by_xpath('//*[@id=\"send\"]').click()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

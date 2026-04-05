@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 13:25:20",
+    "address": "10.199.12.55",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 13788,
+            "index": 4323,
+            "ID": 66275038,
+            "Question": "How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ",
+            "Answer": "_ _.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 6705,
+            "index": 3640,
+            "ID": 66275038,
+            "Question": "How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ",
+            "Answer": "If you are developing the classes yourself, a more proper object - oriented style is to define methods on the classes that encapsulate a particular behaviour, instead of checking the object \u2019 s class and doing a different thing based on what class it is. for example, if you have a function that does something: def search ( obj ) : if isinstr(isinstr(isinstr(isinstr(isinstr(isinstr(isinst",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

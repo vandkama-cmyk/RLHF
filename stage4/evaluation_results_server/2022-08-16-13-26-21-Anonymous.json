@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 13:26:21",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 3286,
+            "index": 221,
+            "ID": 66912904,
+            "Question": "how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ",
+            "Answer": "' '( bpo - 8257 ). mixed type comparisons are now fully supported so that decimal objects can be directly compared with float and fractions. fraction ( bpo - 2531 and bpo - 8188 ). similar changes were made to fractions. fraction so that the from _ float ( ) and from _ decimal ( ) methods are no longer needed ( bpo - 8294 ).",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 9749,
+            "index": 284,
+            "ID": 66912904,
+            "Question": "how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ",
+            "Answer": "' '##94 therefore the best possible approximation to 1 / 10 in 754 double precision is : 7205759403792794 / 2 * * 56 dividing both the numerator and denominator by two reduces the fraction to : 3602879701896397 / 2 * * 55 Note that since we rounded up, this is actually a little bit larger than 1 / 10 ; if we had not rounded up, the quotient would have been a little bit larger than 1 / 10 ; if",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

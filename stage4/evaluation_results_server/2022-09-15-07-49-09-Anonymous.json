@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 07:49:09",
+    "address": "134.209.200.134",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 529,
+            "index": 29,
+            "ID": 22676,
+            "Question": "\"\"\"download a file `url` over HTTP\"\"\"",
+            "Answer": "\nurllib.request.urlretrieve(url, 'file.txt')\n\nA:\n\nYou can use urllib2.urlopen to download a file from a url:\nimport urllib2\nurllib2.urlopen('http://www.google.com')\n\nor urllib.request.urlretrieve('http://www.google.com')\n\nA:\n\nYou can use urllib.request.urlretrieve() to download a file from a url.\nurl = 'http://www.google.com'\nurll",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 28,
+            "index": 28,
+            "ID": 22676,
+            "Question": "\"\"\"download a file 'http://www.example.com/' over HTTP\"\"\"",
+            "Answer": "\nimport urllib2\nurllib2.urlretrieve('http://www.example.com/', 'file.txt')\nurllib2.urlretrieve('http://www.example.com/', 'file.txt')\nurllib2.urlretrieve('http://www.example.com/', 'file.txt')\nurllib2.urlretrieve('http://www.example.com/', 'file.txt')\nurllib2.urlretrieve('http://www.example.com/', 'file.txt')\nur",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

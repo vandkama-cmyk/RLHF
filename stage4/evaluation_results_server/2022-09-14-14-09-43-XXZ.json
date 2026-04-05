@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 14:09:43",
+    "address": "77.234.203.186",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 566,
+            "index": 66,
+            "ID": 4741537,
+            "Question": "\"\"\"Append elements of a set to a list in Python\"\"\"",
+            "Answer": "\n[x + y for x, y in zip(set(a), b)]\n\nA:\n\nYou can use zip with a list comprehension:\n[x + y for x, y in zip(a, b)]\n\nA:\n\nzip(a, b) returns a list of tuples, so you can use itertools.chain.from_iterable to append elements of a list to a list of tuples:\n[x + y for x, y in zip(a, b)]\n\nA:\n\nzip(a, b) returns a list of tu",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2008,
+            "index": 65,
+            "ID": 4741537,
+            "Question": "\"\"\"append elements of a set `b` to a list `a`\"\"\"\n   ",
+            "Answer": "a.extend(b)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

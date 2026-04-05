@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:32:25",
+    "address": "77.234.193.84",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 1977,
+            "index": 31,
+            "ID": 15405636,
+            "Question": "\"\"\"argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`\"\"\"\n   ",
+            "Answer": "parser.add_argument('--version', action='version', version='%(prog)s 2.0')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 531,
+            "index": 31,
+            "ID": 15405636,
+            "Question": "\"\"\"argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`\"\"\"",
+            "Answer": "\nparser.add_argument('--version', action='store_true', default=False, help='Show version information')\nparser.parse_args(['--version'])\nprint(parser.version)\n\nA:\n\nYou can use argparse.ArgumentParser.add_argument() to add an argument to the parser:\nparser.add_argument('--version', action='store_true', default=False, help='Show version information')\nparser.parse_args(['--version'])\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

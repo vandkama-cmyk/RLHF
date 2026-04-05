@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-26 18:26:56",
+    "address": "10.199.126.142",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 3565,
+            "index": 678,
+            "ID": 64282333,
+            "Question": "\"\"\"remove items from a list A that present in list B (with the removal of duplicates )\"\"\"",
+            "Answer": "\n     return [x for x in A if x not in B]",
+            "CSV_PATH": "T2C-SO-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        },
+        {
+            "level_0": 1642,
+            "index": 678,
+            "ID": 64282333,
+            "Question": "\"\"\"remove items from a list A that present in list B (with the removal of duplicates )\"\"\"",
+            "Answer": "\nA = [1, 2, 3, 4, 5]\nB = [1, 2, 3, 4, 5]\nA.remove(B)\nA\nA = [1, 2, 3, 4, 5]\nA.remove(B)\nA\nA = [1, 2, 3, 4, 5]\nA.remove(B)\nA\nA = [1, 2, 3, 4, 5]\nA.remove(B)\nA\nA = [1, 2, 3, 4, 5]\nA.remove(B)\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        }
+    ]
+}

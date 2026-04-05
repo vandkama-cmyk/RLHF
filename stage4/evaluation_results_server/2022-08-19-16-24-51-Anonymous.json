@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-19 16:24:51",
+    "address": "10.199.12.107",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 3641,
+            "index": 757,
+            "ID": 62022120,
+            "Question": "\"\"\"convert a date which maybe in any format to a specific format in python\"\"\"",
+            "Answer": "\n\nimport re\nimport datetime\nimport calendar\nimport time\nimport json\nimport logging\nimport requests\nimport dateutil.parser\nimport dateutil.tz\nfrom dateutil.parser import parse\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.rrule import rrule, DAILY, HOURLY, MINUTELY, SECONDLY, MO, TU, WE, TH, FR, SA, SU\nfrom dateutil.tz import tzlocal\nfrom dateutil.tz import tzutc\nfrom dateutil.tz import tzoffset\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        },
+        {
+            "level_0": 5616,
+            "index": 757,
+            "ID": 62022120,
+            "Question": "\"\"\"convert a date which maybe in any format to a specific format in python\"\"\"",
+            "Answer": "\ndatetime.datetime.strptime('01/01/2000', '%d/%m/%Y')\n\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}
