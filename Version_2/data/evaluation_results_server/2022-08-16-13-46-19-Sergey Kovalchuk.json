@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:46:19",
+    "address": "10.199.12.55",
+    "comparison_slider": 2,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 6642,
+            "index": 3577,
+            "ID": 67301667,
+            "Question": "Generating uniform random numbers between two large integers in fortran90/95 or Python. I want to generate some uniform random numbers between [2E16, 5E20] in fortran90/95 or Python. I know that if R is a random number between zero and one (0R1), we can transform R to [A, B] as: R = (b-a)*r + a. But when I use this algorithm to generate some random numbers between [2E16, 5E20], most of generated random numbers are very close to 5E20. I know why this is occurred, it is because of that, the term B-A is approximately equal to B (because B is so bigger than A), and most of the generated random numbers are placed within the magnitude of B or B/10 (I mean it was very close to B). How can I solve this problem? One solution that I tried to apply is that, I split the [2E16, 5E20] interval into smaller intervals, such as: [2e16, 2e17], [2e17, 2e18], [2e18, 2e19], [2e19, 2e20], [2e20, 5e20]. And I generated some random numbers between each of the above intervals. Is there any other solutions? Is my solution correct? ",
+            "Answer": "The random module now uses a new algorithm, the mersenne twister, implemented in c. it \u2019 s faster and more extensively studied than the previous algorithm. ( all changes contributed by raymond hettinger) the random module now uses a new algorithm, the mersenne twister, implemented in c. it \u2019 s faster and more extensively studied than the previous algorithm.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 1772,
+            "index": 547,
+            "ID": 67301667,
+            "Question": "Generating uniform random numbers between two large integers in fortran90/95 or Python. I want to generate some uniform random numbers between [2E16, 5E20] in fortran90/95 or Python. I know that if R is a random number between zero and one (0R1), we can transform R to [A, B] as: R = (b-a)*r + a. But when I use this algorithm to generate some random numbers between [2E16, 5E20], most of generated random numbers are very close to 5E20. I know why this is occurred, it is because of that, the term B-A is approximately equal to B (because B is so bigger than A), and most of the generated random numbers are placed within the magnitude of B or B/10 (I mean it was very close to B). How can I solve this problem? One solution that I tried to apply is that, I split the [2E16, 5E20] interval into smaller intervals, such as: [2e16, 2e17], [2e17, 2e18], [2e18, 2e19], [2e19, 2e20], [2e20, 5e20]. And I generated some random numbers between each of the above intervals. Is there any other solutions? Is my solution correct? ",
+            "Answer": "\n  I know why this is occurred, it is because of that, the term B-A is approximately equal to B (because B is so bigger than A), and most of the generated random numbers are placed within the magnitude of B or B/10 (I mean it was very close to B). How can I solve this problem?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        }
+    ]
+}

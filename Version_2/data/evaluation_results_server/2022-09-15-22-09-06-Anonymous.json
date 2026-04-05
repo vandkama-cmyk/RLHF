@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 22:09:06",
+    "address": "14.137.139.192",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 963,
+            "index": 489,
+            "ID": 10607688,
+            "Question": "\"\"\"create a datetime with the current date & time\"\"\"",
+            "Answer": "\ndatetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\n\nA:\n\ndatetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\n\nA:\n\ndatetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\n\nA:\n\ndatetime.datetime.now().strftime('%Y-%m-%d %H:%M:",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2407,
+            "index": 489,
+            "ID": 10607688,
+            "Question": "\"\"\"create a datetime with the current date & time\"\"\"\n   ",
+            "Answer": "datetime.datetime.now()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

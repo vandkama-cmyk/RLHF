@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 17:26:58",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": -2,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 14564,
+            "index": 5099,
+            "ID": 66839093,
+            "Question": "Can not install cleverhans version 3.1.0. I am trying to install cleverhans verion 3.1.0 but getting following error pip install cleverhans==3.1.0 Note: you may need to restart the kernel to use updated packages. ERROR: Could not find a version that satisfies the requirement cleverhans==3.1.0 (from versions: 2.1.0, 3.0.0, 3.0.0.post0, 3.0.1) ERROR: No matching distribution found for cleverhans==3.1.0 I want to access random_lp_vector method in 3.1.0 version which I am unable to access if I try in 3.0.1 also Is there any option available for adversarial training in the latest version which is 4.0.0 Please kindly help ",
+            "Answer": "The - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 14561,
+            "index": 5096,
+            "ID": 66839093,
+            "Question": "Can not install cleverhans version 3.1.0. I am trying to install cleverhans verion 3.1.0 but getting following error pip install cleverhans==3.1.0 Note: you may need to restart the kernel to use updated packages. ERROR: Could not find a version that satisfies the requirement cleverhans==3.1.0 (from versions: 2.1.0, 3.0.0, 3.0.0.post0, 3.0.1) ERROR: No matching distribution found for cleverhans==3.1.0 I want to access random_lp_vector method in 3.1.0 version which I am unable to access if I try in 3.0.1 also Is there any option available for adversarial training in the latest version which is 4.0.0 Please kindly help ",
+            "Answer": "python2 - m pip install somepackage # default python 2 python2. 7 - m pip install somepackage # specifically python 2. 7 python3 - m pip install somepackage # default python 3 python3. 4 - m pip install somepackage # default python 3 python3. 4 - m pip install somepackage # default python 3 py",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

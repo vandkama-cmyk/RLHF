@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-22 12:46:27",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 6617,
+            "index": 303,
+            "ID": 20457038,
+            "Question": "\"\"\"Round number `answer` to 2 precision after the decimal point\"\"\"",
+            "Answer": "\nanswer = int(input(\"Enter a number: \"))\nanswer = round(answer, 2)\nprint(\"Your answer is: \", answer)\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 8063,
+            "index": 303,
+            "ID": 20457038,
+            "Question": "\"\"\"Round number `answer` to 2 precision after the decimal point\"\"\"",
+            "Answer": "\nimport math\nprint round(math.pi, 2)\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

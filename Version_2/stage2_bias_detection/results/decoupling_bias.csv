@@ -1,0 +1,12 @@
+rater,n,corr_correct_auto,pval_corr,decoupling_flag
+Anastasia,16,0.3445,0.1914,False
+Anonymous,302,0.2096,0.0002,False
+Anonymous01,58,0.242,0.0673,False
+Artem,78,-0.1447,0.2063,False
+Arthur,8,0.4847,0.2235,False
+Fedor,8,-0.3944,0.3336,False
+Gorbatovski,8,0.1637,0.6985,False
+Sergey Kovalchuk,48,0.0108,0.9421,False
+TypingCat,40,-0.0685,0.6745,False
+Vadim,22,0.1194,0.5967,False
+XXZ,26,0.3703,0.0626,False

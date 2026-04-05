@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 15:59:38",
+    "address": "188.187.74.97",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 0,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 1488,
+            "index": 16,
+            "ID": 13567345,
+            "Question": "\"\"\"Calculate sum over all rows of 2D numpy array\"\"\"",
+            "Answer": "\nsum(a[:, 0] for a in b)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 516,
+            "index": 16,
+            "ID": 13567345,
+            "Question": "\"\"\"Calculate sum over all rows of 2D numpy array\"\"\"",
+            "Answer": "\nnp.sum(np.arange(len(a)) * np.arange(len(b)), axis=0)\n\nThis is a 2D numpy array with shape (3, 3) and each row is a list of lists of length 3.\na = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nb = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\n\nnp.sum(np.arange(len(",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

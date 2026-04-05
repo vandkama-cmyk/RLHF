@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:38:05",
+    "address": "10.199.12.55",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": -1,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 12079,
+            "index": 2614,
+            "ID": 66509048,
+            "Question": "How to stop a thread and restart it - python. How can I stop a thread from running and then restart it when called, havent been able to get a solid answer on this. Thanks in advance. ",
+            "Answer": "' '##ask ( 2 ) and pthread _ sigmask ( 3 ) for further information. see also pause ( ), sigpending ( ) and sigwait ( ). new in version 3. 3. signal. setitimer ( which, seconds, interval = 0. 0 ) sets given interval timer ( one of signal. itimer _ real, signal. itimer _ virtual or signal. itimer _ prof ) specified by which to fire after seconds (",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 5231,
+            "index": 2166,
+            "ID": 66509048,
+            "Question": "How to stop a thread and restart it - python. How can I stop a thread from running and then restart it when called, havent been able to get a solid answer on this. Thanks in advance. ",
+            "Answer": "' '##le ( ) no longer computes the repr of unknown objects to display in an error message, to protect against badly behaved custom reprs. bpo - 30768 : fix the pthread + semaphore implementation of pythread _ acquire _ lock _ timed ( ) when called with timeout > 0 and intr _ flag = 0 : recompute the timeout if sem _ timedwait ( ) is interrupted by a signal ( eintr",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

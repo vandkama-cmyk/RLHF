@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-08 11:41:03",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 811,
+            "index": 825,
+            "ID": 64673085,
+            "Question": "\"\"\"create a static file in django\"\"\"",
+            "Answer": "\nfrom django.conf import settings\nsettings.STATIC_URL = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STATIC_ROOT = '/static/'\nsettings.STAT",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2770,
+            "index": 825,
+            "ID": 64673085,
+            "Question": "\"\"\"create a static file in django\"\"\"",
+            "Answer": "\nfrom django.conf import settings\nfrom django.http import HttpResponse\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        }
+    ]
+}

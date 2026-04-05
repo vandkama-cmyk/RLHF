@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 13:45:28",
+    "address": "77.234.203.186",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2786,
+            "index": 496,
+            "ID": 113534,
+            "Question": "Is there a function in Python to split a string without ignoring the spaces?",
+            "Answer": "    mystring = \"This is a string. It is split into separate strings.\"\n\n    print(mystring.split())\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1468,
+            "index": 496,
+            "ID": 113534,
+            "Question": "\"\"\"split a string `mystring` considering the spaces ' '\"\"\"",
+            "Answer": "\ns ='mystring'\ns.split()\ns.split(' ')\ns.split(' ')[1]\ns.split(' ')[1].split()[0]\ns.split(' ')[1].split()[0].split('-')[0]\ns.split(' ')[1].split()[0].split('-')[0].split('.')[0]\ns.split(' ')[1].split()[0].split('-')[0].split('.')[0].split('/')[0]\ns.split",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

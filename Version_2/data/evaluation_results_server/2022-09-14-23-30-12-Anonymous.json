@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:30:12",
+    "address": "5.166.36.31",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 852,
+            "index": 367,
+            "ID": 373194,
+            "Question": "\"\"\"find all matches of regex pattern '([a-fA-F\\\\d]{32})' in string `data`\"\"\"",
+            "Answer": "\nre.findall('([a-fA-F\\\\d]{32})', data)\n\nprint(re.findall('([a-fA-F\\\\d]{32})', 'a b c d e f g h i j k l m n o p q r s t u v w x y z')[0])\n\nOutput:\n['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l','m', 'n', 'o', 'p",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2706,
+            "index": 367,
+            "ID": 373194,
+            "Question": "Python regex for MD5 hash",
+            "Answer": "    data = \"\"\"\n\n    This is a multi-line string.\n\n    It is split into separate strings.\n\n    print(re.findall(r'([a-fA-F\\d]{32})', data))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

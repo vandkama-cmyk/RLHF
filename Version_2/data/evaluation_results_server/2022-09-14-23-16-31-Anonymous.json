@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:16:31",
+    "address": "176.59.21.66",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": -2,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 604,
+            "index": 108,
+            "ID": 3367288,
+            "Question": "\"\"\"use `%s` operator to print variable values `str1` inside a string\"\"\"",
+            "Answer": "\nprint('str1 = %s' % str1)\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1081,
+            "index": 108,
+            "ID": 3367288,
+            "Question": "\"\"\"use `%s` operator to print variable values `str1` inside a string\"\"\"",
+            "Answer": "\nprint('%s' % str1)\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

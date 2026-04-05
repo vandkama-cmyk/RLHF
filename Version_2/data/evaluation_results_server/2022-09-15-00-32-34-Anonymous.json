@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 00:32:34",
+    "address": "85.143.144.79",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 1509,
+            "index": 39,
+            "ID": 2173087,
+            "Question": "\"\"\"Create 3d array of zeroes of size `(3,3,3)`\"\"\"",
+            "Answer": "\nnp.zeros((3, 3, 3))\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 39,
+            "index": 39,
+            "ID": 2173087,
+            "Question": "\"\"\"Create 3d array of zeroes of size `(3,3,3)`\"\"\"",
+            "Answer": "\nimport numpy as np\na = np.zeros((3,3,3))\na[:,:,:3] = np.zeros((3,3,3))\na[:,:,:,3] = np.zeros((3,3,3))\na[:,:,:,:,3] = np.zeros((3,3,3))\na[:,:,:,:,:,3] = np.zeros((3,3,3))\na[:,:,:,:,:,:,3] = np.zeros((3,3,3))\na",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

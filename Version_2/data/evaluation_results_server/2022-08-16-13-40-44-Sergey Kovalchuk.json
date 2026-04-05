@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:40:44",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 11085,
+            "index": 1620,
+            "ID": 68623928,
+            "Question": "Getting connected partitions using METIS. I am using Metis on Python to partition a networkx graph I have. My objective is to get partitions that have an almost equal sum of node weights, which Metis does perfectly. However, a constraint I want to respect is that nodes in the same partition should be connected (have edges in common), which Metis doesn't do. Is there a way or a parameter to ensure that? ",
+            "Answer": "if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string is the first element of the string. if the separator isn't found, the first element of the string",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 11091,
+            "index": 1626,
+            "ID": 68623928,
+            "Question": "Getting connected partitions using METIS. I am using Metis on Python to partition a networkx graph I have. My objective is to get partitions that have an almost equal sum of node weights, which Metis does perfectly. However, a constraint I want to respect is that nodes in the same partition should be connected (have edges in common), which Metis doesn't do. Is there a way or a parameter to ensure that? ",
+            "Answer": "' '( ), sub ( ), mul ( ), floordiv ( ), abs ( ),... logical operations : not _ ( ), truth ( ). bitwise operations : and _ ( ), or _ ( ), invert ( ). comparisons : eq ( ), ne ( ), lt ( ), le ( ), gt ( ), and ge ( ). object identity : is _ ( ), is _ not ( ).",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

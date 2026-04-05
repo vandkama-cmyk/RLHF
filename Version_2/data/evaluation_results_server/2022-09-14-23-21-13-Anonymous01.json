@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:21:13",
+    "address": "5.18.203.79",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 507,
+            "index": 7,
+            "ID": 14971373,
+            "Question": "\"\"\"capture final output of a chain of system commands `ps -ef | grep something | wc -l`\"\"\"",
+            "Answer": "\nprint('\\n'.join(map(str, ps.communicate())))\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 7,
+            "index": 7,
+            "ID": 14971373,
+            "Question": "\"\"\"capture final output of a chain of system commands `ps -ef | grep something | wc -l`\"\"\"",
+            "Answer": "\nimport subprocess\nsubprocess.Popen([\"ps\", \"-ef\", \"|\", \"grep\", \"something\"], stdout=subprocess.PIPE).communicate()[0]\nsubprocess.Popen([\"ps\", \"-ef\", \"|\", \"grep\", \"something\"], stdout=subprocess.PIPE).communicate()[0]\nsubprocess.Popen([\"ps\", \"-ef\", \"|\", \"grep\", \"something\"], stdout=subprocess.PIPE).communicate()[0]\nsubprocess.Popen(",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

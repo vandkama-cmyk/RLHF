@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-09-12 12:07:41",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 2223,
+            "index": 292,
+            "ID": 19339,
+            "Question": "\"\"\"unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`\"\"\"\n   ",
+            "Answer": "zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 2642,
+            "index": 291,
+            "ID": 19339,
+            "Question": "inverse of zip",
+            "Answer": "    myList = [('a', 1), ('b', 2), ('c', 3), ('d', 4)]\n\n    print(list(zip(*myList)))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

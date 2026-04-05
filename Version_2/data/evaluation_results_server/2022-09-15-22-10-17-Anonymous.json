@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 22:10:17",
+    "address": "14.137.139.192",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -1,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 2092,
+            "index": 154,
+            "ID": 32063985,
+            "Question": "\"\"\"remove a div with a id `main-content` using beautifulsoup\"\"\"\n   ",
+            "Answer": "soup.find('div', id='main-content')\nsoup.find('div', id='main-content').decompose()\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 1127,
+            "index": 154,
+            "ID": 32063985,
+            "Question": "\"\"\"remove a div with a id `main-content` using beautifulsoup\"\"\"",
+            "Answer": "\nimport bs4\nbs_html = bs4.BeautifulSoup(html)\nbs_html.find('div', id='main-content')\nbs_html.find('div', id='main-content').decompose()\nbs_html.find('div', id='main-content')\nbs_html.find('div', id='main-content').decompose()\nbs_html.find('div', id='main-content')\nbs_html.find('div', id='main-content').decompose()\nbs_html.",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

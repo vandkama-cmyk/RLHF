@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 14:06:23",
+    "address": "77.234.203.186",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 178,
+            "index": 178,
+            "ID": 36674519,
+            "Question": "\"\"\"create a DatetimeIndex containing 13 periods of the second friday of each month starting from date '2016-01-01'\"\"\"",
+            "Answer": "\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relativedelta\nfrom dateutil.relativedelta import relat",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1151,
+            "index": 178,
+            "ID": 36674519,
+            "Question": "\"\"\"create a DatetimeIndex containing 13 periods of the second friday of each month starting from date '2016-01-01'\"\"\"",
+            "Answer": "\nimport pandas as pd\ndf = pd.read_csv('file.csv')\ndf['Date'] = pd.to_datetime(df['Date'])\ndf = df.set_index('Date')\ndf.index = pd.to_datetime(df.index)\ndf.index = df.index.normalize()\ndf.index = df.index.tz_localize('UTC')\ndf.index = df.index.tz_convert('US/Eastern')\ndf.index = df.index.tz_localize(",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

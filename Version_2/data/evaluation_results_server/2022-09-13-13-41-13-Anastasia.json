@@ -1,0 +1,34 @@
+{
+    "name_input": "Anastasia",
+    "datetime": "2022-09-13 13:41:13",
+    "address": "85.142.179.62",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 236,
+            "index": 236,
+            "ID": 34945274,
+            "Question": "\"\"\"replace all elements in array `A` that are not present in array `[1, 3, 4]` with zeros\"\"\"",
+            "Answer": "\nA = [1, 3, 4]\nA[A!= [1, 3, 4]] = 0\nA\nA[A!= [1, 3, 4]] = 0\nA\nA[A!= [1, 3, 4]] = 0\nA\nA[A!= [1, 3, 4]] = 0\nA\nA[A!= [1, 3, 4]] = 0\nA\nA[A!= [1, 3, 4]] = 0\nA\nA[A!= [1, 3, 4]] = 0\nA\nA[A!= [",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1209,
+            "index": 236,
+            "ID": 34945274,
+            "Question": "\"\"\"replace all elements in array `A` that are not present in array `[1, 3, 4]` with zeros\"\"\"",
+            "Answer": "\na = [1, 3, 4]\na[a.index(1):] = [0] * (len(a) - a.index(1))\nprint(a)\na[a.index(1):] = [0] * (len(a) - a.index(1))\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

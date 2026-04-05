@@ -1,0 +1,328 @@
+{
+  "warnings": [
+    "INSUFFICIENT OVERLAP: only 38 shared pairs (12.4% of 307 evaluations). Inter-rater metrics (Krippendorff alpha, Cohen kappa) are statistically unreliable. Redesign annotation collection: each example should be rated by at least 3-5 raters."
+  ],
+  "inter_rater_agreement": {
+    "krippendorff_alpha": {
+      "consistent": null,
+      "correct": null,
+      "useful": null
+    },
+    "n_shared_pairs": 38
+  },
+  "positional_bias": {
+    "Anastasia": {
+      "n": 8,
+      "prefer_left": 3,
+      "neutral": 2,
+      "prefer_right": 3,
+      "pct_left": 37.5,
+      "pct_right": 37.5,
+      "chi2": 0.25,
+      "pval": 0.8825,
+      "significant": "False",
+      "low_power": true
+    },
+    "Anonymous": {
+      "n": 151,
+      "prefer_left": 48,
+      "neutral": 57,
+      "prefer_right": 46,
+      "pct_left": 31.8,
+      "pct_right": 30.5,
+      "chi2": 1.364,
+      "pval": 0.5055,
+      "significant": "False",
+      "low_power": false
+    },
+    "Anonymous01": {
+      "n": 29,
+      "prefer_left": 7,
+      "neutral": 11,
+      "prefer_right": 11,
+      "pct_left": 24.1,
+      "pct_right": 37.9,
+      "chi2": 1.103,
+      "pval": 0.576,
+      "significant": "False",
+      "low_power": true
+    },
+    "Artem": {
+      "n": 39,
+      "prefer_left": 4,
+      "neutral": 28,
+      "prefer_right": 7,
+      "pct_left": 10.3,
+      "pct_right": 17.9,
+      "chi2": 26.308,
+      "pval": 0.0,
+      "significant": "True",
+      "bias_direction": "RIGHT (prefers Right answers)",
+      "low_power": false
+    },
+    "Sergey Kovalchuk": {
+      "n": 24,
+      "prefer_left": 7,
+      "neutral": 7,
+      "prefer_right": 10,
+      "pct_left": 29.2,
+      "pct_right": 41.7,
+      "chi2": 0.75,
+      "pval": 0.6873,
+      "significant": "False",
+      "low_power": true
+    },
+    "TypingCat": {
+      "n": 20,
+      "prefer_left": 5,
+      "neutral": 10,
+      "prefer_right": 5,
+      "pct_left": 25.0,
+      "pct_right": 25.0,
+      "chi2": 2.5,
+      "pval": 0.2865,
+      "significant": "False",
+      "low_power": true
+    },
+    "Vadim": {
+      "n": 11,
+      "prefer_left": 1,
+      "neutral": 9,
+      "prefer_right": 1,
+      "pct_left": 9.1,
+      "pct_right": 9.1,
+      "chi2": 11.636,
+      "pval": 0.003,
+      "significant": "True",
+      "bias_direction": "NEUTRAL EXTREME (avoids middle)",
+      "low_power": true
+    },
+    "XXZ": {
+      "n": 13,
+      "prefer_left": 3,
+      "neutral": 4,
+      "prefer_right": 6,
+      "pct_left": 23.1,
+      "pct_right": 46.2,
+      "chi2": 1.077,
+      "pval": 0.5836,
+      "significant": "False",
+      "low_power": true
+    }
+  },
+  "leniency_bias": [
+    {
+      "rater": "Anonymous01",
+      "mean_rating": 0.167,
+      "z_score": 1.17,
+      "bias_type": ""
+    },
+    {
+      "rater": "Gorbatovski",
+      "mean_rating": 0.167,
+      "z_score": 1.17,
+      "bias_type": ""
+    },
+    {
+      "rater": "XXZ",
+      "mean_rating": -0.026,
+      "z_score": 0.826,
+      "bias_type": ""
+    },
+    {
+      "rater": "Anonymous",
+      "mean_rating": -0.15,
+      "z_score": 0.604,
+      "bias_type": ""
+    },
+    {
+      "rater": "Sergey Kovalchuk",
+      "mean_rating": -0.16,
+      "z_score": 0.587,
+      "bias_type": ""
+    },
+    {
+      "rater": "Arthur",
+      "mean_rating": -0.458,
+      "z_score": 0.053,
+      "bias_type": ""
+    },
+    {
+      "rater": "TypingCat",
+      "mean_rating": -0.55,
+      "z_score": -0.111,
+      "bias_type": ""
+    },
+    {
+      "rater": "Anastasia",
+      "mean_rating": -0.583,
+      "z_score": -0.17,
+      "bias_type": ""
+    },
+    {
+      "rater": "Vadim",
+      "mean_rating": -0.788,
+      "z_score": -0.536,
+      "bias_type": ""
+    },
+    {
+      "rater": "Fedor",
+      "mean_rating": -1.375,
+      "z_score": -1.585,
+      "bias_type": "STRICT (deflated ratings)"
+    },
+    {
+      "rater": "Artem",
+      "mean_rating": -1.611,
+      "z_score": -2.007,
+      "bias_type": "STRICT (deflated ratings)"
+    }
+  ],
+  "confidence_correctness_decoupling": [
+    {
+      "rater": "Anastasia",
+      "n": 16,
+      "corr_correct_auto": 0.3445,
+      "pval_corr": 0.1914,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Anonymous",
+      "n": 302,
+      "corr_correct_auto": 0.2096,
+      "pval_corr": 0.0002,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Anonymous01",
+      "n": 58,
+      "corr_correct_auto": 0.242,
+      "pval_corr": 0.0673,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Artem",
+      "n": 78,
+      "corr_correct_auto": -0.1447,
+      "pval_corr": 0.2063,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Arthur",
+      "n": 8,
+      "corr_correct_auto": 0.4847,
+      "pval_corr": 0.2235,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Fedor",
+      "n": 8,
+      "corr_correct_auto": -0.3944,
+      "pval_corr": 0.3336,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Gorbatovski",
+      "n": 8,
+      "corr_correct_auto": 0.1637,
+      "pval_corr": 0.6985,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Sergey Kovalchuk",
+      "n": 48,
+      "corr_correct_auto": 0.0108,
+      "pval_corr": 0.9421,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "TypingCat",
+      "n": 40,
+      "corr_correct_auto": -0.0685,
+      "pval_corr": 0.6745,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "Vadim",
+      "n": 22,
+      "corr_correct_auto": 0.1194,
+      "pval_corr": 0.5967,
+      "decoupling_flag": false
+    },
+    {
+      "rater": "XXZ",
+      "n": 26,
+      "corr_correct_auto": 0.3703,
+      "pval_corr": 0.0626,
+      "decoupling_flag": false
+    }
+  ],
+  "dimension_inconsistency": [
+    {
+      "rater": "Anastasia",
+      "n": 8,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Anonymous",
+      "n": 151,
+      "mean_inconsistency": 0.0044,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Anonymous01",
+      "n": 29,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Artem",
+      "n": 39,
+      "mean_inconsistency": 0.0043,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Arthur",
+      "n": 4,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Fedor",
+      "n": 4,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Gorbatovski",
+      "n": 4,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Sergey Kovalchuk",
+      "n": 24,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "TypingCat",
+      "n": 20,
+      "mean_inconsistency": 0.0083,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "Vadim",
+      "n": 11,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    },
+    {
+      "rater": "XXZ",
+      "n": 13,
+      "mean_inconsistency": 0.0,
+      "inconsistency_flag": false
+    }
+  ]
+}

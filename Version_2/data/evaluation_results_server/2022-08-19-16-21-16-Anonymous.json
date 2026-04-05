@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-19 16:21:16",
+    "address": "10.199.12.107",
+    "comparison_slider": 2,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 8962,
+            "index": 255,
+            "ID": 4048964,
+            "Question": "\"\"\"print elements of list `list` seperated by tabs `\\t`\"\"\"",
+            "Answer": "\n\nfrom __future__ import print_function\n\nimport sys\nimport os\nimport re\nimport collections\nimport itertools\nimport itertools.count\nimport operator\nimport operator.itemgetter\nimport operator.itemgetter_set\nimport operator.lt\nimport operator.lt_\nimport operator.gt\nimport operator.gt_\nimport operator.lt_gt\nimport operator.lt_gt_\nimport operator.gt_gt\nimport operator.lt_gt_gt\nimport operator.lt_gt_gt_\n\nfrom. import _print_list_se",
+            "CSV_PATH": "T2C-CONALA-GPTNEO13-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO13 VANILLA"
+        },
+        {
+            "level_0": 6086,
+            "index": 255,
+            "ID": 4048964,
+            "Question": "\"\"\"print elements of list `list` seperated by tabs `\\t`\"\"\"",
+            "Answer": "\n\nimport sys\n\ndef print_elements_of_list_separated_by_tabs(list, tabsize=8):\n    \"\"\"print elements of list `list` separated by tabs `\\t`\"\"\"\n    for element in list:\n        print(element, end=tabsize)\n\nif __name__ == \"__main__\":\n    print_elements_of_list_separated_by_tabs([1, 2, 3, 4, 5, 6, 7, 8, 9])",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO VANILLA"
+        }
+    ]
+}

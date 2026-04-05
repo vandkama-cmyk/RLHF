@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 14:03:29",
+    "address": "77.234.203.186",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 487,
+            "index": 487,
+            "ID": 7349646,
+            "Question": "\"\"\"Sort a list of tuples `b` by third item in the tuple\"\"\"",
+            "Answer": "\nb = [('a', 1), ('b', 2), ('c', 3)]\nb.sort(key=lambda x: x[1])\nb\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x: x[1])\nb.sort(key=lambda x",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1934,
+            "index": 487,
+            "ID": 7349646,
+            "Question": "\"\"\"Sort a list of tuples `b` by third item in the tuple\"\"\"",
+            "Answer": "\nb.sort(key=lambda x: x[2])\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

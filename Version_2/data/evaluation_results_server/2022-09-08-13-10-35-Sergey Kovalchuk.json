@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-09-08 13:10:35",
+    "address": "10.199.12.55",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 2695,
+            "index": 353,
+            "ID": 15247628,
+            "Question": "How to find duplicate names using pandas?",
+            "Answer": "    x = pd.read_csv('../data/names.csv')\n\n    print(x.name.value_counts())\n\n    print(x.name.value_counts().index)\n\n    print(x.name.value_counts().values)\n\n    print(x.name.value_counts().index.values)\n\n    print(x.name.value_counts().values.values)\n\n    print(x.name.value_counts().index.values.values)\n\n    print(x.name.value_counts().values.values.values)\n\n    print(x.name.value_counts().index.values.values.values)\n\n    print(x.name.value_counts().values.values.values.values)\n\n    print(x.name.value_counts().index.values.values.values.values)\n\n    print(x.name.value_counts().values.values.values.values.values)\n\n    print(x.name.value_counts().index.values.values.values.values.values)\n\n    print(x.name.value_counts().values.values.values.values.values.values)\n\n    print(x.name.value_counts().index.values.values.values.values.values.values)\n\n    print(x.name.value_counts().values.values.values.values.values.values.values)\n\n    print(x.name.value_counts().index.values.values.values.values.values.values.values)\n\n    print(x.name.value_counts().values.values.values.values.values.values.values.values)\n\n    print(x.name.value_counts().index.values.values.values.values.values.values.values.values)\n\n    print(x.name.value_counts().values.values.values.values.values.values.values.values.values)\n\n    print(x.name.value_counts().index.values.values.values.values.values.values.values.\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1810,
+            "index": 353,
+            "ID": 15247628,
+            "Question": "\"\"\"find duplicate names in column 'name' of the dataframe `x`\"\"\"",
+            "Answer": "\nx['name'].value_counts().index[x['name'].value_counts() > 1]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

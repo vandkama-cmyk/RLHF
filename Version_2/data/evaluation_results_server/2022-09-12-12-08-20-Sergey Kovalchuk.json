@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-09-12 12:08:20",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2750,
+            "index": 437,
+            "ID": 1010961,
+            "Question": "String Slicing Python",
+            "Answer": "    s = \"This is a string with a comma,,\"\n\n    print(s.rstrip(\",\"))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1409,
+            "index": 437,
+            "ID": 1010961,
+            "Question": "\"\"\"remove last comma character ',' in string `s`\"\"\"",
+            "Answer": "\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]\ns = s[:-1]",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

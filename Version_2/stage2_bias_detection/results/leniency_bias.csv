@@ -1,0 +1,12 @@
+rater,mean_rating,z_score,bias_type
+Anonymous01,0.167,1.17,
+Gorbatovski,0.167,1.17,
+XXZ,-0.026,0.826,
+Anonymous,-0.15,0.604,
+Sergey Kovalchuk,-0.16,0.587,
+Arthur,-0.458,0.053,
+TypingCat,-0.55,-0.111,
+Anastasia,-0.583,-0.17,
+Vadim,-0.788,-0.536,
+Fedor,-1.375,-1.585,STRICT (deflated ratings)
+Artem,-1.611,-2.007,STRICT (deflated ratings)

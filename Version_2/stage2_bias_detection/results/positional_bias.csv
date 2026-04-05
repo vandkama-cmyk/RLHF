@@ -1,0 +1,9 @@
+rater,n,prefer_left,neutral,prefer_right,pct_left,pct_right,chi2,pval,significant,bias_direction,low_power
+Anastasia,8,3,2,3,37.5,37.5,0.25,0.8825,False,,True
+Anonymous,151,48,57,46,31.8,30.5,1.364,0.5055,False,,False
+Anonymous01,29,7,11,11,24.1,37.9,1.103,0.576,False,,True
+Artem,39,4,28,7,10.3,17.9,26.308,0.0,True,RIGHT (prefers Right answers),False
+Sergey Kovalchuk,24,7,7,10,29.2,41.7,0.75,0.6873,False,,True
+TypingCat,20,5,10,5,25.0,25.0,2.5,0.2865,False,,True
+Vadim,11,1,9,1,9.1,9.1,11.636,0.003,True,NEUTRAL EXTREME (avoids middle),True
+XXZ,13,3,4,6,23.1,46.2,1.077,0.5836,False,,True

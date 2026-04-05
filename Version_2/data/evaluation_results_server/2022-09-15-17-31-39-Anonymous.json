@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 17:31:39",
+    "address": "95.55.35.26",
+    "comparison_slider": 1,
+    "consistent_L": -1,
+    "correct_L": 0,
+    "useful_L": -1,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 678,
+            "index": 184,
+            "ID": 13728486,
+            "Question": "\"\"\"get a list containing the sum of each element `i` in list `l` plus the previous elements\"\"\"",
+            "Answer": "\nsum(i for i in l if i - 1) + sum(i for i in l if i - 2)\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1157,
+            "index": 184,
+            "ID": 13728486,
+            "Question": "\"\"\"get a list containing the sum of each element `i` in list `l` plus the previous elements\"\"\"",
+            "Answer": "\nl = [1, 2, 3, 4, 5]\nsum(l[i] + l[i-1] for i in range(1, len(l)))\nsum(l[i] + l[i-1] for i in range(2, len(l)))\nsum(l[i] + l[i-1] for i in range(3, len(l)))\nsum(l[i] + l[i-1] for i in range(4, len(l)))\nsum(l[i] + l[i-1]",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

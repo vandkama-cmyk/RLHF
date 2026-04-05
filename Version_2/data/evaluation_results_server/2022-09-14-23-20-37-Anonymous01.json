@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:20:37",
+    "address": "5.18.203.79",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 2,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 1867,
+            "index": 419,
+            "ID": 22187233,
+            "Question": "\"\"\"How to delete all instances of a character in a string in python?\"\"\"",
+            "Answer": "\nre.sub('[^a-zA-Z0-9]', '', string)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 417,
+            "index": 417,
+            "ID": 22187233,
+            "Question": "\"\"\"delete all instances of a character 'i' in a string 'it is icy'\"\"\"",
+            "Answer": "\nimport re\nre.sub('[i]', '', 'it is icy')\nre.sub('[i]', '', 'it is icy')\nre.sub('[i]', '', 'it is icy')\nre.sub('[i]', '', 'it is icy')\nre.sub('[i]', '', 'it is icy')\nre.sub('[i]', '', 'it is icy')\nre.sub('[i]', '', 'it is icy')\nre.sub('[i]', '', 'it",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

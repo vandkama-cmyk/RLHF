@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-19 15:18:23",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -1,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 6823,
+            "index": 9,
+            "ID": 18079563,
+            "Question": "\"\"\"find intersection data between series `s1` and series `s2`\"\"\"",
+            "Answer": "\ns1.intersection(s2)\n\nA:\n\nYou can use pandas.Series.intersection with a list of Series as the argument:\ns1.intersection(s2, axis=0)\n\nA:\n\nYou can use pandas.Series.intersection with a list of Series as the argument:\ns1.intersection(s2, axis=0)\n\nA:\n\nYou can use pandas.Series.intersection with a list of Series as the argument:\ns1.intersection(s2, axis=0)\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 7769,
+            "index": 9,
+            "ID": 18079563,
+            "Question": "\"\"\"find intersection data between series `s1` and series `s2`\"\"\"",
+            "Answer": "\ns1.intersection(s2)\ns1.union(s2)\ns1.symmetric_difference(s2)\ns1.difference(s2)\ns1.symmetric_difference(s2)\ns1.symmetric_difference(s2)\ns1.symmetric_difference(s2)\ns1.symmetric_difference(s2)\ns1.symmetric_difference(s2)\ns1.symmetric_difference(s2)\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

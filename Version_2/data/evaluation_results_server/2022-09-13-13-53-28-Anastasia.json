@@ -1,0 +1,34 @@
+{
+    "name_input": "Anastasia",
+    "datetime": "2022-09-13 13:53:28",
+    "address": "85.142.179.62",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": -2,
+    "useful_L": -1,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2397,
+            "index": 478,
+            "ID": 16125229,
+            "Question": "\"\"\"get the last key of dictionary `dict`\"\"\"\n   ",
+            "Answer": "dict.keys()[-1]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 2775,
+            "index": 478,
+            "ID": 16125229,
+            "Question": "Last Key in Python Dictionary",
+            "Answer": "    def func(dict):\n\n        return list(dict.keys())[-1]\n\n    return func\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

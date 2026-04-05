@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-09-08 13:09:28",
+    "address": "10.199.12.55",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1953,
+            "index": 6,
+            "ID": 2544710,
+            "Question": "\"\"\"get rid of None values in dictionary `kwargs`\"\"\"\n   ",
+            "Answer": "dict((k, v) for k, v in kwargs.items() if v is not None)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 2423,
+            "index": 5,
+            "ID": 2544710,
+            "Question": "How I can get rid of None values in dictionary?",
+            "Answer": "    def func(**kwargs):\n\n        return kwargs\n\n    return func\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

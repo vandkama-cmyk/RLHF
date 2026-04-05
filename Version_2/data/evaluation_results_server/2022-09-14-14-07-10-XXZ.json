@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 14:07:10",
+    "address": "77.234.203.186",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2533,
+            "index": 150,
+            "ID": 24242433,
+            "Question": "Python - how to convert a \"raw\" string into a normal string",
+            "Answer": "    raw_byte_string = b\"\\x4a\\x4b\\x4c\"\n\n    print(raw_byte_string.decode(\"utf-8\"))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 2532,
+            "index": 149,
+            "ID": 24242433,
+            "Question": "Python - how to convert a \"raw\" string into a normal string",
+            "Answer": "    raw_string = r\"This is a raw string.\"\n\n    print(raw_string)\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

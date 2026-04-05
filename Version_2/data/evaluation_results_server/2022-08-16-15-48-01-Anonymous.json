@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:48:01",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 15860,
+            "index": 6395,
+            "ID": 68730597,
+            "Question": "Is there a torchsummary equivalent in Tensorflow?. I am using GPU to run some very large deep learning models on a dataset of size 55GB. If I use a batch size greater than 1, I get a resource exhausted error. Even with a batch size of 1, I get segmentation faults. GPU memory is 10GB and Server has 32GB of RAM. Is there a way that I could know how large the data (batch size of 1) will occupy in the GPU? I am using tf.Keras to fit models. Is there a torchsummary equivalent in TensorFlow? ",
+            "Answer": "python's api has many different types of APIs.''- sized arenas, but never freed arenas. with this patch, python will free arenas when they \u2019 re empty. The net effect is that on some platforms, when you allocate many objects, python \u2019 s memory usage may actually drop when you delete them and the memory may be returned to the operating system. ( implemented by evan jones, and reworked by tim peters. ) Note that",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 15859,
+            "index": 6394,
+            "ID": 68730597,
+            "Question": "Is there a torchsummary equivalent in Tensorflow?. I am using GPU to run some very large deep learning models on a dataset of size 55GB. If I use a batch size greater than 1, I get a resource exhausted error. Even with a batch size of 1, I get segmentation faults. GPU memory is 10GB and Server has 32GB of RAM. Is there a way that I could know how large the data (batch size of 1) will occupy in the GPU? I am using tf.Keras to fit models. Is there a torchsummary equivalent in TensorFlow? ",
+            "Answer": "' 'implemented by (in alphabetical order ) brett cannon, nick coghlan, grant edwards, john ehresman, kurt kaiser, neal norwitz, tim peters, armin rigo, and neil schemenauer, plus the participants in a number of ast sprints at conferences such as pycon. evan jones''s patch to obmalloc, first described in a talk at",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

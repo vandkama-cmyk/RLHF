@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:11:39",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 13747,
+            "index": 4282,
+            "ID": 66645103,
+            "Question": "In pygame how can i create a data struct that keeps track of resizing events and the coordinates of objects?. I'm looking to keep my mouse events in sync with my objects after resizing the screen. I'm told I need to create a data structure to keep track of:  Resizing events  New coordinates to match the resize   How can I accomplish this using simple algebraic equations and integrate it into a resize event for accurate updating? ",
+            "Answer": "You can use ttk.windows to display a single window at a time: ttk.windows.windows.set(' ')",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 13751,
+            "index": 4286,
+            "ID": 66645103,
+            "Question": "In pygame how can i create a data struct that keeps track of resizing events and the coordinates of objects?. I'm looking to keep my mouse events in sync with my objects after resizing the screen. I'm told I need to create a data structure to keep track of:  Resizing events  New coordinates to match the resize   How can I accomplish this using simple algebraic equations and integrate it into a resize event for accurate updating? ",
+            "Answer": "' '( ) ) virtual events  this widget generates a  '( ) virtual event after a new tab is selected. ttk. notebook  class tkinter. ttk. notebook  add ( child, * * kw )  adds a new tab to the notebook. if window is currently managed by the notebook but hidden, it is restored to its previous position. see tab options for the list of available options. forget ( tab _ id )  removes the tab",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

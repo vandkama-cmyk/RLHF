@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:43:42",
+    "address": "185.24.52.32",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 699,
+            "index": 207,
+            "ID": 7961363,
+            "Question": "\"\"\"Removing duplicates in list `t`\"\"\"",
+            "Answer": "\nt.pop()\n\nprint(t)\n\nOutput:\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2145,
+            "index": 209,
+            "ID": 7961363,
+            "Question": "\"\"\"Removing duplicates in list `abracadabra`\"\"\"\n   ",
+            "Answer": "list(set(abracadabra))\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

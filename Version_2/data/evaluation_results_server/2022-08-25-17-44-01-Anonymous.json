@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:44:01",
+    "address": "10.199.12.115",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 1,
+    "correct_R": -1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2259,
+            "index": 306,
+            "ID": 62320145,
+            "Question": "\"\"\"convert a date format (YYYY-MM-DD) to (YYYY,MM,DD) in Python\"\"\"",
+            "Answer": "\ndatetime.datetime.strptime('2012-01-01', '%Y-%m-%d').strftime('%Y,%m,%d')\n\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 5172,
+            "index": 306,
+            "ID": 62320145,
+            "Question": "\"\"\"convert a date format (YYYY-MM-DD) to (YYYY,MM,DD) in Python\"\"\"",
+            "Answer": "\ndatetime.datetime.strptime('2013-12-25', '%Y-%m-%d')\n\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 13:59:06",
+    "address": "77.234.203.186",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2089,
+            "index": 151,
+            "ID": 22882922,
+            "Question": "\"\"\"split a string `s` with into all strings of repeated characters\"\"\"\n   ",
+            "Answer": "re.findall('(.)\\\\1+', s)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 151,
+            "index": 151,
+            "ID": 22882922,
+            "Question": "\"\"\"split a string `s` with into all strings of repeated characters\"\"\"",
+            "Answer": "\ns = \"abcdefghijklmnopqrstuvwxyz\"\ns = s.split()\ns = [s[i:i+3] for i in range(0, len(s), 3)]\ns = [s[i:i+3] for i in range(0, len(s), 3)]\ns = [s[i:i+3] for i in range(0, len(s), 3)]\ns = [s[i:i+3] for i in range(0, len(s), 3)]\ns",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

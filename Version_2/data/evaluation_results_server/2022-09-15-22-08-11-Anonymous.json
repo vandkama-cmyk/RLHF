@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 22:08:11",
+    "address": "14.137.139.192",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 520,
+            "index": 20,
+            "ID": 698223,
+            "Question": "\"\"\"How can I parse a time string containing milliseconds in it with python?\"\"\"",
+            "Answer": "\ntime.strptime('12:00:00', '%H:%M:%S')\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 20,
+            "index": 20,
+            "ID": 698223,
+            "Question": "\"\"\"How can I parse a time string containing milliseconds in it with python?\"\"\"",
+            "Answer": "\nimport datetime\ndatetime.datetime.strptime('00:00:00', '%H:%M:%S')\ndatetime.datetime.strptime('00:00:00', '%H:%M:%S.%f')\ndatetime.datetime.strptime('00:00:00', '%H:%M:%S.%f.%f')\ndatetime.datetime.strptime('00:00:00', '%H:%M:%S.%f.%f.%",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

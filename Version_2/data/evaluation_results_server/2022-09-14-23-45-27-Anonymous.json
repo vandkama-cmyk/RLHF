@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:45:27",
+    "address": "95.161.223.140",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2286,
+            "index": 355,
+            "ID": 22859493,
+            "Question": "\"\"\"sort list `li` in descending order based on the date value in second element of each list in list `li`\"\"\"\n   ",
+            "Answer": "li.sort(key=lambda x: x[1], reverse=True)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 1812,
+            "index": 355,
+            "ID": 22859493,
+            "Question": "\"\"\"sort list `li` in descending order based on the date value in second element of each list in list `li`\"\"\"",
+            "Answer": "\nsorted(li, key=lambda x: x[1], reverse=True)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

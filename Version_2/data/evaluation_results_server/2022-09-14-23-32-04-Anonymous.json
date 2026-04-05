@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:32:04",
+    "address": "77.234.193.84",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2474,
+            "index": 73,
+            "ID": 28742436,
+            "Question": "Combining two numpy arrays to form an array with the largest value from each array",
+            "Answer": "    import numpy as np\n\n    arr1 = np.array([2, 3, 4])\n\n    arr2 = np.array([1, 5, 2])\n\n    print(np.maximum(arr1, arr2))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 573,
+            "index": 73,
+            "ID": 28742436,
+            "Question": "\"\"\"create array containing the maximum value of respective elements of array `[2, 3, 4]` and array `[1, 5, 2]`\"\"\"",
+            "Answer": "\nnp.maximum(np.arange(len(a)), np.arange(len(b)))\n\n[2, 3, 4]\n[1, 5, 2]\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

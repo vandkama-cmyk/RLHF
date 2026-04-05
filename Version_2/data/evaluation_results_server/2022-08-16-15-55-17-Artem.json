@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:55:17",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 7568,
+            "index": 4503,
+            "ID": 65549860,
+            "Question": "Get embed footer from reaction message. I want the person who used the command to be able to delete the result. I have put the user's ID in the footer of the embed, and my question is: how do I get that data from the message where the user reacted to. reaction.message.embed.footer doesn't work. I currently don't have code as I was trying to get that ID first. Thanks in advance! ",
+            "Answer": "Asyncio. basetransport. get _ extra _ info ( ) now returns a safe to use socket object when \u2018 socket \u2019 is passed to the name parameter. ( contributed by yury selivanov in bpo - 37027. ) the function asyncio. basetransport. get _ extra _ info ( ) now returns a safe to use socket object when \u2018 socket \u2019 is passed to the name parameter. ( contributed by yury selivanov in bpo -",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 7567,
+            "index": 4502,
+            "ID": 65549860,
+            "Question": "Get embed footer from reaction message. I want the person who used the command to be able to delete the result. I have put the user's ID in the footer of the embed, and my question is: how do I get that data from the message where the user reacted to. reaction.message.embed.footer doesn't work. I currently don't have code as I was trying to get that ID first. Thanks in advance! ",
+            "Answer": "' '( ), visit _ bytes ( ), visit _ nameconstant ( ) and visit _ ellipsis ( ) are depreated now and will not be called in future python versions. add the visit _ constant ( ) method to handle all constant nodes. ( contributed by serhiy storchaka in bpo - 36917. ) the asyncio. coroutine ( ) decorator is depreated and will be removed in version 3.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

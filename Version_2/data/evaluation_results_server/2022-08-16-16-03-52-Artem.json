@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:03:52",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 11402,
+            "index": 1937,
+            "ID": 67695878,
+            "Question": "How to make the python program work in the background. how can i make my program run silently when running? I would like it to leave no trace and nothing to appear visually, in C# we say '' Silent Load '', but I don't know how it works in Python obs : i use pycharm for coding ",
+            "Answer": "' '( 0l ) ; pyobject _ print ( item, stdout, 0 ) ; pyobject _ decref ( item ) ;... The second case of problems with a borrowed reference is a variant involving threads. normally, multiple threads in the c debugger to figure out why his _ _ del _ _ ( ) methods would fail... The second case of problems with a borrowed reference is a variant involving threads.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 4694,
+            "index": 1629,
+            "ID": 67695878,
+            "Question": "How to make the python program work in the background. how can i make my program run silently when running? I would like it to leave no trace and nothing to appear visually, in C# we say '' Silent Load '', but I don't know how it works in Python obs : i use pycharm for coding ",
+            "Answer": "stdscr. refresh ( ) stdscr. getkey ( ) wrapper ( main ) the wrapper ( ) function takes a callable object and does the initializations described above, also initializing colors if color support is present. wrapper ( ) then runs your provided callable. once the callable returns, wrapper ( ) will restore the original state of the terminal. the callable is called inside a try... except that catches exceptions, restores the original state of the terminal.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

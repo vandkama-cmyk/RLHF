@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:05:17",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": 0,
+    "useful_L": 1,
+    "consistent_R": 2,
+    "correct_R": 0,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 568,
+            "index": 100,
+            "ID": 30693804,
+            "Question": "\"\"\"remove all non-alphanumeric characters except space from a string `text` and lower it\"\"\"",
+            "Answer": "\nre.sub('[^a-zA-Z0-9 ]+', '', text)\n\n",
+            "CSV_PATH": "pred_test_conala.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN FINETUNED"
+        },
+        {
+            "level_0": 98,
+            "index": 100,
+            "ID": 30693804,
+            "Question": "\"\"\"remove all non-alphanumeric characters except space from a string `text` and lower it\"\"\"",
+            "Answer": "\n     return re.sub(r'[^\\w\\s]', '', text).lower()",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN VANILLA"
+        }
+    ]
+}

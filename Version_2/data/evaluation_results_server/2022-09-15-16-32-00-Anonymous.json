@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 16:32:00",
+    "address": "178.71.236.89",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 560,
+            "index": 60,
+            "ID": 11236006,
+            "Question": "\"\"\"identify duplicate values in list `mylist`\"\"\"",
+            "Answer": "\nmylist.sort(key=lambda x: x[1])\n\nprint(mylist)\n\nOutput:\n[('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', 'b'), ('a', '",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 2003,
+            "index": 60,
+            "ID": 11236006,
+            "Question": "\"\"\"identify duplicate values in list `mylist`\"\"\"\n   ",
+            "Answer": "[x for x, y in itertools.groupby(mylist, lambda x: x)]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

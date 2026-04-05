@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:21:59",
+    "address": "5.18.203.79",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 1761,
+            "index": 304,
+            "ID": 2890896,
+            "Question": "\"\"\"extract ip address from an html string\"\"\"",
+            "Answer": "\nre.findall('[0-9]+(?:\\.[0-9]+){3}', html)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 790,
+            "index": 304,
+            "ID": 2890896,
+            "Question": "\"\"\"extract ip address from an html string\"\"\"",
+            "Answer": "\nhtml_string.split('<a href=\"http://www.google.com\">')[0].split('</a>')[1]\n\nprint(html_string.split('<a href=\"http://www.google.com\">')[0].split('</a>')[1])\n\nOutput:\n['http://www.google.com']\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

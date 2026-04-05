@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:34:05",
+    "address": "10.199.12.55",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 10030,
+            "index": 565,
+            "ID": 70202261,
+            "Question": "Why is 5D in hex represented as bytearray(b']')?. For example if you represent 5D in a bytearray you get bytearray(b']'), but I don't understand why. Is it because of ASCII and if so, how is Python handling all the ASCII Characters? ",
+            "Answer": "' 'a number : > > > oct ( 42 )'052'> > > future _ builtins. oct ( 42 )'0o52'> > > bin ( 173 )'0b10101101'the int ( ) and long ( ) builtins will now accept the \u201c 0o \u201d and \u201c 0b \u201d prefixes when base - 8 or base - 2 are requested, or when the base argument is zero ( signalling that the base used should be determined from",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 3527,
+            "index": 462,
+            "ID": 70202261,
+            "Question": "Why is 5D in hex represented as bytearray(b']')?. For example if you represent 5D in a bytearray you get bytearray(b']'), but I don't understand why. Is it because of ASCII and if so, how is Python handling all the ASCII Characters? ",
+            "Answer": "The mutable type is based on collections. The mutable api is based on collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collections.collect",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

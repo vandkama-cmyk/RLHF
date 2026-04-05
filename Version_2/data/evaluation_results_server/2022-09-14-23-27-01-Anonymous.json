@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:27:01",
+    "address": "213.152.165.107",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1540,
+            "index": 72,
+            "ID": 15049182,
+            "Question": "\"\"\"add one to the hidden web element with id 'XYZ' with selenium python script\"\"\"",
+            "Answer": "\ndriver.find_element_by_id('XYZ').click()\ndriver.find_element_by_id('XYZ').click()\ndriver.find_element_by_id('XYZ').click()\ndriver.find_element_by_id('XYZ').click()\ndriver.find_element_by_id('XYZ').click()\ndriver.find_element_by_id('XYZ').click()\ndriver.find_element_by_id('XYZ').click()\ndriver.find_element_by_id('XYZ').click()",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 72,
+            "index": 72,
+            "ID": 15049182,
+            "Question": "\"\"\"add one to the hidden web element with id 'XYZ' with selenium python script\"\"\"",
+            "Answer": "\nfrom selenium import webdriver\nfrom selenium.webdriver.common.keys import Keys\ndriver = webdriver.Firefox()\ndriver.get(\"http://www.google.com\")\ndriver.find_element_by_id(\"XYZ\").send_keys(Keys.CONTROL)\ndriver.find_element_by_id(\"XYZ\").send_keys(Keys.CONTROL)\ndriver.find_element_by_id(\"XYZ\").send_keys(Keys.CONTROL)\ndriver.find_element_by_id(\"XY",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

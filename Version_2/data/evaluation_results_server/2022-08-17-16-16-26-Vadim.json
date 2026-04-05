@@ -1,0 +1,34 @@
+{
+    "name_input": "Vadim",
+    "datetime": "2022-08-17 16:16:26",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 9889,
+            "index": 3928,
+            "ID": 70178536,
+            "Question": "Disection of re 're.compile(r\"^[a-zA-Z][\\w_]{2,23}[^_]$\")'. I'm new to python programming and doing some challenges to improve my coding; I encounter the following regular expression: (r^[a-zA-Z][\\w_]{2,23}[^_]$). Doing some research, I understand this: r = The expression is a raw string (not sure what this mean entirely) ^[a-zA-Z] = This tells me that the string must start with a letter [\\w_]{2,23} = the body of the string from val[2] to val[23] must be alphanumeric [^_]$ = the end must be an underscore If my research is correct, I don't understand why the [\\w_] contains an underscore on it. I thought for alphanumerics must be only [\\w]. If I'm wrong, help me to clarify it. ",
+            "Answer": "''is neither in a character class or preceded by an unescaped backslash.''s neither in a character class or preceded by an unescaped backslash. for example, here's a re that uses re. verbose ; see how much easier it is to read? charref = re.compile ( r \" \" \" & [ # ] # start of a numeric entity reference ( 0 [ 0 - 7 ] + # octal form | [",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T5 T"
+        },
+        {
+            "level_0": 9890,
+            "index": 3929,
+            "ID": 70178536,
+            "Question": "Disection of re 're.compile(r\"^[a-zA-Z][\\w_]{2,23}[^_]$\")'. I'm new to python programming and doing some challenges to improve my coding; I encounter the following regular expression: (r^[a-zA-Z][\\w_]{2,23}[^_]$). Doing some research, I understand this: r = The expression is a raw string (not sure what this mean entirely) ^[a-zA-Z] = This tells me that the string must start with a letter [\\w_]{2,23} = the body of the string from val[2] to val[23] must be alphanumeric [^_]$ = the end must be an underscore If my research is correct, I don't understand why the [\\w_] contains an underscore on it. I thought for alphanumerics must be only [\\w]. If I'm wrong, help me to clarify it. ",
+            "Answer": "' 'has been used to break up the re into smaller pieces, but it's still more difficult to understand than the version using re. verbose. More metacharacters  so far we \u2019 ve only covered a part of the features of regular expressions. in this section, we \u2019 ll cover some new metacharacters, and how to use groups to retrieve portions of the text that was matched.''has been used to break up the re into smaller pieces, but it \u2019 s still more difficult to understand than the",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T5 T"
+        }
+    ]
+}

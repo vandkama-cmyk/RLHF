@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:01:00",
+    "address": "10.199.12.90",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1271,
+            "index": 363,
+            "ID": 25388796,
+            "Question": "\"\"\"Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`\"\"\"",
+            "Answer": "\n\nfrom __future__ import division, absolute_import, print_function\n\nimport sys\n\nif sys.version_info[0] >= 3:\n    long = int\n    long_long = long\n    long_long_ = long_long\n    long_long_long = long_long_long\n    long_long_long_ = long_long_long_\n    long_long_long_long = long_long_long_long\n    long_long_long_long_ = long_",
+            "CSV_PATH": "pred_test_gptneo.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2C GPTNEO VANILLA"
+        },
+        {
+            "level_0": 351,
+            "index": 363,
+            "ID": 25388796,
+            "Question": "\"\"\"Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`\"\"\"",
+            "Answer": "\n     return sum([int(i) for i in strings])",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN VANILLA"
+        }
+    ]
+}

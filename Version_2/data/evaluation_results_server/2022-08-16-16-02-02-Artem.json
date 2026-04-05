@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:02:02",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 10894,
+            "index": 1429,
+            "ID": 67175371,
+            "Question": "How to pass data in body of a get request in python?. So i have a hash that i want to pass in the body of get request i am currently using requests library from python, i am doing something like this in my code. I am using falcon framework. requests.get(url, headers=head, data=json.dumps({user_id: 436186})) is it the right approach to pass the data in body of get request? Because i am not able to hit the api and getting 400 from the other side i suspect it's because of data not being able to pass in the get request. Or is there some other library which has the support? ",
+            "Answer": "This password manager extends httppasswordmgrwithdefaultrealm to support tracking uris for which authentication credentials should always be sent. httppasswordmgrwithpriorauth. add _ password ( realm, uri, user, passwd, is _authenticated = false )  realm, uri, user, passwd are as for httppasswordmgr. add _ password ( ). is _authenticated sets the initial value of the is _authenticated = false )",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 4256,
+            "index": 1191,
+            "ID": 67175371,
+            "Question": "How to pass data in body of a get request in python?. So i have a hash that i want to pass in the body of get request i am currently using requests library from python, i am doing something like this in my code. I am using falcon framework. requests.get(url, headers=head, data=json.dumps({user_id: 436186})) is it the right approach to pass the data in body of get request? Because i am not able to hit the api and getting 400 from the other side i suspect it's because of data not being able to pass in the get request. Or is there some other library which has the support? ",
+            "Answer": "' 'iterable object and can be used in a with statement. changed in version 3. 5 : the io. bufferediobase interface is now implemented and all of its reader operations are supported. httpresponse. read ( [ amt ] )  reads and returns the response body, or up to the next amt bytes. httpresponse. readinto ( b )  reads up to the next len ( b ) bytes of the response body into the buffer b.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

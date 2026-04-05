@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-26 19:44:32",
+    "address": "10.81.190.38",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1749,
+            "index": 785,
+            "ID": 59999021,
+            "Question": "\"\"\"extract text from a pdf file\"\"\"",
+            "Answer": "\nfrom PIL import Image\nfrom PIL import ImageDraw\nfrom PIL import ImageFont\nfrom PIL import ImageDraw\nfrom PIL import Image\nfrom PIL import ImageFont\nfrom PIL import ImageDraw\nfrom PIL import Image\nfrom PIL import ImageDraw\nfrom PIL import Image\nfrom PIL import ImageDraw\nfrom PIL import Image\nfrom PIL import ImageDraw\nfrom PIL import Image\nfrom PIL import ImageDraw\nfrom PIL import Image\nfrom PIL import ImageDraw\nfrom PIL import Image\nfrom PIL import ImageDraw\nfrom P",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2723,
+            "index": 785,
+            "ID": 59999021,
+            "Question": "\"\"\"extract text from a pdf file\"\"\"",
+            "Answer": "\npdf.extractText(pdf.open('test.pdf'))\n\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

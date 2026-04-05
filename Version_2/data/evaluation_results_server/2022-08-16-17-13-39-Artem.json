@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 17:13:39",
+    "address": "10.199.12.90",
+    "comparison_slider": 2,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 11437,
+            "index": 1972,
+            "ID": 66324507,
+            "Question": "How to get word embeddings back from Keras?. Say you create your own custom word embeddings in the process of some arbitrary task, say text classification. How do you get a dictionary like structure of {word: vector} back from Keras? embeddings_layer.get_weights() gives you the raw embeddings...but it's unclear which word corresponds to what vector element. ",
+            "Answer": "''for a pattern. findall ( ) returns a list of matching strings : &gt;&gt;&gt; import re &gt;&gt;&gt; s = '12 drummers drumming, 11 pipers piping, 10 lords a - leaping' &gt;&gt;&gt; s.findall ('12 drummers drumming, 11 pipers piping, 10 lords a - leaping'",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 2320,
+            "index": 248,
+            "ID": 66324507,
+            "Question": "How to get word embeddings back from Keras?. Say you create your own custom word embeddings in the process of some arbitrary task, say text classification. How do you get a dictionary like structure of {word: vector} back from Keras? embeddings_layer.get_weights() gives you the raw embeddings...but it's unclear which word corresponds to what vector element. ",
+            "Answer": "\nYou can use the embeddings_layer.get_weights() method to get the weights of the embeddings layer. You can then use the weights to create your own custom word embeddings.\n\nA:\n\nYou can use the embeddings_layer.get_weights() method to get the weights of the embeddings layer. You can then use the weights to create your own custom word embeddings.\n\n",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        }
+    ]
+}

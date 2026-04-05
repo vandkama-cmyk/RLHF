@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-26 18:19:33",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": 2,
+    "useful_L": 1,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 4636,
+            "index": 767,
+            "ID": 63517945,
+            "Question": "\"\"\"check for NaN in any data structure in python\"\"\"",
+            "Answer": "\nimport math\nimport numpy as np\nx = np.array([1,2,3,4,5,6,7,8,9,10])\nx[x == math.nan]\nx[np.isnan(x)]\nx[np.isnan(x) == False]\nx[np.isnan(x) == True]\nx[np.isnan(x) == False]\nx[np.isnan(x) == False]\nx[np.isnan(x) == False]\nx[np.isnan(",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 5626,
+            "index": 767,
+            "ID": 63517945,
+            "Question": "\"\"\"check for NaN in any data structure in python\"\"\"",
+            "Answer": "\nnp.isnan(np.array([1, 2, 3, np.nan, 4, 5, 6, 7, 8, 9]))\n\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

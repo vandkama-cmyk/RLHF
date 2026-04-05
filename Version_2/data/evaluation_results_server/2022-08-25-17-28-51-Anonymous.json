@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:28:51",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 3753,
+            "index": 873,
+            "ID": 64291709,
+            "Question": "\"\"\"open widget, have it do something, and close by itself\"\"\"",
+            "Answer": "\n\nimport os\nimport sys\nimport time\nimport tkinter as tk\nfrom tkinter import ttk\nfrom tkinter import filedialog\nfrom tkinter import messagebox\n\nfrom. import util\nfrom. import config\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import util\nfrom. import",
+            "CSV_PATH": "T2C-SO-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        },
+        {
+            "level_0": 1836,
+            "index": 873,
+            "ID": 64291709,
+            "Question": "\"\"\"open widget, have it do something, and close by itself\"\"\"",
+            "Answer": "\nfrom Tkinter import *\nroot = Tk()\nroot.withdraw()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy()\nroot.destroy",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        }
+    ]
+}

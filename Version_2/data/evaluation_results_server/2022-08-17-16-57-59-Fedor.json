@@ -1,0 +1,34 @@
+{
+    "name_input": "Fedor",
+    "datetime": "2022-08-17 16:57:59",
+    "address": "10.199.126.133",
+    "comparison_slider": 0,
+    "consistent_L": -1,
+    "correct_L": -2,
+    "useful_L": -1,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 20997,
+            "index": 914,
+            "ID": 67571574,
+            "Question": "How can I get Custom Payload as string. I have a Dialogflow CX agent that returns a Custom payload. My client is a Python application using the dialogflowcx_v3beta1 SDK to call DetectIntent. The application needs to forward the custom payload in JSON format to another application, but I have been unable to find a way to convert the structured payload to JSON. There is no schema associated with the custom payload, which could be literally any valid JSON, and because it will simply be forwarded to another component, the application has no reason to interpret the content in any way. Is there a way to serialize the custom payload to JSON? ",
+            "Answer": "You can use pickle.dump to dump the pickled object to the open file:\n\nimport pickle\n\nwith open('file.txt', 'r') as f:\n    pickled_object = pickle(f)\n\n\nThen you can dump it to the pickle module.\n",
+            "CSV_PATH": "q_id_titles_answers_bart.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE BART T"
+        },
+        {
+            "level_0": 6874,
+            "index": 913,
+            "ID": 67571574,
+            "Question": "How can I get Custom Payload as string. I have a Dialogflow CX agent that returns a Custom payload. My client is a Python application using the dialogflowcx_v3beta1 SDK to call DetectIntent. The application needs to forward the custom payload in JSON format to another application, but I have been unable to find a way to convert the structured payload to JSON. There is no schema associated with the custom payload, which could be literally any valid JSON, and because it will simply be forwarded to another component, the application has no reason to interpret the content in any way. Is there a way to serialize the custom payload to JSON? ",
+            "Answer": "' ')  return the mime part that is the best candidate to be the \u201c body \u201d of the message. preferencelist must be a sequence of strings from the set related, html, and plain, and indicates the order of preference for the content type of the part returned. start looking for candidate matches with the object on which the get _ body method is called. if related is not included in preferencelist, consider the root part ( or subpart of the root part ) of any related encountered.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T5 T"
+        }
+    ]
+}

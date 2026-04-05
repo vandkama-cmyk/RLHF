@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:14:18",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1763,
+            "index": 534,
+            "ID": 68619143,
+            "Question": "how to set correct batch_size and steps_per_epoch in keras?. I have 20000 RGB images. I set batch_Size = 1 (due to GPU capacity). So now does it mean the model weights are changing with one-by-one pictures or it depends on the steps_per_epoch? How should I set the steps_per_epoch and epochs for using all of 20000 images to be involved in training in different epochs? ",
+            "Answer": "\n    batch_size = 1 (due to GPU capacity)",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        },
+        {
+            "level_0": 13610,
+            "index": 4145,
+            "ID": 68619143,
+            "Question": "how to set correct batch_size and steps_per_epoch in keras?. I have 20000 RGB images. I set batch_Size = 1 (due to GPU capacity). So now does it mean the model weights are changing with one-by-one pictures or it depends on the steps_per_epoch? How should I set the steps_per_epoch and epochs for using all of 20000 images to be involved in training in different epochs? ",
+            "Answer": "The threading module now lets you set the stack size used when new threads are created. The stack_size ( [ * size * ] ) function returns the currently configured stack size, and supplying the optional size parameter sets a new value. Not all platforms support changing the stack size, but windows, posix threading, and os / 2 all do.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

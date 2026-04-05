@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:13:04",
+    "address": "10.199.12.115",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -1,
+    "consistent_R": 0,
+    "correct_R": -1,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 6027,
+            "index": 188,
+            "ID": 14227561,
+            "Question": "\"\"\"find a value within nested json 'data' where the key inside another key 'B' is unknown.\"\"\"",
+            "Answer": "\n\nimport json\nimport re\n\nfrom django.core.exceptions import ValidationError\nfrom django.core.files.uploadedfile import SimpleUploadedFile\nfrom django.core.files.storage import default_storage\nfrom django.core.files.storage.base import Storage\nfrom django.core.files.storage.base import StorageError\nfrom django.core.files.storage.base import StorageError\nfrom django.core.files.storage.base import StorageError\nfrom django.core.files.storage.base import StorageError\nfrom",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO VANILLA"
+        },
+        {
+            "level_0": 7948,
+            "index": 188,
+            "ID": 14227561,
+            "Question": "\"\"\"find a value within nested json 'data' where the key inside another key 'B' is unknown.\"\"\"",
+            "Answer": "\nimport json\ndata = json.loads(data)\nprint(data['B']['C']['D'])\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

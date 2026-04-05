@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:31:14",
+    "address": "77.234.193.84",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 665,
+            "index": 171,
+            "ID": 25698710,
+            "Question": "\"\"\"replace all occurences of newlines `\\n` with `<br>` in dataframe `df`\"\"\"",
+            "Answer": "\ndf.replace('\\n', '<br>')\n\ndf\n\nOutput:\n                                                                                                           ",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1145,
+            "index": 172,
+            "ID": 25698710,
+            "Question": "\"\"\"replace all occurrences of a string `\\n` by string `<br>` in a pandas data frame `df`\"\"\"",
+            "Answer": "\ndf.replace('\\n', '<br>', regex=True)\ndf.replace('\\n', '<br>', regex=True)\ndf.replace('\\n', '<br>', regex=True)\ndf.replace('\\n', '<br>', regex=True)\ndf.replace('\\n', '<br>', regex=True)\ndf.replace('\\n', '<br>', regex=True)\ndf.replace('\\n', '<br>', regex=True)\ndf.replace('\\n', '",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

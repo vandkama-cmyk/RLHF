@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 17:30:27",
+    "address": "95.55.35.26",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 2,
+    "correct_R": 0,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 2787,
+            "index": 497,
+            "ID": 5838735,
+            "Question": "Open file in Python",
+            "Answer": "    with open('path', 'r') as f:\n\n        print(f.read())\n\n    return True\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1469,
+            "index": 497,
+            "ID": 5838735,
+            "Question": "\"\"\"open file `path` with mode 'r'\"\"\"",
+            "Answer": "\nwith open(path, 'r') as f:\n    f.read()\n    f.close()\n    f.closed\n    f.mode\n    f.name\n    f.encoding\n    f.newlines\n    f.softspace\n    f.tell()\n    f.seek(0)\n    f.read()\n    f.readline()\n    f.readlines()\n    f.readlines()[1]\n    f.readlines()[1]\n    f.readlines()[1]\n    f.readlines()",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

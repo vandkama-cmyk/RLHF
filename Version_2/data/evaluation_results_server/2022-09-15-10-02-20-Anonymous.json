@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 10:02:20",
+    "address": "176.53.205.126",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": -1,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 525,
+            "index": 25,
+            "ID": 17977584,
+            "Question": "\"\"\"open a file `Output.txt` in append mode\"\"\"",
+            "Answer": "\nopen('Output.txt', 'a')\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 998,
+            "index": 25,
+            "ID": 17977584,
+            "Question": "\"\"\"open a file `Output.txt` in append mode\"\"\"",
+            "Answer": "\nwith open('Output.txt', 'a') as f:\n    f.write(str(data))\n    f.write('\\n')\n    f.close()\n    f = open('Output.txt', 'r')\n    print(f.read())\n    f.close()\n    f = open('Output.txt', 'w')\n    f.write(str(data))\n    f.close()\n    f = open('Output.txt', 'r')\n    print(f.read())\n    f.close()\n    f = open('",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

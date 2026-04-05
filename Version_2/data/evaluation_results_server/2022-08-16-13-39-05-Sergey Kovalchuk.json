@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:39:05",
+    "address": "10.199.12.55",
+    "comparison_slider": 1,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 1411,
+            "index": 37,
+            "ID": 66693194,
+            "Question": "How can I change my default Python version, that if I type python in the terminal python 3 gets executed?. Can somebody help me? I tried to change my python version with the alias but I got a permission denied. What can I do? I'm on a mac. ",
+            "Answer": "\n  I tried to change my python version with the alias but I got a permission denied. What can I do?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        },
+        {
+            "level_0": 9767,
+            "index": 302,
+            "ID": 66693194,
+            "Question": "How can I change my default Python version, that if I type python in the terminal python 3 gets executed?. Can somebody help me? I tried to change my python version with the alias but I got a permission denied. What can I do? I'm on a mac. ",
+            "Answer": "sys. exec _ prefix'/ usr' is a placeholder for the version of python, for example 3. 2 ; abiflags will be replaced by the value of sys. abiflags or the empty string for platforms which don \u2019 t define abi flags ; dist. sys. exec _ prefix'/ usr'",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

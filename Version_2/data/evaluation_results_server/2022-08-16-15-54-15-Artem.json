@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:54:15",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 14995,
+            "index": 5530,
+            "ID": 68654914,
+            "Question": "discord.py get user \"about me\" section. I was wondering if it was possible using discord.py to get the about me section of a given user. I did not find anything in the API documentation so I'm asking here to be sure. ",
+            "Answer": "' 'the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords. use keyword - only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 14994,
+            "index": 5529,
+            "ID": 68654914,
+            "Question": "discord.py get user \"about me\" section. I was wondering if it was possible using discord.py to get the about me section of a given user. I did not find anything in the API documentation so I'm asking here to be sure. ",
+            "Answer": "You can combine multiple literals in a single literal. You can use''more literals : def http _ error ( status ) : match status : case 400 : return \" bad request \" case 404 : return \" not found \" case 418 : return \" i'm a teapot \" case _ : return \" something's wrong with the internet \" note the last block : the \u201c variable name \u201d _ acts as a wildcard and never fails to match. if no case matches, none of the branches is",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

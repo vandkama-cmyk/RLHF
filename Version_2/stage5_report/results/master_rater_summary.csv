@@ -1,0 +1,12 @@
+rater,n_evaluations,mean_rating,std_rating,z_score,bias_type,positional_pval,positional_sig,positional_dir,corr_correct_auto,decoupling_flag,inconsistency_score,inconsistency_flag,reliability_weight_stage3,align_score,consistency_score,agreement_score,effective_weight_stage4
+Anonymous,151,-0.15,1.359,0.604,,0.5055,False,,0.2096,False,0.0044,False,0.939803,0.6048,0.9009,0.498,0.15
+Artem,39,-1.611,0.973,-2.007,STRICT (deflated ratings),0.0,True,RIGHT (prefers Right answers),-0.1447,False,0.0043,False,0.024546,0.4276,0.9757,0.5508,0.024546
+Anonymous01,29,0.167,0.526,1.17,,0.576,False,,0.242,False,0.0,False,0.019621,0.621,0.9244,0.4181,0.019621
+Sergey Kovalchuk,24,-0.16,1.531,0.587,,0.6873,False,,0.0108,False,0.0,False,0.009037,0.5054,0.907,0.6022,0.009037
+TypingCat,20,-0.55,1.548,-0.111,,0.2865,False,,-0.0685,False,0.0083,False,0.003232,0.4657,0.9064,0.5,0.003232
+XXZ,13,-0.026,1.783,0.826,,0.5836,False,,0.3703,False,0.0,False,0.001912,0.6852,0.9916,0.3389,0.001912
+Vadim,11,-0.788,1.628,-0.536,,0.003,True,NEUTRAL EXTREME (avoids middle),0.1194,False,0.0,False,0.001023,0.5597,0.9656,0.5608,0.001023
+Anastasia,8,-0.583,1.412,-0.17,,0.8825,False,,0.3445,False,0.0,False,0.000597,0.6723,0.9254,0.6394,0.000597
+Arthur,4,-0.458,1.117,0.053,,,,,0.4847,False,0.0,False,0.000107,0.7424,0.9434,0.5,0.000107
+Gorbatovski,4,0.167,1.312,1.17,,,,,0.1637,False,0.0,False,7.8e-05,0.5818,0.8812,0.5,7.8e-05
+Fedor,4,-1.375,0.753,-1.585,STRICT (deflated ratings),,,,-0.3944,False,0.0,False,4.4e-05,0.3028,0.794,,4.4e-05

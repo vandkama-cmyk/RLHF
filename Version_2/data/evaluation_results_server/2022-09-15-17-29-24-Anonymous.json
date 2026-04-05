@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 17:29:24",
+    "address": "95.55.35.26",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 450,
+            "index": 450,
+            "ID": 743806,
+            "Question": "\"\"\"split string `text` by \",\"\"\"\"",
+            "Answer": "\ntext = 'Hello, world!'\ntext.split(',')\n['Hello', 'world!']\ntext.split(',')[0]\n'Hello'\ntext.split(',')[1]\n'world!'\ntext.split(',')[2]\n'!'\ntext.split(',')[3]\n'world!'\ntext.split(',')[4]\n'!'\ntext.split(',')[5]\n'world!'\ntext.split(',')[6]\n'!'\ntext.split(',')[7]",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2370,
+            "index": 450,
+            "ID": 743806,
+            "Question": "\"\"\"split string `text` by \",\"\"\"\"\n   ",
+            "Answer": "re.split('\\\\,\\\\s+', text)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

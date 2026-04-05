@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 15:56:41",
+    "address": "188.187.74.97",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": -1,
+    "correct_R": 0,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1237,
+            "index": 264,
+            "ID": 9323159,
+            "Question": "\"\"\"find 10 largest differences between each respective elements of list `l1` and list `l2`\"\"\"",
+            "Answer": "\ndef largest_difference(l1, l2):\n    return max([abs(l1[i] - l2[i]) for i in range(len(l1))])\nl1 = [1, 2, 3, 4, 5]\nl2 = [2, 3, 4, 5, 6]\nlargest_difference(l1, l2)\nlargest_difference(l2, l1)\nlargest_difference(l1, l2)\nlargest_difference(l2, l1)\nlargest_difference(l1",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 2197,
+            "index": 264,
+            "ID": 9323159,
+            "Question": "\"\"\"find 10 largest differences between each respective elements of list `l1` and list `l2`\"\"\"\n   ",
+            "Answer": "sorted(list(map(lambda x, y: abs(x - y), l1, l2)))[:10]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

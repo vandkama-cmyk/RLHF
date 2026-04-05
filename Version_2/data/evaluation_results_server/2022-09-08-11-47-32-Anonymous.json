@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-08 11:47:32",
+    "address": "10.199.12.55",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 5901,
+            "index": 25,
+            "ID": 17977584,
+            "Question": "import requests\nimport subprocess\nimport io\nimport json\nimport os\n\ndef open():\n    \"\"\"open a file `Output.txt` in append mode\"\"\"\n    ",
+            "Answer": "f = open('Output.txt', 'a')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 4928,
+            "index": 25,
+            "ID": 17977584,
+            "Question": "\"\"\"open a file `Output.txt` in append mode\"\"\"",
+            "Answer": "\nwith open('Output.txt', 'a') as f:\n    f.write(str(data))\n    f.write('\\n')\n    f.close()\n    f = open('Output.txt', 'r')\n    print(f.read())\n    f.close()\n    f = open('Output.txt', 'w')\n    f.write(str(data))\n    f.close()\n    f = open('Output.txt', 'r')\n    print(f.read())\n    f.close()\n    f = open('",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-24 12:34:54",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1391,
+            "index": 421,
+            "ID": 62782130,
+            "Question": "\"\"\"print top words from wordcloud\"\"\"",
+            "Answer": "\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.feature_extraction.text import TfidfTransformer\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.feature_extraction.text import TfidfTransformer\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.feature_extraction.text import TfidfTransformer\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.feature_extraction.text import Tf",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 3326,
+            "index": 421,
+            "ID": 62782130,
+            "Question": "\"\"\"print top words from wordcloud\"\"\"",
+            "Answer": "\nimport os\nimport sys\nimport json\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom wordcloud import WordCloud, STOPWORDS, ImageColorGenerator\nfrom PIL import Image\nimport matplotlib.patches as mpatches\n\ndef main():\n     \"\"\"main function\"\"\"\n     if len(sys.argv)!= 2:\n         print(\"Usage: python3 wordcloud.py <file_path>\")\n         exit(1)\n\n     file_path = sys.argv[1]\n     if not os.path",
+            "CSV_PATH": "T2C-SO-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        }
+    ]
+}

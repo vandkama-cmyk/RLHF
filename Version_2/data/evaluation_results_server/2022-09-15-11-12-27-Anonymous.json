@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 11:12:27",
+    "address": "188.243.182.141",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1960,
+            "index": 14,
+            "ID": 13954222,
+            "Question": "\"\"\"concatenate elements of list `b` by a colon \":\"\"\"\"\n   ",
+            "Answer": "print(':'.join(b))\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 14,
+            "index": 14,
+            "ID": 13954222,
+            "Question": "\"\"\"concatenate elements of list `b` by a colon \":\"\"\"\"",
+            "Answer": "\nb = [1, 2, 3]\nb.extend([\"a\", \"b\", \"c\"])\nb.extend([\"a\", \"b\", \"c\"])\nb.extend([\"a\", \"b\", \"c\"])\nb.extend([\"a\", \"b\", \"c\"])\nb.extend([\"a\", \"b\", \"c\"])\nb.extend([\"a\", \"b\", \"c\"])\nb.extend([\"a\", \"b\", \"c\"])\nb.extend(",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

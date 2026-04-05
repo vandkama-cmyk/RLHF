@@ -1,0 +1,34 @@
+{
+    "name_input": "Arthur",
+    "datetime": "2022-09-13 12:25:40",
+    "address": "178.66.156.248",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": -1,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 1625,
+            "index": 163,
+            "ID": 8519922,
+            "Question": "\"\"\"Send a post request with raw data `DATA` and basic authentication with `username` and `password`\"\"\"",
+            "Answer": "\nrequest.post('http://httpbin.org/post', data=DATA, auth=('username', 'password'))\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1136,
+            "index": 163,
+            "ID": 8519922,
+            "Question": "\"\"\"Send a post request with raw data `DATA` and basic authentication with `username` and `password`\"\"\"",
+            "Answer": "\nimport requests\nresponse = requests.post(url, data=DATA, auth=HTTPBasicAuth(username, password))\nprint(response.text)\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

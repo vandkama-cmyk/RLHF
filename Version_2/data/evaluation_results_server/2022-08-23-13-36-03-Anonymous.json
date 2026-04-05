@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-23 13:36:03",
+    "address": "10.199.12.90",
+    "comparison_slider": -1,
+    "consistent_L": -1,
+    "correct_L": -1,
+    "useful_L": -1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 8324,
+            "index": 69,
+            "ID": 15851568,
+            "Question": "\"\"\"Split a string `x` by last occurrence of character `-`\"\"\"",
+            "Answer": "\nx.split('-')[-1]\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 5913,
+            "index": 69,
+            "ID": 15851568,
+            "Question": "\"\"\"Split a string `x` by last occurrence of character `-`\"\"\"",
+            "Answer": "\n\nimport re\n\nfrom collections import defaultdict\n\nfrom. import _split_regex\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO VANILLA"
+        }
+    ]
+}

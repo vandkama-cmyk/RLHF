@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:43:39",
+    "address": "10.199.12.55",
+    "comparison_slider": -2,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 171,
+            "index": 173,
+            "ID": 41923858,
+            "Question": "\"\"\"create a list containing each two adjacent letters in string `word` as its elements\"\"\"",
+            "Answer": "\n     return [word[i:i+2] for i in range(len(word)-1)]\n\n",
+            "CSV_PATH": "pred_test_codegen.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN VANILLA"
+        },
+        {
+            "level_0": 1103,
+            "index": 174,
+            "ID": 41923858,
+            "Question": "\"\"\"Get a list of pairs from a string `word` using lambda function\"\"\"",
+            "Answer": "\n\nimport re\n\nfrom.. import util\nfrom.. import util.compat\nfrom.. import util.compat.string_types\nfrom.. import util.compat.string_types.string_types\nfrom.. import util.compat.string_types.string_types_base\nfrom.. import util.compat.string_types.string_types_base.string_types\nfrom.. import util.compat.string_types.string_types_base.string_types_base\nfrom.. import util.compat.string_types.string_types_base",
+            "CSV_PATH": "pred_test_gptneo.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2C GPTNEO VANILLA"
+        }
+    ]
+}

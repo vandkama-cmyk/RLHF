@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:45:14",
+    "address": "95.161.223.140",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2573,
+            "index": 206,
+            "ID": 9012008,
+            "Question": "python's re: return True if regex contains in the string",
+            "Answer": "    foobarrrr = \"foobarrrr\"\n\n    print(re.search(\"ba[rzd]\", foobarrrr))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 2142,
+            "index": 206,
+            "ID": 9012008,
+            "Question": "\"\"\"return `True` if string `foobarrrr` contains regex `ba[rzd]`\"\"\"\n   ",
+            "Answer": "re.search('ba[rzd]', 'foobarrrr')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

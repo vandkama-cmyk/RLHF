@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:21:32",
+    "address": "188.170.82.230",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2476,
+            "index": 75,
+            "ID": 11801309,
+            "Question": "loop over files",
+            "Answer": "    for filename in os.listdir('.'):\n\n        print(filename)\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        },
+        {
+            "level_0": 1543,
+            "index": 75,
+            "ID": 11801309,
+            "Question": "\"\"\"loop over files in directory '.'\"\"\"",
+            "Answer": "\nfor (dirpath, dirnames, filenames) in os.walk('.'):\n    pass\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

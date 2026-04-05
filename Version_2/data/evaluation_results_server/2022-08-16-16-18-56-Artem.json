@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:18:56",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1605,
+            "index": 307,
+            "ID": 65694323,
+            "Question": "Heikin Ashi without a stock's entire history?. I'm trying to loop through hundreds of stock tickers, calculating the most recent Heikin-Ashi open and close value for each. However, you need the previous HA open and close to calculate the current HA open. Is there any way to do this without having to deal with a stock's entire history? ",
+            "Answer": "\n  Is there any way to do this without having to deal with a stock's entire history?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        },
+        {
+            "level_0": 5060,
+            "index": 1995,
+            "ID": 65694323,
+            "Question": "Heikin Ashi without a stock's entire history?. I'm trying to loop through hundreds of stock tickers, calculating the most recent Heikin-Ashi open and close value for each. However, you need the previous HA open and close to calculate the current HA open. Is there any way to do this without having to deal with a stock's entire history? ",
+            "Answer": "' 'the window. when shown, this pane freezes the opening lines for block code, such as those beginning with class, def, or if keywords, that would have otherwise scrolled out of view. the size of the pane will be expanded and contracted as needed to show the all current levels of context, up to the maximum number of lines defined in the configure idle dialog ( which defaults to 15 ). if there are no current context lines and the feature is disabled, it will freeze the opening lines for block code, such as those beginning with class, def, or",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 07:50:08",
+    "address": "134.209.200.134",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 107,
+            "index": 107,
+            "ID": 13793321,
+            "Question": "\"\"\"joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes\"\"\"",
+            "Answer": "\ndf1['Date_Time'] = df1['Date_Time'].dt.date\ndf2['Date_Time'] = df2['Date_Time'].dt.date\ndf1['Date_Time'] = df1['Date_Time'].dt.date\ndf2['Date_Time'] = df2['Date_Time'].dt.date\ndf1['Date_Time'] = df1['Date_Time'].dt.date\ndf2['Date_Time'] = df2['Date_Time'].dt.date\ndf1['Date_Time']",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2049,
+            "index": 107,
+            "ID": 13793321,
+            "Question": "\"\"\"joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes\"\"\"\n   ",
+            "Answer": "pd.merge(df1, df2, on='Date_Time')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:14:55",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 11387,
+            "index": 1922,
+            "ID": 66118575,
+            "Question": "Do I need a setup.cfg if I have a setup.py?. I use setuptools to build my python package. I was using just a setup.py file, but I added a pyproject.toml in accordance with this tutorial, which appears to have been recently updated to include that file. What I can't tell from that tutorial or this one, is whether I need to have a setup.cfg if I'm still using setup.py, and if so, what should be in it. It does show a file tree with both, but then implies that file structure is only indicative with (for people using primarily setup.cfg)  If you create a setup.py file, this will enable direct interaction with setup.py (which generally should be avoided), and editable installs. This file used to be required, but can be omitted in modern setuptools.  ",
+            "Answer": "''simple example : more metadata, and the specification of pure python modules by package, rather than by module. This is important since the distutils consist of a couple of dozen modules split into ( so far ) two packages ; an explicit list of every module would be tedious to generate and difficult to maintain.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 11384,
+            "index": 1919,
+            "ID": 66118575,
+            "Question": "Do I need a setup.cfg if I have a setup.py?. I use setuptools to build my python package. I was using just a setup.py file, but I added a pyproject.toml in accordance with this tutorial, which appears to have been recently updated to include that file. What I can't tell from that tutorial or this one, is whether I need to have a setup.cfg if I'm still using setup.py, and if so, what should be in it. It does show a file tree with both, but then implies that file structure is only indicative with (for people using primarily setup.cfg)  If you create a setup.py file, this will enable direct interaction with setup.py (which generally should be avoided), and editable installs. This file used to be required, but can be omitted in modern setuptools.  ",
+            "Answer": "' '' : ['data / *. dat'], ) changed in version 3. 1 : all the files that match package _ data will be added to the manifest file if no template is provided. see specifying the files to distribute.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:48:33",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 8388,
+            "index": 5323,
+            "ID": 66182380,
+            "Question": "i want to compile .py to .exe. i want to compile .py to .exe. But when i do so the exe files is too big. Is there a solution?? i want the exe to be a smaller i know that  python was not meant to be compiled, executables made from python are bound to be large , but the problem is i have learnt python like 3 years, and now i want to make apps/games for windows. i can't just install python on every device?? i want to make it small i learnt that there is something called executable-packing?? using tools like crinkler how can we do that with python with pyinstaller or cx_freeze ",
+            "Answer": "ccompiler is a built-in class that can be used for all the compile / link steps in building a single project.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 15939,
+            "index": 6474,
+            "ID": 66182380,
+            "Question": "i want to compile .py to .exe. i want to compile .py to .exe. But when i do so the exe files is too big. Is there a solution?? i want the exe to be a smaller i know that  python was not meant to be compiled, executables made from python are bound to be large , but the problem is i have learnt python like 3 years, and now i want to make apps/games for windows. i can't just install python on every device?? i want to make it small i learnt that there is something called executable-packing?? using tools like crinkler how can we do that with python with pyinstaller or cx_freeze ",
+            "Answer": "ccompiler is a built-in module for distutils. You can use it as a ccompiler instance to create a single project. import distutils ccompiler = distutils.ccompiler(ccompiler) ccompiler = ccompiler(ccompiler) ccompiler = ccompiler(ccompiler)",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:45:13",
+    "address": "185.24.52.32",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 958,
+            "index": 484,
+            "ID": 356483,
+            "Question": "\"\"\"Find all numbers and dots from a string `text` using regex\"\"\"",
+            "Answer": "\nre.findall('\\\\d+\\\\.\\\\d+', text)\n\nThis will return a list of numbers and dots separated by a comma.\n\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 484,
+            "index": 484,
+            "ID": 356483,
+            "Question": "\"\"\"Find all numbers and dots from a string `text` using regex\"\"\"",
+            "Answer": "\nimport re\ntext = \"123.456.789.123\"\nre.findall(r'\\d+\\.\\d+\\.\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+\\.\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+\\.\\d+\\.\\d+', text)\nre.findall(r'\\d+\\.\\d+\\.\\d+\\.\\d+', text)\nre.findall(r'\\",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        }
+    ]
+}

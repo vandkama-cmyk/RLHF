@@ -1,0 +1,34 @@
+{
+    "name_input": "Vadim",
+    "datetime": "2022-08-17 15:47:16",
+    "address": "10.199.126.142",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 18700,
+            "index": 6339,
+            "ID": 66512924,
+            "Question": "How to run and test a django cloned project from github in visual studio code?. I have cloned a random project and trying to run it in my local system. I am using visual studio code editor. After opening the extracted folder in editor, I have clicked on run. At this point in time, a new chrome browser is getting opened and its showing that the server is down. I tried setting up a virtual environment and by using the command - python manage.py runserver . Even though I am unable to test that project. Could I get some insights to get rid of this issue as early as possible please? ",
+            "Answer": "' '##o - 15308 : add \u2018 interrupt execution \u2019 (  c ) to shell menu. patch by roger serwy, updated by bayard randel. bpo - 27922 : stop idle tests from \u2018 flashing \u2019 gui widgets on the screen. add version to title of idle help window.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T5 T+B"
+        },
+        {
+            "level_0": 25315,
+            "index": 5232,
+            "ID": 66512924,
+            "Question": "How to run and test a django cloned project from github in visual studio code?. I have cloned a random project and trying to run it in my local system. I am using visual studio code editor. After opening the extracted folder in editor, I have clicked on run. At this point in time, a new chrome browser is getting opened and its showing that the server is down. I tried setting up a virtual environment and by using the command - python manage.py runserver . Even though I am unable to test that project. Could I get some insights to get rid of this issue as early as possible please? ",
+            "Answer": "You can use the built-in bpo module from the standard library.\n\nimport bpo\n\n#!/usr/bin/env python\nimport urllib\nimport sys\nimport test\n\nclass Test(object):\n    def __init__(self, *args, **kwargs):\n\n   # ...\n\n  def test_test_test(self):\n\n\n  test_tests_test.__init__() will return a new test object.\n\n\nSo, you can do this:\n\ntest_tests = Test()\n\nwith open('test_",
+            "CSV_PATH": "q_id_titles_answers_bart.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE BART T"
+        }
+    ]
+}

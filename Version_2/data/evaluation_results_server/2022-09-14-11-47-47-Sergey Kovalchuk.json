@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-09-14 11:47:47",
+    "address": "159.138.216.22",
+    "comparison_slider": 1,
+    "consistent_L": 1,
+    "correct_L": -1,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 462,
+            "index": 462,
+            "ID": 29881993,
+            "Question": "\"\"\"join together with \",\" elements inside a list indexed with 'category' within a dictionary `trans`\"\"\"",
+            "Answer": "\ntrans = {'category': ['a', 'b', 'c', 'd'], 'value': [1, 2, 3, 4]}\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category', [])\ntrans.get('category",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 2382,
+            "index": 462,
+            "ID": 29881993,
+            "Question": "\"\"\"join together with \",\" elements inside a list indexed with 'category' within a dictionary `trans`\"\"\"\n   ",
+            "Answer": "print(','.join(['{0}'.format(x) for x in list(trans['category'].values)]))\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        }
+    ]
+}

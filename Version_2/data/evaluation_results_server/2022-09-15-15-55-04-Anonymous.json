@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 15:55:04",
+    "address": "188.187.74.97",
+    "comparison_slider": -1,
+    "consistent_L": 1,
+    "correct_L": 0,
+    "useful_L": 1,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 1642,
+            "index": 180,
+            "ID": 1007481,
+            "Question": "\"\"\"replace spaces with underscore\"\"\"",
+            "Answer": "\nre.sub(' +', '_', string)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 674,
+            "index": 180,
+            "ID": 1007481,
+            "Question": "\"\"\"replace spaces with underscore\"\"\"",
+            "Answer": "\nre.sub('\\\\s+', '_', '_')\n\nprint(re.sub('\\\\s+', '_', '_'))\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

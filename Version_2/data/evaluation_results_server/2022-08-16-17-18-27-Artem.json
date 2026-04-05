@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 17:18:27",
+    "address": "10.199.12.90",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 10064,
+            "index": 599,
+            "ID": 69259790,
+            "Question": "Why does Google Cloud Compute Engine IP differ from the static one I have reserved?. I have set a static IP address for my Google Cloud Compute Engine. When I go to the network details of the engine, it tells it is 34.88.xx.xx However - when I now run a test python script in the cloud shell, it tells me that the requests comes from an IP that is 34.91.xx.xx It looks like I should not run the script on the Shell but somehow run it in the compute engine. Hard to figure out how that could be done. ",
+            "Answer": "' '##auth objects abstractbasicauthhandler objects proxybasicauthhandler objects httpbasicauthhandler objects proxydigestauthhandler objects httphandler objects httpshandler objects filehandler objects ftphandler objects cacheftphandler objects unknownhandler objects httperrorprocessor objects examples legacy interface urllib. request restrictions urllib. response restrictions urllib. response restrictions urllib. response restrictions urllib. response restrictions urllib. response restrictions urllib. response restrictions urllib. response restrictions urllib.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 2150,
+            "index": 78,
+            "ID": 69259790,
+            "Question": "Why does Google Cloud Compute Engine IP differ from the static one I have reserved?. I have set a static IP address for my Google Cloud Compute Engine. When I go to the network details of the engine, it tells it is 34.88.xx.xx However - when I now run a test python script in the cloud shell, it tells me that the requests comes from an IP that is 34.91.xx.xx It looks like I should not run the script on the Shell but somehow run it in the compute engine. Hard to figure out how that could be done. ",
+            "Answer": "\nThe IP address of the Compute Engine is not the same as the IP address that you have reserved.\n\nA:\n\nThe IP address of the Compute Engine is not the same as the IP address that you have reserved.\n\nThe IP address of the Compute Engine is 34.88.xx.xx.\n\nThe IP address of the Compute Engine is 34.88.xx.xx.\n\nThe IP address of the Compute Engine is 34.88.xx.xx.\n\nThe IP address of the Compute Engine is 34.88.xx.xx.\n\nThe",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        }
+    ]
+}

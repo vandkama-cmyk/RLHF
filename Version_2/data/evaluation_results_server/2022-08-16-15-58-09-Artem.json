@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:58:09",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 8675,
+            "index": 5610,
+            "ID": 65683478,
+            "Question": "Django button in admin. On user form view, add button Login As, that button will execute functionality that we login as that user. Only admins can see/execute this functionality. This is my question, how this to make? ",
+            "Answer": "django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.django.djan",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 8684,
+            "index": 5619,
+            "ID": 65683478,
+            "Question": "Django button in admin. On user form view, add button Login As, that button will execute functionality that we login as that user. Only admins can see/execute this functionality. This is my question, how this to make? ",
+            "Answer": "' '##dget creates a box of buttons, such as is commonly used for ok cancel. class tkinter. tix. combobox  the combobox widget is similar to the combo box control in ms windows. the user can select a choice by either typing in the entry subwidget or selecting from the listbox subwidget.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

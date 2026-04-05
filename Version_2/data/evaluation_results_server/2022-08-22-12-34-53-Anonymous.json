@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-22 12:34:53",
+    "address": "10.199.12.90",
+    "comparison_slider": -1,
+    "consistent_L": -1,
+    "correct_L": -1,
+    "useful_L": -1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 2694,
+            "index": 756,
+            "ID": 62971053,
+            "Question": "\"\"\"get this type of output in python in string\"\"\"",
+            "Answer": "\nprint(type(output))\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 3640,
+            "index": 756,
+            "ID": 62971053,
+            "Question": "\"\"\"get this type of output in python in string\"\"\"",
+            "Answer": "\n         return self.__class__.__name__\n\n     def __repr__(self):\n         return self.__class__.__name__\n\n     def __str__(self):\n         return self.__class__.__name__\n\n     def __call__(self, *args, **kwargs):\n         return self.__class__(*args, **kwargs)\n\n     def __getattr__(self, item):\n         return self.__class__(item)\n\n     def __getitem__(self, item):\n         return self.__class",
+            "CSV_PATH": "T2C-SO-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN VANILLA"
+        }
+    ]
+}

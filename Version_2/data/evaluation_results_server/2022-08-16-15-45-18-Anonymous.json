@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:45:18",
+    "address": "10.199.12.90",
+    "comparison_slider": -2,
+    "consistent_L": 2,
+    "correct_L": 2,
+    "useful_L": 2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 768,
+            "index": 310,
+            "ID": 16330838,
+            "Question": "\"\"\"Python split a string using regex\"\"\"",
+            "Answer": "\nre.split('\\\\W+', 'This is a string with words')\n\n",
+            "CSV_PATH": "pred_test_conala.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C CODEGEN FINETUNED"
+        },
+        {
+            "level_0": 1225,
+            "index": 310,
+            "ID": 16330838,
+            "Question": "\"\"\"Python split a string using regex\"\"\"",
+            "Answer": "\n\nimport re\n\nfrom collections import defaultdict\n\nfrom. import _base\nfrom. import _base_types\nfrom. import _base_string_types\nfrom. import _base_string_util\nfrom. import _base_string_util_base\nfrom. import _base_string_util_base_types\nfrom. import _base_string_util_base_types\nfrom. import _base_string_util_base_types_base\nfrom. import _base_string_util_base_types_base\nfrom. import _base_string_util",
+            "CSV_PATH": "pred_test_gptneo.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2C GPTNEO VANILLA"
+        }
+    ]
+}

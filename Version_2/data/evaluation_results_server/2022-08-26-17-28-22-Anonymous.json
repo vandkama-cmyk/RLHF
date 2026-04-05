@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-26 17:28:22",
+    "address": "10.81.194.230",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 2,
+    "correct_R": 2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 6064,
+            "index": 231,
+            "ID": 5558418,
+            "Question": "\"\"\"group a list of dicts `LD` into one dict by key\"\"\"",
+            "Answer": "\n\nimport collections\nimport copy\nimport itertools\nimport operator\nimport re\nimport sys\n\nfrom. import _base\nfrom. import _base_dict\nfrom. import _base_list\nfrom. import _base_set\nfrom. import _base_tuple\nfrom. import _base_dict_list\nfrom. import _base_dict_set\nfrom. import _base_dict_tuple\nfrom. import _base_dict_list_set\nfrom. import _base_dict_tuple_set\nfrom. import _base_dict_set_",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO VANILLA"
+        },
+        {
+            "level_0": 7512,
+            "index": 231,
+            "ID": 5558418,
+            "Question": "\"\"\"group a list of dicts `LD` into one dict by key\"\"\"",
+            "Answer": "\n     return {k: v for d in LD for k, v in d.items()}",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN VANILLA"
+        }
+    ]
+}

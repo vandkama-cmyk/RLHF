@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 07:48:11",
+    "address": "134.209.200.134",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": -1,
+    "correct_R": 0,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1917,
+            "index": 469,
+            "ID": 2763750,
+            "Question": "\"\"\"insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.\"\"\"",
+            "Answer": "\nlong.file.name.jpg.replace('_a', '_suff', 1)\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1441,
+            "index": 469,
+            "ID": 2763750,
+            "Question": "\"\"\"insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.\"\"\"",
+            "Answer": "\nfrom django.conf import settings\nfrom django.core.files.storage import default_storage\nfrom django.core.files.base import ContentFile\nfrom django.core.files.storage import default_storage\nfrom django.core.files.base import ContentFile\nfrom django.core.files.storage import default_storage\nfrom django.core.files.base import ContentFile\nfrom django.core.files.storage import default_storage\nfrom django.core.files.base import ContentFile\nfrom django.core.files.storage import default",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

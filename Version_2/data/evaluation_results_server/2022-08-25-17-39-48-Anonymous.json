@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-25 17:39:48",
+    "address": "10.199.12.115",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": -1,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": -1,
+    "questions_df": [
+        {
+            "level_0": 4680,
+            "index": 812,
+            "ID": 62716645,
+            "Question": "\"\"\"make the game restart (python turtle snake game)\"\"\"",
+            "Answer": "\nimport turtle\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset()\nturtle.reset",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 794,
+            "index": 812,
+            "ID": 62716645,
+            "Question": "\"\"\"make the game restart (python turtle snake game)\"\"\"",
+            "Answer": "\n\nimport turtle\nimport random\nimport math\nimport time\nimport sys\nimport os\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\nimport random\nimport math\nimport turtle\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO VANILLA"
+        }
+    ]
+}

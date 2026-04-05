@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:18:27",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 7624,
+            "index": 4559,
+            "ID": 66627916,
+            "Question": "Is it possible to write python code inside Flutter using Android Studio?. I'm working on Flutter project in Android Studio platform and I faced a problem with how to write and run python API code inside my Flutter project without letting it as a backend code in another platform? since when I run my Flutter project that connected with python API code in another platform as a backend using post method, it's worked with the emulator but it does not work with my physical android device. So is there any recommend solution for either the first problem or the second. Thanks. ",
+            "Answer": "bpo - 30389 : adds detection of visual studio 2017 to distutils on windows. bpo - 31358 : zlib is no longer available on windows.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 7620,
+            "index": 4555,
+            "ID": 66627916,
+            "Question": "Is it possible to write python code inside Flutter using Android Studio?. I'm working on Flutter project in Android Studio platform and I faced a problem with how to write and run python API code inside my Flutter project without letting it as a backend code in another platform? since when I run my Flutter project that connected with python API code in another platform as a backend using post method, it's worked with the emulator but it does not work with my physical android device. So is there any recommend solution for either the first problem or the second. Thanks. ",
+            "Answer": "' '##4 : the new os. posix _ spawn added in 3. 7. 0b1 was removed as we are still working on what the api should look like. expect this in 3. 8 instead. bpo - 33475 : fixed miscellaneous bugs in converting annotations to strings and optimized parentheses in the string representation. bpo - 28055 : fix unaligned accesses ( ). bpo - 28055 : fix unaligned accesses (",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:12:55",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 4748,
+            "index": 1683,
+            "ID": 67010639,
+            "Question": "How do you import and use Spark-Koalas in palantir-foundry. How can I -- in Palantir-foundry -- import and use the Koalas: pandas API for Apache Spark open source python package. I know that you can import packages that don't exist through Code Repo and have done this, can I do this same process for Koalas package or do I need to follow another route? ",
+            "Answer": "' 'names in the 1st are not yet available, because the first module is busy importing the 2nd. in this case, if the second module is only used in one function, then the import can easily be moved into that function. by the time the import is called, the first module will have finished initializing, and the second module can do its import.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 4749,
+            "index": 1684,
+            "ID": 67010639,
+            "Question": "How do you import and use Spark-Koalas in palantir-foundry. How can I -- in Palantir-foundry -- import and use the Koalas: pandas API for Apache Spark open source python package. I know that you can import packages that don't exist through Code Repo and have done this, can I do this same process for Koalas package or do I need to follow another route? ",
+            "Answer": "If you need to create a. pyc file for foo \u2013 that is, to create a. pyc file for a module that is not imported \u2013 you can do so by using python foo. py as a shell command.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

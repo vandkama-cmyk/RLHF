@@ -1,0 +1,34 @@
+{
+    "name_input": "TypingCat",
+    "datetime": "2022-08-19 15:25:49",
+    "address": "10.199.126.142",
+    "comparison_slider": 2,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": 2,
+    "questions_df": [
+        {
+            "level_0": 2678,
+            "index": 740,
+            "ID": 64536774,
+            "Question": "\"\"\"download the latest dataset(.csv) with an automatic Python script from Nasdaq\"\"\"",
+            "Answer": "\nos.system('python -m pandas.read_csv file.csv')\n\n",
+            "CSV_PATH": "T2C-SO-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 4609,
+            "index": 740,
+            "ID": 64536774,
+            "Question": "\"\"\"download the latest dataset(.csv) with an automatic Python script from Nasdaq\"\"\"",
+            "Answer": "\nimport urllib2\nurl = 'http://www.nasdaq.com/symbol/aapl/historical'\nresponse = urllib2.urlopen(url)\ndata = response.read()\nwith open('aapl.csv', 'w') as f:\n    f.write(data)\nprint 'Downloaded aapl.csv'\n",
+            "CSV_PATH": "T2C-SO-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-SO CODEGEN FINETUNED-SO"
+        }
+    ]
+}

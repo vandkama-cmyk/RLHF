@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 13:24:32",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1492,
+            "index": 151,
+            "ID": 68176565,
+            "Question": "How to plot maximal intensity projection of images in same directory. I have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample ? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me know if you have any clue in order to solve my issue ? ",
+            "Answer": "\n  How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        },
+        {
+            "level_0": 2223,
+            "index": 151,
+            "ID": 68176565,
+            "Question": "How to plot maximal intensity projection of images in same directory. I have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample ? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me know if you have any clue in order to solve my issue ? ",
+            "Answer": "\nI have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        }
+    ]
+}

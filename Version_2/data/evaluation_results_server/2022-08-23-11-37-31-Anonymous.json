@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-23 11:37:31",
+    "address": "10.199.12.90",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 7378,
+            "index": 93,
+            "ID": 15534223,
+            "Question": "\"\"\"search for string that matches regular expression pattern '(?<!Distillr)\\\\\\\\AcroTray\\\\.exe' in string 'C:\\\\SomeDir\\\\AcroTray.exe'\"\"\"",
+            "Answer": "\n\nimport re\nimport os\nimport sys\nimport time\nimport datetime\nimport subprocess\nimport logging\nimport argparse\nimport threading\nimport queue\nimport multiprocessing\nimport signal\nimport traceback\nimport psutil\nimport threading\nimport multiprocessing\nimport signal\nimport threading\nimport multiprocessing\nimport signal\nimport threading\nimport multiprocessing\nimport signal\nimport threading\nimport multiprocessing\nimport signal\nimport threading\nimport multiprocessing\nimport signal\nimport threading\nimport multiprocessing\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN VANILLA"
+        },
+        {
+            "level_0": 6904,
+            "index": 93,
+            "ID": 15534223,
+            "Question": "\"\"\"search for string that matches regular expression pattern '(?<!Distillr)\\\\\\\\AcroTray\\\\.exe' in string 'C:\\\\SomeDir\\\\AcroTray.exe'\"\"\"",
+            "Answer": "\nre.search('(?<!Distillr)\\\\\\\\AcroTray\\\\.exe', 'C:\\\\SomeDir\\\\AcroTray.exe')\n\nA:\n\nYou can use re.findall() to find all matches in a string:\nre.findall('(?<!Distillr)\\\\\\\\AcroTray\\\\.exe', 'C:\\\\SomeDir\\\\AcroTray.exe')\n\nThis will return a list of all matches in the string 'C:\\\\SomeDir\\\\AcroTray.exe'.\nIf you want to find",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

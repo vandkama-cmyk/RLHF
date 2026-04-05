@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 17:31:03",
+    "address": "95.55.35.26",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 2356,
+            "index": 436,
+            "ID": 15392730,
+            "Question": "\"\"\"Print new line character as `\\n` in a string `foo\\nbar`\"\"\"\n   ",
+            "Answer": "print('foo\\nbar')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 1884,
+            "index": 436,
+            "ID": 15392730,
+            "Question": "\"\"\"Print new line character as `\\n` in a string `foo\\nbar`\"\"\"",
+            "Answer": "\nprint('foo\\nbar')\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

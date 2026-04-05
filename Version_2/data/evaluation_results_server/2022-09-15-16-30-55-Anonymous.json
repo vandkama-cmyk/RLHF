@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 16:30:55",
+    "address": "178.71.236.89",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": 1,
+    "useful_L": 1,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 2031,
+            "index": 89,
+            "ID": 7138686,
+            "Question": "\"\"\"write the elements of list `lines` concatenated by special character '\\n' to file `myfile`\"\"\"\n   ",
+            "Answer": "myfile.write('\\n'.join(lines))\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS"
+        },
+        {
+            "level_0": 1556,
+            "index": 89,
+            "ID": 7138686,
+            "Question": "\"\"\"write the elements of list `lines` concatenated by special character '\\n' to file `myfile`\"\"\"",
+            "Answer": "\nfor line in lines:\n    myfile.write(line + '\\n')\nmyfile.close()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:49:13",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 16756,
+            "index": 7291,
+            "ID": 67533126,
+            "Question": "live updates of google trends api python. Hi I played with pytrends for few hours and wonder if there is a way to get live updates and not only historical value of specific keyword? I want to train model that use the google trends but what can I do if I don't have live data. Any websocket or something similar will be appreciated ",
+            "Answer": "' '5 > > > p. y = 0. 5 > > > print ( _ _ ('message with coordinates : (  point. x :. 2f,  point. y :. 2f  ) ',... point = p ) message with coordinates : ( 0. 50, 0. 50 ) > > > > from wherever import dollarmessage as _ _ > > print ( _ _ ('message with $ num $ what ',",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 9109,
+            "index": 6044,
+            "ID": 67533126,
+            "Question": "live updates of google trends api python. Hi I played with pytrends for few hours and wonder if there is a way to get live updates and not only historical value of specific keyword? I want to train model that use the google trends but what can I do if I don't have live data. Any websocket or something similar will be appreciated ",
+            "Answer": "The os. stat _ float _ times ( ) function is deprecated. abc. abstractproperty has been deprecated, use property with abc. abstractmethod ( ) instead. abc. abstractclassmethod has been deprecated, use classmethod with abc. abstractmethod ( ) instead. abc. abstractstaticmethod has been deprecated, use staticmetamethod with abc. abstractmethod ( ) instead. abc. abstractstaticmethod has been deprecated, use staticmetamethod with ab",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

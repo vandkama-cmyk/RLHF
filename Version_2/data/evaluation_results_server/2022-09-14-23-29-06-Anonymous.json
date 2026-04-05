@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-14 23:29:06",
+    "address": "5.166.36.31",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 939,
+            "index": 465,
+            "ID": 12666897,
+            "Question": "\"\"\"Remove all strings from a list a strings `sents` where the values starts with `@$\\t` or `#`\"\"\"",
+            "Answer": "\nsents = [s for s in sents if s.startswith('@$\\t') or s.startswith('#')]\nprint(sents)\n\nOutput:\n['@$\\t', '#', '@$\\t', '#', '@$\\t', '#', '@$\\t', '#', '@$\\t', '#', '@$\\t', '#', '@$\\t', '#', '@$\\t', '#', '@$\\t', '#', '@$",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1437,
+            "index": 465,
+            "ID": 12666897,
+            "Question": "\"\"\"Remove all strings from a list a strings `sents` where the values starts with `@$\\t` or `#`\"\"\"",
+            "Answer": "\nsents = [sent for sent in sents if not sent.startswith(\"@$\")]\nsents = [sent for sent in sents if not sent.startswith(\"#",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

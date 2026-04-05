@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 00:32:16",
+    "address": "85.143.144.79",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 327,
+            "index": 327,
+            "ID": 5932059,
+            "Question": "\"\"\"split a string into a list of words and whitespace\"\"\"",
+            "Answer": "\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in words]\nwords = [word.split() for word in",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 812,
+            "index": 327,
+            "ID": 5932059,
+            "Question": "\"\"\"split a string into a list of words and whitespace\"\"\"",
+            "Answer": "\n[word.split() for word in string.split()]\n\nprint(list(re.split(' ','')))\n\nOutput:\n['one', 'two', 'three', 'four', 'five','six','seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen','sixteen','seventeen', 'eighteen', 'nineteen', 'twenty', 'twenty-one', 'twenty-two', 'twenty-three', 'twenty-four',",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

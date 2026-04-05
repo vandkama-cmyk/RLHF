@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 15:59:07",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 16714,
+            "index": 7249,
+            "ID": 69954270,
+            "Question": "What does the python runtime environment mean?. I was reading this article about the sys module in python And I came across this line:  The sys module in Python provides various functions and variables that are used to manipulate different parts of the Python runtime environment. It allows operating on the interpreter as it provides access to the variables and functions that interact strongly with the interpreter.  Can someone explain what this means? I don't get it ",
+            "Answer": "''the type of the trace function registered using pyeval _ setprofile ( ) and pyeval _ settrace ( ). the first parameter is the object passed to the registration function as obj, frame is the frame object to which the event pertains, what is one of the constants pytrace _ call, pytrace _ exception, pytrace _ line, pytrace _ return, pytrace _ c _ call, py",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 9081,
+            "index": 6016,
+            "ID": 69954270,
+            "Question": "What does the python runtime environment mean?. I was reading this article about the sys module in python And I came across this line:  The sys module in Python provides various functions and variables that are used to manipulate different parts of the Python runtime environment. It allows operating on the interpreter as it provides access to the variables and functions that interact strongly with the interpreter.  Can someone explain what this means? I don't get it ",
+            "Answer": "''executes expressions in annotations at their definition time, the compiler stores the annotation in a string form equivalent to the ast of the expression in question. if needed, annotations can be resolved at runtime using typing. get _ type _ hints ( ). in the common case where this is not required, the annotations are cheaper to store ( since short strings are interned by the interpreter ) and make startup time faster.",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:21:20",
+    "address": "5.18.203.79",
+    "comparison_slider": -1,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 454,
+            "index": 454,
+            "ID": 9609375,
+            "Question": "\"\"\"call multiple bash function \u2018vasp\u2019 and \u2018tee tee_output\u2019 using \u2018|\u2019\"\"\"",
+            "Answer": "\nimport os\nimport sys\n",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-SO"
+        },
+        {
+            "level_0": 1426,
+            "index": 454,
+            "ID": 9609375,
+            "Question": "\"\"\"call multiple bash function \u2018vasp\u2019 and \u2018tee tee_output\u2019 using \u2018|\u2019\"\"\"",
+            "Answer": "\nimport subprocess\nsubprocess.call(['vasp', 'tee', 'tee_output'])\nsubprocess.call(['vasp', 'tee', 'tee_output'])\nsubprocess.call(['vasp', 'tee', 'tee_output'])\nsubprocess.call(['vasp', 'tee', 'tee_output'])\nsubprocess.call(['vasp', 'tee', 'tee_output'])\nsubprocess.call(['vasp', 'tee', 'tee_output",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        }
+    ]
+}

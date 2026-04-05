@@ -1,0 +1,90 @@
+{
+  "Anonymous": {
+    "weight": 0.939803,
+    "composite_score": 0.5759,
+    "align_score": 0.6048,
+    "consistency_score": 0.9009,
+    "agreement_score": 0.498,
+    "n_evaluations": 151
+  },
+  "Artem": {
+    "weight": 0.024546,
+    "composite_score": 0.3936,
+    "align_score": 0.4276,
+    "consistency_score": 0.9757,
+    "agreement_score": 0.5508,
+    "n_evaluations": 39
+  },
+  "Anonymous01": {
+    "weight": 0.019621,
+    "composite_score": 0.3824,
+    "align_score": 0.621,
+    "consistency_score": 0.9244,
+    "agreement_score": 0.4181,
+    "n_evaluations": 29
+  },
+  "Sergey Kovalchuk": {
+    "weight": 0.009037,
+    "composite_score": 0.3436,
+    "align_score": 0.5054,
+    "consistency_score": 0.907,
+    "agreement_score": 0.6022,
+    "n_evaluations": 24
+  },
+  "TypingCat": {
+    "weight": 0.003232,
+    "composite_score": 0.2922,
+    "align_score": 0.4657,
+    "consistency_score": 0.9064,
+    "agreement_score": 0.5,
+    "n_evaluations": 20
+  },
+  "XXZ": {
+    "weight": 0.001912,
+    "composite_score": 0.266,
+    "align_score": 0.6852,
+    "consistency_score": 0.9916,
+    "agreement_score": 0.3389,
+    "n_evaluations": 13
+  },
+  "Vadim": {
+    "weight": 0.001023,
+    "composite_score": 0.2347,
+    "align_score": 0.5597,
+    "consistency_score": 0.9656,
+    "agreement_score": 0.5608,
+    "n_evaluations": 11
+  },
+  "Anastasia": {
+    "weight": 0.000597,
+    "composite_score": 0.2078,
+    "align_score": 0.6723,
+    "consistency_score": 0.9254,
+    "agreement_score": 0.6394,
+    "n_evaluations": 8
+  },
+  "Arthur": {
+    "weight": 0.000107,
+    "composite_score": 0.122,
+    "align_score": 0.7424,
+    "consistency_score": 0.9434,
+    "agreement_score": 0.5,
+    "n_evaluations": 4
+  },
+  "Gorbatovski": {
+    "weight": 7.8e-05,
+    "composite_score": 0.106,
+    "align_score": 0.5818,
+    "consistency_score": 0.8812,
+    "agreement_score": 0.5,
+    "n_evaluations": 4
+  },
+  "Fedor": {
+    "weight": 4.4e-05,
+    "composite_score": 0.0778,
+    "align_score": 0.3028,
+    "consistency_score": 0.794,
+    "agreement_score": null,
+    "n_evaluations": 4
+  }
+}

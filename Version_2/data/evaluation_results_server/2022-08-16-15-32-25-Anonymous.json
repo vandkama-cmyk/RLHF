@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:32:25",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -1,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1437,
+            "index": 71,
+            "ID": 68453528,
+            "Question": "Running a tester file in the VSC terminal - ModuleNotFoundError. I have made a tester file to check my other files are implementing correctly, however I can only get an output by clicking run on the file  (top right green arrow). When I type 'python Test.py' in the terminal I get :  Fatal Python error: initsite: Failed to import the site module ModuleNotFoundError: No module named 'site' Current thread 0x0000000102c0ce00 (most recent call first):  I assume this is an environment issue for my terminal? I am in the correct folder (one above Test.py). Any ideas how I can change this? Thanks! ",
+            "Answer": "\n  I assume this is an environment issue for my terminal?",
+            "CSV_PATH": "T2T_trained_YES_CLEAN_YES_NL_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO FINETUNED"
+        },
+        {
+            "level_0": 10014,
+            "index": 549,
+            "ID": 68453528,
+            "Question": "Running a tester file in the VSC terminal - ModuleNotFoundError. I have made a tester file to check my other files are implementing correctly, however I can only get an output by clicking run on the file  (top right green arrow). When I type 'python Test.py' in the terminal I get :  Fatal Python error: initsite: Failed to import the site module ModuleNotFoundError: No module named 'site' Current thread 0x0000000102c0ce00 (most recent call first):  I assume this is an environment issue for my terminal? I am in the correct folder (one above Test.py). Any ideas how I can change this? Thanks! ",
+            "Answer": "if you create a python directory, you can use the''===' '===' linux'if you don't need to support older python versions. bpo - 13847, bpo - 14180 : time and datetime : overflowerror is now raised instead of valueerror if a timestamp is out of range. oserror is now raised if c functions gmtime ( ) or localtime ( ) failed",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

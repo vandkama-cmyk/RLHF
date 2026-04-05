@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous01",
+    "datetime": "2022-09-14 23:20:21",
+    "address": "5.18.203.79",
+    "comparison_slider": 1,
+    "consistent_L": 0,
+    "correct_L": -1,
+    "useful_L": 0,
+    "consistent_R": 2,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1121,
+            "index": 148,
+            "ID": 24242433,
+            "Question": "\"\"\"decode string \"\\\\x89\\\\n\" into a normal string\"\"\"",
+            "Answer": "\nimport codecs\ncodecs.decode('\\\\x89\\\\n', 'rot13')\ncodecs.decode('\\\\x89\\\\n', 'rot13','replace')\ncodecs.decode('\\\\x89\\\\n', 'rot13', 'backslashreplace')\ncodecs.decode('\\\\x89\\\\n', 'rot13', 'xmlcharrefreplace')\ncodecs.decode('\\\\x89\\\\n', 'rot13', 'backslashreplace', 'xmlcharrefreplace')\ncodecs.decode",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 1612,
+            "index": 149,
+            "ID": 24242433,
+            "Question": "\"\"\"convert a raw string `raw_string` into a normal string\"\"\"",
+            "Answer": "\nraw_string.decode('utf-8')\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-16 15:37:43",
+    "address": "10.199.12.115",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": -2,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": -2,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 11808,
+            "index": 2343,
+            "ID": 69324608,
+            "Question": "Raspberry PI - Python Network NAME. I've made a small info / kiosk system where a user can scan a QR code on the screen to connect with the raspberry pi. On the screen (next to the QR code) I want to put the name of the network (because you have to be on the same network to have the interaction). How can I print the name of the network (wifi or cable) on the screen, the IP address is not the issue, neither the hostname. I am just struggling with the name of the network where the Pi is connected too.. Thanks ",
+            "Answer": "' '. ip _ address ( ) factory function, which automatically determines whether to create an ipv4 or ipv6 address based on the passed in value: &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipad",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 11801,
+            "index": 2336,
+            "ID": 69324608,
+            "Question": "Raspberry PI - Python Network NAME. I've made a small info / kiosk system where a user can scan a QR code on the screen to connect with the raspberry pi. On the screen (next to the QR code) I want to put the name of the network (because you have to be on the same network to have the interaction). How can I print the name of the network (wifi or cable) on the screen, the IP address is not the issue, neither the hostname. I am just struggling with the name of the network where the Pi is connected too.. Thanks ",
+            "Answer": "ipaddress is a module for inspecting and manipulating ip addresses, the first thing you'll see is a list of ip addresses. This list is a list of ip addresses, and the first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses.",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

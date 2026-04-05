@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-08-23 11:14:47",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 6903,
+            "index": 92,
+            "ID": 26053849,
+            "Question": "\"\"\"count non zero values in each column in pandas data frame\"\"\"",
+            "Answer": "\ndf.groupby(['A', 'B', 'C'])['D'].transform('count')\n\ndf.groupby(['A', 'B', 'C'])['D'].transform('sum')\n\ndf.groupby(['A', 'B', 'C'])['D'].transform('sum')\n\ndf.groupby(['A', 'B', 'C'])['D'].transform('sum')\n\ndf.groupby(['A', 'B', 'C'])['D'].transform('sum')\n\ndf.",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 5934,
+            "index": 92,
+            "ID": 26053849,
+            "Question": "\"\"\"count non zero values in each column in pandas data frame\"\"\"",
+            "Answer": "\nimport pandas as pd\nimport numpy as np\n\nfrom pandas import DataFrame, Series, Index, concat, concat_series, concat_frame, concat_dict, concat_list, concat_dict_list, concat_dict_to_list, concat_dict_to_dict, concat_dict_to_dict_list, concat_dict_to_dict_to_list, concat_dict_to_dict_to_dict_list, concat_dict_to_dict_to_dict_to_",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-VANILLA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO VANILLA"
+        }
+    ]
+}

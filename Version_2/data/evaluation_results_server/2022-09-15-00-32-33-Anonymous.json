@@ -1,0 +1,34 @@
+{
+    "name_input": "Anonymous",
+    "datetime": "2022-09-15 00:32:33",
+    "address": "85.143.144.79",
+    "comparison_slider": 0,
+    "consistent_L": 0,
+    "correct_L": 0,
+    "useful_L": 0,
+    "consistent_R": 0,
+    "correct_R": 0,
+    "useful_R": 0,
+    "questions_df": [
+        {
+            "level_0": 646,
+            "index": 152,
+            "ID": 4143502,
+            "Question": "\"\"\"scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none\"\"\"",
+            "Answer": "\nplt.scatter(np.random.randn(100), np.random.randn(100), c='none', s=0)\nplt.show()\n\nA:\n\nYou can use plt.scatter(x, y, c='none', s=0) to plot a scatter plot with x and y as the x and y coordinates of a random point in a 2D array.\nThe s parameter is used to specify the color of the points.\n\nA:\n\nYou can use plt.scatter(np.random.randn(100",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        },
+        {
+            "level_0": 1615,
+            "index": 152,
+            "ID": 4143502,
+            "Question": "\"\"\"scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none\"\"\"",
+            "Answer": "\nplt.scatter(np.random.randn(100), np.random.randn(100), c=None)\nplt.show()\n\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-CONALA"
+        }
+    ]
+}

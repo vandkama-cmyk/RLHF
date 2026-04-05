@@ -1,0 +1,34 @@
+{
+    "name_input": "Artem",
+    "datetime": "2022-08-16 16:19:32",
+    "address": "10.199.12.90",
+    "comparison_slider": 0,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 4969,
+            "index": 1904,
+            "ID": 68860312,
+            "Question": "How can I classify a dataset after one-hot encoding the target class?. I want to Classify a dataset with kernel machine. The Target-Class has 5 different values and I want to one-hot encoding it. After that I have 5 Target-Columns. I do the Training 5 times, one time per Target-Column. Now I want to classify a new sample. I classify the Sample 5 times using the 5 Trainig-model I got. At the end I look which Prediction has the maximum value over the 5 predictions and then I classify the sample according to the Class with the maximum prediction. I am not sure that I am doing the right thing. How can I do that in the right way? ",
+            "Answer": "' '( self ) :... return list ( self. keylist )...",
+            "CSV_PATH": "q_id_titles_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T"
+        },
+        {
+            "level_0": 11746,
+            "index": 2281,
+            "ID": 68860312,
+            "Question": "How can I classify a dataset after one-hot encoding the target class?. I want to Classify a dataset with kernel machine. The Target-Class has 5 different values and I want to one-hot encoding it. After that I have 5 Target-Columns. I do the Training 5 times, one time per Target-Column. Now I want to classify a new sample. I classify the Sample 5 times using the 5 Trainig-model I got. At the end I look which Prediction has the maximum value over the 5 predictions and then I classify the sample according to the Class with the maximum prediction. I am not sure that I am doing the right thing. How can I do that in the right way? ",
+            "Answer": "You can use es as a base class: es.embody both the data ( attributes ) and code ( methods ) specific to a datatype. es.embody both the data ( attributes ) and code ( methods ) specific to a datatype. a class can be based on one or more other classes, called its base class ( es ). it then inherits the attributes and methods of its base classes. This allows an object model to be successively refined by inheritance. You might have a generic mailbox that provides basic access",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        }
+    ]
+}

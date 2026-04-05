@@ -1,0 +1,34 @@
+{
+    "name_input": "Anastasia",
+    "datetime": "2022-09-13 13:49:14",
+    "address": "85.142.179.62",
+    "comparison_slider": -1,
+    "consistent_L": 2,
+    "correct_L": 0,
+    "useful_L": 1,
+    "consistent_R": -2,
+    "correct_R": -2,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 1434,
+            "index": 462,
+            "ID": 29881993,
+            "Question": "\"\"\"join together with \",\" elements inside a list indexed with 'category' within a dictionary `trans`\"\"\"",
+            "Answer": "\nfor key, value in trans.items():\n    trans[key] = ','.join(value)\nprint(trans)\n",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 936,
+            "index": 462,
+            "ID": 29881993,
+            "Question": "\"\"\"join together with \",\" elements inside a list indexed with 'category' within a dictionary `trans`\"\"\"",
+            "Answer": "\ntrans.items()[category].join(',')\n\nprint(trans)\n\nOutput:\n{'category': ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34",
+            "CSV_PATH": "T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA GPTNEO FINETUNED-CONALA"
+        }
+    ]
+}

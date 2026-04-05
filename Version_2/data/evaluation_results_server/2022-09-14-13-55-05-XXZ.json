@@ -1,0 +1,34 @@
+{
+    "name_input": "XXZ",
+    "datetime": "2022-09-14 13:55:05",
+    "address": "77.234.203.186",
+    "comparison_slider": 1,
+    "consistent_L": -2,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": 1,
+    "useful_R": 1,
+    "questions_df": [
+        {
+            "level_0": 1284,
+            "index": 311,
+            "ID": 7378180,
+            "Question": "\"\"\"generate all 2-element subsets of tuple `(1, 2, 3)`\"\"\"",
+            "Answer": "\n[(1, 2), (1, 3), (2, 3)]\n[(1, 2), (2, 3), (1, 3)]\n[(1, 2), (2, 3), (3, 1)]\n[(1, 2), (2, 3), (3, 2)]\n[(1, 2), (2, 3), (3, 3)]\n[(1, 2), (2, 3), (3, 1), (1, 3)]\n[(1, 2), (2, 3), (3, 2), (1, 3",
+            "CSV_PATH": "T2C-CONALA-CODEGEN-FINETUNED-SO.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA CODEGEN FINETUNED-SO"
+        },
+        {
+            "level_0": 2659,
+            "index": 311,
+            "ID": 7378180,
+            "Question": "Generate all subsets of size k (containing k elements) in Python",
+            "Answer": "    print(tuple(itertools.combinations((1, 2, 3), 2)))\n",
+            "CSV_PATH": "T2C-CONALA-COPILOT.csv",
+            "CODE_FORMATTING": true,
+            "MODEL_TAG": "T2C-CONALA COPILOT"
+        }
+    ]
+}

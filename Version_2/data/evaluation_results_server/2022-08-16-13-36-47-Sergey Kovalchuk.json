@@ -1,0 +1,34 @@
+{
+    "name_input": "Sergey Kovalchuk",
+    "datetime": "2022-08-16 13:36:47",
+    "address": "10.199.12.55",
+    "comparison_slider": 0,
+    "consistent_L": 1,
+    "correct_L": -2,
+    "useful_L": -2,
+    "consistent_R": 1,
+    "correct_R": -1,
+    "useful_R": -2,
+    "questions_df": [
+        {
+            "level_0": 16815,
+            "index": 7350,
+            "ID": 68141452,
+            "Question": "How to save the moving graphs in the jupyter notebook into the pdf?. I have tried saving the notebook which has moving graphs in form of pdf but the pdf doesn't show any moving graphs, is it possible to save the moving graphs in form of pdf? ",
+            "Answer": "''in simulated shells, such as those presented by idle and other development environments. This is described in pep 264. ( contributed by michael hudson.) The new license introduced with python 1. 6 wasn \u2019 t gpl - compatible. this is fixed by some minor textual changes to the 2. 2 license, so it \u2019 s now legal to embed python inside a gpled program again. Note that python itself is not gpled, but instead is",
+            "CSV_PATH": "q_id_titles-body_answers_t5_fixed.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "PIPELINE T+B"
+        },
+        {
+            "level_0": 3016,
+            "index": 950,
+            "ID": 68141452,
+            "Question": "How to save the moving graphs in the jupyter notebook into the pdf?. I have tried saving the notebook which has moving graphs in form of pdf but the pdf doesn't show any moving graphs, is it possible to save the moving graphs in form of pdf? ",
+            "Answer": "\n\nYou can save the notebook as a pdf by using the save as pdf button in the notebook.\n\nYou can also save the notebook as a pdf by using the save as pdf button in the notebook.\n\nYou can also save the notebook as a pdf by using the save as pdf button in the notebook.\n\nYou can also save the notebook as a pdf by using the save as pdf button in the notebook.\n\nYou can also save the notebook as a pdf by using the save as pdf button in the notebook.\n\nYou can also save the notebook as a pdf by using the save as pdf button in",
+            "CSV_PATH": "T2T_vanilla_predict.csv",
+            "CODE_FORMATTING": false,
+            "MODEL_TAG": "T2T GPTNEO VANILLA"
+        }
+    ]
+}
