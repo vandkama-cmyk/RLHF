@@ -1,0 +1,149 @@
+{
+  "experiment": "Stage3_SFT_5FoldCV",
+  "k_folds": 3,
+  "epochs_per_fold": 2,
+  "num_samples": 45,
+  "seed": 42,
+  "aggregated": {
+    "train_loss": {
+      "mean": 5.1522,
+      "std": 0.1874,
+      "per_fold": [
+        5.1358,
+        5.3894,
+        4.9314
+      ]
+    },
+    "val_loss": {
+      "mean": 0.0,
+      "std": 0.0,
+      "per_fold": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bertscore": {
+      "mean": 0.0,
+      "std": 0.0,
+      "per_fold": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "codebleu": {
+      "mean": 0.1739,
+      "std": 0.0228,
+      "per_fold": [
+        0.1498,
+        0.1675,
+        0.2045
+      ]
+    },
+    "bleu": {
+      "mean": 0.0209,
+      "std": 0.0166,
+      "per_fold": [
+        0.0057,
+        0.013,
+        0.0439
+      ]
+    },
+    "rouge": {
+      "mean": 0.1015,
+      "std": 0.0314,
+      "per_fold": [
+        0.0686,
+        0.092,
+        0.1438
+      ]
+    },
+    "ruby": {
+      "mean": 0.079,
+      "std": 0.0186,
+      "per_fold": [
+        0.0594,
+        0.0736,
+        0.104
+      ]
+    },
+    "reward": {
+      "mean": 0.0751,
+      "std": 0.0179,
+      "per_fold": [
+        0.0567,
+        0.0692,
+        0.0992
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_size": 30,
+      "val_size": 15,
+      "final_epoch": {
+        "epoch": 2,
+        "train_loss": 5.1357641061147055,
+        "val_loss": null,
+        "reward": 0.0567059508663848,
+        "gradient_norm": 33.51079415571059,
+        "bertscore": 0.0,
+        "codebleu": 0.14979393821580697,
+        "bleu": 0.00571524960886479,
+        "rouge": 0.0685838582469422,
+        "ruby": 0.05943670826031006,
+        "learning_rate": 0.0,
+        "epoch_time": 65.9232485294342,
+        "policy_entropy": 4.055344915390014,
+        "approx_kl": 6.764453368820272,
+        "balanced_accuracy": 0.5
+      }
+    },
+    {
+      "fold": 2,
+      "train_size": 30,
+      "val_size": 15,
+      "final_epoch": {
+        "epoch": 2,
+        "train_loss": 5.389439566930135,
+        "val_loss": null,
+        "reward": 0.06922666061336755,
+        "gradient_norm": 27.076123130275448,
+        "bertscore": 0.0,
+        "codebleu": 0.1675148969609023,
+        "bleu": 0.012950690001718484,
+        "rouge": 0.09203740711778603,
+        "ruby": 0.07363030898643097,
+        "learning_rate": 0.0,
+        "epoch_time": 49.70301008224487,
+        "policy_entropy": 4.27388645807902,
+        "approx_kl": 6.545911826131266,
+        "balanced_accuracy": 0.5
+      }
+    },
+    {
+      "fold": 3,
+      "train_size": 30,
+      "val_size": 15,
+      "final_epoch": {
+        "epoch": 2,
+        "train_loss": 4.931354586283366,
+        "val_loss": null,
+        "reward": 0.09924697947753616,
+        "gradient_norm": 41.966406636856476,
+        "bertscore": 0.0,
+        "codebleu": 0.20446657024138612,
+        "bleu": 0.043948916644999496,
+        "rouge": 0.14383493232610203,
+        "ruby": 0.10398447817519312,
+        "learning_rate": 0.0,
+        "epoch_time": 49.03114867210388,
+        "policy_entropy": 4.158430560429891,
+        "approx_kl": 6.661367723780395,
+        "balanced_accuracy": 0.5
+      }
+    }
+  ]
+}

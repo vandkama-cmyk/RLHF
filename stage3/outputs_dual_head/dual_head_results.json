@@ -1,0 +1,59 @@
+{
+  "experiment": "Stage3_DualHead_SFT",
+  "num_samples": 45,
+  "lam": 0.5,
+  "seed": 42,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 6.2459,
+      "val_loss": null,
+      "reward": 0.0425,
+      "gradient_norm": 0.0,
+      "bertscore": 0.0,
+      "codebleu": 0.09844302678948348,
+      "bleu": 0.0024304761548685633,
+      "rouge": 0.0634027374436055,
+      "ruby": 0.04801733960474184,
+      "learning_rate": 3.6666666666666666e-06,
+      "epoch_time": 80.3,
+      "policy_entropy": 0.0,
+      "approx_kl": 0.0,
+      "balanced_accuracy": 0.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 4.4314,
+      "val_loss": null,
+      "reward": 0.0424,
+      "gradient_norm": 0.0,
+      "bertscore": 0.0,
+      "codebleu": 0.09297978554319358,
+      "bleu": 0.0025259409418482643,
+      "rouge": 0.06602061451586679,
+      "ruby": 0.05041790744561658,
+      "learning_rate": 1.8333333333333333e-06,
+      "epoch_time": 2845.5,
+      "policy_entropy": 0.0,
+      "approx_kl": 0.0,
+      "balanced_accuracy": 0.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 4.0963,
+      "val_loss": null,
+      "reward": 0.0424,
+      "gradient_norm": 0.0,
+      "bertscore": 0.0,
+      "codebleu": 0.09297978554319358,
+      "bleu": 0.0025259409418482643,
+      "rouge": 0.06602061451586679,
+      "ruby": 0.05041790744561658,
+      "learning_rate": 0.0,
+      "epoch_time": 98.5,
+      "policy_entropy": 0.0,
+      "approx_kl": 0.0,
+      "balanced_accuracy": 0.0
+    }
+  ]
+}

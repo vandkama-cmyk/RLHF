@@ -1,0 +1,36 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 6.869485155741374,
+    "val_loss": null,
+    "reward": 0.09571212586738087,
+    "gradient_norm": 53.90629349470914,
+    "bertscore": 0.0,
+    "codebleu": 0.2036996962447559,
+    "bleu": 0.042731291649578965,
+    "rouge": 0.1321028974414204,
+    "ruby": 0.1000267440011491,
+    "learning_rate": 2.7777777777777783e-06,
+    "epoch_time": 62.45534062385559,
+    "policy_entropy": 3.8520586490631104,
+    "approx_kl": 6.967739635147176,
+    "balanced_accuracy": 0.5
+  },
+  {
+    "epoch": 2,
+    "train_loss": 4.931354586283366,
+    "val_loss": null,
+    "reward": 0.09924697947753616,
+    "gradient_norm": 41.966406636856476,
+    "bertscore": 0.0,
+    "codebleu": 0.20446657024138612,
+    "bleu": 0.043948916644999496,
+    "rouge": 0.14383493232610203,
+    "ruby": 0.10398447817519312,
+    "learning_rate": 0.0,
+    "epoch_time": 49.03114867210388,
+    "policy_entropy": 4.158430560429891,
+    "approx_kl": 6.661367723780395,
+    "balanced_accuracy": 0.5
+  }
+]
