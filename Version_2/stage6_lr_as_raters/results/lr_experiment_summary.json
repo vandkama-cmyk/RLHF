@@ -1,0 +1,16 @@
+{
+  "total_evaluations": 614,
+  "total_virtual_raters": 100,
+  "original_evaluations": 307,
+  "original_raters": 50,
+  "grand_l_mean": -0.056243821312786844,
+  "grand_r_mean": -0.08153867396970843,
+  "grand_diff_lr": 0.025294852656921586,
+  "t_stat_lr": 0.20342403526815991,
+  "p_value_lr": 0.8396460571471548,
+  "significant_positional_asymmetry": false,
+  "mean_alignment_L": 0.009864285714285699,
+  "mean_alignment_R": -0.1320214285714286,
+  "mean_dim_consistency_L": 0.6456142857142856,
+  "mean_dim_consistency_R": 0.7352857142857143
+}

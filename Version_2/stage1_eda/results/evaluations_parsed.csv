@@ -1,9 +1,9 @@
 file,rater,datetime,ip,comparison_slider,consistent_L,correct_L,useful_L,consistent_R,correct_R,useful_R,id_L,index_L,csv_L,model_L,code_fmt_L,question_L,answer_L,id_R,index_R,csv_R,model_R,code_fmt_R,question_R,answer_R
-2022-08-16-13-24-32-Anonymous.json,Anonymous,2022-08-16 13:24:32,10.199.12.55,0,2,-2,-2,1,-2,-2,68176565,151,T2T_trained_YES_CLEAN_YES_NL_predict.csv,T2T GPTNEO FINETUNED,False,"How to plot maximal intensity projection of images in same directory. I have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample ? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me know if you have any clue in order to solve my issue ? ","
+2022-08-16-13-24-32-Anonymous.json,Anonymous_10.199.12.55,2022-08-16 13:24:32,10.199.12.55,0,2,-2,-2,1,-2,-2,68176565,151,T2T_trained_YES_CLEAN_YES_NL_predict.csv,T2T GPTNEO FINETUNED,False,"How to plot maximal intensity projection of images in same directory. I have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample ? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me know if you have any clue in order to solve my issue ? ","
   How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample?",68176565,151,T2T_vanilla_predict.csv,T2T GPTNEO VANILLA,False,"How to plot maximal intensity projection of images in same directory. I have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample ? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me know if you have any clue in order to solve my issue ? ","
 I have a Z-stack of images of biological samples. Each biological sample is saved in its own directory : Sample_1, Sample_2... Each image of the Z-stack is saved alone : Sample_1/position_1.tif, Sample_1/position_2.tif, Sample_1/position_3.tif... How can I plot with opencv (or any other python library) the maximal intensity projection of each biological sample? I found here (Maximum intensity projection from image stack) an answer that is close but my original images are not stacks but separated images. Please, could you let me"
-2022-08-16-13-25-20-Anonymous.json,Anonymous,2022-08-16 13:25:20,10.199.12.55,1,-2,-2,-2,1,1,0,66275038,4323,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ",_ _.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__,66275038,3640,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ","If you are developing the classes yourself, a more proper object - oriented style is to define methods on the classes that encapsulate a particular behaviour, instead of checking the object ’ s class and doing a different thing based on what class it is. for example, if you have a function that does something: def search ( obj ) : if isinstr(isinstr(isinstr(isinstr(isinstr(isinstr(isinst"
-2022-08-16-13-26-21-Anonymous.json,Anonymous,2022-08-16 13:26:21,10.199.12.55,0,1,-1,-2,1,0,-1,66912904,221,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ",' '( bpo - 8257 ). mixed type comparisons are now fully supported so that decimal objects can be directly compared with float and fractions. fraction ( bpo - 2531 and bpo - 8188 ). similar changes were made to fractions. fraction so that the from _ float ( ) and from _ decimal ( ) methods are no longer needed ( bpo - 8294 ).,66912904,284,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ","' '##94 therefore the best possible approximation to 1 / 10 in 754 double precision is : 7205759403792794 / 2 * * 56 dividing both the numerator and denominator by two reduces the fraction to : 3602879701896397 / 2 * * 55 Note that since we rounded up, this is actually a little bit larger than 1 / 10 ; if we had not rounded up, the quotient would have been a little bit larger than 1 / 10 ; if"
+2022-08-16-13-25-20-Anonymous.json,Anonymous_10.199.12.55,2022-08-16 13:25:20,10.199.12.55,1,-2,-2,-2,1,1,0,66275038,4323,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ",_ _.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__,66275038,3640,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ","If you are developing the classes yourself, a more proper object - oriented style is to define methods on the classes that encapsulate a particular behaviour, instead of checking the object ’ s class and doing a different thing based on what class it is. for example, if you have a function that does something: def search ( obj ) : if isinstr(isinstr(isinstr(isinstr(isinstr(isinstr(isinst"
+2022-08-16-13-26-21-Anonymous.json,Anonymous_10.199.12.55,2022-08-16 13:26:21,10.199.12.55,0,1,-1,-2,1,0,-1,66912904,221,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ",' '( bpo - 8257 ). mixed type comparisons are now fully supported so that decimal objects can be directly compared with float and fractions. fraction ( bpo - 2531 and bpo - 8188 ). similar changes were made to fractions. fraction so that the from _ float ( ) and from _ decimal ( ) methods are no longer needed ( bpo - 8294 ).,66912904,284,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ","' '##94 therefore the best possible approximation to 1 / 10 in 754 double precision is : 7205759403792794 / 2 * * 56 dividing both the numerator and denominator by two reduces the fraction to : 3602879701896397 / 2 * * 55 Note that since we rounded up, this is actually a little bit larger than 1 / 10 ; if we had not rounded up, the quotient would have been a little bit larger than 1 / 10 ; if"
 2022-08-16-13-27-36-Sergey Kovalchuk.json,Sergey Kovalchuk,2022-08-16 13:27:36,10.199.12.55,1,1,-1,-2,1,1,1,66895732,3772,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Get nodes within 1km walking distance of a GPS location OSMNX. Given a (lat,lng) point and an all type OSMNX network, how can I find which nodes in the graph are within 1km walking distance from the point? I was thinking about calculating the great circle distance between each node and the point and checking whether it is at most 1km, but I do not believe this will be very accurate since the topology of the network will be ignored. ","' '( fullcircle = 360. 0 )  parameters fullcircle – a number set angle measurement units, i. e. set number of “ degrees ” for a full circle. default value is 360 degrees. &gt;&gt;&gt; turtle. home ( 90) &gt;&gt;&gt; turtle. heading ( 90) &gt;&gt;&gt; turtle. heading ( 90) &gt;&gt;&gt; turtle.",66895732,3151,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"Get nodes within 1km walking distance of a GPS location OSMNX. Given a (lat,lng) point and an all type OSMNX network, how can I find which nodes in the graph are within 1km walking distance from the point? I was thinking about calculating the great circle distance between each node and the point and checking whether it is at most 1km, but I do not believe this will be very accurate since the topology of the network will be ignored. ","' 'once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror if called without calling prepare ( ) previously.''once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror"
 2022-08-16-13-29-58-Sergey Kovalchuk.json,Sergey Kovalchuk,2022-08-16 13:29:58,10.199.12.55,-1,2,2,1,1,0,-1,65716394,203,T2T_vanilla_predict.csv,T2T GPTNEO VANILLA,False,"Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ","
 I think the answer is yes, but I'm not sure. I would recommend that you use a virtualenv to install the packages you want to use. Then you can simply run the script with the virtualenv.
@@ -119,19 +119,19 @@ from.. import util.compat.string_types.string_types_base"
 You can use the following code to do that:
 
 "
-2022-08-16-15-09-10-Anonymous.json,Anonymous,2022-08-16 15:09:10,10.199.12.115,0,1,0,1,0,-2,-2,69526900,3384,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"PyCharm Code Completion for files outside project directory. my python application imports other python packages in other locations on the filesystem dynamically at runtime. It then calls certain functions in these packages and supplies data objects from the main application. The issue is that coding these external packages there is no code completion in regard to the main apps code. Because these data objects are only supplied at runtime, as are their classes (which are already imported by then main app when calling the package) the package itself cannot reference them in any way (circular import). Since the package doesnt know about the objects up until it's running, Code Completion can't suggest any methods of these objects for example either. Is there any way for me to provide PyCharms Code Completion with a reference to the main application, so it can autocomplete my code? By this I mean suggestions for objects of the classes of my main app, autocomplete for native python packages works fine of course. The packages are imported by dynamically adding their path to the path variable, I tried to also add them to the interpreter path, however this did not work. ","' 'is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.''is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.",69526900,3389,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"PyCharm Code Completion for files outside project directory. my python application imports other python packages in other locations on the filesystem dynamically at runtime. It then calls certain functions in these packages and supplies data objects from the main application. The issue is that coding these external packages there is no code completion in regard to the main apps code. Because these data objects are only supplied at runtime, as are their classes (which are already imported by then main app when calling the package) the package itself cannot reference them in any way (circular import). Since the package doesnt know about the objects up until it's running, Code Completion can't suggest any methods of these objects for example either. Is there any way for me to provide PyCharms Code Completion with a reference to the main application, so it can autocomplete my code? By this I mean suggestions for objects of the classes of my main app, autocomplete for native python packages works fine of course. The packages are imported by dynamically adding their path to the path variable, I tried to also add them to the interpreter path, however this did not work. ",' '3. 9 : use bdist _ wheel ( wheel packages ) instead. builds a windows installer (. msi ) binary package. 9. 30. distutils. command. bdist _ rpm — build a binary distribution as a redhat rpm and srpm  9. 31. distutils. command. sdist — build a source distribution  9. 32. distutils. command. build — build all files of a package  9. 32
-2022-08-16-15-13-13-Anonymous.json,Anonymous,2022-08-16 15:13:13,10.199.12.115,0,0,-2,1,1,-2,1,68392721,4166,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How to automate the process of running an excel model, 100,000 times, with different inputs in Python?. So I have a complex financial model on excel for a given set of input. Now I want to run the same model on 100,000 other sets of input and save it. Is there any libraries I should look into? I just have to change the inputs. Any guidance will be appreciated. TIA! ",' '( ) method on complex objects. ( removed by meador inge and mark dickinson ; bpo - 5211. ) the str. format ( ) method now supports automatic numbering of the replacement fields. This makes using str. format ( ) more closely resemble using % s formatting.,68392721,4163,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How to automate the process of running an excel model, 100,000 times, with different inputs in Python?. So I have a complex financial model on excel for a given set of input. Now I want to run the same model on 100,000 other sets of input and save it. Is there any libraries I should look into? I just have to change the inputs. Any guidance will be appreciated. TIA! ","You can use auto-numbering and named fields, as in the second example above. ( contributed by eric smith ; bpo - 5237. ) complex numbers now correctly support usage with format ( ), and default to being right - aligned. specifying a precision or comma - separation applies to both the real and imaginary parts of the number, but a specified field width and alignment is applied to the whole of the resulting 1. 5 + 3j output. ( contributed by eric smith ; bpo -"
-2022-08-16-15-29-36-Anonymous.json,Anonymous,2022-08-16 15:29:36,10.199.12.115,1,0,-2,-1,1,-2,1,65707676,5389,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Deleting Excess Rows in Python with Pandas. I have a python script that restructures our organization's data into a different shape using python's pylightxl. But this script only works with excel files with less than 5000 rows of data, which is the standard format. But some files go up to 65000 rows, with unnecessary data after the 5000 index. What i want is to delete the excess rows after 5000th index. Pylightxl cannot do this. Only pandas can, I've scoured the internet on deleting rows using pandas but the answers I've found so far havenot benefitted me. The question is how can i delete excess rows using python pandas (the limit of which we may not know, it can go up to 200000), but the cut-off index is 5000 rows. If you know another python way other than pandas, do answer as well. ",' '. See also pep 342 - coroutines via enhanced generatorspep written by guido van rossum and phillip j. eby ; implemented by phillip j. eby. includes examples of some fancier uses of generators as coroutines.,65707676,697,T2T_vanilla_predict.csv,T2T GPTNEO VANILLA,False,"Deleting Excess Rows in Python with Pandas. I have a python script that restructures our organization's data into a different shape using python's pylightxl. But this script only works with excel files with less than 5000 rows of data, which is the standard format. But some files go up to 65000 rows, with unnecessary data after the 5000 index. What i want is to delete the excess rows after 5000th index. Pylightxl cannot do this. Only pandas can, I've scoured the internet on deleting rows using pandas but the answers I've found so far havenot benefitted me. The question is how can i delete excess rows using python pandas (the limit of which we may not know, it can go up to 200000), but the cut-off index is 5000 rows. If you know another python way other than pandas, do answer as well. ","
+2022-08-16-15-09-10-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:09:10,10.199.12.115,0,1,0,1,0,-2,-2,69526900,3384,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"PyCharm Code Completion for files outside project directory. my python application imports other python packages in other locations on the filesystem dynamically at runtime. It then calls certain functions in these packages and supplies data objects from the main application. The issue is that coding these external packages there is no code completion in regard to the main apps code. Because these data objects are only supplied at runtime, as are their classes (which are already imported by then main app when calling the package) the package itself cannot reference them in any way (circular import). Since the package doesnt know about the objects up until it's running, Code Completion can't suggest any methods of these objects for example either. Is there any way for me to provide PyCharms Code Completion with a reference to the main application, so it can autocomplete my code? By this I mean suggestions for objects of the classes of my main app, autocomplete for native python packages works fine of course. The packages are imported by dynamically adding their path to the path variable, I tried to also add them to the interpreter path, however this did not work. ","' 'is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.''is being used as part of the build process for python. This changes a lot of relative locations for files, allowing them to be located in the build area rather than in an installed python.",69526900,3389,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"PyCharm Code Completion for files outside project directory. my python application imports other python packages in other locations on the filesystem dynamically at runtime. It then calls certain functions in these packages and supplies data objects from the main application. The issue is that coding these external packages there is no code completion in regard to the main apps code. Because these data objects are only supplied at runtime, as are their classes (which are already imported by then main app when calling the package) the package itself cannot reference them in any way (circular import). Since the package doesnt know about the objects up until it's running, Code Completion can't suggest any methods of these objects for example either. Is there any way for me to provide PyCharms Code Completion with a reference to the main application, so it can autocomplete my code? By this I mean suggestions for objects of the classes of my main app, autocomplete for native python packages works fine of course. The packages are imported by dynamically adding their path to the path variable, I tried to also add them to the interpreter path, however this did not work. ",' '3. 9 : use bdist _ wheel ( wheel packages ) instead. builds a windows installer (. msi ) binary package. 9. 30. distutils. command. bdist _ rpm — build a binary distribution as a redhat rpm and srpm  9. 31. distutils. command. sdist — build a source distribution  9. 32. distutils. command. build — build all files of a package  9. 32
+2022-08-16-15-13-13-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:13:13,10.199.12.115,0,0,-2,1,1,-2,1,68392721,4166,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How to automate the process of running an excel model, 100,000 times, with different inputs in Python?. So I have a complex financial model on excel for a given set of input. Now I want to run the same model on 100,000 other sets of input and save it. Is there any libraries I should look into? I just have to change the inputs. Any guidance will be appreciated. TIA! ",' '( ) method on complex objects. ( removed by meador inge and mark dickinson ; bpo - 5211. ) the str. format ( ) method now supports automatic numbering of the replacement fields. This makes using str. format ( ) more closely resemble using % s formatting.,68392721,4163,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How to automate the process of running an excel model, 100,000 times, with different inputs in Python?. So I have a complex financial model on excel for a given set of input. Now I want to run the same model on 100,000 other sets of input and save it. Is there any libraries I should look into? I just have to change the inputs. Any guidance will be appreciated. TIA! ","You can use auto-numbering and named fields, as in the second example above. ( contributed by eric smith ; bpo - 5237. ) complex numbers now correctly support usage with format ( ), and default to being right - aligned. specifying a precision or comma - separation applies to both the real and imaginary parts of the number, but a specified field width and alignment is applied to the whole of the resulting 1. 5 + 3j output. ( contributed by eric smith ; bpo -"
+2022-08-16-15-29-36-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:29:36,10.199.12.115,1,0,-2,-1,1,-2,1,65707676,5389,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Deleting Excess Rows in Python with Pandas. I have a python script that restructures our organization's data into a different shape using python's pylightxl. But this script only works with excel files with less than 5000 rows of data, which is the standard format. But some files go up to 65000 rows, with unnecessary data after the 5000 index. What i want is to delete the excess rows after 5000th index. Pylightxl cannot do this. Only pandas can, I've scoured the internet on deleting rows using pandas but the answers I've found so far havenot benefitted me. The question is how can i delete excess rows using python pandas (the limit of which we may not know, it can go up to 200000), but the cut-off index is 5000 rows. If you know another python way other than pandas, do answer as well. ",' '. See also pep 342 - coroutines via enhanced generatorspep written by guido van rossum and phillip j. eby ; implemented by phillip j. eby. includes examples of some fancier uses of generators as coroutines.,65707676,697,T2T_vanilla_predict.csv,T2T GPTNEO VANILLA,False,"Deleting Excess Rows in Python with Pandas. I have a python script that restructures our organization's data into a different shape using python's pylightxl. But this script only works with excel files with less than 5000 rows of data, which is the standard format. But some files go up to 65000 rows, with unnecessary data after the 5000 index. What i want is to delete the excess rows after 5000th index. Pylightxl cannot do this. Only pandas can, I've scoured the internet on deleting rows using pandas but the answers I've found so far havenot benefitted me. The question is how can i delete excess rows using python pandas (the limit of which we may not know, it can go up to 200000), but the cut-off index is 5000 rows. If you know another python way other than pandas, do answer as well. ","
 import pandas as pd
 import numpy as np
 
 df = pd.read_excel('C:\\Users\\user\\Desktop\\test.xlsx')
 
 df.columns = ['col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9', 'col10', 'col11', 'col12', 'col13', 'col14', 'col15', 'col16', 'col17', 'col18', 'col19', 'col20', '"
-2022-08-16-15-32-25-Anonymous.json,Anonymous,2022-08-16 15:32:25,10.199.12.115,0,0,-2,-2,-1,-2,-2,68453528,71,T2T_trained_YES_CLEAN_YES_NL_predict.csv,T2T GPTNEO FINETUNED,False,"Running a tester file in the VSC terminal - ModuleNotFoundError. I have made a tester file to check my other files are implementing correctly, however I can only get an output by clicking run on the file  (top right green arrow). When I type 'python Test.py' in the terminal I get :  Fatal Python error: initsite: Failed to import the site module ModuleNotFoundError: No module named 'site' Current thread 0x0000000102c0ce00 (most recent call first):  I assume this is an environment issue for my terminal? I am in the correct folder (one above Test.py). Any ideas how I can change this? Thanks! ","
+2022-08-16-15-32-25-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:32:25,10.199.12.115,0,0,-2,-2,-1,-2,-2,68453528,71,T2T_trained_YES_CLEAN_YES_NL_predict.csv,T2T GPTNEO FINETUNED,False,"Running a tester file in the VSC terminal - ModuleNotFoundError. I have made a tester file to check my other files are implementing correctly, however I can only get an output by clicking run on the file  (top right green arrow). When I type 'python Test.py' in the terminal I get :  Fatal Python error: initsite: Failed to import the site module ModuleNotFoundError: No module named 'site' Current thread 0x0000000102c0ce00 (most recent call first):  I assume this is an environment issue for my terminal? I am in the correct folder (one above Test.py). Any ideas how I can change this? Thanks! ","
   I assume this is an environment issue for my terminal?",68453528,549,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Running a tester file in the VSC terminal - ModuleNotFoundError. I have made a tester file to check my other files are implementing correctly, however I can only get an output by clicking run on the file  (top right green arrow). When I type 'python Test.py' in the terminal I get :  Fatal Python error: initsite: Failed to import the site module ModuleNotFoundError: No module named 'site' Current thread 0x0000000102c0ce00 (most recent call first):  I assume this is an environment issue for my terminal? I am in the correct folder (one above Test.py). Any ideas how I can change this? Thanks! ","if you create a python directory, you can use the''===' '===' linux'if you don't need to support older python versions. bpo - 13847, bpo - 14180 : time and datetime : overflowerror is now raised instead of valueerror if a timestamp is out of range. oserror is now raised if c functions gmtime ( ) or localtime ( ) failed"
-2022-08-16-15-37-43-Anonymous.json,Anonymous,2022-08-16 15:37:43,10.199.12.115,0,1,-2,0,0,-2,0,69324608,2343,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Raspberry PI - Python Network NAME. I've made a small info / kiosk system where a user can scan a QR code on the screen to connect with the raspberry pi. On the screen (next to the QR code) I want to put the name of the network (because you have to be on the same network to have the interaction). How can I print the name of the network (wifi or cable) on the screen, the IP address is not the issue, neither the hostname. I am just struggling with the name of the network where the Pi is connected too.. Thanks ","' '. ip _ address ( ) factory function, which automatically determines whether to create an ipv4 or ipv6 address based on the passed in value: &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipad",69324608,2336,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Raspberry PI - Python Network NAME. I've made a small info / kiosk system where a user can scan a QR code on the screen to connect with the raspberry pi. On the screen (next to the QR code) I want to put the name of the network (because you have to be on the same network to have the interaction). How can I print the name of the network (wifi or cable) on the screen, the IP address is not the issue, neither the hostname. I am just struggling with the name of the network where the Pi is connected too.. Thanks ","ipaddress is a module for inspecting and manipulating ip addresses, the first thing you'll see is a list of ip addresses. This list is a list of ip addresses, and the first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses."
-2022-08-16-15-38-29-Anonymous.json,Anonymous,2022-08-16 15:38:29,10.199.12.115,1,1,-2,0,2,-1,1,7856296,229,pred_test_gptneo.csv,T2C GPTNEO VANILLA,False,"""""""parse tab-delimited CSV file 'text.txt' into a list""""""","
+2022-08-16-15-37-43-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:37:43,10.199.12.115,0,1,-2,0,0,-2,0,69324608,2343,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Raspberry PI - Python Network NAME. I've made a small info / kiosk system where a user can scan a QR code on the screen to connect with the raspberry pi. On the screen (next to the QR code) I want to put the name of the network (because you have to be on the same network to have the interaction). How can I print the name of the network (wifi or cable) on the screen, the IP address is not the issue, neither the hostname. I am just struggling with the name of the network where the Pi is connected too.. Thanks ","' '. ip _ address ( ) factory function, which automatically determines whether to create an ipv4 or ipv6 address based on the passed in value: &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipaddress. ip _ address ('192. 0. 2. 1') &gt;&gt;&gt; ipad",69324608,2336,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Raspberry PI - Python Network NAME. I've made a small info / kiosk system where a user can scan a QR code on the screen to connect with the raspberry pi. On the screen (next to the QR code) I want to put the name of the network (because you have to be on the same network to have the interaction). How can I print the name of the network (wifi or cable) on the screen, the IP address is not the issue, neither the hostname. I am just struggling with the name of the network where the Pi is connected too.. Thanks ","ipaddress is a module for inspecting and manipulating ip addresses, the first thing you'll see is a list of ip addresses. This list is a list of ip addresses, and the first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses. The first thing you'll see is a list of ip addresses."
+2022-08-16-15-38-29-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:38:29,10.199.12.115,1,1,-2,0,2,-1,1,7856296,229,pred_test_gptneo.csv,T2C GPTNEO VANILLA,False,"""""""parse tab-delimited CSV file 'text.txt' into a list""""""","
 
 import csv
 import sys
@@ -159,14 +159,14 @@ import csv
 import sys
 
 "
-2022-08-16-15-39-59-Anonymous.json,Anonymous,2022-08-16 15:39:59,10.199.12.115,1,2,-2,0,2,1,2,34280147,74,pred_test_conala.csv,T2C CODEGEN FINETUNED,True,"""""""print a list `l` and move first 3 elements to the end of the list""""""","
+2022-08-16-15-39-59-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:39:59,10.199.12.115,1,2,-2,0,2,1,2,34280147,74,pred_test_conala.csv,T2C CODEGEN FINETUNED,True,"""""""print a list `l` and move first 3 elements to the end of the list""""""","
 print(l[3:])
 l[3:] = l[:3]
 ",34280147,74,pred_test_codegen.csv,T2C CODEGEN VANILLA,True,"""""""print a list `l` and move first 3 elements to the end of the list""""""","
      print(l)
      l.extend(l[:3])
      print(l)"
-2022-08-16-15-45-18-Anonymous.json,Anonymous,2022-08-16 15:45:18,10.199.12.90,-2,2,2,2,-2,-2,-2,16330838,310,pred_test_conala.csv,T2C CODEGEN FINETUNED,True,"""""""Python split a string using regex""""""","
+2022-08-16-15-45-18-Anonymous.json,Anonymous_10.199.12.90,2022-08-16 15:45:18,10.199.12.90,-2,2,2,2,-2,-2,-2,16330838,310,pred_test_conala.csv,T2C CODEGEN FINETUNED,True,"""""""Python split a string using regex""""""","
 re.split('\\W+', 'This is a string with words')
 
 ",16330838,310,pred_test_gptneo.csv,T2C GPTNEO VANILLA,False,"""""""Python split a string using regex""""""","
@@ -186,7 +186,7 @@ from. import _base_string_util_base_types_base
 from. import _base_string_util_base_types_base
 from. import _base_string_util"
 2022-08-16-15-46-45-Artem.json,Artem,2022-08-16 15:46:45,10.199.12.90,0,-2,-2,-2,-2,-2,-2,65713613,3112,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"Is there any function in which .wav file will generate. I am stuck on the .wav file extension, I used gtts method to convert text into the speech and save the file and it is working perfectly but the problem is gtts only support the .mp3 extension but I need the output file with .wav extension. So I am question is, if any function like gtts to convert text into speech and save the file with .wav extension? or anyone who already done work on this module. Please share your opinion. Thanks ","' '##s = audioop. findmax ( outputdata, 800 ) # one tenth second out _ test = outputdata [ pos * 2 : ] in _ test = inputdata [ pos * 2 : ] ipos, factor = audioop. findfit ( in _ test, out _ test ) # optional ( for better cancellation ) : # factor = audioop. findfactor ( in _ test [ ipos * 2 : ipos * 2 + len (",65713613,3115,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"Is there any function in which .wav file will generate. I am stuck on the .wav file extension, I used gtts method to convert text into the speech and save the file and it is working perfectly but the problem is gtts only support the .mp3 extension but I need the output file with .wav extension. So I am question is, if any function like gtts to convert text into speech and save the file with .wav extension? or anyone who already done work on this module. Please share your opinion. Thanks ","' 'tell ( ) and wave _ read. setpos ( ) methods. wave _ write. writeframesraw ( data )  write audio frames, without correcting nframes. changed in version 3. 4 : any bytes - like object is now accepted. it will raise an error if the output stream is not seekable and the total number of frames that have been written."
-2022-08-16-15-48-01-Anonymous.json,Anonymous,2022-08-16 15:48:01,10.199.12.115,0,-1,-2,-2,-2,-2,-2,68730597,6395,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Is there a torchsummary equivalent in Tensorflow?. I am using GPU to run some very large deep learning models on a dataset of size 55GB. If I use a batch size greater than 1, I get a resource exhausted error. Even with a batch size of 1, I get segmentation faults. GPU memory is 10GB and Server has 32GB of RAM. Is there a way that I could know how large the data (batch size of 1) will occupy in the GPU? I am using tf.Keras to fit models. Is there a torchsummary equivalent in TensorFlow? ","python's api has many different types of APIs.''- sized arenas, but never freed arenas. with this patch, python will free arenas when they ’ re empty. The net effect is that on some platforms, when you allocate many objects, python ’ s memory usage may actually drop when you delete them and the memory may be returned to the operating system. ( implemented by evan jones, and reworked by tim peters. ) Note that",68730597,6394,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Is there a torchsummary equivalent in Tensorflow?. I am using GPU to run some very large deep learning models on a dataset of size 55GB. If I use a batch size greater than 1, I get a resource exhausted error. Even with a batch size of 1, I get segmentation faults. GPU memory is 10GB and Server has 32GB of RAM. Is there a way that I could know how large the data (batch size of 1) will occupy in the GPU? I am using tf.Keras to fit models. Is there a torchsummary equivalent in TensorFlow? ","' 'implemented by (in alphabetical order ) brett cannon, nick coghlan, grant edwards, john ehresman, kurt kaiser, neal norwitz, tim peters, armin rigo, and neil schemenauer, plus the participants in a number of ast sprints at conferences such as pycon. evan jones''s patch to obmalloc, first described in a talk at"
+2022-08-16-15-48-01-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 15:48:01,10.199.12.115,0,-1,-2,-2,-2,-2,-2,68730597,6395,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Is there a torchsummary equivalent in Tensorflow?. I am using GPU to run some very large deep learning models on a dataset of size 55GB. If I use a batch size greater than 1, I get a resource exhausted error. Even with a batch size of 1, I get segmentation faults. GPU memory is 10GB and Server has 32GB of RAM. Is there a way that I could know how large the data (batch size of 1) will occupy in the GPU? I am using tf.Keras to fit models. Is there a torchsummary equivalent in TensorFlow? ","python's api has many different types of APIs.''- sized arenas, but never freed arenas. with this patch, python will free arenas when they ’ re empty. The net effect is that on some platforms, when you allocate many objects, python ’ s memory usage may actually drop when you delete them and the memory may be returned to the operating system. ( implemented by evan jones, and reworked by tim peters. ) Note that",68730597,6394,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Is there a torchsummary equivalent in Tensorflow?. I am using GPU to run some very large deep learning models on a dataset of size 55GB. If I use a batch size greater than 1, I get a resource exhausted error. Even with a batch size of 1, I get segmentation faults. GPU memory is 10GB and Server has 32GB of RAM. Is there a way that I could know how large the data (batch size of 1) will occupy in the GPU? I am using tf.Keras to fit models. Is there a torchsummary equivalent in TensorFlow? ","' 'implemented by (in alphabetical order ) brett cannon, nick coghlan, grant edwards, john ehresman, kurt kaiser, neal norwitz, tim peters, armin rigo, and neil schemenauer, plus the participants in a number of ast sprints at conferences such as pycon. evan jones''s patch to obmalloc, first described in a talk at"
 2022-08-16-15-48-33-Artem.json,Artem,2022-08-16 15:48:33,10.199.12.90,0,-2,-2,-2,-2,-2,-2,66182380,5323,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"i want to compile .py to .exe. i want to compile .py to .exe. But when i do so the exe files is too big. Is there a solution?? i want the exe to be a smaller i know that  python was not meant to be compiled, executables made from python are bound to be large , but the problem is i have learnt python like 3 years, and now i want to make apps/games for windows. i can't just install python on every device?? i want to make it small i learnt that there is something called executable-packing?? using tools like crinkler how can we do that with python with pyinstaller or cx_freeze ",ccompiler is a built-in class that can be used for all the compile / link steps in building a single project.,66182380,6474,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"i want to compile .py to .exe. i want to compile .py to .exe. But when i do so the exe files is too big. Is there a solution?? i want the exe to be a smaller i know that  python was not meant to be compiled, executables made from python are bound to be large , but the problem is i have learnt python like 3 years, and now i want to make apps/games for windows. i can't just install python on every device?? i want to make it small i learnt that there is something called executable-packing?? using tools like crinkler how can we do that with python with pyinstaller or cx_freeze ",ccompiler is a built-in module for distutils. You can use it as a ccompiler instance to create a single project. import distutils ccompiler = distutils.ccompiler(ccompiler) ccompiler = ccompiler(ccompiler) ccompiler = ccompiler(ccompiler)
 2022-08-16-15-49-13-Artem.json,Artem,2022-08-16 15:49:13,10.199.12.90,0,-2,-2,-2,-2,-2,-2,67533126,7291,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,live updates of google trends api python. Hi I played with pytrends for few hours and wonder if there is a way to get live updates and not only historical value of specific keyword? I want to train model that use the google trends but what can I do if I don't have live data. Any websocket or something similar will be appreciated ,"' '5 > > > p. y = 0. 5 > > > print ( _ _ ('message with coordinates : (  point. x :. 2f,  point. y :. 2f  ) ',... point = p ) message with coordinates : ( 0. 50, 0. 50 ) > > > > from wherever import dollarmessage as _ _ > > print ( _ _ ('message with $ num $ what ',",67533126,6044,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,live updates of google trends api python. Hi I played with pytrends for few hours and wonder if there is a way to get live updates and not only historical value of specific keyword? I want to train model that use the google trends but what can I do if I don't have live data. Any websocket or something similar will be appreciated ,"The os. stat _ float _ times ( ) function is deprecated. abc. abstractproperty has been deprecated, use property with abc. abstractmethod ( ) instead. abc. abstractclassmethod has been deprecated, use classmethod with abc. abstractmethod ( ) instead. abc. abstractstaticmethod has been deprecated, use staticmetamethod with abc. abstractmethod ( ) instead. abc. abstractstaticmethod has been deprecated, use staticmetamethod with ab"
 2022-08-16-15-50-12-Artem.json,Artem,2022-08-16 15:50:12,10.199.12.90,-1,1,0,0,-2,-2,-2,7574841,396,pred_test_conala.csv,T2C CODEGEN FINETUNED,True,"""""""open a 'gnome' terminal from python script and run  'sudo apt-get update' command.""""""","
@@ -357,9 +357,9 @@ import importlib.machinery
 import importlib.machinery
 "
 2022-08-16-17-22-07-Artem.json,Artem,2022-08-16 17:22:07,10.199.12.90,0,-2,-2,-2,-2,-2,-2,65651883,5152,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"How to close chrome manually and do .quit() automatically. My script is in python with selenium is to login automatically on some site and after(i use chrome like any browser), I want when I finish to use chrome (when I close it), automatically close the chromedriver.exe else the chromedriver.exe is all time running. ","' '. if block raises an exception, the _ _ exit _ _ ( type, value, traceback ) is called with the exception details, the same values returned by sys. exc _ info ( ). the method''. if block raises an exception, the _ _ exit _ _ ( type, value, traceback ) is called with the exception details, the same values returned by sys. exc _ info ( ). the method ’ s return value controls whether the exception is",65651883,5155,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"How to close chrome manually and do .quit() automatically. My script is in python with selenium is to login automatically on some site and after(i use chrome like any browser), I want when I finish to use chrome (when I close it), automatically close the chromedriver.exe else the chromedriver.exe is all time running. ",qtwidgets.addhandler is a built-in addhandler that will terminate the qthread when we exit app. abouttoquit. connect ( self. force__ quit ) # lay out all the widgets layout = qtwidgets.qvboxlayout ( self ) layout. addwidget ( self. work _ button ) layout. addwidget ( self. clear _ button ) layout. addwidget ( self. clear _ button ) layout. addwidget ( self. clear _ button )
-2022-08-16-17-22-35-Anonymous.json,Anonymous,2022-08-16 17:22:35,10.199.12.115,0,-1,-2,-2,-2,-2,-2,69068138,1841,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How do built in macros on Emulators work?. I'm building a script to automate some stuff on my Android emulator I'm currently using pyautogui to do it tho it would be nice if there was some sort of way I can directly interact with the emulator without it relying on my mouse I know there's an option using ADB but that requires the android to be rooted a lot of android emulators like Nox, Bluestacks, LDplayer have built-in macros that don't require the device to be rooted. How do these emulators send commands to the emulator is that something I can tap into and send commands through that instead? ","You can use c + + to extend python with c. c + + ''1. extending python with c or c + +  it is quite easy to add new built - in modules to python, if you know how to program in c. such extension modules can do two things that can ’ t be done directly in python : they can implement new built - in object types, and they can call c library functions and system calls.''",69068138,1839,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How do built in macros on Emulators work?. I'm building a script to automate some stuff on my Android emulator I'm currently using pyautogui to do it tho it would be nice if there was some sort of way I can directly interact with the emulator without it relying on my mouse I know there's an option using ADB but that requires the android to be rooted a lot of android emulators like Nox, Bluestacks, LDplayer have built-in macros that don't require the device to be rooted. How do these emulators send commands to the emulator is that something I can tap into and send commands through that instead? ",_ macros is a list of tuples to define explicitly a list of tuples to undef _ macros a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly
-2022-08-16-17-26-58-Anonymous.json,Anonymous,2022-08-16 17:26:58,10.199.12.115,0,1,-2,0,0,-2,0,66839093,5099,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Can not install cleverhans version 3.1.0. I am trying to install cleverhans verion 3.1.0 but getting following error pip install cleverhans==3.1.0 Note: you may need to restart the kernel to use updated packages. ERROR: Could not find a version that satisfies the requirement cleverhans==3.1.0 (from versions: 2.1.0, 3.0.0, 3.0.0.post0, 3.0.1) ERROR: No matching distribution found for cleverhans==3.1.0 I want to access random_lp_vector method in 3.1.0 version which I am unable to access if I try in 3.0.1 also Is there any option available for adversarial training in the latest version which is 4.0.0 Please kindly help ","The - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.",66839093,5096,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Can not install cleverhans version 3.1.0. I am trying to install cleverhans verion 3.1.0 but getting following error pip install cleverhans==3.1.0 Note: you may need to restart the kernel to use updated packages. ERROR: Could not find a version that satisfies the requirement cleverhans==3.1.0 (from versions: 2.1.0, 3.0.0, 3.0.0.post0, 3.0.1) ERROR: No matching distribution found for cleverhans==3.1.0 I want to access random_lp_vector method in 3.1.0 version which I am unable to access if I try in 3.0.1 also Is there any option available for adversarial training in the latest version which is 4.0.0 Please kindly help ",python2 - m pip install somepackage # default python 2 python2. 7 - m pip install somepackage # specifically python 2. 7 python3 - m pip install somepackage # default python 3 python3. 4 - m pip install somepackage # default python 3 python3. 4 - m pip install somepackage # default python 3 py
-2022-08-17-15-41-45-Anonymous.json,Anonymous,2022-08-17 15:41:45,10.199.126.142,0,-2,-2,-2,-2,-2,-2,69656599,7111,q_id_titles-body_answers_bart.csv,PIPELINE BART T+B,False,How do I get rid of the '$' in the destination folder so I can download Anaconda?. Im trying to download Anaconda on Windows 10 but there is an error in the destination folder due to a '$' . I changed the username on my PC but it still doesn't change on the destination folder. How can I change the '$'? ,"You can do this using the built-in installer module.
+2022-08-16-17-22-35-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 17:22:35,10.199.12.115,0,-1,-2,-2,-2,-2,-2,69068138,1841,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How do built in macros on Emulators work?. I'm building a script to automate some stuff on my Android emulator I'm currently using pyautogui to do it tho it would be nice if there was some sort of way I can directly interact with the emulator without it relying on my mouse I know there's an option using ADB but that requires the android to be rooted a lot of android emulators like Nox, Bluestacks, LDplayer have built-in macros that don't require the device to be rooted. How do these emulators send commands to the emulator is that something I can tap into and send commands through that instead? ","You can use c + + to extend python with c. c + + ''1. extending python with c or c + +  it is quite easy to add new built - in modules to python, if you know how to program in c. such extension modules can do two things that can ’ t be done directly in python : they can implement new built - in object types, and they can call c library functions and system calls.''",69068138,1839,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How do built in macros on Emulators work?. I'm building a script to automate some stuff on my Android emulator I'm currently using pyautogui to do it tho it would be nice if there was some sort of way I can directly interact with the emulator without it relying on my mouse I know there's an option using ADB but that requires the android to be rooted a lot of android emulators like Nox, Bluestacks, LDplayer have built-in macros that don't require the device to be rooted. How do these emulators send commands to the emulator is that something I can tap into and send commands through that instead? ",_ macros is a list of tuples to define explicitly a list of tuples to undef _ macros a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly a list of tuples to undef explicitly
+2022-08-16-17-26-58-Anonymous.json,Anonymous_10.199.12.115,2022-08-16 17:26:58,10.199.12.115,0,1,-2,0,0,-2,0,66839093,5099,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Can not install cleverhans version 3.1.0. I am trying to install cleverhans verion 3.1.0 but getting following error pip install cleverhans==3.1.0 Note: you may need to restart the kernel to use updated packages. ERROR: Could not find a version that satisfies the requirement cleverhans==3.1.0 (from versions: 2.1.0, 3.0.0, 3.0.0.post0, 3.0.1) ERROR: No matching distribution found for cleverhans==3.1.0 I want to access random_lp_vector method in 3.1.0 version which I am unable to access if I try in 3.0.1 also Is there any option available for adversarial training in the latest version which is 4.0.0 Please kindly help ","The - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.''the - - user option to python - m pip install will install a package just for the current user, rather than for all users of the system.",66839093,5096,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Can not install cleverhans version 3.1.0. I am trying to install cleverhans verion 3.1.0 but getting following error pip install cleverhans==3.1.0 Note: you may need to restart the kernel to use updated packages. ERROR: Could not find a version that satisfies the requirement cleverhans==3.1.0 (from versions: 2.1.0, 3.0.0, 3.0.0.post0, 3.0.1) ERROR: No matching distribution found for cleverhans==3.1.0 I want to access random_lp_vector method in 3.1.0 version which I am unable to access if I try in 3.0.1 also Is there any option available for adversarial training in the latest version which is 4.0.0 Please kindly help ",python2 - m pip install somepackage # default python 2 python2. 7 - m pip install somepackage # specifically python 2. 7 python3 - m pip install somepackage # default python 3 python3. 4 - m pip install somepackage # default python 3 python3. 4 - m pip install somepackage # default python 3 py
+2022-08-17-15-41-45-Anonymous.json,Anonymous_10.199.126.142,2022-08-17 15:41:45,10.199.126.142,0,-2,-2,-2,-2,-2,-2,69656599,7111,q_id_titles-body_answers_bart.csv,PIPELINE BART T+B,False,How do I get rid of the '$' in the destination folder so I can download Anaconda?. Im trying to download Anaconda on Windows 10 but there is an error in the destination folder due to a '$' . I changed the username on my PC but it still doesn't change on the destination folder. How can I change the '$'? ,"You can do this using the built-in installer module.
 
 import installer
 
@@ -377,7 +377,7 @@ with open('your_installer.py', 'w') as f:
 ",69656599,5867,q_id_titles_answers_bart.csv,PIPELINE BART T,False,How do I get rid of the '$' in the destination folder so I can download Anaconda?. Im trying to download Anaconda on Windows 10 but there is an error in the destination folder due to a '$' . I changed the username on my PC but it still doesn't change on the destination folder. How can I change the '$'? ,"You can use the controlset \ control \ filesystem. this allows the open ( ) function, the os module and most other path functionality to accept and return paths longer than 260 characters. after changing the above option, no further configuration is required. changed in version 3. 6 : support for long paths was enabled in python. 4. 1. 3. installing without ui
 all of the options available in the installer ui can also be specified from the command line, allowing scripted installers to replicate.
 "
-2022-08-17-15-43-30-Anonymous.json,Anonymous,2022-08-17 15:43:30,10.199.126.142,0,0,-2,-2,-1,-1,-2,60610062,453,pred_codegen_vanilla_test.csv,T2C-SO CODEGEN VANILLA,True,"""""""view web page content that is generated using angular JS""""""","
+2022-08-17-15-43-30-Anonymous.json,Anonymous_10.199.126.142,2022-08-17 15:43:30,10.199.126.142,0,0,-2,-2,-1,-1,-2,60610062,453,pred_codegen_vanilla_test.csv,T2C-SO CODEGEN VANILLA,True,"""""""view web page content that is generated using angular JS""""""","
 
 import os
 import json
@@ -448,7 +448,7 @@ with open('test_"
 os.path.join('..', '..')
 
 "
-2022-08-17-15-49-57-Anonymous.json,Anonymous,2022-08-17 15:49:57,10.199.12.107,1,2,-2,-2,2,2,1,62937922,608,pred_codegen_vanilla_test.csv,T2C-SO CODEGEN VANILLA,True,"""""""use relative path in Python""""""","
+2022-08-17-15-49-57-Anonymous.json,Anonymous_10.199.12.107,2022-08-17 15:49:57,10.199.12.107,1,2,-2,-2,2,2,1,62937922,608,pred_codegen_vanilla_test.csv,T2C-SO CODEGEN VANILLA,True,"""""""use relative path in Python""""""","
 
 import os
 import sys
@@ -738,7 +738,7 @@ df['text'].apply(lambda x: x.split()).apply(lambda x: collections.Counter(x)).ap
 df['text'].apply(lambda x: x.split()).apply(lambda x: collections.Counter(x)).apply(lambda x: x.most_common(100))
 
 "
-2022-08-19-16-20-02-Anonymous.json,Anonymous,2022-08-19 16:20:02,10.199.12.107,-2,2,2,2,0,-2,-2,63674966,839,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""read from files which has tfrec extension in tensorflow""""""","
+2022-08-19-16-20-02-Anonymous.json,Anonymous_10.199.12.107,2022-08-19 16:20:02,10.199.12.107,-2,2,2,2,0,-2,-2,63674966,839,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""read from files which has tfrec extension in tensorflow""""""","
 tf.io.gfile.GFile('/tmp/tfrec.tfrec', 'rb').read()
 
 ",63674966,839,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""read from files which has tfrec extension in tensorflow""""""","
@@ -757,7 +757,7 @@ from skimage.transform import resize
 from skimage.morphology import binary_dilation, binary_erosion, binary_closing
 from skimage.filters import gaussian
 from skimage.segment"
-2022-08-19-16-21-16-Anonymous.json,Anonymous,2022-08-19 16:21:16,10.199.12.107,2,0,-2,-2,2,2,2,4048964,255,T2C-CONALA-GPTNEO13-VANILLA.csv,T2C-CONALA GPTNEO13 VANILLA,True,"""""""print elements of list `list` seperated by tabs `\t`""""""","
+2022-08-19-16-21-16-Anonymous.json,Anonymous_10.199.12.107,2022-08-19 16:21:16,10.199.12.107,2,0,-2,-2,2,2,2,4048964,255,T2C-CONALA-GPTNEO13-VANILLA.csv,T2C-CONALA GPTNEO13 VANILLA,True,"""""""print elements of list `list` seperated by tabs `\t`""""""","
 
 from __future__ import print_function
 
@@ -791,7 +791,7 @@ def print_elements_of_list_separated_by_tabs(list, tabsize=8):
 
 if __name__ == ""__main__"":
     print_elements_of_list_separated_by_tabs([1, 2, 3, 4, 5, 6, 7, 8, 9])"
-2022-08-19-16-22-39-Anonymous.json,Anonymous,2022-08-19 16:22:39,10.199.12.107,0,-2,-2,-2,-2,-2,-2,60143969,449,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""count a list of words from a list in python""""""","
+2022-08-19-16-22-39-Anonymous.json,Anonymous_10.199.12.107,2022-08-19 16:22:39,10.199.12.107,0,-2,-2,-2,-2,-2,-2,60143969,449,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""count a list of words from a list in python""""""","
 
 import re
 import sys
@@ -809,7 +809,7 @@ from. import _
 ",60143969,449,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""count a list of words from a list in python""""""","
 import collections
 words = ['cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog', 'dog', 'cat', 'dog"
-2022-08-19-16-23-30-Anonymous.json,Anonymous,2022-08-19 16:23:30,10.199.12.107,1,0,-2,-2,1,1,1,61152242,436,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""obtain data from a public google sheets using python""""""","
+2022-08-19-16-23-30-Anonymous.json,Anonymous_10.199.12.107,2022-08-19 16:23:30,10.199.12.107,1,0,-2,-2,1,1,1,61152242,436,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""obtain data from a public google sheets using python""""""","
 
 import os
 import sys
@@ -835,7 +835,7 @@ import httplib.request
 service.spreadsheets().values('Sheet1')
 
 "
-2022-08-19-16-24-51-Anonymous.json,Anonymous,2022-08-19 16:24:51,10.199.12.107,1,-2,-2,-2,1,1,1,62022120,757,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""convert a date which maybe in any format to a specific format in python""""""","
+2022-08-19-16-24-51-Anonymous.json,Anonymous_10.199.12.107,2022-08-19 16:24:51,10.199.12.107,1,-2,-2,-2,1,1,1,62022120,757,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""convert a date which maybe in any format to a specific format in python""""""","
 
 import re
 import datetime
@@ -856,7 +856,7 @@ from dateutil.tz import tzoffset
 datetime.datetime.strptime('01/01/2000', '%d/%m/%Y')
 
 "
-2022-08-19-16-25-30-Anonymous.json,Anonymous,2022-08-19 16:25:30,10.199.12.107,-2,2,2,2,-2,-2,-2,30385151,41,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""convert scalar `x` to array""""""","
+2022-08-19-16-25-30-Anonymous.json,Anonymous_10.199.12.107,2022-08-19 16:25:30,10.199.12.107,-2,2,2,2,-2,-2,-2,30385151,41,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""convert scalar `x` to array""""""","
 x = np.array(x)
 
 print(x)
@@ -869,11 +869,11 @@ from scipy.sparse import csr_matrix
 
 from..utils import check_array
 from..utils.misc import is_array_like"
-2022-08-22-10-03-00-Anonymous.json,Anonymous,2022-08-22 10:03:00,10.199.12.90,-1,1,-2,-1,-1,-2,-2,63534475,568,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""create a flattened list from multi-levels using recursion in Python""""""","
+2022-08-22-10-03-00-Anonymous.json,Anonymous_10.199.12.90,2022-08-22 10:03:00,10.199.12.90,-1,1,-2,-1,-1,-2,-2,63534475,568,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""create a flattened list from multi-levels using recursion in Python""""""","
 [item for sublist in [[1, 2, 3], [4, 5, 6]] for item in sublist]
 ",63534475,568,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""create a flattened list from multi-levels using recursion in Python""""""","
 list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list(map(list, list"
-2022-08-22-12-34-10-Anonymous.json,Anonymous,2022-08-22 12:34:10,10.199.12.90,1,-2,-2,-2,2,2,2,60491017,486,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""generate all possibilities of objects of 2 dimensions""""""","
+2022-08-22-12-34-10-Anonymous.json,Anonymous_10.199.12.90,2022-08-22 12:34:10,10.199.12.90,1,-2,-2,-2,2,2,2,60491017,486,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""generate all possibilities of objects of 2 dimensions""""""","
 
 import numpy as np
 import random
@@ -887,7 +887,7 @@ import math
 [(x, y) for x in range(3) for y in range(3)]
 
 "
-2022-08-22-12-34-53-Anonymous.json,Anonymous,2022-08-22 12:34:53,10.199.12.90,-1,-1,-1,-1,-2,-2,-2,62971053,756,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""get this type of output in python in string""""""","
+2022-08-22-12-34-53-Anonymous.json,Anonymous_10.199.12.90,2022-08-22 12:34:53,10.199.12.90,-1,-1,-1,-1,-2,-2,-2,62971053,756,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""get this type of output in python in string""""""","
 print(type(output))
 ",62971053,756,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""get this type of output in python in string""""""","
          return self.__class__.__name__
@@ -906,7 +906,7 @@ print(type(output))
 
      def __getitem__(self, item):
          return self.__class"
-2022-08-22-12-45-22-Anonymous.json,Anonymous,2022-08-22 12:45:22,10.199.12.90,-1,1,1,1,-2,-1,-2,59851392,698,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""read a file line by line from S3 parquet, filter and save line by line to another S3 bucket""""""","
+2022-08-22-12-45-22-Anonymous.json,Anonymous_10.199.12.90,2022-08-22 12:45:22,10.199.12.90,-1,1,1,1,-2,-1,-2,59851392,698,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""read a file line by line from S3 parquet, filter and save line by line to another S3 bucket""""""","
 import boto3
 import pandas as pd
 import io
@@ -937,7 +937,7 @@ import boto3.s3.connection_to_region
 import boto3.s3.connection_to_region.connection_to_region_aws
 import boto3.s3.connection_to_region.connection_to_region_aws.connection_to_region_aws_aws
 import b"
-2022-08-22-12-45-48-Anonymous.json,Anonymous,2022-08-22 12:45:48,10.199.12.90,0,-2,-2,-2,-2,-2,-2,60262869,221,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""get probability and label prediction at the same time using sklearn""""""","
+2022-08-22-12-45-48-Anonymous.json,Anonymous_10.199.12.90,2022-08-22 12:45:48,10.199.12.90,0,-2,-2,-2,-2,-2,-2,60262869,221,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""get probability and label prediction at the same time using sklearn""""""","
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
@@ -956,7 +956,7 @@ predict(model, X_test)
 predict(model, X_test, verbose=True)
 predict(model, X_test, verbose=True, return_type='multiclass')
 p"
-2022-08-22-12-46-27-Anonymous.json,Anonymous,2022-08-22 12:46:27,10.199.12.90,0,2,2,2,2,2,2,20457038,303,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Round number `answer` to 2 precision after the decimal point""""""","
+2022-08-22-12-46-27-Anonymous.json,Anonymous_10.199.12.90,2022-08-22 12:46:27,10.199.12.90,0,2,2,2,2,2,2,20457038,303,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Round number `answer` to 2 precision after the decimal point""""""","
 answer = int(input(""Enter a number: ""))
 answer = round(answer, 2)
 print(""Your answer is: "", answer)
@@ -964,7 +964,7 @@ print(""Your answer is: "", answer)
 import math
 print round(math.pi, 2)
 "
-2022-08-23-11-14-47-Anonymous.json,Anonymous,2022-08-23 11:14:47,10.199.12.90,0,-2,-2,-2,-2,-2,-2,26053849,92,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""count non zero values in each column in pandas data frame""""""","
+2022-08-23-11-14-47-Anonymous.json,Anonymous_10.199.12.90,2022-08-23 11:14:47,10.199.12.90,0,-2,-2,-2,-2,-2,-2,26053849,92,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""count non zero values in each column in pandas data frame""""""","
 df.groupby(['A', 'B', 'C'])['D'].transform('count')
 
 df.groupby(['A', 'B', 'C'])['D'].transform('sum')
@@ -980,7 +980,7 @@ import pandas as pd
 import numpy as np
 
 from pandas import DataFrame, Series, Index, concat, concat_series, concat_frame, concat_dict, concat_list, concat_dict_list, concat_dict_to_list, concat_dict_to_dict, concat_dict_to_dict_list, concat_dict_to_dict_to_list, concat_dict_to_dict_to_dict_list, concat_dict_to_dict_to_dict_to_"
-2022-08-23-11-36-58-Anonymous.json,Anonymous,2022-08-23 11:36:58,10.199.12.90,0,0,-2,-2,-2,-2,-2,16125229,478,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""get the last key of dictionary `dict`""""""","
+2022-08-23-11-36-58-Anonymous.json,Anonymous_10.199.12.90,2022-08-23 11:36:58,10.199.12.90,0,0,-2,-2,-2,-2,-2,16125229,478,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""get the last key of dictionary `dict`""""""","
 dict.pop('key')
 
 print(dict.keys())
@@ -1004,7 +1004,7 @@ dict.keys()[-1]
 dict.keys()[-1]
 dict.keys()[-1]
 dict"
-2022-08-23-11-37-31-Anonymous.json,Anonymous,2022-08-23 11:37:31,10.199.12.90,1,-2,-2,-2,1,0,0,15534223,93,T2C-CONALA-CODEGEN-VANILLA.csv,T2C-CONALA CODEGEN VANILLA,True,"""""""search for string that matches regular expression pattern '(?<!Distillr)\\\\AcroTray\\.exe' in string 'C:\\SomeDir\\AcroTray.exe'""""""","
+2022-08-23-11-37-31-Anonymous.json,Anonymous_10.199.12.90,2022-08-23 11:37:31,10.199.12.90,1,-2,-2,-2,1,0,0,15534223,93,T2C-CONALA-CODEGEN-VANILLA.csv,T2C-CONALA CODEGEN VANILLA,True,"""""""search for string that matches regular expression pattern '(?<!Distillr)\\\\AcroTray\\.exe' in string 'C:\\SomeDir\\AcroTray.exe'""""""","
 
 import re
 import os
@@ -1047,7 +1047,7 @@ re.findall('(?<!Distillr)\\\\AcroTray\\.exe', 'C:\\SomeDir\\AcroTray.exe')
 
 This will return a list of all matches in the string 'C:\\SomeDir\\AcroTray.exe'.
 If you want to find"
-2022-08-23-13-35-40-Anonymous.json,Anonymous,2022-08-23 13:35:40,10.199.12.90,-1,-1,-2,-2,-2,-2,-2,65512677,143,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""use 2 numpy arrays as dataset for denoising autoencoder, and further split them into train and test sets""""""","
+2022-08-23-13-35-40-Anonymous.json,Anonymous_10.199.12.90,2022-08-23 13:35:40,10.199.12.90,-1,-1,-2,-2,-2,-2,-2,65512677,143,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""use 2 numpy arrays as dataset for denoising autoencoder, and further split them into train and test sets""""""","
 np.random.shuffle(np.concatenate((x_train, x_test)))
 np.random.shuffle(np.concatenate((y_train, y_test)))
 x_train, x_test, y_train, y_test = x_train[:int(len(x_train) * 0.8)], x_train[int(len(x_train) * 0.8):], y_train[:int(len(y_train) * 0.8)], y_train[int(len(y",65512677,143,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""use 2 numpy arrays as dataset for denoising autoencoder, and further split them into train and test sets""""""","
@@ -1066,7 +1066,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
 from tensorflow.ker"
-2022-08-23-13-36-03-Anonymous.json,Anonymous,2022-08-23 13:36:03,10.199.12.90,-1,-1,-1,-1,-2,-2,-2,15851568,69,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Split a string `x` by last occurrence of character `-`""""""","
+2022-08-23-13-36-03-Anonymous.json,Anonymous_10.199.12.90,2022-08-23 13:36:03,10.199.12.90,-1,-1,-1,-1,-2,-2,-2,15851568,69,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Split a string `x` by last occurrence of character `-`""""""","
 x.split('-')[-1]
 
 ",15851568,69,T2C-CONALA-GPTNEO-VANILLA.csv,T2C-CONALA GPTNEO VANILLA,True,"""""""Split a string `x` by last occurrence of character `-`""""""","
@@ -1171,7 +1171,7 @@ from. import",60324151,246,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINE
 service.files().create(body=open('test.html', 'rb'))
 
 "
-2022-08-25-17-04-44-Anonymous.json,Anonymous,2022-08-25 17:04:44,10.199.126.142,1,0,-1,-1,2,2,2,61981569,62,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""write a python program to print the sum of a string of numbers that are separated by a comma""""""","
+2022-08-25-17-04-44-Anonymous.json,Anonymous_10.199.126.142,2022-08-25 17:04:44,10.199.126.142,1,0,-1,-1,2,2,2,61981569,62,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""write a python program to print the sum of a string of numbers that are separated by a comma""""""","
 sum(map(int, input().split("","")))
 sum(map(int, input().split()))
 sum(map(int, input().split()))
@@ -1185,7 +1185,7 @@ sum(map(int, input().split()))
 sum(map(int,",61981569,62,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""write a python program to print the sum of a string of numbers that are separated by a comma""""""","
 print(sum(map(int, input().split(','))))
 "
-2022-08-25-17-06-37-Anonymous.json,Anonymous,2022-08-25 17:06:37,10.199.12.115,0,0,-2,0,0,-1,0,62083669,792,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""run a loop by interlinking two lists""""""","
+2022-08-25-17-06-37-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:06:37,10.199.12.115,0,0,-2,0,0,-1,0,62083669,792,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""run a loop by interlinking two lists""""""","
 for i in range(10):
     for j in range(10):
         print(i, j)
@@ -1204,13 +1204,13 @@ for i in range(len(list1)):
 for i in range(len(list1)):
     for j in range(len(list2)):
         print(list1["
-2022-08-25-17-07-39-Anonymous.json,Anonymous,2022-08-25 17:07:39,10.81.192.36,0,0,-2,-2,0,-2,-2,64070050,116,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""get a list of installed windows fonts using python""""""","
+2022-08-25-17-07-39-Anonymous.json,Anonymous_10.81.192.36,2022-08-25 17:07:39,10.81.192.36,0,0,-2,-2,0,-2,-2,64070050,116,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""get a list of installed windows fonts using python""""""","
 [(name, size, style) for name, size, style in list(font.families()) if style =='regular']
 ",64070050,116,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""get a list of installed windows fonts using python""""""","
 os.system('fonts')
 
 "
-2022-08-25-17-07-40-Anonymous.json,Anonymous,2022-08-25 17:07:40,10.199.12.115,0,-1,-2,-2,0,-2,-1,62982279,172,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""allow spaces in the default django user model username""""""","
+2022-08-25-17-07-40-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:07:40,10.199.12.115,0,-1,-2,-2,0,-2,-1,62982279,172,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""allow spaces in the default django user model username""""""","
 User.USERNAME_FIELD = 'username'
 User.REQUIRED_FIELDS = []
 User.objects.create_user(username='user', password='password')
@@ -1224,7 +1224,7 @@ User.username = 'username'
 
 A:
 "
-2022-08-25-17-09-42-Anonymous.json,Anonymous,2022-08-25 17:09:42,10.81.192.36,-1,0,1,1,0,-2,-2,60285734,598,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""get a random 4 digit number in python, from 0000-9999""""""","
+2022-08-25-17-09-42-Anonymous.json,Anonymous_10.81.192.36,2022-08-25 17:09:42,10.81.192.36,-1,0,1,1,0,-2,-2,60285734,598,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""get a random 4 digit number in python, from 0000-9999""""""","
 import random
 random.randint(0, 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",60285734,598,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""get a random 4 digit number in python, from 0000-9999""""""","
 import random
@@ -1232,7 +1232,7 @@ import string
 import sys
 
 "
-2022-08-25-17-11-33-Anonymous.json,Anonymous,2022-08-25 17:11:33,10.81.192.36,0,-1,-2,-2,-1,-2,-2,60752246,867,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""run a python file on button click in tkinter""""""","
+2022-08-25-17-11-33-Anonymous.json,Anonymous_10.81.192.36,2022-08-25 17:11:33,10.81.192.36,0,-1,-2,-2,-1,-2,-2,60752246,867,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""run a python file on button click in tkinter""""""","
 
 import tkinter as tk
 from tkinter import ttk
@@ -1280,7 +1280,7 @@ from tkinter import ttk
 from tkinter import ttk
 from tkinter import ttk
 from tkinter import"
-2022-08-25-17-13-04-Anonymous.json,Anonymous,2022-08-25 17:13:04,10.199.12.115,1,0,-2,-1,0,-1,0,14227561,188,T2C-CONALA-GPTNEO-VANILLA.csv,T2C-CONALA GPTNEO VANILLA,True,"""""""find a value within nested json 'data' where the key inside another key 'B' is unknown.""""""","
+2022-08-25-17-13-04-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:13:04,10.199.12.115,1,0,-2,-1,0,-1,0,14227561,188,T2C-CONALA-GPTNEO-VANILLA.csv,T2C-CONALA GPTNEO VANILLA,True,"""""""find a value within nested json 'data' where the key inside another key 'B' is unknown.""""""","
 
 import json
 import re
@@ -1298,7 +1298,7 @@ import json
 data = json.loads(data)
 print(data['B']['C']['D'])
 "
-2022-08-25-17-18-50-Anonymous.json,Anonymous,2022-08-25 17:18:50,10.199.12.115,0,0,-2,-2,0,-2,-2,65256251,731,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""treat a `networkx.digraph` as un-directed""""""","
+2022-08-25-17-18-50-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:18:50,10.199.12.115,0,0,-2,-2,0,-2,-2,65256251,731,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""treat a `networkx.digraph` as un-directed""""""","
 import networkx as nx
 G = nx.Graph()
 G.add_edge(1, 2)
@@ -1315,7 +1315,7 @@ G.",65256251,731,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONA
 networkx.digraph(directed=False)
 
 "
-2022-08-25-17-20-33-Anonymous.json,Anonymous,2022-08-25 17:20:33,10.199.12.115,1,-1,-1,-2,2,1,1,18730044,404,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""converting two lists `[1, 2, 3]` and `[4, 5, 6]` into a matrix""""""","
+2022-08-25-17-20-33-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:20:33,10.199.12.115,1,-1,-1,-2,2,1,1,18730044,404,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""converting two lists `[1, 2, 3]` and `[4, 5, 6]` into a matrix""""""","
 matrix = [[1, 2, 3], [4, 5, 6]]
 matrix
 matrix[0]
@@ -1336,7 +1336,7 @@ mat",18730044,404,T2C-CONALA-CODEGEN-VANILLA.csv,T2C-CONALA CODEGEN VANILLA,True
          for j in range(len(matrix_b)):
              matrix[i].append(matrix_a[i] * matrix_b[j])
      return matrix"
-2022-08-25-17-26-46-Anonymous.json,Anonymous,2022-08-25 17:26:46,10.199.12.115,1,0,0,-1,0,-1,0,60647285,547,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""send pytest coverage report via email""""""","
+2022-08-25-17-26-46-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:26:46,10.199.12.115,1,0,0,-1,0,-1,0,60647285,547,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""send pytest coverage report via email""""""","
 
 from __future__ import absolute_import
 
@@ -1353,7 +1353,7 @@ from pip._vendor.requests.packages.urllib3 import urlopen
 from pip._vendor.requests.packages.urllib3.exceptions import InsecureRequestWarning",60647285,547,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""send pytest coverage report via email""""""","
 send_email('pytest coverage report', '<html><body>' + html_body + '</body></html>')
 "
-2022-08-25-17-28-51-Anonymous.json,Anonymous,2022-08-25 17:28:51,10.199.12.115,0,0,-2,-2,-2,-2,-2,64291709,873,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""open widget, have it do something, and close by itself""""""","
+2022-08-25-17-28-51-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:28:51,10.199.12.115,0,0,-2,-2,-2,-2,-2,64291709,873,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""open widget, have it do something, and close by itself""""""","
 
 import os
 import sys
@@ -1405,7 +1405,7 @@ root.destroy()
 root.destroy()
 root.destroy()
 root.destroy"
-2022-08-25-17-30-17-Anonymous.json,Anonymous,2022-08-25 17:30:17,10.199.12.115,-1,0,0,0,0,-2,-2,62081511,99,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""find which downscaling algorithm used""""""","
+2022-08-25-17-30-17-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:30:17,10.199.12.115,-1,0,0,0,0,-2,-2,62081511,99,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""find which downscaling algorithm used""""""","
 import cv2
 import numpy as np
 img = cv2.imread('image.jpg',0)
@@ -1428,7 +1428,7 @@ from. import shufflenetv2_x1_5
 from. import shufflenetv2_x2_0
 from. import shufflenetv2_x3_0
 from. import shufflenetv"
-2022-08-25-17-34-23-Anonymous.json,Anonymous,2022-08-25 17:34:23,10.199.12.115,-1,2,1,1,1,0,0,4356842,386,T2C-CONALA-CODEGEN-VANILLA.csv,T2C-CONALA CODEGEN VANILLA,True,"""""""return a 401 unauthorized in django""""""","
+2022-08-25-17-34-23-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:34:23,10.199.12.115,-1,2,1,1,1,0,0,4356842,386,T2C-CONALA-CODEGEN-VANILLA.csv,T2C-CONALA CODEGEN VANILLA,True,"""""""return a 401 unauthorized in django""""""","
          return Response(
              {
                  ""detail"": ""Not authenticated. Please log in to continue.""
@@ -1452,7 +1452,7 @@ A:
 
 You can use django-allauth for authentication.
 from allauth.account."
-2022-08-25-17-36-32-Anonymous.json,Anonymous,2022-08-25 17:36:32,10.199.12.115,0,0,-2,-2,1,-1,-1,62490336,884,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""read string in sound with python without create mp3 file just with command line""""""","
+2022-08-25-17-36-32-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:36:32,10.199.12.115,0,0,-2,-2,1,-1,-1,62490336,884,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""read string in sound with python without create mp3 file just with command line""""""","
 from __future__ import print_function
 from __future__ import unicode_literals
 from __future__ import division
@@ -1478,7 +1478,7 @@ from pygame.compat import geterror
 from pygame.mixer import Sound, init, quit
 
 "
-2022-08-25-17-39-48-Anonymous.json,Anonymous,2022-08-25 17:39:48,10.199.12.115,-1,0,0,-1,0,-2,-1,62716645,812,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""make the game restart (python turtle snake game)""""""","
+2022-08-25-17-39-48-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:39:48,10.199.12.115,-1,0,0,-1,0,-2,-1,62716645,812,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""make the game restart (python turtle snake game)""""""","
 import turtle
 turtle.reset()
 turtle.reset()
@@ -1545,14 +1545,14 @@ import random
 import math
 import turtle
 "
-2022-08-25-17-44-01-Anonymous.json,Anonymous,2022-08-25 17:44:01,10.199.12.115,-1,2,2,2,1,-1,0,62320145,306,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""convert a date format (YYYY-MM-DD) to (YYYY,MM,DD) in Python""""""","
+2022-08-25-17-44-01-Anonymous.json,Anonymous_10.199.12.115,2022-08-25 17:44:01,10.199.12.115,-1,2,2,2,1,-1,0,62320145,306,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-CONALA,True,"""""""convert a date format (YYYY-MM-DD) to (YYYY,MM,DD) in Python""""""","
 datetime.datetime.strptime('2012-01-01', '%Y-%m-%d').strftime('%Y,%m,%d')
 
 ",62320145,306,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FINETUNED-CONALA,True,"""""""convert a date format (YYYY-MM-DD) to (YYYY,MM,DD) in Python""""""","
 datetime.datetime.strptime('2013-12-25', '%Y-%m-%d')
 
 "
-2022-08-26-17-28-22-Anonymous.json,Anonymous,2022-08-26 17:28:22,10.81.194.230,1,0,-2,-2,2,2,2,5558418,231,T2C-CONALA-GPTNEO-VANILLA.csv,T2C-CONALA GPTNEO VANILLA,True,"""""""group a list of dicts `LD` into one dict by key""""""","
+2022-08-26-17-28-22-Anonymous.json,Anonymous_10.81.194.230,2022-08-26 17:28:22,10.81.194.230,1,0,-2,-2,2,2,2,5558418,231,T2C-CONALA-GPTNEO-VANILLA.csv,T2C-CONALA GPTNEO VANILLA,True,"""""""group a list of dicts `LD` into one dict by key""""""","
 
 import collections
 import copy
@@ -1573,7 +1573,7 @@ from. import _base_dict_list_set
 from. import _base_dict_tuple_set
 from. import _base_dict_set_",5558418,231,T2C-CONALA-CODEGEN-VANILLA.csv,T2C-CONALA CODEGEN VANILLA,True,"""""""group a list of dicts `LD` into one dict by key""""""","
      return {k: v for d in LD for k, v in d.items()}"
-2022-08-26-17-29-27-Anonymous.json,Anonymous,2022-08-26 17:29:27,10.81.194.230,-1,1,0,1,-1,-2,-2,63354050,511,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""save a pandas dataframe to csv in overwrite mode""""""","
+2022-08-26-17-29-27-Anonymous.json,Anonymous_10.81.194.230,2022-08-26 17:29:27,10.81.194.230,-1,1,0,1,-1,-2,-2,63354050,511,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""save a pandas dataframe to csv in overwrite mode""""""","
 df.to_csv('filename.csv', mode='a')
 df.to_csv('filename.csv', mode='w')
 df.to_csv('filename.csv', mode='a')
@@ -1738,7 +1738,7 @@ A
 A = [1, 2, 3, 4, 5]
 A.remove(B)
 "
-2022-08-26-19-42-31-Anonymous.json,Anonymous,2022-08-26 19:42:31,10.81.190.38,1,-2,-2,-2,1,1,1,15907200,240,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""add a header to a csv file""""""","
+2022-08-26-19-42-31-Anonymous.json,Anonymous_10.81.190.38,2022-08-26 19:42:31,10.81.190.38,1,-2,-2,-2,1,1,1,15907200,240,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""add a header to a csv file""""""","
 import pandas as pd
 df = pd.read_csv('file.csv')
 df.to_csv('file.csv.header')
@@ -1764,7 +1764,7 @@ writer = csv.writer(file)
 writer.writerow([""name"", ""age""])
 file.close()
 file = open"
-2022-08-26-19-44-32-Anonymous.json,Anonymous,2022-08-26 19:44:32,10.81.190.38,1,-2,-2,-2,1,0,1,59999021,785,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""extract text from a pdf file""""""","
+2022-08-26-19-44-32-Anonymous.json,Anonymous_10.81.190.38,2022-08-26 19:44:32,10.81.190.38,1,-2,-2,-2,1,0,1,59999021,785,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""extract text from a pdf file""""""","
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
@@ -1788,7 +1788,7 @@ from P",59999021,785,T2C-SO-GPTNEO-FINETUNED-CONALA.csv,T2C-SO GPTNEO FINETUNED-
 pdf.extractText(pdf.open('test.pdf'))
 
 "
-2022-08-26-19-45-41-Anonymous.json,Anonymous,2022-08-26 19:45:41,10.81.190.38,0,0,-2,-2,0,-2,-2,63630494,105,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""find area coordinates of a invoice table in pdf file using python""""""","
+2022-08-26-19-45-41-Anonymous.json,Anonymous_10.81.190.38,2022-08-26 19:45:41,10.81.190.38,0,0,-2,-2,0,-2,-2,63630494,105,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""find area coordinates of a invoice table in pdf file using python""""""","
 
 import os
 import sys
@@ -1833,7 +1833,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
 "
-2022-09-08-11-39-24-Anonymous.json,Anonymous,2022-09-08 11:39:24,10.199.12.55,0,2,2,2,2,2,2,5843518,177,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"import itertools
+2022-09-08-11-39-24-Anonymous.json,Anonymous_10.199.12.55,2022-09-08 11:39:24,10.199.12.55,0,2,2,2,2,2,2,5843518,177,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"import itertools
 import ast
 import string
 import re
@@ -1847,7 +1847,7 @@ def remove():
 re.sub('[^a-zA-Z0-9\s]', '', mystring)
 
 "
-2022-09-08-11-40-29-Anonymous.json,Anonymous,2022-09-08 11:40:29,10.199.12.55,0,2,2,2,2,2,1,7750557,464,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get json data from restful service 'url'""""""","
+2022-09-08-11-40-29-Anonymous.json,Anonymous_10.199.12.55,2022-09-08 11:40:29,10.199.12.55,0,2,2,2,2,2,1,7750557,464,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get json data from restful service 'url'""""""","
 import requests
 response = requests.get('http://www.example.com/api/v1/users/1')
 print(response.json())
@@ -1864,7 +1864,7 @@ def get():
     print(data)
 
 "
-2022-09-08-11-41-03-Anonymous.json,Anonymous,2022-09-08 11:41:03,10.199.12.55,0,-1,-2,-2,1,-2,-2,64673085,825,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""create a static file in django""""""","
+2022-09-08-11-41-03-Anonymous.json,Anonymous_10.199.12.55,2022-09-08 11:41:03,10.199.12.55,0,-1,-2,-2,1,-2,-2,64673085,825,T2C-SO-GPTNEO-FINETUNED-SO.csv,T2C-SO GPTNEO FINETUNED-SO,True,"""""""create a static file in django""""""","
 from django.conf import settings
 settings.STATIC_URL = '/static/'
 settings.STATIC_ROOT = '/static/'
@@ -1879,7 +1879,7 @@ settings.STAT",64673085,825,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINET
 from django.conf import settings
 from django.http import HttpResponse
 "
-2022-09-08-11-41-36-Anonymous.json,Anonymous,2022-09-08 11:41:36,10.199.12.55,0,0,1,1,0,1,1,63791094,331,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""get all the classes in a module""""""","
+2022-09-08-11-41-36-Anonymous.json,Anonymous_10.199.12.55,2022-09-08 11:41:36,10.199.12.55,0,0,1,1,0,1,1,63791094,331,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""get all the classes in a module""""""","
 import inspect
 inspect.getmembers(module, inspect.isclass)
 [(name, obj) for name, obj in inspect.getmembers(module) if inspect.isclass(obj)]
@@ -1897,7 +1897,7 @@ inspect.getmembers(module, inspect.isbuiltin)
 inspect.getmembers(module, inspect.isabstract)
 inspect.getmembers(module, inspect.isabstractclass)
 inspect.getmembers(module, inspect.isclass"
-2022-09-08-11-42-57-Anonymous.json,Anonymous,2022-09-08 11:42:57,10.199.12.55,-1,1,-1,-2,1,0,-2,3519125,401,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""convert a hex-string representation to actual bytes""""""","
+2022-09-08-11-42-57-Anonymous.json,Anonymous_10.199.12.55,2022-09-08 11:42:57,10.199.12.55,-1,1,-1,-2,1,0,-2,3519125,401,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""convert a hex-string representation to actual bytes""""""","
 hex_string = '\x01\x02\x03\x04'
 hex_string.decode('hex')
 b'\x01\x02\x03\x04'
@@ -1908,7 +1908,7 @@ b'\x01\x02\x03\x04'
 b'\x01\x02\x03\x04'
 b'",3519125,401,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""convert a hex-string representation to actual bytes""""""","
 bytes.hex('0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0x0"
-2022-09-08-11-45-59-Anonymous.json,Anonymous,2022-09-08 11:45:59,10.199.12.55,-1,1,0,-1,2,-1,-2,64161083,712,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""use Postgresql Array field in Tortoise-ORM""""""","
+2022-09-08-11-45-59-Anonymous.json,Anonymous_10.199.12.55,2022-09-08 11:45:59,10.199.12.55,-1,1,0,-1,2,-1,-2,64161083,712,T2C-SO-CODEGEN-FINETUNED-SO.csv,T2C-SO CODEGEN FINETUNED-SO,True,"""""""use Postgresql Array field in Tortoise-ORM""""""","
 class User(Model):
     name = CharField(max_length=50)
     age = IntField()
@@ -1924,7 +1924,7 @@ class User(Model):
 tortoise.connect('test_db')
 
 "
-2022-09-08-11-47-32-Anonymous.json,Anonymous,2022-09-08 11:47:32,10.199.12.55,-1,2,2,2,1,1,1,17977584,25,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"import requests
+2022-09-08-11-47-32-Anonymous.json,Anonymous_10.199.12.55,2022-09-08 11:47:32,10.199.12.55,-1,2,2,2,1,1,1,17977584,25,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"import requests
 import subprocess
 import io
 import json
@@ -2030,14 +2030,14 @@ s = s[:-1]
 s = s[:-1]
 s = s[:-1]
 s = s[:-1]"
-2022-09-13-11-26-31-Anonymous.json,Anonymous,2022-09-13 11:26:31,159.138.218.18,-1,2,2,1,2,1,0,4914277,96,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""erase all the contents of a file `filename`""""""
+2022-09-13-11-26-31-Anonymous.json,Anonymous_159.138.218.18,2022-09-13 11:26:31,159.138.218.18,-1,2,2,1,2,1,0,4914277,96,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""erase all the contents of a file `filename`""""""
    ","open(filename, 'w').close()
 
 ",4914277,96,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""erase all the contents of a file `filename`""""""","
 os.remove(filename)
 
 "
-2022-09-13-12-14-03-Anonymous.json,Anonymous,2022-09-13 12:14:03,178.66.156.248,0,-1,-1,-1,-1,-1,-1,3475251,109,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Split a string by a delimiter in python""""""","
+2022-09-13-12-14-03-Anonymous.json,Anonymous_178.66.156.248,2022-09-13 12:14:03,178.66.156.248,0,-1,-1,-1,-1,-1,-1,3475251,109,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Split a string by a delimiter in python""""""","
 print(re.split('\\s+', 'a b c d e f g h i j k l m n o p q r s t u v w x y z'))
 ",3475251,109,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Split a string by a delimiter in python""""""
    ","re.split('\\W+', 'This is a string with a delimiter')
@@ -2301,7 +2301,7 @@ trans.get('category",29881993,462,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.
    ","print(','.join(['{0}'.format(x) for x in list(trans['category'].values)]))
 
 "
-2022-09-14-12-39-01-Anonymous.json,Anonymous,2022-09-14 12:39:01,14.137.139.192,1,-2,-2,-2,-1,-1,-1,24242433,150,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""convert a raw string `raw_byte_string` into a normal string""""""","
+2022-09-14-12-39-01-Anonymous.json,Anonymous_14.137.139.192,2022-09-14 12:39:01,14.137.139.192,1,-2,-2,-2,-1,-1,-1,24242433,150,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""convert a raw string `raw_byte_string` into a normal string""""""","
 import string
 raw_byte_string = '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00",24242433,148,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""decode string ""\\x89\\n"" into a normal string""""""","
 import re
@@ -2339,7 +2339,7 @@ s
 s
 s
 "
-2022-09-14-12-41-24-Anonymous.json,Anonymous,2022-09-14 12:41:24,14.137.139.192,-1,-1,1,1,-2,-2,-2,2354166,62,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""modify sys.path for python module `subdir`""""""","
+2022-09-14-12-41-24-Anonymous.json,Anonymous_14.137.139.192,2022-09-14 12:41:24,14.137.139.192,-1,-1,1,1,-2,-2,-2,2354166,62,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""modify sys.path for python module `subdir`""""""","
 import sys
 sys.path.append('subdir')
 import foo
@@ -2378,7 +2378,7 @@ print(os.path.join('apps', '__file__'))
 ",12666897,465,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""Remove all strings from a list a strings `sents` where the values starts with `@$\t` or `#`""""""","
 sents = [sent for sent in sents if not sent.startswith(""@$"")]
 sents = [sent for sent in sents if not sent.startswith(""#"
-2022-09-14-13-21-12-Anonymous.json,Anonymous,2022-09-14 13:21:12,159.138.218.175,1,1,-1,-2,2,2,1,1762484,343,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""find the index of an element 'MSFT' in a list `stocks_list`""""""","
+2022-09-14-13-21-12-Anonymous.json,Anonymous_159.138.218.175,2022-09-14 13:21:12,159.138.218.175,1,1,-1,-2,2,2,1,1762484,343,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""find the index of an element 'MSFT' in a list `stocks_list`""""""","
 import re
 re.search(r'\bMSFT\b',''.join(stocks_list)).start()
 re.search(r'\bMSFT\b',''.join(stocks_list)).end()
@@ -2389,7 +2389,7 @@ re.search(r'\bMSFT\b',''.join(stocks_list)).group().end()
 
     print(stocks_list.index(""MSFT""))
 "
-2022-09-14-13-21-54-Anonymous.json,Anonymous,2022-09-14 13:21:54,159.138.218.175,0,0,-1,-2,-1,-1,-1,15856127,42,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""sum all elements of nested list `L`""""""","
+2022-09-14-13-21-54-Anonymous.json,Anonymous_159.138.218.175,2022-09-14 13:21:54,159.138.218.175,0,0,-1,-2,-1,-1,-1,15856127,42,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""sum all elements of nested list `L`""""""","
 sum(sum(L, []))
 sum(sum(L, []))
 sum(sum(L, []))
@@ -2428,7 +2428,7 @@ matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 matrix = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]
 matrix = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]
 matrix = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12"
-2022-09-14-13-45-28-Anonymous.json,Anonymous,2022-09-14 13:45:28,77.234.203.186,-1,2,2,2,-2,-2,-2,113534,496,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Is there a function in Python to split a string without ignoring the spaces?,"    mystring = ""This is a string. It is split into separate strings.""
+2022-09-14-13-45-28-Anonymous.json,Anonymous_77.234.203.186,2022-09-14 13:45:28,77.234.203.186,-1,2,2,2,-2,-2,-2,113534,496,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Is there a function in Python to split a string without ignoring the spaces?,"    mystring = ""This is a string. It is split into separate strings.""
 
     print(mystring.split())
 ",113534,496,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""split a string `mystring` considering the spaces ' '""""""","
@@ -2441,7 +2441,7 @@ s.split(' ')[1].split()[0].split('-')[0]
 s.split(' ')[1].split()[0].split('-')[0].split('.')[0]
 s.split(' ')[1].split()[0].split('-')[0].split('.')[0].split('/')[0]
 s.split"
-2022-09-14-13-46-18-Anonymous.json,Anonymous,2022-09-14 13:46:18,77.234.203.186,1,-2,-2,-2,2,2,2,15907200,240,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""add a header to a csv file""""""","
+2022-09-14-13-46-18-Anonymous.json,Anonymous_77.234.203.186,2022-09-14 13:46:18,77.234.203.186,1,-2,-2,-2,2,2,2,15907200,240,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""add a header to a csv file""""""","
 csv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)
 csv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)
 csv.writer('file.csv', delimiter=',', quoting=csv.QUOTE_NONE)
@@ -2451,7 +2451,7 @@ csv.writer('file.csv",15907200,240,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS
    ","df.to_csv('myfile.csv', header=True)
 
 "
-2022-09-14-13-52-13-Anonymous.json,Anonymous,2022-09-14 13:52:13,77.234.203.186,-1,2,2,2,-2,-2,-2,7349646,487,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Sort a list of tuples `b` by third item in the tuple""""""","
+2022-09-14-13-52-13-Anonymous.json,Anonymous_77.234.203.186,2022-09-14 13:52:13,77.234.203.186,-1,2,2,2,-2,-2,-2,7349646,487,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Sort a list of tuples `b` by third item in the tuple""""""","
 sorted(b, key=lambda x: x[2])
 
 This will sort the list `b` by the third item in each tuple in the list `b` in ascending order.
@@ -2679,7 +2679,7 @@ next"
    ","print(' '.join(l))
 
 "
-2022-09-14-15-47-03-Anonymous.json,Anonymous,2022-09-14 15:47:03,159.138.216.23,1,1,1,0,2,2,1,4642501,220,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""How to sort dictionaries by keys in Python""""""","
+2022-09-14-15-47-03-Anonymous.json,Anonymous_159.138.216.23,2022-09-14 15:47:03,159.138.216.23,1,1,1,0,2,2,1,4642501,220,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""How to sort dictionaries by keys in Python""""""","
 import operator
 sorted(d.items(), key=operator.itemgetter(0))
 sorted(d.items(), key=operator.itemgetter(1))
@@ -2698,13 +2698,13 @@ sum(map(lambda x: x.decimal, x))
 sum(x[(b, b) for b in x if b])
 
 "
-2022-09-14-23-16-31-Anonymous.json,Anonymous,2022-09-14 23:16:31,176.59.21.66,-1,0,0,0,-2,0,0,3367288,108,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""use `%s` operator to print variable values `str1` inside a string""""""","
+2022-09-14-23-16-31-Anonymous.json,Anonymous_176.59.21.66,2022-09-14 23:16:31,176.59.21.66,-1,0,0,0,-2,0,0,3367288,108,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""use `%s` operator to print variable values `str1` inside a string""""""","
 print('str1 = %s' % str1)
 
 ",3367288,108,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""use `%s` operator to print variable values `str1` inside a string""""""","
 print('%s' % str1)
 "
-2022-09-14-23-16-52-Anonymous.json,Anonymous,2022-09-14 23:16:52,176.59.21.66,-1,0,0,0,0,0,0,30766151,267,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Extract brackets from string `s`""""""
+2022-09-14-23-16-52-Anonymous.json,Anonymous_176.59.21.66,2022-09-14 23:16:52,176.59.21.66,-1,0,0,0,0,0,0,30766151,267,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Extract brackets from string `s`""""""
    ","re.findall('\\[(.*?)\\]', s)
 
 ",30766151,267,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""Extract brackets from string `s`""""""","
@@ -2727,7 +2727,7 @@ class MyClass(gql.GqlQuery):
     def execute(self, *args, **kwargs):
         return super(MyClass, self).execute(*args, **kwargs)
     def"
-2022-09-14-23-19-35-Anonymous.json,Anonymous,2022-09-14 23:19:35,5.18.163.156,1,2,-2,-2,2,-1,1,22365172,165,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Iterate ove list `[1, 2, 3]` using list comprehension""""""","
+2022-09-14-23-19-35-Anonymous.json,Anonymous_5.18.163.156,2022-09-14 23:19:35,5.18.163.156,1,2,-2,-2,2,-1,1,22365172,165,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Iterate ove list `[1, 2, 3]` using list comprehension""""""","
 [1, 2, 3]
 [1, 2, 3]
 [1, 2, 3]
@@ -2765,7 +2765,7 @@ codecs.decode",24242433,149,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA C
 raw_string.decode('utf-8')
 
 "
-2022-09-14-23-20-27-Anonymous.json,Anonymous,2022-09-14 23:20:27,5.18.95.129,0,0,0,0,0,0,0,15049182,72,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""add one to the hidden web element with id 'XYZ' with selenium python script""""""","
+2022-09-14-23-20-27-Anonymous.json,Anonymous_5.18.95.129,2022-09-14 23:20:27,5.18.95.129,0,0,0,0,0,0,0,15049182,72,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""add one to the hidden web element with id 'XYZ' with selenium python script""""""","
 driver.find_element_by_id('XYZ').clear()
 driver.find_element_by_id('XYZ').send_keys('one')
 driver.find_element_by_id('XYZ').send_keys('two')
@@ -2809,7 +2809,7 @@ df['list'] = df['list'].apply(pd.Series)
 df['list'] = df['list'].apply(pd.Series)
 df['list'] = df['list'].apply(pd.Series)
 df"
-2022-09-14-23-21-01-Anonymous.json,Anonymous,2022-09-14 23:21:01,188.170.82.230,0,0,0,0,0,0,0,1269217,243,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Call a base class's class method `do` from derived class `Derived`""""""","
+2022-09-14-23-21-01-Anonymous.json,Anonymous_188.170.82.230,2022-09-14 23:21:01,188.170.82.230,0,0,0,0,0,0,0,1269217,243,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Call a base class's class method `do` from derived class `Derived`""""""","
 Derived.do()
 
 ",1269217,243,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Call a base class's class method `do` from derived class `Derived`""""""
@@ -2878,12 +2878,12 @@ subprocess.call(['vasp', 'tee', 'tee_output'])
 subprocess.call(['vasp', 'tee', 'tee_output'])
 subprocess.call(['vasp', 'tee', 'tee_output'])
 subprocess.call(['vasp', 'tee', 'tee_output"
-2022-09-14-23-21-22-Anonymous.json,Anonymous,2022-09-14 23:21:22,213.152.165.107,-1,-2,0,-2,2,2,2,638048,232,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""How do I sum the first value in each tuple in a list of tuples in Python?""""""","
+2022-09-14-23-21-22-Anonymous.json,Anonymous_213.152.165.107,2022-09-14 23:21:22,213.152.165.107,-1,-2,0,-2,2,2,2,638048,232,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""How do I sum the first value in each tuple in a list of tuples in Python?""""""","
 sum(x[0] for x in list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(zip(*list(",638048,232,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""How do I sum the first value in each tuple in a list of tuples in Python?""""""","
 sum(x[0] for x in list_of_tuples)
 
 "
-2022-09-14-23-21-32-Anonymous.json,Anonymous,2022-09-14 23:21:32,188.170.82.230,-1,2,2,2,0,0,0,11801309,75,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,loop over files,"    for filename in os.listdir('.'):
+2022-09-14-23-21-32-Anonymous.json,Anonymous_188.170.82.230,2022-09-14 23:21:32,188.170.82.230,-1,2,2,2,0,0,0,11801309,75,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,loop over files,"    for filename in os.listdir('.'):
 
         print(filename)
 ",11801309,75,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""loop over files in directory '.'""""""","
@@ -2905,7 +2905,7 @@ else:
 print(""Done"")
 
 "
-2022-09-14-23-21-45-Anonymous.json,Anonymous,2022-09-14 23:21:45,188.170.78.137,-1,2,0,0,2,1,0,13145368,277,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""find the first element of the tuple with the maximum second element in a list of tuples `lis`""""""","
+2022-09-14-23-21-45-Anonymous.json,Anonymous_188.170.78.137,2022-09-14 23:21:45,188.170.78.137,-1,2,0,0,2,1,0,13145368,277,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""find the first element of the tuple with the maximum second element in a list of tuples `lis`""""""","
 max(lis, key=lambda x: x[1])[0]
 
 ",13145368,277,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Find the maximum value in a list of tuples in Python,"    lis = [(1, 2), (3, 4), (5, 6)]
@@ -3254,7 +3254,7 @@ re.findall(r'\$\w+', mystring)
 re.findall(r'\$\w+', mystring)
 re.findall(r'\$\w+', mystring)
 re.findall(r'\$\"
-2022-09-14-23-27-01-Anonymous.json,Anonymous,2022-09-14 23:27:01,213.152.165.107,0,-2,-2,-2,-2,-2,-2,15049182,72,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""add one to the hidden web element with id 'XYZ' with selenium python script""""""","
+2022-09-14-23-27-01-Anonymous.json,Anonymous_213.152.165.107,2022-09-14 23:27:01,213.152.165.107,0,-2,-2,-2,-2,-2,-2,15049182,72,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""add one to the hidden web element with id 'XYZ' with selenium python script""""""","
 driver.find_element_by_id('XYZ').click()
 driver.find_element_by_id('XYZ').click()
 driver.find_element_by_id('XYZ').click()
@@ -3271,7 +3271,7 @@ driver.find_element_by_id(""XYZ"").send_keys(Keys.CONTROL)
 driver.find_element_by_id(""XYZ"").send_keys(Keys.CONTROL)
 driver.find_element_by_id(""XYZ"").send_keys(Keys.CONTROL)
 driver.find_element_by_id(""XY"
-2022-09-14-23-29-06-Anonymous.json,Anonymous,2022-09-14 23:29:06,5.166.36.31,1,0,0,0,0,0,0,12666897,465,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Remove all strings from a list a strings `sents` where the values starts with `@$\t` or `#`""""""","
+2022-09-14-23-29-06-Anonymous.json,Anonymous_5.166.36.31,2022-09-14 23:29:06,5.166.36.31,1,0,0,0,0,0,0,12666897,465,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Remove all strings from a list a strings `sents` where the values starts with `@$\t` or `#`""""""","
 sents = [s for s in sents if s.startswith('@$\t') or s.startswith('#')]
 print(sents)
 
@@ -3279,7 +3279,7 @@ Output:
 ['@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$\t', '#', '@$",12666897,465,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""Remove all strings from a list a strings `sents` where the values starts with `@$\t` or `#`""""""","
 sents = [sent for sent in sents if not sent.startswith(""@$"")]
 sents = [sent for sent in sents if not sent.startswith(""#"
-2022-09-14-23-29-46-Anonymous.json,Anonymous,2022-09-14 23:29:46,5.166.36.31,1,0,0,0,0,0,0,10155684,400,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""add an entry 'wuggah' at the beginning of list `myList`""""""","
+2022-09-14-23-29-46-Anonymous.json,Anonymous_5.166.36.31,2022-09-14 23:29:46,5.166.36.31,1,0,0,0,0,0,0,10155684,400,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""add an entry 'wuggah' at the beginning of list `myList`""""""","
 myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, wuggah]
 myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, wuggah]
@@ -3288,7 +3288,7 @@ myList = [1, 2, 3, 4, 5, 6",10155684,400,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-I
    ","myList.insert(0, 'wuggah')
 
 "
-2022-09-14-23-30-12-Anonymous.json,Anonymous,2022-09-14 23:30:12,5.166.36.31,1,0,0,0,0,0,0,373194,367,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""find all matches of regex pattern '([a-fA-F\\d]{32})' in string `data`""""""","
+2022-09-14-23-30-12-Anonymous.json,Anonymous_5.166.36.31,2022-09-14 23:30:12,5.166.36.31,1,0,0,0,0,0,0,373194,367,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""find all matches of regex pattern '([a-fA-F\\d]{32})' in string `data`""""""","
 re.findall('([a-fA-F\\d]{32})', data)
 
 print(re.findall('([a-fA-F\\d]{32})', 'a b c d e f g h i j k l m n o p q r s t u v w x y z')[0])
@@ -3302,7 +3302,7 @@ Output:
 
     print(re.findall(r'([a-fA-F\d]{32})', data))
 "
-2022-09-14-23-30-33-Anonymous.json,Anonymous,2022-09-14 23:30:33,5.166.36.31,-1,0,0,0,0,0,0,17021863,131,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Put the curser at beginning of the file""""""","
+2022-09-14-23-30-33-Anonymous.json,Anonymous_5.166.36.31,2022-09-14 23:30:33,5.166.36.31,-1,0,0,0,0,0,0,17021863,131,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Put the curser at beginning of the file""""""","
 file.seek(0)
 
 ",17021863,131,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Put the curser at beginning of the file""""""","
@@ -3317,14 +3317,14 @@ os.chdir('/path/to/your/file')
 os.startfile('yourfile.txt')
 os.chdir('/path/to/your/file')
 os.startfile('"
-2022-09-14-23-30-53-Anonymous.json,Anonymous,2022-09-14 23:30:53,77.234.193.84,0,0,0,0,0,0,0,1303243,333,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""check if object `o` is a string""""""","
+2022-09-14-23-30-53-Anonymous.json,Anonymous_77.234.193.84,2022-09-14 23:30:53,77.234.193.84,0,0,0,0,0,0,0,1303243,333,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""check if object `o` is a string""""""","
 isinstance(o, str)
 
 ",1303243,335,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""check if `obj_to_test` is a string""""""
    ","isinstance(obj_to_test, str)
 
 "
-2022-09-14-23-31-14-Anonymous.json,Anonymous,2022-09-14 23:31:14,77.234.193.84,-1,0,0,0,0,0,0,25698710,171,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""replace all occurences of newlines `\n` with `<br>` in dataframe `df`""""""","
+2022-09-14-23-31-14-Anonymous.json,Anonymous_77.234.193.84,2022-09-14 23:31:14,77.234.193.84,-1,0,0,0,0,0,0,25698710,171,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""replace all occurences of newlines `\n` with `<br>` in dataframe `df`""""""","
 df.replace('\n', '<br>')
 
 df
@@ -3339,7 +3339,7 @@ df.replace('\n', '<br>', regex=True)
 df.replace('\n', '<br>', regex=True)
 df.replace('\n', '<br>', regex=True)
 df.replace('\n', '"
-2022-09-14-23-31-38-Anonymous.json,Anonymous,2022-09-14 23:31:38,77.234.193.84,0,0,0,0,0,0,0,2430539,488,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get a list of all keys in Cassandra database `cf` with pycassa""""""","
+2022-09-14-23-31-38-Anonymous.json,Anonymous_77.234.193.84,2022-09-14 23:31:38,77.234.193.84,0,0,0,0,0,0,0,2430539,488,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get a list of all keys in Cassandra database `cf` with pycassa""""""","
 from pycassa.system.ttypes import ColumnDescriptor
 from pycassa.system.ttypes import ColumnFamilyDescriptor
 from pycassa.system.ttypes import ColumnDescriptor
@@ -3361,7 +3361,7 @@ cluster.execute('show keyspace')
 cluster.execute('show keyspace')
 cluster.execute('show keyspace')
 cluster.execute('show"
-2022-09-14-23-32-04-Anonymous.json,Anonymous,2022-09-14 23:32:04,77.234.193.84,-1,0,0,0,0,0,0,28742436,73,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Combining two numpy arrays to form an array with the largest value from each array,"    import numpy as np
+2022-09-14-23-32-04-Anonymous.json,Anonymous_77.234.193.84,2022-09-14 23:32:04,77.234.193.84,-1,0,0,0,0,0,0,28742436,73,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Combining two numpy arrays to form an array with the largest value from each array,"    import numpy as np
 
     arr1 = np.array([2, 3, 4])
 
@@ -3375,7 +3375,7 @@ np.maximum(np.arange(len(a)), np.arange(len(b)))
 [1, 5, 2]
 
 "
-2022-09-14-23-32-25-Anonymous.json,Anonymous,2022-09-14 23:32:25,77.234.193.84,-1,0,0,0,0,0,0,15405636,31,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`""""""
+2022-09-14-23-32-25-Anonymous.json,Anonymous_77.234.193.84,2022-09-14 23:32:25,77.234.193.84,-1,0,0,0,0,0,0,15405636,31,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`""""""
    ","parser.add_argument('--version', action='version', version='%(prog)s 2.0')
 
 ",15405636,31,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`""""""","
@@ -3389,7 +3389,7 @@ You can use argparse.ArgumentParser.add_argument() to add an argument to the par
 parser.add_argument('--version', action='store_true', default=False, help='Show version information')
 parser.parse_args(['--version'])
 "
-2022-09-14-23-33-07-Anonymous.json,Anonymous,2022-09-14 23:33:07,77.234.193.84,-1,0,0,0,0,0,0,4383082,245,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""separate words delimited by one or more spaces into a list""""""","
+2022-09-14-23-33-07-Anonymous.json,Anonymous_77.234.193.84,2022-09-14 23:33:07,77.234.193.84,-1,0,0,0,0,0,0,4383082,245,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""separate words delimited by one or more spaces into a list""""""","
 import re
 re.split(r'\s+', 'one two three')
 re.split(r'\s+', 'one two three')[0]
@@ -3406,7 +3406,7 @@ Output:
 ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l','m', 'n', 'o', 'p', 'q', 'r','s', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 "
-2022-09-14-23-33-18-Anonymous.json,Anonymous,2022-09-14 23:33:18,77.234.193.84,0,0,0,0,0,0,0,356483,485,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""python regex  to find all numbers and dots from 'text'""""""","
+2022-09-14-23-33-18-Anonymous.json,Anonymous_77.234.193.84,2022-09-14 23:33:18,77.234.193.84,0,0,0,0,0,0,0,356483,485,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""python regex  to find all numbers and dots from 'text'""""""","
 import re
 text = ""one two three four five six seven eight nine""
 re.findall(r'\d+\.\d+', text)
@@ -3425,7 +3425,7 @@ re.findall(r'\d+\.\d+', text)
 re.findall(r'\d+\.\d+', text)
 re.findall(r'\d+\.\d+', text)
 re.findall(r'\d+\.\d+', text"
-2022-09-14-23-40-59-Anonymous.json,Anonymous,2022-09-14 23:40:59,185.24.52.32,1,2,-2,-2,-1,2,2,10607688,489,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""create a datetime with the current date & time""""""","
+2022-09-14-23-40-59-Anonymous.json,Anonymous_185.24.52.32,2022-09-14 23:40:59,185.24.52.32,1,2,-2,-2,-1,2,2,10607688,489,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""create a datetime with the current date & time""""""","
 datetime.datetime.now() + datetime.timedelta(days=1)
 datetime.datetime.now() + datetime.timedelta(days=1) + datetime.timedelta(days=1)
 datetime.datetime.now() + datetime.timedelta(days=1) + datetime.timedelta(days=1) + datetime.timedelta(days=1) + datetime.timedelta(days=1)
@@ -3433,7 +3433,7 @@ datetime.datetime.now() + datetime.timedelta(",10607688,489,T2C-CONALA-CODEGEN-F
 datetime.datetime.now()
 
 "
-2022-09-14-23-41-51-Anonymous.json,Anonymous,2022-09-14 23:41:51,185.24.52.32,1,2,1,0,2,2,2,28986489,290,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Python Pandas: How to replace a characters in a column of a dataframe?""""""","
+2022-09-14-23-41-51-Anonymous.json,Anonymous_185.24.52.32,2022-09-14 23:41:51,185.24.52.32,1,2,1,0,2,2,2,28986489,290,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Python Pandas: How to replace a characters in a column of a dataframe?""""""","
 df.replace(old_string, new_string)
 df.replace(old_string, new_string, regex=True)
 df.replace(old_string, new_string, regex=False)
@@ -3444,7 +3444,7 @@ df.replace(old_string, new_string, regex=None, inplace=",28986489,290,T2C-CONALA
    ","df['column_name'].str.replace('a', 'b')
 
 "
-2022-09-14-23-43-42-Anonymous.json,Anonymous,2022-09-14 23:43:42,185.24.52.32,0,2,-2,-2,2,-1,-2,7961363,207,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Removing duplicates in list `t`""""""","
+2022-09-14-23-43-42-Anonymous.json,Anonymous_185.24.52.32,2022-09-14 23:43:42,185.24.52.32,0,2,-2,-2,2,-1,-2,7961363,207,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Removing duplicates in list `t`""""""","
 t.pop()
 
 print(t)
@@ -3456,14 +3456,14 @@ Output:
    ","list(set(abracadabra))
 
 "
-2022-09-14-23-44-51-Anonymous.json,Anonymous,2022-09-14 23:44:51,95.161.223.140,-1,0,0,0,0,0,0,14401047,325,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""average each two columns of array `data`""""""","
+2022-09-14-23-44-51-Anonymous.json,Anonymous_95.161.223.140,2022-09-14 23:44:51,95.161.223.140,-1,0,0,0,0,0,0,14401047,325,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""average each two columns of array `data`""""""","
 data.mean(axis=1)
 
 ",14401047,325,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""average each two columns of array `data`""""""
    ","np.mean(data, axis=1)
 
 "
-2022-09-14-23-45-05-Anonymous.json,Anonymous,2022-09-14 23:45:05,95.161.223.140,1,0,0,0,0,0,0,32675861,187,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'""""""","
+2022-09-14-23-45-05-Anonymous.json,Anonymous_95.161.223.140,2022-09-14 23:45:05,95.161.223.140,1,0,0,0,0,0,0,32675861,187,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'""""""","
 df['B'] = df['B'].apply(lambda x: x.replace(',',''))
 df['D'] = df['B'].apply(lambda x: x.replace(',',''))
 df
@@ -3475,7 +3475,7 @@ df.to_csv('new_file",32675861,187,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.
    ","df['D'] = df['B']
 
 "
-2022-09-14-23-45-13-Anonymous.json,Anonymous,2022-09-14 23:45:13,185.24.52.32,0,2,-2,-2,1,-2,-2,356483,484,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Find all numbers and dots from a string `text` using regex""""""","
+2022-09-14-23-45-13-Anonymous.json,Anonymous_185.24.52.32,2022-09-14 23:45:13,185.24.52.32,0,2,-2,-2,1,-2,-2,356483,484,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Find all numbers and dots from a string `text` using regex""""""","
 re.findall('\\d+\\.\\d+', text)
 
 This will return a list of numbers and dots separated by a comma.
@@ -3488,35 +3488,35 @@ re.findall(r'\d+\.\d+\.\d+\.\d+', text)
 re.findall(r'\d+\.\d+\.\d+\.\d+', text)
 re.findall(r'\d+\.\d+\.\d+\.\d+', text)
 re.findall(r'\"
-2022-09-14-23-45-14-Anonymous.json,Anonymous,2022-09-14 23:45:14,95.161.223.140,1,0,0,0,0,0,0,9012008,206,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,python's re: return True if regex contains in the string,"    foobarrrr = ""foobarrrr""
+2022-09-14-23-45-14-Anonymous.json,Anonymous_95.161.223.140,2022-09-14 23:45:14,95.161.223.140,1,0,0,0,0,0,0,9012008,206,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,python's re: return True if regex contains in the string,"    foobarrrr = ""foobarrrr""
 
     print(re.search(""ba[rzd]"", foobarrrr))
 ",9012008,206,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""return `True` if string `foobarrrr` contains regex `ba[rzd]`""""""
    ","re.search('ba[rzd]', 'foobarrrr')
 
 "
-2022-09-14-23-45-27-Anonymous.json,Anonymous,2022-09-14 23:45:27,95.161.223.140,1,0,0,0,0,0,0,22859493,355,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""sort list `li` in descending order based on the date value in second element of each list in list `li`""""""
+2022-09-14-23-45-27-Anonymous.json,Anonymous_95.161.223.140,2022-09-14 23:45:27,95.161.223.140,1,0,0,0,0,0,0,22859493,355,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""sort list `li` in descending order based on the date value in second element of each list in list `li`""""""
    ","li.sort(key=lambda x: x[1], reverse=True)
 
 ",22859493,355,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""sort list `li` in descending order based on the date value in second element of each list in list `li`""""""","
 sorted(li, key=lambda x: x[1], reverse=True)
 
 "
-2022-09-14-23-45-35-Anonymous.json,Anonymous,2022-09-14 23:45:35,95.161.223.140,1,0,0,0,0,0,0,7574841,396,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""open a 'gnome' terminal from python script and run  'sudo apt-get update' command.""""""","
+2022-09-14-23-45-35-Anonymous.json,Anonymous_95.161.223.140,2022-09-14 23:45:35,95.161.223.140,1,0,0,0,0,0,0,7574841,396,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""open a 'gnome' terminal from python script and run  'sudo apt-get update' command.""""""","
 import subprocess
 subprocess.call(['gnome-terminal', '--disable-factory', '--disable-factory-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable-extensions', '--disable",7574841,396,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""open a 'gnome' terminal from python script and run  'sudo apt-get update' command.""""""","
 os.system('gnome')
 os.system('sudo apt-get update')
 
 "
-2022-09-14-23-45-46-Anonymous.json,Anonymous,2022-09-14 23:45:46,95.161.223.140,1,0,0,0,0,0,0,35837346,302,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""find maximal value in matrix `matrix`""""""
+2022-09-14-23-45-46-Anonymous.json,Anonymous_95.161.223.140,2022-09-14 23:45:46,95.161.223.140,1,0,0,0,0,0,0,35837346,302,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""find maximal value in matrix `matrix`""""""
    ","max(matrix.max(), matrix.min())
 
 ",35837346,302,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""find maximal value in matrix `matrix`""""""","
 max(matrix)
 
 "
-2022-09-14-23-51-08-Anonymous.json,Anonymous,2022-09-14 23:51:08,188.243.238.216,1,0,0,0,0,0,0,37080612,443,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""get rows of dataframe `df` that match regex '(Hel|Just)'""""""","
+2022-09-14-23-51-08-Anonymous.json,Anonymous_188.243.238.216,2022-09-14 23:51:08,188.243.238.216,1,0,0,0,0,0,0,37080612,443,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""get rows of dataframe `df` that match regex '(Hel|Just)'""""""","
 df.apply(lambda x: x.str.contains('Hel|Just'))
 
 df.apply(lambda x: x.str.contains('Hel|Just'))
@@ -3559,7 +3559,7 @@ df",37080612,443,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,pandas DataFrame
 
     print(df
 "
-2022-09-15-00-31-46-Anonymous.json,Anonymous,2022-09-15 00:31:46,85.143.144.79,1,0,0,0,0,0,0,30843103,490,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get the index of an integer `1` from a list `lst` if the list also contains boolean items""""""","
+2022-09-15-00-31-46-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:31:46,85.143.144.79,1,0,0,0,0,0,0,30843103,490,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get the index of an integer `1` from a list `lst` if the list also contains boolean items""""""","
 def index_of_1(lst):
     for i, x in enumerate(lst):
         if x == 1:
@@ -3574,14 +3574,14 @@ Output:
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 "
-2022-09-15-00-31-49-Anonymous.json,Anonymous,2022-09-15 00:31:49,85.143.144.79,0,0,0,0,0,0,0,1007481,180,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""replace spaces with underscore""""""
+2022-09-15-00-31-49-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:31:49,85.143.144.79,0,0,0,0,0,0,0,1007481,180,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""replace spaces with underscore""""""
    ","re.sub(' ', '_', 'hello')
 
 ",1007481,180,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""replace spaces with underscore""""""","
 re.sub(' +', '_', string)
 
 "
-2022-09-15-00-32-16-Anonymous.json,Anonymous,2022-09-15 00:32:16,85.143.144.79,1,0,0,0,0,0,0,5932059,327,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""split a string into a list of words and whitespace""""""","
+2022-09-15-00-32-16-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:32:16,85.143.144.79,1,0,0,0,0,0,0,5932059,327,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""split a string into a list of words and whitespace""""""","
 words = [word.split() for word in words]
 words = [word.split() for word in words]
 words = [word.split() for word in words]
@@ -3598,7 +3598,7 @@ print(list(re.split(' ','')))
 
 Output:
 ['one', 'two', 'three', 'four', 'five','six','seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen','sixteen','seventeen', 'eighteen', 'nineteen', 'twenty', 'twenty-one', 'twenty-two', 'twenty-three', 'twenty-four',"
-2022-09-15-00-32-20-Anonymous.json,Anonymous,2022-09-15 00:32:20,85.143.144.79,0,0,0,0,0,0,0,5306756,260,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""display the float `1/3*100` as a percentage""""""","
+2022-09-15-00-32-20-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:32:20,85.143.144.79,0,0,0,0,0,0,0,5306756,260,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""display the float `1/3*100` as a percentage""""""","
 print('{0:.2f}'.format(1/3*100))
 
 A:
@@ -3606,7 +3606,7 @@ A:
 You can use float() to convert a float to a string:
 ",5306756,260,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,how to show Percentage in python,"    print(str(round(1/3*100, 2)) + ""%"")
 "
-2022-09-15-00-32-32-Anonymous.json,Anonymous,2022-09-15 00:32:32,85.143.144.79,-1,0,0,0,0,0,0,17665809,32,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""remove key 'c' from dictionary `d`""""""","
+2022-09-15-00-32-32-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:32:32,85.143.144.79,-1,0,0,0,0,0,0,17665809,32,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""remove key 'c' from dictionary `d`""""""","
 d = {'a':1, 'b':2, 'c':3}
 d.pop('c')
 d
@@ -3640,7 +3640,7 @@ d
 
     return func
 "
-2022-09-15-00-32-33-Anonymous.json,Anonymous,2022-09-15 00:32:33,85.143.144.79,0,0,0,0,0,0,0,4143502,152,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none""""""","
+2022-09-15-00-32-33-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:32:33,85.143.144.79,0,0,0,0,0,0,0,4143502,152,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none""""""","
 plt.scatter(np.random.randn(100), np.random.randn(100), c='none', s=0)
 plt.show()
 
@@ -3656,7 +3656,7 @@ plt.scatter(np.random.randn(100), np.random.randn(100), c=None)
 plt.show()
 
 "
-2022-09-15-00-32-34-Anonymous.json,Anonymous,2022-09-15 00:32:34,85.143.144.79,0,0,0,0,0,0,0,2173087,39,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Create 3d array of zeroes of size `(3,3,3)`""""""","
+2022-09-15-00-32-34-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:32:34,85.143.144.79,0,0,0,0,0,0,0,2173087,39,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Create 3d array of zeroes of size `(3,3,3)`""""""","
 np.zeros((3, 3, 3))
 
 ",2173087,39,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Create 3d array of zeroes of size `(3,3,3)`""""""","
@@ -3668,14 +3668,14 @@ a[:,:,:,:,3] = np.zeros((3,3,3))
 a[:,:,:,:,:,3] = np.zeros((3,3,3))
 a[:,:,:,:,:,:,3] = np.zeros((3,3,3))
 a"
-2022-09-15-00-32-35-Anonymous.json,Anonymous,2022-09-15 00:32:35,85.143.144.79,0,0,0,0,0,0,0,13567345,16,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Calculate sum over all rows of 2D numpy array""""""
+2022-09-15-00-32-35-Anonymous.json,Anonymous_85.143.144.79,2022-09-15 00:32:35,85.143.144.79,0,0,0,0,0,0,0,13567345,16,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Calculate sum over all rows of 2D numpy array""""""
    ","np.sum(a, axis=1)
 
 ",13567345,16,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Calculate sum over all rows of 2D numpy array""""""","
 sum(a[:, 0] for a in b)
 
 "
-2022-09-15-00-47-41-Anonymous.json,Anonymous,2022-09-15 00:47:41,178.252.127.225,0,2,1,0,2,0,0,19546911,471,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,How to get a 16bit Unsigned integer in python,"    print(int(input(""Enter an integer: "")))
+2022-09-15-00-47-41-Anonymous.json,Anonymous_178.252.127.225,2022-09-15 00:47:41,178.252.127.225,0,2,1,0,2,0,0,19546911,471,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,How to get a 16bit Unsigned integer in python,"    print(int(input(""Enter an integer: "")))
 ",19546911,471,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Convert integer `number` into an unassigned integer""""""","
 number = int(number)
 
@@ -3687,7 +3687,7 @@ You can use int(number) to convert number to int and assign it to variable numbe
 number = int(number)
 number = number + 1
 "
-2022-09-15-06-23-43-Anonymous.json,Anonymous,2022-09-15 06:23:43,88.201.165.124,-1,0,0,2,0,0,0,18453566,323,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get list of values from dictionary 'mydict' w.r.t. list of keys 'mykeys'""""""","
+2022-09-15-06-23-43-Anonymous.json,Anonymous_88.201.165.124,2022-09-15 06:23:43,88.201.165.124,-1,0,0,2,0,0,0,18453566,323,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get list of values from dictionary 'mydict' w.r.t. list of keys 'mykeys'""""""","
 mydict = {'key1': 'value1', 'key2': 'value2'}
 mykeys = ['key1', 'key2']
 myvalues = [mydict[key] for key in mykeys]
@@ -3698,7 +3698,7 @@ print(myvalues)
 
     print(list(map(lambda x: mydict[x], mykeys)))
 "
-2022-09-15-07-48-11-Anonymous.json,Anonymous,2022-09-15 07:48:11,134.209.200.134,-1,2,1,1,-1,0,-2,2763750,469,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.""""""","
+2022-09-15-07-48-11-Anonymous.json,Anonymous_134.209.200.134,2022-09-15 07:48:11,134.209.200.134,-1,2,1,1,-1,0,-2,2763750,469,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.""""""","
 long.file.name.jpg.replace('_a', '_suff', 1)
 
 ",2763750,469,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.""""""","
@@ -3712,7 +3712,7 @@ from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
 from django.core.files.storage import default"
-2022-09-15-07-49-09-Anonymous.json,Anonymous,2022-09-15 07:49:09,134.209.200.134,-1,2,2,2,2,-2,-2,22676,29,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""download a file `url` over HTTP""""""","
+2022-09-15-07-49-09-Anonymous.json,Anonymous_134.209.200.134,2022-09-15 07:49:09,134.209.200.134,-1,2,2,2,2,-2,-2,22676,29,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""download a file `url` over HTTP""""""","
 urllib.request.urlretrieve(url, 'file.txt')
 
 A:
@@ -3735,7 +3735,7 @@ urllib2.urlretrieve('http://www.example.com/', 'file.txt')
 urllib2.urlretrieve('http://www.example.com/', 'file.txt')
 urllib2.urlretrieve('http://www.example.com/', 'file.txt')
 ur"
-2022-09-15-07-50-08-Anonymous.json,Anonymous,2022-09-15 07:50:08,134.209.200.134,1,0,0,-2,2,2,2,13793321,107,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes""""""","
+2022-09-15-07-50-08-Anonymous.json,Anonymous_134.209.200.134,2022-09-15 07:50:08,134.209.200.134,1,0,0,-2,2,2,2,13793321,107,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes""""""","
 df1['Date_Time'] = df1['Date_Time'].dt.date
 df2['Date_Time'] = df2['Date_Time'].dt.date
 df1['Date_Time'] = df1['Date_Time'].dt.date
@@ -3746,7 +3746,7 @@ df1['Date_Time']",13793321,107,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv
    ","pd.merge(df1, df2, on='Date_Time')
 
 "
-2022-09-15-07-50-48-Anonymous.json,Anonymous,2022-09-15 07:50:48,134.209.200.134,-1,2,2,2,1,-2,-2,5932059,327,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""split a string into a list of words and whitespace""""""","
+2022-09-15-07-50-48-Anonymous.json,Anonymous_134.209.200.134,2022-09-15 07:50:48,134.209.200.134,-1,2,2,2,1,-2,-2,5932059,327,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""split a string into a list of words and whitespace""""""","
 [x.strip() for x in re.split('\\W+', 'a b c d e f g h i j k l m n o p q r s t u v w x y z')]
 ",5932059,327,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""split a string into a list of words and whitespace""""""","
 words = [word.split() for word in words]
@@ -3759,7 +3759,7 @@ words = [word.split() for word in words]
 words = [word.split() for word in words]
 words = [word.split() for word in words]
 words = [word.split() for word in"
-2022-09-15-09-37-08-Anonymous.json,Anonymous,2022-09-15 09:37:08,77.234.216.36,0,2,-2,-2,2,-2,-2,20107570,473,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""write dataframe `df`, excluding index, to a csv file""""""","
+2022-09-15-09-37-08-Anonymous.json,Anonymous_77.234.216.36,2022-09-15 09:37:08,77.234.216.36,0,2,-2,-2,2,-2,-2,20107570,473,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""write dataframe `df`, excluding index, to a csv file""""""","
 df.to_csv('path/to/file.csv', index=False)
 df.to_csv('path/to/file.csv', index=False, header=False)
 df.to_csv('path/to/file.csv', index=False, header=False, mode='a')
@@ -3781,7 +3781,7 @@ df.to_csv('test.csv', index=False)
 
 df.to_csv('test.csv', index=False)
 "
-2022-09-15-10-02-20-Anonymous.json,Anonymous,2022-09-15 10:02:20,176.53.205.126,-1,0,0,0,-1,0,0,17977584,25,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""open a file `Output.txt` in append mode""""""","
+2022-09-15-10-02-20-Anonymous.json,Anonymous_176.53.205.126,2022-09-15 10:02:20,176.53.205.126,-1,0,0,0,-1,0,0,17977584,25,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""open a file `Output.txt` in append mode""""""","
 open('Output.txt', 'a')
 
 ",17977584,25,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""open a file `Output.txt` in append mode""""""","
@@ -3799,7 +3799,7 @@ with open('Output.txt', 'a') as f:
     print(f.read())
     f.close()
     f = open('"
-2022-09-15-11-11-27-Anonymous.json,Anonymous,2022-09-15 11:11:27,188.243.182.141,1,-1,2,1,2,0,-2,875968,345,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""remove symbols from a string `s`""""""","
+2022-09-15-11-11-27-Anonymous.json,Anonymous_188.243.182.141,2022-09-15 11:11:27,188.243.182.141,1,-1,2,1,2,0,-2,875968,345,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""remove symbols from a string `s`""""""","
 s = 'a b c d e f g h i j k l m n o p q r s t u v w x y z'
 s = ''.join(c for c in s if c not in '!@#$%^&*()_+{}|:""<>?/.,;')
 s
@@ -3813,7 +3813,7 @@ print(s)
 Output:
 
 '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\"
-2022-09-15-11-12-27-Anonymous.json,Anonymous,2022-09-15 11:12:27,188.243.182.141,-1,2,2,2,0,-2,-2,13954222,14,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""concatenate elements of list `b` by a colon "":""""""""
+2022-09-15-11-12-27-Anonymous.json,Anonymous_188.243.182.141,2022-09-15 11:12:27,188.243.182.141,-1,2,2,2,0,-2,-2,13954222,14,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""concatenate elements of list `b` by a colon "":""""""""
    ","print(':'.join(b))
 
 ",13954222,14,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""concatenate elements of list `b` by a colon "":""""""""","
@@ -3826,7 +3826,7 @@ b.extend([""a"", ""b"", ""c""])
 b.extend([""a"", ""b"", ""c""])
 b.extend([""a"", ""b"", ""c""])
 b.extend("
-2022-09-15-11-14-12-Anonymous.json,Anonymous,2022-09-15 11:14:12,188.243.182.141,1,0,2,-1,-1,-2,2,40452956,373,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""remove escape character from string ""\\a""""""""","
+2022-09-15-11-14-12-Anonymous.json,Anonymous_188.243.182.141,2022-09-15 11:14:12,188.243.182.141,1,0,2,-1,-1,-2,2,40452956,373,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""remove escape character from string ""\\a""""""""","
 s = s.replace(""\\a"", """")
 s = s.replace(""\\a"", """")
 s = s.replace(""\\a"", """")
@@ -3840,7 +3840,7 @@ s = s.replace(""\\a"", """")
 s = s.replace(""\\",40452956,373,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""remove escape character from string ""\\a""""""""","
 print(s.replace(""\\a"", """"))
 "
-2022-09-15-11-16-00-Anonymous.json,Anonymous,2022-09-15 11:16:00,188.243.182.141,0,2,2,0,-2,2,2,678236,167,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,How to get the filename without the extension from a path in Python?,"    import os
+2022-09-15-11-16-00-Anonymous.json,Anonymous_188.243.182.141,2022-09-15 11:16:00,188.243.182.141,0,2,2,0,-2,2,2,678236,167,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,How to get the filename without the extension from a path in Python?,"    import os
 
     def func(filename):
 
@@ -3851,7 +3851,7 @@ print(s.replace(""\\a"", """"))
 os.path.splitext('hemanth.txt')[0]
 
 "
-2022-09-15-12-21-09-Anonymous.json,Anonymous,2022-09-15 12:21:09,85.249.20.122,0,2,1,1,2,2,0,4914277,96,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""erase all the contents of a file `filename`""""""
+2022-09-15-12-21-09-Anonymous.json,Anonymous_85.249.20.122,2022-09-15 12:21:09,85.249.20.122,0,2,1,1,2,2,0,4914277,96,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""erase all the contents of a file `filename`""""""
    ","open(filename, 'w').close()
 
 ",4914277,96,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,How to empty a file using Python,"    filename = input(""Enter a filename: "")
@@ -3878,7 +3878,7 @@ os.path.splitext('hemanth.txt')[0]
 
         print(""Program finished"")
 "
-2022-09-15-13-39-36-Anonymous.json,Anonymous,2022-09-15 13:39:36,109.167.205.3,1,-2,2,-1,2,2,1,2430539,488,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""get a list of all keys in Cassandra database `cf` with pycassa""""""","
+2022-09-15-13-39-36-Anonymous.json,Anonymous_109.167.205.3,2022-09-15 13:39:36,109.167.205.3,1,-2,2,-1,2,2,1,2430539,488,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""get a list of all keys in Cassandra database `cf` with pycassa""""""","
 cqlsh.execute('SELECT * FROM cf')
 cqlsh.execute('SELECT * FROM cf')
 cqlsh.execute('SELECT * FROM cf')
@@ -3905,7 +3905,7 @@ cqlsh.execute('SELECT",2430539,488,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,Tru
 
         print(key)
 "
-2022-09-15-15-54-09-Anonymous.json,Anonymous,2022-09-15 15:54:09,188.187.74.97,0,0,0,0,0,0,0,72899,460,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""How do I sort a list of dictionaries by values of the dictionary in Python?""""""","
+2022-09-15-15-54-09-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 15:54:09,188.187.74.97,0,0,0,0,0,0,0,72899,460,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""How do I sort a list of dictionaries by values of the dictionary in Python?""""""","
 sorted(my_dict.items(), key=lambda x: x[1])
 sorted(my_dict.values(), key=lambda x: x[1])
 sorted(my_dict.items(), key=lambda x: x[1], reverse=True)
@@ -3918,7 +3918,7 @@ sorted(my_dict.items(), key=lambda x: x[1], reverse=True)
 sorted(my_dict.values(), key=lambda x: x[1], reverse=True)
 sorted(my_dict.items(), key=lambda x: x[1], reverse=True, key=lambda x: x[0])
 sorted(my_dict.values(), key="
-2022-09-15-15-55-04-Anonymous.json,Anonymous,2022-09-15 15:55:04,188.187.74.97,-1,1,0,1,0,0,0,1007481,180,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""replace spaces with underscore""""""","
+2022-09-15-15-55-04-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 15:55:04,188.187.74.97,-1,1,0,1,0,0,0,1007481,180,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""replace spaces with underscore""""""","
 re.sub(' +', '_', string)
 
 ",1007481,180,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""replace spaces with underscore""""""","
@@ -3926,7 +3926,7 @@ re.sub('\\s+', '_', '_')
 
 print(re.sub('\\s+', '_', '_'))
 "
-2022-09-15-15-56-41-Anonymous.json,Anonymous,2022-09-15 15:56:41,188.187.74.97,1,0,0,0,-1,0,1,9323159,264,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""find 10 largest differences between each respective elements of list `l1` and list `l2`""""""","
+2022-09-15-15-56-41-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 15:56:41,188.187.74.97,1,0,0,0,-1,0,1,9323159,264,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""find 10 largest differences between each respective elements of list `l1` and list `l2`""""""","
 def largest_difference(l1, l2):
     return max([abs(l1[i] - l2[i]) for i in range(len(l1))])
 l1 = [1, 2, 3, 4, 5]
@@ -3939,12 +3939,12 @@ largest_difference(l1",9323159,264,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS
    ","sorted(list(map(lambda x, y: abs(x - y), l1, l2)))[:10]
 
 "
-2022-09-15-15-58-30-Anonymous.json,Anonymous,2022-09-15 15:58:30,188.187.74.97,1,0,0,0,2,2,2,8687018,374,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass.""""""
+2022-09-15-15-58-30-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 15:58:30,188.187.74.97,1,0,0,0,2,2,2,8687018,374,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass.""""""
    ","re.sub('a', 'b', 'obama')
 
 ",8687018,374,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Python string replace two things at once?,"    print(""obama"".replace(""a"", ""b"").replace(""b"", ""a""))
 "
-2022-09-15-15-59-38-Anonymous.json,Anonymous,2022-09-15 15:59:38,188.187.74.97,-1,1,0,1,0,0,0,13567345,16,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Calculate sum over all rows of 2D numpy array""""""","
+2022-09-15-15-59-38-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 15:59:38,188.187.74.97,-1,1,0,1,0,0,0,13567345,16,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Calculate sum over all rows of 2D numpy array""""""","
 sum(a[:, 0] for a in b)
 
 ",13567345,16,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""Calculate sum over all rows of 2D numpy array""""""","
@@ -3955,21 +3955,21 @@ a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 b = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
 np.sum(np.arange(len("
-2022-09-15-16-01-22-Anonymous.json,Anonymous,2022-09-15 16:01:22,188.187.74.97,-1,1,1,1,1,0,0,19601086,200,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""click a href button with text 'Send InMail' with selenium""""""","
+2022-09-15-16-01-22-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 16:01:22,188.187.74.97,-1,1,1,1,1,0,0,19601086,200,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""click a href button with text 'Send InMail' with selenium""""""","
 driver.find_element_by_link_text('Send in mail').click()
 
 ",19601086,198,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""click a href button 'Send' with selenium""""""
    ","driver.find_element_by_xpath('//*[@id=""send""]').click()
 
 "
-2022-09-15-16-02-17-Anonymous.json,Anonymous,2022-09-15 16:02:17,188.187.74.97,1,-1,0,0,2,1,2,14716342,444,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""find the string in `your_string` between two special characters ""["" and ""]""""""""","
+2022-09-15-16-02-17-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 16:02:17,188.187.74.97,1,-1,0,0,2,1,2,14716342,444,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""find the string in `your_string` between two special characters ""["" and ""]""""""""","
 your_string.find('[', 2)
 your_string.find(']', 2)
 ",14716342,444,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""find the string in `your_string` between two special characters ""["" and ""]""""""""","
 re.findall('\\[.*\\]', your_string)
 
 "
-2022-09-15-16-03-07-Anonymous.json,Anonymous,2022-09-15 16:03:07,188.187.74.97,-1,1,0,1,0,0,0,12400256,242,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""Convert unix timestamp '1347517370' to formatted string '%Y-%m-%d %H:%M:%S'""""""","
+2022-09-15-16-03-07-Anonymous.json,Anonymous_188.187.74.97,2022-09-15 16:03:07,188.187.74.97,-1,1,0,1,0,0,0,12400256,242,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""Convert unix timestamp '1347517370' to formatted string '%Y-%m-%d %H:%M:%S'""""""","
 import datetime
 datetime.datetime.fromtimestamp(1347517370)
 datetime.datetime.fromtimestamp(1347517370).strftime('%Y-%m-%d %H:%M:%S')
@@ -3978,7 +3978,7 @@ datetime.datetime.fromtimestamp(1347517370).strftime('%Y-%m-%d %H:%M:%S')",12400
 '%Y-%m-%d %H:%M:%S' % (1347517370,)
 
 "
-2022-09-15-16-27-49-Anonymous.json,Anonymous,2022-09-15 16:27:49,178.71.236.89,0,0,-1,-1,0,1,0,18367007,476,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""write `newFileBytes` to a binary file `newFile`""""""","
+2022-09-15-16-27-49-Anonymous.json,Anonymous_178.71.236.89,2022-09-15 16:27:49,178.71.236.89,0,0,-1,-1,0,1,0,18367007,476,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""write `newFileBytes` to a binary file `newFile`""""""","
 with open('newFile', 'wb') as f:
     f.write(newFileBytes)
 with open('newFile', 'rb') as f:
@@ -3994,7 +3994,7 @@ newFile.write(newFileBytes)
 newFile.close()
 
 "
-2022-09-15-16-28-54-Anonymous.json,Anonymous,2022-09-15 16:28:54,178.71.236.89,0,1,1,1,-1,-1,-1,7243750,448,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Download file from web in Python 3,"    import requests
+2022-09-15-16-28-54-Anonymous.json,Anonymous_178.71.236.89,2022-09-15 16:28:54,178.71.236.89,0,1,1,1,-1,-1,-1,7243750,448,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Download file from web in Python 3,"    import requests
 
     url = input(""Enter the url: "")
 
@@ -4013,7 +4013,7 @@ newFile.close()
 download_file(url, file_name)
 
 "
-2022-09-15-16-30-55-Anonymous.json,Anonymous,2022-09-15 16:30:55,178.71.236.89,0,1,1,1,1,1,1,7138686,89,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""write the elements of list `lines` concatenated by special character '\n' to file `myfile`""""""
+2022-09-15-16-30-55-Anonymous.json,Anonymous_178.71.236.89,2022-09-15 16:30:55,178.71.236.89,0,1,1,1,1,1,1,7138686,89,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""write the elements of list `lines` concatenated by special character '\n' to file `myfile`""""""
    ","myfile.write('\n'.join(lines))
 
 ",7138686,89,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""write the elements of list `lines` concatenated by special character '\n' to file `myfile`""""""","
@@ -4022,7 +4022,7 @@ for line in lines:
 myfile.close()
 
 "
-2022-09-15-16-32-00-Anonymous.json,Anonymous,2022-09-15 16:32:00,178.71.236.89,0,-1,-2,-2,-1,-2,-2,11236006,60,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""identify duplicate values in list `mylist`""""""","
+2022-09-15-16-32-00-Anonymous.json,Anonymous_178.71.236.89,2022-09-15 16:32:00,178.71.236.89,0,-1,-2,-2,-1,-2,-2,11236006,60,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""identify duplicate values in list `mylist`""""""","
 mylist.sort(key=lambda x: x[1])
 
 print(mylist)
@@ -4032,7 +4032,7 @@ Output:
    ","[x for x, y in itertools.groupby(mylist, lambda x: x)]
 
 "
-2022-09-15-16-32-51-Anonymous.json,Anonymous,2022-09-15 16:32:51,178.71.236.89,0,-1,-1,-1,0,-1,-1,18897261,366,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""make a barplot of data in column `group` of dataframe `df` colour-coded according to list `color`""""""","
+2022-09-15-16-32-51-Anonymous.json,Anonymous_178.71.236.89,2022-09-15 16:32:51,178.71.236.89,0,-1,-1,-1,0,-1,-1,18897261,366,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""make a barplot of data in column `group` of dataframe `df` colour-coded according to list `color`""""""","
 df.groupby('group').mean()['value'].plot(kind='bar', color=color)
 df.groupby('group').mean()['value'].plot(kind='bar', color=color)
 df.groupby('group').mean()['value'].plot(kind='bar', color=color)
@@ -4043,7 +4043,7 @@ plt.bar(df.group, df.group, color=color)
 plt.show()
 
 "
-2022-09-15-16-33-01-Anonymous.json,Anonymous,2022-09-15 16:33:01,178.71.236.89,0,0,0,0,0,0,0,40903174,202,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Sorting data in DataFrame Pandas""""""","
+2022-09-15-16-33-01-Anonymous.json,Anonymous_178.71.236.89,2022-09-15 16:33:01,178.71.236.89,0,0,0,0,0,0,0,40903174,202,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""Sorting data in DataFrame Pandas""""""","
 df.sort_values(by=['col1','col2'], ascending=False)
 df.sort_values(by=['col1','col2'], ascending=True)
 df.sort_values(by=['col1','col2'], ascending=False, inplace=True)
@@ -4055,7 +4055,7 @@ df.sort_values(by=['column_name'], ascending=False, inplace=True)
 df.sort_values(by=['column_name'], ascending=True, inplace=True)
 df.sort_values(by=['column_name'], ascending=False, inplace=True)
 df.sort_values(by=['column_name'], ascending=True"
-2022-09-15-17-29-24-Anonymous.json,Anonymous,2022-09-15 17:29:24,95.55.35.26,0,0,0,0,0,0,0,743806,450,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""split string `text` by "",""""""""","
+2022-09-15-17-29-24-Anonymous.json,Anonymous_95.55.35.26,2022-09-15 17:29:24,95.55.35.26,0,0,0,0,0,0,0,743806,450,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""split string `text` by "",""""""""","
 text = 'Hello, world!'
 text.split(',')
 ['Hello', 'world!']
@@ -4077,7 +4077,7 @@ text.split(',')[7]",743806,450,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv
    ","re.split('\\,\\s+', text)
 
 "
-2022-09-15-17-30-27-Anonymous.json,Anonymous,2022-09-15 17:30:27,95.55.35.26,-1,2,2,2,2,0,-1,5838735,497,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Open file in Python,"    with open('path', 'r') as f:
+2022-09-15-17-30-27-Anonymous.json,Anonymous_95.55.35.26,2022-09-15 17:30:27,95.55.35.26,-1,2,2,2,2,0,-1,5838735,497,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Open file in Python,"    with open('path', 'r') as f:
 
         print(f.read())
 
@@ -4101,13 +4101,13 @@ with open(path, 'r') as f:
     f.readlines()[1]
     f.readlines()[1]
     f.readlines()"
-2022-09-15-17-31-03-Anonymous.json,Anonymous,2022-09-15 17:31:03,95.55.35.26,0,0,0,0,0,-2,0,15392730,436,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Print new line character as `\n` in a string `foo\nbar`""""""
+2022-09-15-17-31-03-Anonymous.json,Anonymous_95.55.35.26,2022-09-15 17:31:03,95.55.35.26,0,0,0,0,0,-2,0,15392730,436,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""Print new line character as `\n` in a string `foo\nbar`""""""
    ","print('foo\nbar')
 
 ",15392730,436,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""Print new line character as `\n` in a string `foo\nbar`""""""","
 print('foo\nbar')
 "
-2022-09-15-17-31-39-Anonymous.json,Anonymous,2022-09-15 17:31:39,95.55.35.26,1,-1,0,-1,2,2,1,13728486,184,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""get a list containing the sum of each element `i` in list `l` plus the previous elements""""""","
+2022-09-15-17-31-39-Anonymous.json,Anonymous_95.55.35.26,2022-09-15 17:31:39,95.55.35.26,1,-1,0,-1,2,2,1,13728486,184,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""get a list containing the sum of each element `i` in list `l` plus the previous elements""""""","
 sum(i for i in l if i - 1) + sum(i for i in l if i - 2)
 ",13728486,184,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""get a list containing the sum of each element `i` in list `l` plus the previous elements""""""","
 l = [1, 2, 3, 4, 5]
@@ -4116,7 +4116,7 @@ sum(l[i] + l[i-1] for i in range(2, len(l)))
 sum(l[i] + l[i-1] for i in range(3, len(l)))
 sum(l[i] + l[i-1] for i in range(4, len(l)))
 sum(l[i] + l[i-1]"
-2022-09-15-22-06-18-Anonymous.json,Anonymous,2022-09-15 22:06:18,14.137.139.192,-1,1,0,0,-2,-2,-2,7373219,287,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Attribute getters in python,"    def func(obj, attr):
+2022-09-15-22-06-18-Anonymous.json,Anonymous_14.137.139.192,2022-09-15 22:06:18,14.137.139.192,-1,1,0,0,-2,-2,-2,7373219,287,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,Attribute getters in python,"    def func(obj, attr):
 
         return getattr(obj, attr)
 
@@ -4133,7 +4133,7 @@ obj.attr.attr.attr.attr.attr.attr.attr
 obj.attr.attr.attr.attr.attr.attr.attr.attr
 obj.attr.attr.attr.attr.attr.attr.attr.attr.attr
 obj.attr.attr.attr.attr.attr.attr.attr"
-2022-09-15-22-08-11-Anonymous.json,Anonymous,2022-09-15 22:08:11,14.137.139.192,1,1,-2,-2,1,1,1,698223,20,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""How can I parse a time string containing milliseconds in it with python?""""""","
+2022-09-15-22-08-11-Anonymous.json,Anonymous_14.137.139.192,2022-09-15 22:08:11,14.137.139.192,1,1,-2,-2,1,1,1,698223,20,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""How can I parse a time string containing milliseconds in it with python?""""""","
 time.strptime('12:00:00', '%H:%M:%S')
 
 ",698223,20,T2C-CONALA-GPTNEO-FINETUNED-SO.csv,T2C-CONALA GPTNEO FINETUNED-SO,True,"""""""How can I parse a time string containing milliseconds in it with python?""""""","
@@ -4142,7 +4142,7 @@ datetime.datetime.strptime('00:00:00', '%H:%M:%S')
 datetime.datetime.strptime('00:00:00', '%H:%M:%S.%f')
 datetime.datetime.strptime('00:00:00', '%H:%M:%S.%f.%f')
 datetime.datetime.strptime('00:00:00', '%H:%M:%S.%f.%f.%"
-2022-09-15-22-09-06-Anonymous.json,Anonymous,2022-09-15 22:09:06,14.137.139.192,1,0,-2,-2,2,2,2,10607688,489,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""create a datetime with the current date & time""""""","
+2022-09-15-22-09-06-Anonymous.json,Anonymous_14.137.139.192,2022-09-15 22:09:06,14.137.139.192,1,0,-2,-2,2,2,2,10607688,489,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""create a datetime with the current date & time""""""","
 datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 A:
@@ -4159,7 +4159,7 @@ datetime.datetime.now().strftime('%Y-%m-%d %H:%M:",10607688,489,T2C-CONALA-CODEG
    ","datetime.datetime.now()
 
 "
-2022-09-15-22-09-48-Anonymous.json,Anonymous,2022-09-15 22:09:48,14.137.139.192,1,-2,-2,-2,2,2,2,15856127,42,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""sum all elements of nested list `L`""""""","
+2022-09-15-22-09-48-Anonymous.json,Anonymous_14.137.139.192,2022-09-15 22:09:48,14.137.139.192,1,-2,-2,-2,2,2,2,15856127,42,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""sum all elements of nested list `L`""""""","
 sum(sum(L, []))
 sum(sum(L, []))
 sum(sum(L, []))
@@ -4178,7 +4178,7 @@ sum",15856127,42,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINE
 sum(map(sum, L))
 
 "
-2022-09-15-22-10-17-Anonymous.json,Anonymous,2022-09-15 22:10:17,14.137.139.192,-1,1,1,1,-1,-1,-1,32063985,154,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""remove a div with a id `main-content` using beautifulsoup""""""
+2022-09-15-22-10-17-Anonymous.json,Anonymous_14.137.139.192,2022-09-15 22:10:17,14.137.139.192,-1,1,1,1,-1,-1,-1,32063985,154,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""remove a div with a id `main-content` using beautifulsoup""""""
    ","soup.find('div', id='main-content')
 soup.find('div', id='main-content').decompose()
 ",32063985,154,T2C-CONALA-CODEGEN-FINETUNED-SO.csv,T2C-CONALA CODEGEN FINETUNED-SO,True,"""""""remove a div with a id `main-content` using beautifulsoup""""""","
@@ -4191,14 +4191,14 @@ bs_html.find('div', id='main-content').decompose()
 bs_html.find('div', id='main-content')
 bs_html.find('div', id='main-content').decompose()
 bs_html."
-2022-09-16-01-06-19-Anonymous.json,Anonymous,2022-09-16 01:06:19,176.59.13.156,-1,2,2,2,2,-2,-2,8177079,338,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""append list `a` to `c`""""""","
+2022-09-16-01-06-19-Anonymous.json,Anonymous_176.59.13.156,2022-09-16 01:06:19,176.59.13.156,-1,2,2,2,2,-2,-2,8177079,338,T2C-CONALA-CODEGEN-FINETUNED-CONALA.csv,T2C-CONALA CODEGEN FINETUNED-CONALA,True,"""""""append list `a` to `c`""""""","
 c.extend(a)
 
 ",8177079,338,T2C-CONALA-CODEGEN2B-FINETUNED-CONALA-IMPORTS.csv,T2C-CONALA CODEGEN2B FINETUNED-CONALA-IMPORTS,True,"""""""append list `a` to `c`""""""
    ","c.append(a)
 
 "
-2022-09-16-15-25-39-Anonymous.json,Anonymous,2022-09-16 15:25:39,88.201.167.57,-1,2,1,1,2,-1,-2,5404068,35,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""read keyboard-input""""""","
+2022-09-16-15-25-39-Anonymous.json,Anonymous_88.201.167.57,2022-09-16 15:25:39,88.201.167.57,-1,2,1,1,2,-1,-2,5404068,35,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""read keyboard-input""""""","
 keyboard_input = raw_input('Keyboard input: ')
 print(keyboard_input)
 
@@ -4231,7 +4231,7 @@ sys.stdin.readline()
 sys.stdin.readline()
 sys.stdin.readline()
 sys.stdin.readline"
-2022-09-16-19-30-14-Anonymous.json,Anonymous,2022-09-16 19:30:14,14.137.135.219,0,0,0,0,0,0,0,9012008,206,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""return `True` if string `foobarrrr` contains regex `ba[rzd]`""""""","
+2022-09-16-19-30-14-Anonymous.json,Anonymous_14.137.135.219,2022-09-16 19:30:14,14.137.135.219,0,0,0,0,0,0,0,9012008,206,T2C-CONALA-GPTNEO-FINETUNED-CONALA.csv,T2C-CONALA GPTNEO FINETUNED-CONALA,True,"""""""return `True` if string `foobarrrr` contains regex `ba[rzd]`""""""","
 re.search('ba[rzd]', foobarrrr) is None
 
 ",9012008,206,T2C-CONALA-COPILOT.csv,T2C-CONALA COPILOT,True,python's re: return True if regex contains in the string,"    foobarrrr = ""foobarrrr""

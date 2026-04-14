@@ -126,8 +126,13 @@ def compute_metric_alignment(eval_df: pd.DataFrame, decoupling_df: pd.DataFrame)
             tokens = text.lower().split()
             if len(tokens) == 0:
                 return np.nan
-            diversity = len(set(tokens)) / len(tokens)
-            length_score = min(len(tokens), 150) / 150.0
+            n = len(tokens)
+            diversity = len(set(tokens)) / n
+            # Task 2: inverted-U length penalty — long answers tend to be wrong.
+            if n <= 50:
+                length_score = n / 50.0
+            else:
+                length_score = max(0.0, 1.0 - (n - 50) / 200.0)
             return 0.5 * diversity + 0.5 * length_score
 
         eval_df = eval_df.copy()

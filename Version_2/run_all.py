@@ -1,12 +1,19 @@
 """
 Version 2: Rater Bias Investigation — Full Pipeline Runner
 ===========================================================
-Runs all 5 stages in sequence.
+Runs all 7 stages in sequence.
+
+Stages 1-5: core bias detection + reward model training
+Stage 6:    Experiment — L and R sides treated as separate virtual raters
+            (doubles dataset to 614 evaluations; tests positional asymmetry)
+Stage 7:    Experiment — Pair comparison (slider) vs individual ratings
+            (tests hypothesis: humans compare pairs better than they evaluate)
 
 Usage:
     python Version_2/run_all.py               # run all stages
     python Version_2/run_all.py --stages 1 2  # run only stages 1 and 2
     python Version_2/run_all.py --skip 4      # skip stage 4 (model training)
+    python Version_2/run_all.py --stages 6 7  # run only experiments
 """
 
 import argparse
@@ -18,11 +25,13 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
 STAGES = {
-    1: ("stage1_eda/parse_and_explore.py",        "Data Parsing & EDA"),
-    2: ("stage2_bias_detection/detect_bias.py",   "Rater Bias Detection"),
-    3: ("stage3_expertise/estimate_expertise.py", "Expertise Proxy & Weighting"),
-    4: ("stage4_reward_model/train_weighted.py",  "Bias-Corrected Reward Model"),
-    5: ("stage5_report/generate_report.py",       "Report & Visualization"),
+    1: ("stage1_eda/parse_and_explore.py",                    "Data Parsing & EDA"),
+    2: ("stage2_bias_detection/detect_bias.py",               "Rater Bias Detection"),
+    3: ("stage3_expertise/estimate_expertise.py",             "Expertise Proxy & Weighting"),
+    4: ("stage4_reward_model/train_weighted.py",              "Bias-Corrected Reward Model"),
+    5: ("stage5_report/generate_report.py",                   "Report & Visualization"),
+    6: ("stage6_lr_as_raters/lr_raters_experiment.py",        "L/R as Separate Raters Experiment"),
+    7: ("stage7_pairs_vs_individual/pairs_vs_individual.py",  "Pair vs Individual Evaluation"),
 }
 
 
@@ -51,9 +60,9 @@ def run_stage(stage_num: int, extra_args: list = None):
 
 def main():
     parser = argparse.ArgumentParser(description="Run Version 2 RLHF pipeline")
-    parser.add_argument("--stages", nargs="+", type=int, choices=[1, 2, 3, 4, 5],
+    parser.add_argument("--stages", nargs="+", type=int, choices=[1, 2, 3, 4, 5, 6, 7],
                         help="Run only specific stages (default: all)")
-    parser.add_argument("--skip", nargs="+", type=int, choices=[1, 2, 3, 4, 5],
+    parser.add_argument("--skip", nargs="+", type=int, choices=[1, 2, 3, 4, 5, 6, 7],
                         help="Skip specific stages")
     parser.add_argument("--mode", choices=["weighted", "baseline", "both"],
                         default="both", help="Stage 4 training mode")
@@ -74,7 +83,7 @@ def main():
         extra = ["--mode", args.mode] if stage == 4 else None
         ok = run_stage(stage, extra)
         results[stage] = ok
-        if not ok and stage < 4:
+        if not ok and stage < 4 and stage not in (6, 7):
             print(f"\n[ABORT] Stage {stage} failed. Later stages depend on this output.")
             break
 

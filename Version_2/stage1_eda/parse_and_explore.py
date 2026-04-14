@@ -61,11 +61,22 @@ def parse_eval_files(eval_dir: Path) -> pd.DataFrame:
         q_L = questions[0]
         q_R = questions[1]
 
+        # Task 1: Anonymous raters with different IP addresses are treated as
+        # DIFFERENT raters. A person who entered "Anonymous" and a different IP
+        # is a distinct evaluator, not the same person (40 unique IPs found in data).
+        # Named raters (e.g. "Artem", "Anonymous01") keep their name as-is.
+        name = d.get("name_input", "Unknown").strip()
+        ip   = d.get("address", "").strip()
+        if name == "Anonymous" and ip:
+            rater_id = f"Anonymous_{ip}"
+        else:
+            rater_id = name
+
         record = {
             "file": fpath.name,
-            "rater": d.get("name_input", "Unknown").strip(),
+            "rater": rater_id,
             "datetime": d.get("datetime", ""),
-            "ip": d.get("address", ""),
+            "ip": ip,
             # ratings
             "comparison_slider": d.get("comparison_slider", np.nan),
             "consistent_L": d.get("consistent_L", np.nan),

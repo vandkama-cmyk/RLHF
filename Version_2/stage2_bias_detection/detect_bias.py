@@ -366,7 +366,12 @@ def compute_bertscore_proxy(df: pd.DataFrame) -> pd.DataFrame:
     except ImportError:
         pass
 
-    # Better proxy: answer length + type-token ratio (diversity)
+    # Better proxy: answer length + type-token ratio (diversity).
+    # Task 2: In code-generation evaluation, overly long answers are usually wrong
+    # (hallucinations, rambling, off-topic). Use an inverted-U length score that
+    # peaks around 50 tokens and penalises answers > 50 tokens progressively.
+    # This makes the proxy *negatively* correlated with excessive length, which
+    # improves Spearman r(correct, proxy) for well-calibrated raters.
     def answer_quality_proxy(text) -> float:
         if not isinstance(text, str) or len(text.strip()) == 0:
             return np.nan
@@ -375,8 +380,12 @@ def compute_bertscore_proxy(df: pd.DataFrame) -> pd.DataFrame:
             return np.nan
         n = len(tokens)
         diversity = len(set(tokens)) / n   # type-token ratio
-        # Normalize length (prefer 10-100 tokens): use sigmoid-like
-        length_score = min(n, 150) / 150.0
+        # Inverted-U length score: rises to 1.0 at 50 tokens, then falls.
+        # A long answer (200+ tokens) scores near 0, reflecting likely incorrectness.
+        if n <= 50:
+            length_score = n / 50.0
+        else:
+            length_score = max(0.0, 1.0 - (n - 50) / 200.0)
         return 0.5 * diversity + 0.5 * length_score
 
     df = df.copy()
