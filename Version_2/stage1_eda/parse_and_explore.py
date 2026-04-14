@@ -11,11 +11,15 @@ Usage:
 
 import json
 import os
+import sys
 import glob
 import pandas as pd
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
@@ -108,6 +112,24 @@ def parse_eval_files(eval_dir: Path) -> pd.DataFrame:
     df["datetime"] = pd.to_datetime(df["datetime"], errors="coerce")
     for col in RATING_COLS:
         df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # Bug #10 fix: detect and remove duplicate evaluations (same rater, same
+    # question-pair rated more than once).  Keeping contradictory duplicates
+    # inflates inter-rater disagreement metrics and injects noise into labels.
+    # Strategy: for each (rater, id_L, id_R) group keep only the LATEST
+    # evaluation by datetime (or the first row if datetime is missing) so that
+    # the most recent judgement is used and the contradiction is flagged.
+    pair_key = df["id_L"].astype(str) + "_" + df["id_R"].astype(str)
+    dup_mask = df.duplicated(subset=["rater", "id_L", "id_R"], keep=False)
+    n_dup = dup_mask.sum()
+    if n_dup > 0:
+        print(f"  WARNING: {n_dup} rows share the same (rater, id_L, id_R). "
+              "Keeping the latest evaluation per duplicate group.")
+        df = (df.sort_values("datetime", na_position="first")
+                .drop_duplicates(subset=["rater", "id_L", "id_R"], keep="last")
+                .reset_index(drop=True))
+        print(f"  After deduplication: {len(df)} evaluations remain.")
+
     print(f"[Stage 1] Parsed {len(df)} evaluations from {eval_dir}")
     return df
 
@@ -262,14 +284,17 @@ def plot_rating_count_bar(stats: pd.DataFrame, plots_dir: Path):
 
 def plot_dimension_correlation(df: pd.DataFrame, plots_dir: Path):
     """Scatter-matrix of consistent / correct / useful (all raters combined)."""
-    cols = {
-        "consistent": pd.concat([df["consistent_L"], df["consistent_R"]]).dropna(),
-        "correct":    pd.concat([df["correct_L"],    df["correct_R"]]).dropna(),
-        "useful":     pd.concat([df["useful_L"],     df["useful_R"]]).dropna(),
-    }
-    # Align by index
-    dim_df = pd.DataFrame({k: v.reset_index(drop=True) for k, v in cols.items()}).dropna()
+    # Bug #2 fix: keep all 3 dimensions together per observation so that
+    # dropna() removes the same rows from every column.  Independent
+    # dropna() per column followed by reset_index() stitches together
+    # ratings from different evaluations, producing misaligned correlations.
+    left = df[["consistent_L", "correct_L", "useful_L"]].rename(
+        columns={"consistent_L": "consistent", "correct_L": "correct", "useful_L": "useful"})
+    right = df[["consistent_R", "correct_R", "useful_R"]].rename(
+        columns={"consistent_R": "consistent", "correct_R": "correct", "useful_R": "useful"})
+    dim_df = pd.concat([left, right], ignore_index=True).dropna()
 
+    rng = np.random.RandomState(42)  # Bug #16 fix: seeded RNG for reproducible jitter
     fig, axes = plt.subplots(3, 3, figsize=(10, 10))
     dims = ["consistent", "correct", "useful"]
     for i, d1 in enumerate(dims):
@@ -279,7 +304,7 @@ def plot_dimension_correlation(df: pd.DataFrame, plots_dir: Path):
                 ax.hist(dim_df[d1], bins=9, range=(-2.5, 2.5), color="#5dade2", edgecolor="white")
                 ax.set_title(d1.capitalize(), fontsize=10)
             else:
-                jitter = np.random.uniform(-0.15, 0.15, size=len(dim_df))
+                jitter = rng.uniform(-0.15, 0.15, size=len(dim_df))
                 ax.scatter(dim_df[d2] + jitter, dim_df[d1] + jitter, alpha=0.3, s=8, color="#5dade2")
                 corr = dim_df[[d1, d2]].corr().iloc[0, 1]
                 ax.set_title(f"r={corr:.2f}", fontsize=9)

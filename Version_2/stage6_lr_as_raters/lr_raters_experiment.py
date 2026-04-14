@@ -31,17 +31,22 @@ Usage:
 
 import json
 import sys
-import warnings
 import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 from scipy import stats as scipy_stats
 
-warnings.filterwarnings("ignore")
+# Bug #15 fix: do NOT suppress all warnings globally.
+# Bug #11 fix: import shared quality proxy from utils.py (single canonical definition).
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils import answer_quality_proxy
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 BASE_DIR    = Path(__file__).resolve().parent.parent
@@ -106,26 +111,10 @@ def build_lr_dataset(eval_df: pd.DataFrame) -> pd.DataFrame:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 2. Auto quality proxy (inverted-U — long answers penalised)
+# 2. Auto quality proxy — imported from utils.py (Bug #11 fix)
 # ═══════════════════════════════════════════════════════════════════════════════
-
-def answer_quality_proxy(text) -> float:
-    """
-    Lightweight quality proxy: type-token diversity + inverted-U length score.
-    Long answers (code generation) tend to be wrong → penalised beyond 50 tokens.
-    """
-    if not isinstance(text, str) or len(text.strip()) == 0:
-        return np.nan
-    tokens = text.lower().split()
-    if len(tokens) == 0:
-        return np.nan
-    n = len(tokens)
-    diversity = len(set(tokens)) / n
-    if n <= 50:
-        length_score = n / 50.0
-    else:
-        length_score = max(0.0, 1.0 - (n - 50) / 200.0)
-    return 0.5 * diversity + 0.5 * length_score
+# answer_quality_proxy is now imported at the top of this file from utils.py.
+# The local definition has been removed to avoid divergence between stages.
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

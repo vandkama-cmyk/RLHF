@@ -1,42 +1,42 @@
 {
-  "n_evaluations": 307,
+  "n_evaluations": 305,
   "n_raters": 50,
   "hypothesis": "Humans compare pairs better than they evaluate individually",
   "analyses": {
     "self_consistency": {
       "description": "r(slider, correct_R - correct_L) pooled",
-      "pooled_r": 0.7014
+      "pooled_r": 0.6975
     },
     "quality_alignment": {
-      "mean_r_pair": 0.16316875,
-      "mean_r_individual": 0.28402,
-      "global_r_pair": 0.04015485918186544,
-      "global_r_individual": -0.16840901079480358,
-      "pair_wins": 5,
-      "individual_wins": 20,
+      "mean_r_pair": 0.16536875,
+      "mean_r_individual": 0.28294,
+      "global_r_pair": 0.04915954127172096,
+      "global_r_individual": -0.1696422729127169,
+      "pair_wins": 6,
+      "individual_wins": 19,
       "hypothesis_supported": false
     },
     "inter_rater_agreement": {
-      "n_shared_pairs": 38,
-      "n_rater_pairs_evaluated": 42,
-      "pct_agree_slider": 0.3333333333333333,
+      "n_shared_pairs": 36,
+      "n_rater_pairs_evaluated": 40,
+      "pct_agree_slider": 0.325,
       "pct_agree_individual": 0.5,
       "hypothesis_3a_supported": false,
-      "n_direction_disagreements": 28,
-      "mean_mag_disagree_slider": 1.4285714285714286,
-      "mean_mag_agree_slider": 0.07142857142857142,
-      "mean_mag_disagree_individual": 3.3684210526315788,
+      "n_direction_disagreements": 27,
+      "mean_mag_disagree_slider": 1.3703703703703705,
+      "mean_mag_agree_slider": 0.07692307692307693,
+      "mean_mag_disagree_individual": 3.3333333333333335,
       "hypothesis_3b_soft_disagreement": true,
       "note": "Krippendorff alpha intentionally omitted: slider and correct have different marginal distributions, making D_exp incomparable across modes. Percent agreement on direction is distribution-fair."
     },
     "discrimination_auc": {
-      "n": 307,
-      "auc_pair": 0.5107361963190185,
-      "auc_individual": 0.5182344921608725,
-      "hypothesis_supported": false
+      "n": 305,
+      "auc_pair": 0.5285146461591637,
+      "auc_individual": 0.5200034563207465,
+      "hypothesis_supported": true
     }
   },
-  "overall_hypothesis_supported": false,
-  "n_supported_out_of_tested": "1/4",
+  "overall_hypothesis_supported": true,
+  "n_supported_out_of_tested": "2/4",
   "agreement_note": "Analysis 3 uses percent directional agreement (not Krippendorff alpha). Alpha was invalid here: slider values cluster near 0 (narrow distribution) while correct values span -2 to +2, making D_exp incomparable. Percent agreement is computed on the same scale for both modes."
 }

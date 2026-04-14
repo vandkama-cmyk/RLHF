@@ -17,10 +17,14 @@ Usage:
 """
 
 import argparse
+import os
 import subprocess
 import sys
 import time
 from pathlib import Path
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -47,7 +51,8 @@ def run_stage(stage_num: int, extra_args: list = None):
     print(f"  Stage {stage_num}: {name}")
     print(f"{'='*60}")
     t0 = time.time()
-    result = subprocess.run(cmd, cwd=str(BASE_DIR))
+    env = {**os.environ, 'PYTHONUTF8': '1'}
+    result = subprocess.run(cmd, cwd=str(BASE_DIR), env=env)
     elapsed = time.time() - t0
 
     if result.returncode == 0:

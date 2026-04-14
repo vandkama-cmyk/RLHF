@@ -1,89 +1,401 @@
 {
-  "Anonymous": {
-    "weight": 0.939803,
-    "composite_score": 0.5759,
-    "align_score": 0.6048,
-    "consistency_score": 0.9009,
-    "agreement_score": 0.498,
-    "n_evaluations": 151
-  },
-  "Artem": {
-    "weight": 0.024546,
-    "composite_score": 0.3936,
-    "align_score": 0.4276,
-    "consistency_score": 0.9757,
-    "agreement_score": 0.5508,
-    "n_evaluations": 39
-  },
   "Anonymous01": {
-    "weight": 0.019621,
-    "composite_score": 0.3824,
-    "align_score": 0.621,
-    "consistency_score": 0.9244,
+    "weight": 0.027922,
+    "composite_score": 0.5815,
+    "align_score": 0.6111,
+    "consistency_score": 0.9102,
     "agreement_score": 0.4181,
     "n_evaluations": 29
   },
-  "Sergey Kovalchuk": {
-    "weight": 0.009037,
-    "composite_score": 0.3436,
-    "align_score": 0.5054,
-    "consistency_score": 0.907,
-    "agreement_score": 0.6022,
-    "n_evaluations": 24
+  "Anonymous_10.199.12.90": {
+    "weight": 0.027814,
+    "composite_score": 0.5807,
+    "align_score": 0.585,
+    "consistency_score": 0.921,
+    "agreement_score": 0.7697,
+    "n_evaluations": 12
   },
-  "TypingCat": {
-    "weight": 0.003232,
-    "composite_score": 0.2922,
-    "align_score": 0.4657,
-    "consistency_score": 0.9064,
+  "Anastasia": {
+    "weight": 0.025269,
+    "composite_score": 0.5615,
+    "align_score": 0.7263,
+    "consistency_score": 0.7692,
+    "agreement_score": 0.6394,
+    "n_evaluations": 8
+  },
+  "Anonymous_178.71.236.89": {
+    "weight": 0.024153,
+    "composite_score": 0.5525,
+    "align_score": 0.5875,
+    "consistency_score": 0.9763,
+    "agreement_score": 0.7582,
+    "n_evaluations": 6
+  },
+  "Anonymous_95.55.35.26": {
+    "weight": 0.023875,
+    "composite_score": 0.5501,
+    "align_score": 0.7782,
+    "consistency_score": 0.9045,
+    "agreement_score": 0.7425,
+    "n_evaluations": 4
+  },
+  "Anonymous_77.234.203.186": {
+    "weight": 0.023491,
+    "composite_score": 0.5469,
+    "align_score": 0.9391,
+    "consistency_score": 1.0,
+    "agreement_score": 0.5604,
+    "n_evaluations": 3
+  },
+  "Anonymous_134.209.200.134": {
+    "weight": 0.023161,
+    "composite_score": 0.5441,
+    "align_score": 0.9225,
+    "consistency_score": 0.7129,
     "agreement_score": 0.5,
-    "n_evaluations": 20
-  },
-  "XXZ": {
-    "weight": 0.001912,
-    "composite_score": 0.266,
-    "align_score": 0.6852,
-    "consistency_score": 0.9916,
-    "agreement_score": 0.3389,
-    "n_evaluations": 13
+    "n_evaluations": 4
   },
   "Vadim": {
-    "weight": 0.001023,
-    "composite_score": 0.2347,
-    "align_score": 0.5597,
+    "weight": 0.022112,
+    "composite_score": 0.5348,
+    "align_score": 0.433,
     "consistency_score": 0.9656,
     "agreement_score": 0.5608,
     "n_evaluations": 11
   },
-  "Anastasia": {
-    "weight": 0.000597,
-    "composite_score": 0.2078,
-    "align_score": 0.6723,
-    "consistency_score": 0.9254,
-    "agreement_score": 0.6394,
+  "Artem": {
+    "weight": 0.021816,
+    "composite_score": 0.5321,
+    "align_score": 0.3392,
+    "consistency_score": 0.9652,
+    "agreement_score": 0.5508,
+    "n_evaluations": 39
+  },
+  "Anonymous_10.81.190.38": {
+    "weight": 0.021811,
+    "composite_score": 0.5321,
+    "align_score": 0.5169,
+    "consistency_score": 0.9753,
+    "agreement_score": 0.9743,
+    "n_evaluations": 3
+  },
+  "Anonymous_188.187.74.97": {
+    "weight": 0.021459,
+    "composite_score": 0.5288,
+    "align_score": 0.4935,
+    "consistency_score": 0.9165,
+    "agreement_score": 0.5,
     "n_evaluations": 8
   },
+  "XXZ": {
+    "weight": 0.020653,
+    "composite_score": 0.5212,
+    "align_score": 0.4422,
+    "consistency_score": 0.9916,
+    "agreement_score": 0.3389,
+    "n_evaluations": 13
+  },
+  "Anonymous_10.199.12.107": {
+    "weight": 0.020274,
+    "composite_score": 0.5175,
+    "align_score": 0.3973,
+    "consistency_score": 0.9072,
+    "agreement_score": null,
+    "n_evaluations": 7
+  },
+  "Sergey Kovalchuk": {
+    "weight": 0.019896,
+    "composite_score": 0.5137,
+    "align_score": 0.4521,
+    "consistency_score": 0.596,
+    "agreement_score": 0.6022,
+    "n_evaluations": 23
+  },
+  "Anonymous_14.137.139.192": {
+    "weight": 0.019872,
+    "composite_score": 0.5135,
+    "align_score": 0.427,
+    "consistency_score": 0.8435,
+    "agreement_score": 0.5101,
+    "n_evaluations": 7
+  },
+  "Anonymous_10.81.192.36": {
+    "weight": 0.019829,
+    "composite_score": 0.513,
+    "align_score": 0.5655,
+    "consistency_score": 0.8974,
+    "agreement_score": 0.3709,
+    "n_evaluations": 3
+  },
+  "Anonymous_10.199.12.55": {
+    "weight": 0.019433,
+    "composite_score": 0.509,
+    "align_score": 0.5354,
+    "consistency_score": 0.6661,
+    "agreement_score": 0.3709,
+    "n_evaluations": 10
+  },
+  "Anonymous_85.249.20.122": {
+    "weight": 0.019387,
+    "composite_score": 0.5085,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": 0.9643,
+    "n_evaluations": 1
+  },
+  "Anonymous_159.138.218.18": {
+    "weight": 0.019387,
+    "composite_score": 0.5085,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": 0.9643,
+    "n_evaluations": 1
+  },
+  "Anonymous_10.81.194.230": {
+    "weight": 0.019297,
+    "composite_score": 0.5076,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 2
+  },
+  "Anonymous_188.170.82.230": {
+    "weight": 0.019297,
+    "composite_score": 0.5076,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 2
+  },
   "Arthur": {
-    "weight": 0.000107,
-    "composite_score": 0.122,
-    "align_score": 0.7424,
+    "weight": 0.01925,
+    "composite_score": 0.5071,
+    "align_score": 0.3633,
     "consistency_score": 0.9434,
     "agreement_score": 0.5,
     "n_evaluations": 4
   },
   "Gorbatovski": {
-    "weight": 7.8e-05,
-    "composite_score": 0.106,
-    "align_score": 0.5818,
-    "consistency_score": 0.8812,
+    "weight": 0.019224,
+    "composite_score": 0.5068,
+    "align_score": 0.4434,
+    "consistency_score": 0.777,
     "agreement_score": 0.5,
     "n_evaluations": 4
   },
+  "Anonymous_176.59.21.66": {
+    "weight": 0.019115,
+    "composite_score": 0.5057,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": 0.5,
+    "n_evaluations": 2
+  },
+  "Anonymous_213.152.165.107": {
+    "weight": 0.019115,
+    "composite_score": 0.5057,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": 0.5,
+    "n_evaluations": 2
+  },
+  "Anonymous_178.66.156.248": {
+    "weight": 0.018952,
+    "composite_score": 0.504,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "Anonymous_178.252.127.225": {
+    "weight": 0.018952,
+    "composite_score": 0.504,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "Anonymous_188.170.78.137": {
+    "weight": 0.018952,
+    "composite_score": 0.504,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "Anonymous_159.138.216.23": {
+    "weight": 0.018952,
+    "composite_score": 0.504,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "Anonymous_188.243.238.216": {
+    "weight": 0.018952,
+    "composite_score": 0.504,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "Anonymous_88.201.165.124": {
+    "weight": 0.018952,
+    "composite_score": 0.504,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "TypingCat": {
+    "weight": 0.018898,
+    "composite_score": 0.5034,
+    "align_score": 0.3584,
+    "consistency_score": 0.8112,
+    "agreement_score": 0.5,
+    "n_evaluations": 19
+  },
+  "Anonymous_14.137.135.219": {
+    "weight": 0.018858,
+    "composite_score": 0.503,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": 0.5,
+    "n_evaluations": 1
+  },
+  "Anonymous_5.18.95.129": {
+    "weight": 0.018858,
+    "composite_score": 0.503,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": 0.5,
+    "n_evaluations": 1
+  },
+  "Anonymous_185.24.52.32": {
+    "weight": 0.018731,
+    "composite_score": 0.5016,
+    "align_score": 0.5289,
+    "consistency_score": 0.3103,
+    "agreement_score": 0.6708,
+    "n_evaluations": 4
+  },
+  "Anonymous_176.53.205.126": {
+    "weight": 0.018714,
+    "composite_score": 0.5014,
+    "align_score": 0.5,
+    "consistency_score": 0.75,
+    "agreement_score": 0.3709,
+    "n_evaluations": 1
+  },
+  "Anonymous_188.243.182.141": {
+    "weight": 0.018669,
+    "composite_score": 0.501,
+    "align_score": 0.5208,
+    "consistency_score": 0.4758,
+    "agreement_score": null,
+    "n_evaluations": 4
+  },
+  "Anonymous_159.138.218.175": {
+    "weight": 0.018668,
+    "composite_score": 0.5009,
+    "align_score": 0.5,
+    "consistency_score": 0.5417,
+    "agreement_score": 0.5,
+    "n_evaluations": 2
+  },
+  "Anonymous_95.161.223.140": {
+    "weight": 0.01858,
+    "composite_score": 0.5,
+    "align_score": 0.5,
+    "consistency_score": NaN,
+    "agreement_score": 0.5,
+    "n_evaluations": 6
+  },
+  "Anonymous_77.234.193.84": {
+    "weight": 0.01858,
+    "composite_score": 0.5,
+    "align_score": 0.5,
+    "consistency_score": NaN,
+    "agreement_score": 0.5,
+    "n_evaluations": 7
+  },
+  "Anonymous_5.166.36.31": {
+    "weight": 0.01858,
+    "composite_score": 0.5,
+    "align_score": 0.5,
+    "consistency_score": NaN,
+    "agreement_score": 0.5,
+    "n_evaluations": 4
+  },
+  "Anonymous_85.143.144.79": {
+    "weight": 0.01858,
+    "composite_score": 0.5,
+    "align_score": 0.5,
+    "consistency_score": NaN,
+    "agreement_score": 0.5,
+    "n_evaluations": 8
+  },
+  "Anonymous_10.199.12.115": {
+    "weight": 0.018473,
+    "composite_score": 0.4988,
+    "align_score": 0.3577,
+    "consistency_score": 0.778,
+    "agreement_score": null,
+    "n_evaluations": 22
+  },
+  "Anonymous_88.201.167.57": {
+    "weight": 0.018396,
+    "composite_score": 0.498,
+    "align_score": 0.5,
+    "consistency_score": 0.3333,
+    "agreement_score": 0.5,
+    "n_evaluations": 1
+  },
+  "Anonymous_109.167.205.3": {
+    "weight": 0.018396,
+    "composite_score": 0.498,
+    "align_score": 0.5,
+    "consistency_score": 0.3333,
+    "agreement_score": 0.5,
+    "n_evaluations": 1
+  },
+  "Anonymous_176.59.13.156": {
+    "weight": 0.018335,
+    "composite_score": 0.4974,
+    "align_score": 0.5,
+    "consistency_score": 0.3333,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "Anonymous_5.18.163.156": {
+    "weight": 0.018305,
+    "composite_score": 0.497,
+    "align_score": 0.5,
+    "consistency_score": 0.25,
+    "agreement_score": 0.5,
+    "n_evaluations": 1
+  },
+  "Anonymous_77.234.216.36": {
+    "weight": 0.018215,
+    "composite_score": 0.496,
+    "align_score": 0.5,
+    "consistency_score": 0.25,
+    "agreement_score": null,
+    "n_evaluations": 1
+  },
+  "Anonymous_10.199.126.142": {
+    "weight": 0.017055,
+    "composite_score": 0.4829,
+    "align_score": 0.0834,
+    "consistency_score": 0.9394,
+    "agreement_score": null,
+    "n_evaluations": 3
+  },
   "Fedor": {
-    "weight": 4.4e-05,
-    "composite_score": 0.0778,
-    "align_score": 0.3028,
-    "consistency_score": 0.794,
+    "weight": 0.016487,
+    "composite_score": 0.4761,
+    "align_score": 0.1901,
+    "consistency_score": 0.6897,
     "agreement_score": null,
     "n_evaluations": 4
   }

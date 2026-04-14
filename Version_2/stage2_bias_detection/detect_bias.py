@@ -23,13 +23,23 @@ import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 from scipy import stats as scipy_stats
 from itertools import combinations
 
-warnings.filterwarnings("ignore")
+# Shared quality proxy (Bug #11 fix: single canonical definition)
+import sys as _sys
+_sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils import answer_quality_proxy
+
+# Bug #15 fix: do NOT suppress all warnings globally.
+# Broad suppression hides convergence failures, deprecation warnings, and
+# numerical issues.  Targeted filters can be added per call-site if needed.
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 BASE_DIR   = Path(__file__).resolve().parent.parent
@@ -113,19 +123,25 @@ def krippendorff_alpha(data: np.ndarray, level_of_measurement: str = "ordinal") 
     if n_total == 0:
         return np.nan
 
-    # Expected disagreement
+    # Bug #17 fix: compute expected disagreement in O(n) instead of O(n²).
+    # For the ordinal metric: sum_{i<j} (xi - xj)^2 = n*sum(xi^2) - (sum xi)^2
+    # This identity avoids iterating over all O(n²) pairs.
     all_vals = data[~np.isnan(data)]
     n_all = len(all_vals)
-    for i in range(n_all):
-        for j in range(i + 1, n_all):
-            diff = all_vals[i] - all_vals[j]
-            if level_of_measurement == "ordinal":
-                d_exp += diff ** 2
-            else:
-                d_exp += abs(diff)
-
     n_exp = n_all * (n_all - 1) / 2
-    if n_exp == 0 or d_exp == 0:
+    if n_exp == 0:
+        return np.nan
+
+    if level_of_measurement == "ordinal":
+        # sum_{i<j}(xi-xj)^2 = n*sum(xi^2) - (sum xi)^2
+        d_exp = float(n_all * np.sum(all_vals ** 2) - np.sum(all_vals) ** 2)
+    else:
+        # For interval/ratio: still use O(n) via sorted differences
+        sorted_vals = np.sort(all_vals)
+        # sum_{i<j}|xi-xj| = sum_j xj*(2j - n - 1) on 0-indexed sorted array
+        d_exp = float(np.sum(sorted_vals * (2 * np.arange(n_all) - n_all + 1)))
+
+    if d_exp == 0:
         return np.nan
 
     d_obs_norm = d_obs / n_total
@@ -255,10 +271,22 @@ def detect_positional_bias(df: pd.DataFrame) -> dict:
         prefer_right = (slider > 0).sum()
         total        = len(slider)
 
-        # Chi-square against uniform expected distribution
-        expected = total / 3.0
-        observed = [prefer_left, neutral, prefer_right]
-        chi2, pval = scipy_stats.chisquare(observed, f_exp=[expected, expected, expected])
+        # Bug #7 fix: test only left vs right (excluding neutral).
+        # The old null hypothesis (uniform over left/neutral/right) is wrong
+        # because neutral responses are naturally rare when answers genuinely
+        # differ in quality — this produces false-positive positional bias
+        # detections for raters who simply have strong quality preferences.
+        # Under no positional bias, a rater should be equally likely to prefer
+        # left vs right, making 50/50 the correct null for this two-cell test.
+        lr_total = prefer_left + prefer_right
+        if lr_total == 0:
+            chi2, pval = 0.0, 1.0
+        else:
+            expected_lr = lr_total / 2.0
+            chi2, pval = scipy_stats.chisquare(
+                [prefer_left, prefer_right],
+                f_exp=[expected_lr, expected_lr],
+            )
 
         bias_direction = None
         if pval < 0.05:
@@ -334,60 +362,18 @@ def detect_leniency_bias(df: pd.DataFrame) -> pd.DataFrame:
 
 def compute_bertscore_proxy(df: pd.DataFrame) -> pd.DataFrame:
     """
-    For each answer, compute a simple automated quality proxy.
-    We use token-level F1 overlap between Answer (reference) and
-    the answer text itself as a structural proxy (since BERTScore
-    requires model loading which may be slow).
+    For each answer, compute the automated quality proxy from utils.py.
 
-    If bert_score package is available, we use it; otherwise fall
-    back to ROUGE-1 F1 as proxy.
+    Bug #1 fix: removed the ROUGE self-comparison block that computed
+    rouge1_f1(answer, answer) — scoring an answer against itself always
+    returns 1.0 and is immediately overwritten, so it was dead code that
+    only misled readers of the log output.
 
-    Returns df with a new column 'auto_quality_L' and 'auto_quality_R'.
+    Bug #11 fix: the proxy function is now imported from utils.py instead
+    of being defined inline, so a single definition is shared across all stages.
+
+    Returns df with new columns 'auto_quality_L' and 'auto_quality_R'.
     """
-    # Try ROUGE as a lightweight proxy
-    try:
-        from rouge_score import rouge_scorer
-        scorer = rouge_scorer.RougeScorer(["rouge1"], use_stemmer=False)
-
-        def rouge1_f1(prediction: str, reference: str) -> float:
-            if not isinstance(prediction, str) or not isinstance(reference, str):
-                return np.nan
-            if len(prediction.strip()) == 0 or len(reference.strip()) == 0:
-                return np.nan
-            score = scorer.score(reference, prediction)
-            return score["rouge1"].fmeasure
-
-        df = df.copy()
-        print("  Computing ROUGE-1 proxy for auto quality (fast)...")
-        df["auto_quality_L"] = [rouge1_f1(str(ans), str(ans)) for ans in df["answer_L"]]
-        df["auto_quality_R"] = [rouge1_f1(str(ans), str(ans)) for ans in df["answer_R"]]
-        # NOTE: Since we only have the model answers (not ground truth) in the eval JSONs,
-        # we use answer length + token diversity as proxy quality signal
-    except ImportError:
-        pass
-
-    # Better proxy: answer length + type-token ratio (diversity).
-    # Task 2: In code-generation evaluation, overly long answers are usually wrong
-    # (hallucinations, rambling, off-topic). Use an inverted-U length score that
-    # peaks around 50 tokens and penalises answers > 50 tokens progressively.
-    # This makes the proxy *negatively* correlated with excessive length, which
-    # improves Spearman r(correct, proxy) for well-calibrated raters.
-    def answer_quality_proxy(text) -> float:
-        if not isinstance(text, str) or len(text.strip()) == 0:
-            return np.nan
-        tokens = text.lower().split()
-        if len(tokens) == 0:
-            return np.nan
-        n = len(tokens)
-        diversity = len(set(tokens)) / n   # type-token ratio
-        # Inverted-U length score: rises to 1.0 at 50 tokens, then falls.
-        # A long answer (200+ tokens) scores near 0, reflecting likely incorrectness.
-        if n <= 50:
-            length_score = n / 50.0
-        else:
-            length_score = max(0.0, 1.0 - (n - 50) / 200.0)
-        return 0.5 * diversity + 0.5 * length_score
-
     df = df.copy()
     df["auto_quality_L"] = df["answer_L"].apply(answer_quality_proxy)
     df["auto_quality_R"] = df["answer_R"].apply(answer_quality_proxy)
@@ -455,16 +441,20 @@ def detect_dimension_inconsistency(df: pd.DataFrame) -> pd.DataFrame:
             return np.nan
         suspicious = 0
         total = 0
-        # Rule 1: very incorrect but very useful
-        if corr <= -2 and use >= 2:
+        # Bug #13 fix: use -1/+1 thresholds instead of only extreme -2/+2.
+        # The original rules only caught absolute extremes (corr=-2, use=+2),
+        # missing common incoherent patterns like corr=-1, use=+2.
+        # Rule 1: incorrect but useful (code rated wrong yet useful?)
+        if corr <= -1 and use >= 1:
             suspicious += 1
         total += 1
-        # Rule 2: inconsistent but very correct
-        if cons <= -2 and corr >= 2:
+        # Rule 2: inconsistent style but correct logic — minor flag
+        if cons <= -1 and corr >= 1:
             suspicious += 1
         total += 1
-        # Rule 3: all extreme in opposite directions
-        if corr <= -1 and use >= 1 and cons <= -1:
+        # Rule 3: negative across all meaningful dimensions (correct, useful)
+        #          but positively rated for consistency — incoherent
+        if corr <= -1 and use <= -1 and cons >= 1:
             suspicious += 1
         total += 1
         return suspicious / total

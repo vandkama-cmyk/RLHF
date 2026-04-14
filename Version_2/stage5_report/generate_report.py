@@ -25,13 +25,16 @@ import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import seaborn as sns
 from pathlib import Path
 from scipy.stats import chi2
 
-warnings.filterwarnings("ignore")
+# Bug #15 fix: do not suppress all warnings globally.
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 BASE_DIR    = Path(__file__).resolve().parent.parent
@@ -39,6 +42,8 @@ STAGE1_DIR  = BASE_DIR / "stage1_eda"  / "results"
 STAGE2_DIR  = BASE_DIR / "stage2_bias_detection" / "results"
 STAGE3_DIR  = BASE_DIR / "stage3_expertise" / "results"
 STAGE4_DIR  = BASE_DIR / "stage4_reward_model" / "results"
+STAGE6_DIR  = BASE_DIR / "stage6_lr_as_raters" / "results"
+STAGE7_DIR  = BASE_DIR / "stage7_pairs_vs_individual" / "results"
 RESULTS_DIR = Path(__file__).parent / "results"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -115,6 +120,22 @@ def load_stage_outputs():
         hist_path = STAGE4_DIR / f"history_{mode}.csv"
         if hist_path.exists():
             data["histories"][mode] = pd.read_csv(hist_path)
+
+    # Stage 6 — L/R as virtual raters experiment (Bug #20 fix)
+    s6_path = STAGE6_DIR / "lr_experiment_summary.json"
+    if s6_path.exists():
+        with open(s6_path) as f:
+            data["stage6_summary"] = json.load(f)
+    else:
+        data["stage6_summary"] = {}
+
+    # Stage 7 — pair vs individual comparison (Bug #20 fix)
+    s7_path = STAGE7_DIR / "pairs_vs_individual_summary.json"
+    if s7_path.exists():
+        with open(s7_path) as f:
+            data["stage7_summary"] = json.load(f)
+    else:
+        data["stage7_summary"] = {}
 
     return data
 
@@ -395,6 +416,8 @@ def generate_summary_json(master_df: pd.DataFrame, data: dict) -> dict:
     training = data.get("training_results", {})
     bias_report = data.get("bias_report", {})
     rater_weights = data.get("rater_weights", {})
+    stage6_summary = data.get("stage6_summary", {})   # Bug #20 fix
+    stage7_summary = data.get("stage7_summary", {})   # Bug #20 fix
 
     # Identify biased raters.
     # Note: bias_type="" (empty string) means no leniency bias — only non-empty strings are real flags.
@@ -452,8 +475,53 @@ def generate_summary_json(master_df: pd.DataFrame, data: dict) -> dict:
 
         # Build significance interpretation using McNemar's p-value when available
         p_val = mcnemar_result.get("p_value")
-        sig_str = (f"McNemar's test p={p_val} ({'significant' if mcnemar_result.get('significant') else 'not significant'})"
+        is_sig = mcnemar_result.get("significant", False)
+        sig_str = (f"McNemar's test p={p_val} ({'significant' if is_sig else 'not significant'})"
                    if p_val is not None else "no formal significance test performed")
+
+        # Bug #5/#18 fix: lead with significance result; detect and flag class-accuracy flip.
+        # The old code said "improved" whenever delta > 0.005, regardless of whether
+        # McNemar's p-value was significant and regardless of whether the gain was an
+        # artefact of a decision-boundary shift that helped one class at the expense of
+        # the other.  A large positive delta_pos paired with a large negative delta_neg
+        # is the signature of a degenerate shift (e.g. toward always-predict-positive).
+        is_class_flip = (
+            not math.isnan(delta_pos) and not math.isnan(delta_neg)
+            and delta_pos > 0.1 and delta_neg < -0.1
+        )
+        if is_class_flip:
+            interpretation = (
+                f"Class-accuracy flip detected: weighted model gained on positive class "
+                f"({delta_pos:+.3f}) but lost on negative class ({delta_neg:+.3f}). "
+                f"The overall Δacc ({delta:+.4f}) likely reflects a decision-boundary shift "
+                f"rather than genuine improvement — the model moved toward predicting the "
+                f"majority class more often.  {sig_str}."
+            )
+        elif within_noise:
+            interpretation = (
+                f"No practically meaningful accuracy difference (|Δ| ≤ 0.01, {sig_str}), "
+                "consistent with dataset size limitations (n=614). "
+                "Per-class breakdown may reveal differential effects hidden by aggregated accuracy."
+            )
+        elif delta > 0.005:
+            if is_sig:
+                interpretation = (
+                    f"Bias-corrected weighting improved reward model accuracy "
+                    f"(Δ={delta:+.4f}, statistically significant). {sig_str}."
+                )
+            else:
+                interpretation = (
+                    f"Weighted model shows higher accuracy (Δ={delta:+.4f}) but the "
+                    f"difference is NOT statistically significant. {sig_str}. "
+                    "Dataset size (n=614) is too small to confirm this improvement; "
+                    "treat as indicative only."
+                )
+        else:
+            interpretation = (
+                f"Weighted model underperformed baseline ({sig_str}) — check per-class "
+                "breakdown and consider whether high-weight raters have systematically "
+                "harder examples."
+            )
 
         model_comparison = {
             "weighted_best_val_acc":   w["best_val_acc"],
@@ -463,16 +531,7 @@ def generate_summary_json(master_df: pd.DataFrame, data: dict) -> dict:
             "delta_negative_class":    delta_neg,
             "within_noise_threshold":  within_noise,
             "mcnemar_test":            mcnemar_result,
-            "interpretation": (
-                f"Bias-corrected weighting improved reward model accuracy. ({sig_str})"
-                if delta > 0.005
-                else f"No practically meaningful accuracy difference (|Δ| ≤ 0.01, {sig_str}), "
-                     "consistent with dataset size limitations (n=614). "
-                     "Per-class breakdown may reveal differential effects hidden by aggregated accuracy."
-                if within_noise
-                else f"Weighted model underperformed baseline ({sig_str}) — check per-class breakdown "
-                     "and consider whether high-weight raters have systematically harder examples."
-            )
+            "interpretation":          interpretation,
         }
 
         # Critical warnings: surface zero positive-class accuracy prominently
@@ -549,6 +608,13 @@ def generate_summary_json(master_df: pd.DataFrame, data: dict) -> dict:
             "across 11 raters (~12% overlap). Values reflect genuine disagreement but confidence "
             "intervals are wide at this sample size."
         ),
+        # Bug #20 fix: include Stage 6 and Stage 7 results that were previously absent.
+        "stage6_lr_as_raters": stage6_summary if stage6_summary else {
+            "note": "Stage 6 results not available — run stage6_lr_as_raters/lr_raters_experiment.py"
+        },
+        "stage7_pairs_vs_individual": stage7_summary if stage7_summary else {
+            "note": "Stage 7 results not available — run stage7_pairs_vs_individual/pairs_vs_individual.py"
+        },
         "key_findings": [],
     }
 
@@ -594,6 +660,28 @@ def generate_summary_json(master_df: pd.DataFrame, data: dict) -> dict:
 
     findings.append("Rater expertise proxy: based on alignment with automated metrics, "
                     "dimension consistency, and majority agreement.")
+
+    # Stage 6 finding
+    if stage6_summary:
+        positional_sig = stage6_summary.get("positional_asymmetry_significant")
+        if positional_sig is not None:
+            findings.append(
+                "Stage 6 (L/R as virtual raters): positional asymmetry "
+                + ("SIGNIFICANT" if positional_sig else "not significant")
+                + f" (p={stage6_summary.get('positional_pval', 'N/A')})."
+            )
+
+    # Stage 7 finding
+    if stage7_summary:
+        verdict = stage7_summary.get("hypothesis_verdict", "")
+        n_supported = stage7_summary.get("n_tests_supported", "?")
+        n_total = stage7_summary.get("n_tests_total", "?")
+        if verdict:
+            findings.append(
+                f"Stage 7 (pairs vs individual): hypothesis {verdict} "
+                f"({n_supported}/{n_total} tests support pair-comparison superiority)."
+            )
+
     summary["key_findings"] = findings
 
     return summary

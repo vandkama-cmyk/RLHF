@@ -5,32 +5,6 @@ I have a Z-stack of images of biological samples. Each biological sample is save
 2022-08-16-13-25-20-Anonymous.json,Anonymous_10.199.12.55,2022-08-16 13:25:20,10.199.12.55,1,-2,-2,-2,1,1,0,66275038,4323,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ",_ _.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__.__,66275038,3640,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"How to create a class that is not an instance of type?. According to 3.3.3.2. Resolving MRO entries:  If a base that appears in class definition is not an instance of type, then an _mro_entries_ method is searched on it.  So, I suppose there should be a way to create a class that is not an instance of type. But how? I know only two ways in Python to create a class:  A class definition (class MyClass(...): ...) creates an instance of type or the given metaclass given by the metaclass argument (actually, the most derived one from the set including the metaclasses of the bases). A call of type(name, bases, dict) creates an instance of type.  Is there any other way? How to create a class that is not an instance of type? ","If you are developing the classes yourself, a more proper object - oriented style is to define methods on the classes that encapsulate a particular behaviour, instead of checking the object ’ s class and doing a different thing based on what class it is. for example, if you have a function that does something: def search ( obj ) : if isinstr(isinstr(isinstr(isinstr(isinstr(isinstr(isinst"
 2022-08-16-13-26-21-Anonymous.json,Anonymous_10.199.12.55,2022-08-16 13:26:21,10.199.12.55,0,1,-1,-2,1,0,-1,66912904,221,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ",' '( bpo - 8257 ). mixed type comparisons are now fully supported so that decimal objects can be directly compared with float and fractions. fraction ( bpo - 2531 and bpo - 8188 ). similar changes were made to fractions. fraction so that the from _ float ( ) and from _ decimal ( ) methods are no longer needed ( bpo - 8294 ).,66912904,284,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"how can i stop showing the decimal .0 after the whole number? python. So, i entered code below to round a column to the nearest integer, though it still shows up with decimals. Eg. I want to round 62.040 to just 62 though once the code is entered it shows 62.0 in the output data['Final'] = np.ceil(data['Total'].round()) ","' '##94 therefore the best possible approximation to 1 / 10 in 754 double precision is : 7205759403792794 / 2 * * 56 dividing both the numerator and denominator by two reduces the fraction to : 3602879701896397 / 2 * * 55 Note that since we rounded up, this is actually a little bit larger than 1 / 10 ; if we had not rounded up, the quotient would have been a little bit larger than 1 / 10 ; if"
 2022-08-16-13-27-36-Sergey Kovalchuk.json,Sergey Kovalchuk,2022-08-16 13:27:36,10.199.12.55,1,1,-1,-2,1,1,1,66895732,3772,q_id_titles-body_answers_t5_fixed.csv,PIPELINE T+B,False,"Get nodes within 1km walking distance of a GPS location OSMNX. Given a (lat,lng) point and an all type OSMNX network, how can I find which nodes in the graph are within 1km walking distance from the point? I was thinking about calculating the great circle distance between each node and the point and checking whether it is at most 1km, but I do not believe this will be very accurate since the topology of the network will be ignored. ","' '( fullcircle = 360. 0 )  parameters fullcircle – a number set angle measurement units, i. e. set number of “ degrees ” for a full circle. default value is 360 degrees. &gt;&gt;&gt; turtle. home ( 90) &gt;&gt;&gt; turtle. heading ( 90) &gt;&gt;&gt; turtle. heading ( 90) &gt;&gt;&gt; turtle.",66895732,3151,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"Get nodes within 1km walking distance of a GPS location OSMNX. Given a (lat,lng) point and an all type OSMNX network, how can I find which nodes in the graph are within 1km walking distance from the point? I was thinking about calculating the great circle distance between each node and the point and checking whether it is at most 1km, but I do not believe this will be very accurate since the topology of the network will be ignored. ","' 'once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror if called without calling prepare ( ) previously.''once those are marked as processed by calling topologicalsorter. done ( ), further calls will return all new nodes that have all their predecessors already processed. once no more progress can be made, empty tuples are returned. raises valueerror"
-2022-08-16-13-29-58-Sergey Kovalchuk.json,Sergey Kovalchuk,2022-08-16 13:29:58,10.199.12.55,-1,2,2,1,1,0,-1,65716394,203,T2T_vanilla_predict.csv,T2T GPTNEO VANILLA,False,"Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ","
-I think the answer is yes, but I'm not sure. I would recommend that you use a virtualenv to install the packages you want to use. Then you can simply run the script with the virtualenv.
-
-A:
-
-You can use the virtualenv to install packages.
-
-A:
-
-You can use virtualenv to install packages.
-
-A:
-
-You can use virtualenv to install packages.
-
-A:
-
-You can use virtualenv to install packages.
-
-A:
-
-You can use virtualenv to install packages.
-
-A:
-
-You can",65716394,1357,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,"Method of opening .py scripts without packages installed? (pip). Essentially want to send a script to my friend to go over. He has python installed on his computer, but doesn't specifically have 'pyinputplus' - a key component of the program. Is there a way that I can send this script to him without him installing pyinputplus? Or whether I can effectively insert 'pip install pyinputplus' into the code and have it execute when he runs it? I had also considered making the script an executable, but didn't think that would help. Relatively new to this, so apologies for my naivety. Thanks. ","' '##lib. resources in python 3. 7 and newer ( backported as importlib _ resources for older versions of python ), this can eliminate the need to use the older and less efficient pkg _ resources package."
 2022-08-16-13-31-10-Sergey Kovalchuk.json,Sergey Kovalchuk,2022-08-16 13:31:10,10.199.12.55,-1,2,-1,-2,2,-2,-2,66541282,465,T2T_trained_YES_CLEAN_YES_NL_predict.csv,T2T GPTNEO FINETUNED,False,Is there a way to set a float for the single step of a pyqt5 scrollbar?. I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01? ,"
   I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01?",66541282,3002,q_id_titles_answers_t5_fixed.csv,PIPELINE T,False,Is there a way to set a float for the single step of a pyqt5 scrollbar?. I'm trying to use a scroll bar in a pyqt5 gui. I need it to increment by 0.01 (Total length should be around 390) for a single click on the arrow but it seems like the setSingleStep only takes integers. Is there a way to make a single step 0.01? ,"You can use auto-numbering and named fields, as in the second example above. ( contributed by eric smith ; bpo - 5237. ) complex numbers now correctly support usage with format ( ), and default to being right - aligned. specifying a precision or comma - separation applies to both the real and imaginary parts of the number, but a specified field width and alignment is applied to the whole of the resulting 1. 5 + 3j output. ( contributed by eric smith ; bpo -"
 2022-08-16-13-31-58-Sergey Kovalchuk.json,Sergey Kovalchuk,2022-08-16 13:31:58,10.199.12.55,1,-2,-2,-2,2,2,1,33078554,352,pred_test_gptneo.csv,T2C GPTNEO VANILLA,False,"""""""get a list from a list `lst` with values mapped into a dictionary `dct`""""""","
@@ -1661,24 +1635,6 @@ x[np.isnan(",63517945,767,T2C-SO-CODEGEN-FINETUNED-CONALA.csv,T2C-SO CODEGEN FIN
 np.isnan(np.array([1, 2, 3, np.nan, 4, 5, 6, 7, 8, 9]))
 
 "
-2022-08-26-18-20-21-TypingCat.json,TypingCat,2022-08-26 18:20:21,10.199.126.142,-1,2,2,2,-2,-2,-2,64282333,678,T2C-SO-CODEGEN-VANILLA.csv,T2C-SO CODEGEN VANILLA,True,"""""""remove items from a list A that present in list B (with the removal of duplicates )""""""","
-     return [x for x in A if x not in B]",64282333,678,T2C-SO-GPTNEO-VANILLA.csv,T2C-SO GPTNEO VANILLA,True,"""""""remove items from a list A that present in list B (with the removal of duplicates )""""""","
-
-import copy
-
-from collections import deque
-
-from. import _base
-from. import _base_utils
-from. import _base_utils_list
-from. import _base_utils_set
-from. import _base_utils_dict
-from. import _base_utils_set_dict
-from. import _base_utils_dict_dict
-from. import _base_utils_dict_set
-from. import _base_utils_dict_set_dict
-from. import _base_utils_dict_dict_set
-from. import _base_utils"
 2022-08-26-18-21-07-TypingCat.json,TypingCat,2022-08-26 18:21:07,10.199.126.142,1,-2,-2,-2,1,1,1,40144769,402,T2C-CONALA-GPTNEO-VANILLA.csv,T2C-CONALA GPTNEO VANILLA,True,"""""""select the last column of dataframe `df`""""""","
 
 import pandas as pd

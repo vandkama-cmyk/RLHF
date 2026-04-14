@@ -55,7 +55,6 @@ Usage:
 
 import json
 import sys
-import warnings
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -65,7 +64,13 @@ import seaborn as sns
 from pathlib import Path
 from scipy import stats as scipy_stats
 
-warnings.filterwarnings("ignore")
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
+# Bug #15 fix: do NOT suppress all warnings globally.
+# Bug #11 fix: import shared quality proxy from utils.py (single canonical definition).
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils import answer_quality_proxy
 
 # -- Paths ----------------------------------------------------------------------
 BASE_DIR    = Path(__file__).resolve().parent.parent
@@ -80,23 +85,7 @@ PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 # Helpers
 # ===============================================================================
 
-def answer_quality_proxy(text) -> float:
-    """
-    Lightweight quality proxy: type-token diversity + inverted-U length score.
-    Long answers penalised (long = likely wrong for code generation tasks).
-    """
-    if not isinstance(text, str) or len(text.strip()) == 0:
-        return np.nan
-    tokens = text.lower().split()
-    if len(tokens) == 0:
-        return np.nan
-    n = len(tokens)
-    diversity = len(set(tokens)) / n
-    if n <= 50:
-        length_score = n / 50.0
-    else:
-        length_score = max(0.0, 1.0 - (n - 50) / 200.0)
-    return 0.5 * diversity + 0.5 * length_score
+# answer_quality_proxy imported from utils.py above (Bug #11 fix)
 
 
 def krippendorff_alpha_ordinal(data: np.ndarray) -> float:
@@ -123,15 +112,16 @@ def krippendorff_alpha_ordinal(data: np.ndarray) -> float:
     if n_obs == 0:
         return np.nan
 
+    # Bug #17 fix: compute expected disagreement in O(n) instead of O(n²).
+    # Identity: sum_{i<j}(xi-xj)^2 = n*sum(xi^2) - (sum xi)^2
     all_vals = data[~np.isnan(data)]
     n_all = len(all_vals)
-    d_exp, n_exp = 0.0, 0
-    for i in range(n_all):
-        for j in range(i + 1, n_all):
-            d_exp += (all_vals[i] - all_vals[j]) ** 2
-            n_exp += 1
+    n_exp = n_all * (n_all - 1) / 2
+    if n_exp == 0:
+        return np.nan
+    d_exp = float(n_all * np.sum(all_vals ** 2) - np.sum(all_vals) ** 2)
 
-    if n_exp == 0 or d_exp == 0:
+    if d_exp == 0:
         return np.nan
 
     return float(1.0 - (d_obs / n_obs) / (d_exp / n_exp))

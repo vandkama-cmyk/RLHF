@@ -1,19 +1,35 @@
 {
   "project": "RLHF Version 2 - Rater Bias Investigation",
-  "n_raters": 11,
-  "n_evaluations": 307,
+  "n_raters": 50,
+  "n_evaluations": 305,
   "inter_rater_agreement": {
     "krippendorff_alpha": {
       "consistent": null,
       "correct": null,
       "useful": null
     },
-    "n_shared_pairs": 38,
-    "overlap_pct": 12.4,
+    "n_shared_pairs": 36,
+    "overlap_pct": 11.8,
     "reliability_note": "WARNING: overlap too low (<15%) for reliable agreement estimates \u2014 Krippendorff alpha and rater rankings should be treated as indicative only."
   },
   "biased_raters_detected": [
     {
+      "rater": "Anonymous_159.138.218.18",
+      "bias_type": "LENIENT (inflated ratings)"
+    },
+    {
+      "rater": "Anonymous_85.249.20.122",
+      "bias_type": "LENIENT (inflated ratings)"
+    },
+    {
+      "rater": "Anonymous_159.138.216.23",
+      "bias_type": "LENIENT (inflated ratings)"
+    },
+    {
+      "rater": "Anonymous_10.81.192.36",
+      "bias_type": "STRICT (deflated ratings)"
+    },
+    {
       "rater": "Fedor",
       "bias_type": "STRICT (deflated ratings)"
     },
@@ -22,65 +38,77 @@
       "bias_type": "STRICT (deflated ratings)"
     },
     {
-      "rater": "Artem",
-      "bias_type": "Positional: RIGHT (prefers Right answers)"
+      "rater": "Anonymous_77.234.193.84",
+      "bias_type": "Positional: LEFT (prefers Left answers)"
     },
     {
-      "rater": "Vadim",
-      "bias_type": "Positional: NEUTRAL EXTREME (avoids middle)"
+      "rater": "Anonymous_10.199.12.115",
+      "bias_type": "Confidence-Correctness decoupling (r=-0.285)"
+    },
+    {
+      "rater": "Anonymous_10.199.126.142",
+      "bias_type": "Confidence-Correctness decoupling (r=-0.833)"
+    },
+    {
+      "rater": "Artem",
+      "bias_type": "Confidence-Correctness decoupling (r=-0.322)"
+    },
+    {
+      "rater": "TypingCat",
+      "bias_type": "Confidence-Correctness decoupling (r=-0.283)"
     }
   ],
   "top_reliability_raters": [
     {
-      "rater": "Anonymous",
-      "reliability_weight_stage3": 0.939803,
-      "effective_weight_stage4": 0.15
-    },
-    {
-      "rater": "Artem",
-      "reliability_weight_stage3": 0.024546,
-      "effective_weight_stage4": 0.024546
-    },
-    {
       "rater": "Anonymous01",
-      "reliability_weight_stage3": 0.019621,
-      "effective_weight_stage4": 0.019621
+      "reliability_weight_stage3": 0.027922,
+      "effective_weight_stage4": 0.027922
+    },
+    {
+      "rater": "Anonymous_10.199.12.90",
+      "reliability_weight_stage3": 0.027814,
+      "effective_weight_stage4": 0.027814
+    },
+    {
+      "rater": "Anastasia",
+      "reliability_weight_stage3": 0.025269,
+      "effective_weight_stage4": 0.025269
     }
   ],
   "bottom_reliability_raters": [
     {
-      "rater": "Arthur",
-      "reliability_weight_stage3": 0.000107,
-      "effective_weight_stage4": 0.000107
+      "rater": "Anonymous_77.234.216.36",
+      "reliability_weight_stage3": 0.018215,
+      "effective_weight_stage4": 0.018215
     },
     {
-      "rater": "Gorbatovski",
-      "reliability_weight_stage3": 7.8e-05,
-      "effective_weight_stage4": 7.8e-05
+      "rater": "Anonymous_10.199.126.142",
+      "reliability_weight_stage3": 0.017055,
+      "effective_weight_stage4": 0.017055
     },
     {
       "rater": "Fedor",
-      "reliability_weight_stage3": 4.4e-05,
-      "effective_weight_stage4": 4.4e-05
+      "reliability_weight_stage3": 0.016487,
+      "effective_weight_stage4": 0.016487
     }
   ],
   "model_comparison": {
-    "weighted_best_val_acc": 0.5528455294244657,
-    "baseline_best_val_acc": 0.48780487853337107,
-    "improvement_delta": 0.065,
-    "delta_positive_class": 0.6721,
-    "delta_negative_class": -0.7419,
+    "weighted_best_val_acc": 0.4316939893967467,
+    "baseline_best_val_acc": 0.5491803281131338,
+    "improvement_delta": -0.1175,
+    "delta_positive_class": -0.377,
+    "delta_negative_class": 0.3607,
     "within_noise_threshold": false,
     "mcnemar_test": {
-      "statistic": 0.1839,
-      "p_value": 0.668,
-      "b01": 46,
-      "b10": 41,
-      "n_discordant": 87,
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b01": 33,
+      "b10": 32,
+      "n_discordant": 65,
       "significant": false,
       "note": "McNemar's test with continuity correction (chi2, df=1)"
     },
-    "interpretation": "Bias-corrected weighting improved reward model accuracy. (McNemar's test p=0.668 (not significant))",
+    "interpretation": "Weighted model underperformed baseline (McNemar's test p=1.0 (not significant)) \u2014 check per-class breakdown and consider whether high-weight raters have systematically harder examples.",
     "critical_warnings": []
   },
   "methodology_note": "Reliability weight is NOT the same as calibration. A rater can be internally consistent (high consistency_score) while still being miscalibrated (low align_score, e.g. preferring confident-sounding wrong answers). Bias detection flags directional/leniency/decoupling issues independently. Raters appearing in both biased_raters_detected and top_reliability_raters are consistent-but-miscalibrated \u2014 their labels are penalised via lower alignment weight. reliability_weight_stage3 is the softmax output from Stage 3; effective_weight_stage4 is the same weight after per-rater capping used in Stage 4 weighted training.",
@@ -89,11 +117,69 @@
     "stage4_capped_for_training": "effective_weight_stage4"
   },
   "inter_rater_agreement_note": "Krippendorff alpha values should be interpreted cautiously: only 38 shared pairs across 11 raters (~12% overlap). Values reflect genuine disagreement but confidence intervals are wide at this sample size.",
+  "stage6_lr_as_raters": {
+    "total_evaluations": 614,
+    "total_virtual_raters": 100,
+    "original_evaluations": 307,
+    "original_raters": 50,
+    "grand_l_mean": -0.056243821312786844,
+    "grand_r_mean": -0.08153867396970843,
+    "grand_diff_lr": 0.025294852656921586,
+    "t_stat_lr": 0.20342403526815991,
+    "p_value_lr": 0.8396460571471548,
+    "significant_positional_asymmetry": false,
+    "mean_alignment_L": 0.009864285714285699,
+    "mean_alignment_R": -0.1320214285714286,
+    "mean_dim_consistency_L": 0.6456142857142856,
+    "mean_dim_consistency_R": 0.7352857142857143
+  },
+  "stage7_pairs_vs_individual": {
+    "n_evaluations": 307,
+    "n_raters": 50,
+    "hypothesis": "Humans compare pairs better than they evaluate individually",
+    "analyses": {
+      "self_consistency": {
+        "description": "r(slider, correct_R - correct_L) pooled",
+        "pooled_r": 0.7014
+      },
+      "quality_alignment": {
+        "mean_r_pair": 0.16316875,
+        "mean_r_individual": 0.28402,
+        "global_r_pair": 0.04015485918186544,
+        "global_r_individual": -0.16840901079480358,
+        "pair_wins": 5,
+        "individual_wins": 20,
+        "hypothesis_supported": false
+      },
+      "inter_rater_agreement": {
+        "n_shared_pairs": 38,
+        "n_rater_pairs_evaluated": 42,
+        "pct_agree_slider": 0.3333333333333333,
+        "pct_agree_individual": 0.5,
+        "hypothesis_3a_supported": false,
+        "n_direction_disagreements": 28,
+        "mean_mag_disagree_slider": 1.4285714285714286,
+        "mean_mag_agree_slider": 0.07142857142857142,
+        "mean_mag_disagree_individual": 3.3684210526315788,
+        "hypothesis_3b_soft_disagreement": true,
+        "note": "Krippendorff alpha intentionally omitted: slider and correct have different marginal distributions, making D_exp incomparable across modes. Percent agreement on direction is distribution-fair."
+      },
+      "discrimination_auc": {
+        "n": 307,
+        "auc_pair": 0.5107361963190185,
+        "auc_individual": 0.5182344921608725,
+        "hypothesis_supported": false
+      }
+    },
+    "overall_hypothesis_supported": false,
+    "n_supported_out_of_tested": "1/4",
+    "agreement_note": "Analysis 3 uses percent directional agreement (not Krippendorff alpha). Alpha was invalid here: slider values cluster near 0 (narrow distribution) while correct values span -2 to +2, making D_exp incomparable. Percent agreement is computed on the same scale for both modes."
+  },
   "key_findings": [
-    "3 rater(s) with 4 bias detection(s) (Artem, Fedor, Vadim). Note: one rater may have multiple bias types.",
-    "Highest reliability: Anonymous (Stage3=0.9398, Stage4-capped=0.1500)",
-    "Lowest reliability: Fedor (Stage3=0.0000, Stage4-capped=0.0000)",
-    "Weighted reward model vs baseline: dacc=+0.0650",
+    "10 rater(s) with 11 bias detection(s) (Anonymous_10.199.12.115, Anonymous_10.199.126.142, Anonymous_10.81.192.36, Anonymous_159.138.216.23, Anonymous_159.138.218.18, Anonymous_77.234.193.84, Anonymous_85.249.20.122, Artem, Fedor, TypingCat). Note: one rater may have multiple bias types.",
+    "Highest reliability: Anonymous01 (Stage3=0.0279, Stage4-capped=0.0279)",
+    "Lowest reliability: Fedor (Stage3=0.0165, Stage4-capped=0.0165)",
+    "Weighted reward model vs baseline: dacc=-0.1175",
     "Rater expertise proxy: based on alignment with automated metrics, dimension consistency, and majority agreement."
   ]
 }

@@ -32,10 +32,18 @@ import numpy as np
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 from scipy.special import softmax as scipy_softmax
+
+# Shared quality proxy (Bug #11 fix)
+import sys as _sys
+_sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils import answer_quality_proxy
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 BASE_DIR    = Path(__file__).resolve().parent.parent
@@ -49,14 +57,20 @@ ALPHA = 0.50   # metric alignment (most important: reflects domain expertise)
 BETA  = 0.25   # consistency (logical coherence of ratings)
 GAMMA = 0.25   # agreement with majority
 
-# Softmax temperature for weight sharpening.
-# With composite scores in a narrow range (~0.49–0.60), standard softmax
-# collapses to near-uniform weights.  Dividing by T=0.05 amplifies the
-# spread ~20×, producing a max/uniform ratio of ~2–4× instead of ~1.06×.
-SOFTMAX_TEMPERATURE = 0.05
+# Bug #4 fix: temperature raised from 0.05 → 0.20.
+# T=0.05 amplifies composite-score differences by 20×, which combined with
+# shrinkage-toward-0 (see below) created a winner-takes-all dynamic where a
+# single rater captured 94% of the total weight.  T=0.20 still meaningfully
+# sharpens the softmax (≈5× amplification) without extreme concentration.
+SOFTMAX_TEMPERATURE = 0.20
 
-# Shrink composite scores toward a neutral value for raters with few evaluations
-# before softmax: adjusted = composite * n / (n + N_SHRINKAGE_N0).
+# Bug #4 fix: N_SHRINKAGE_N0 shrinks toward the NEUTRAL value (0.5), not toward 0.
+# The original formula  composite * n/(n+N0)  pulled low-n raters toward 0,
+# which maps to extremely low softmax inputs regardless of their actual scores.
+# The corrected formula is applied in compute_rater_weights():
+#   composite_adj = 0.5 + (composite - 0.5) * n / (n + N_SHRINKAGE_N0)
+# A rater with composite=0.55 and n=4 is now shrunk to ~0.51 (closer to neutral)
+# rather than 0.09 (almost certainly penalised to near-zero weight).
 N_SHRINKAGE_N0 = 20.0
 
 
@@ -119,22 +133,7 @@ def compute_metric_alignment(eval_df: pd.DataFrame, decoupling_df: pd.DataFrame)
                 scores[row["rater"]] = (float(corr) + 1) / 2
         print("  Using precomputed correlations from Stage 2")
     else:
-        # Recompute inline
-        def answer_quality_proxy(text) -> float:
-            if not isinstance(text, str) or len(text.strip()) == 0:
-                return np.nan
-            tokens = text.lower().split()
-            if len(tokens) == 0:
-                return np.nan
-            n = len(tokens)
-            diversity = len(set(tokens)) / n
-            # Task 2: inverted-U length penalty — long answers tend to be wrong.
-            if n <= 50:
-                length_score = n / 50.0
-            else:
-                length_score = max(0.0, 1.0 - (n - 50) / 200.0)
-            return 0.5 * diversity + 0.5 * length_score
-
+        # Recompute inline using the shared proxy from utils.py (Bug #11 fix)
         eval_df = eval_df.copy()
         eval_df["auto_quality_L"] = eval_df["answer_L"].apply(answer_quality_proxy)
         eval_df["auto_quality_R"] = eval_df["answer_R"].apply(answer_quality_proxy)
@@ -179,23 +178,25 @@ def compute_consistency_score(eval_df: pd.DataFrame, inconsistency_df: pd.DataFr
         else:
             coherence = 0.5  # neutral
 
-        # Within-rater correlation: consistent ↔ correct (should be positive for experts)
-        cons = pd.concat([grp["consistent_L"], grp["consistent_R"]]).dropna().reset_index(drop=True)
-        corr = pd.concat([grp["correct_L"],    grp["correct_R"]]).dropna().reset_index(drop=True)
-        min_len = min(len(cons), len(corr))
-        if min_len >= 5:
-            r, _ = scipy_stats.spearmanr(cons[:min_len], corr[:min_len])
-            dim_corr_score = (float(r) + 1) / 2   # normalize to [0, 1]
+        # Bug #3 fix: build a single aligned DataFrame before computing correlations.
+        # The original code called dropna() independently on each dimension and then
+        # sliced with min_len — after reset_index the remaining rows came from
+        # different evaluations, producing correlations on misaligned observations.
+        # Fix: concatenate all three columns together (L then R), drop rows where
+        # ANY column is NaN so every observation is aligned.
+        left_3  = grp[["consistent_L", "correct_L", "useful_L"]].rename(
+            columns={"consistent_L": "cons", "correct_L": "corr", "useful_L": "use"})
+        right_3 = grp[["consistent_R", "correct_R", "useful_R"]].rename(
+            columns={"consistent_R": "cons", "correct_R": "corr", "useful_R": "use"})
+        dim_df  = pd.concat([left_3, right_3], ignore_index=True).dropna()
+
+        if len(dim_df) >= 5:
+            r, _  = scipy_stats.spearmanr(dim_df["cons"], dim_df["corr"])
+            r2, _ = scipy_stats.spearmanr(dim_df["use"],  dim_df["corr"])
+            dim_corr_score  = (float(r)  + 1) / 2
+            use_corr_score  = (float(r2) + 1) / 2
         else:
             dim_corr_score = 0.5
-
-        # Also check: useful ↔ correct correlation (useful should follow correct for experts)
-        use = pd.concat([grp["useful_L"], grp["useful_R"]]).dropna().reset_index(drop=True)
-        min_len2 = min(len(use), len(corr))
-        if min_len2 >= 5:
-            r2, _ = scipy_stats.spearmanr(use[:min_len2], corr[:min_len2])
-            use_corr_score = (float(r2) + 1) / 2
-        else:
             use_corr_score = 0.5
 
         # Combine: 50% coherence, 30% cons↔corr, 20% use↔corr
@@ -450,8 +451,12 @@ def compute_rater_weights(eval_df: pd.DataFrame, align_scores: dict,
         d = ds_reliability.get(rater, 0.5) if use_ds else float("nan")
         composite = _weighted_signal_composite(a, c, g, d, use_ds, alpha, beta, gamma, delta)
         n_ev = max(int(n_eval_by_rater.get(rater, 1)), 1)
-        # Uncertainty shrinkage: low-n raters pulled toward neutral composite before softmax
-        composite = composite * (n_ev / (n_ev + N_SHRINKAGE_N0))
+        # Bug #4 fix: shrink toward 0.5 (neutral), not toward 0.
+        # Old formula: composite * n/(n+N0)  → pulled low-n raters to ~0,
+        # causing a ~1000:1 weight ratio after softmax (winner-takes-all).
+        # New formula: 0.5 + (composite - 0.5) * n/(n+N0)  → low-n raters
+        # converge to the neutral midpoint regardless of their raw composite.
+        composite = 0.5 + (composite - 0.5) * (n_ev / (n_ev + N_SHRINKAGE_N0))
         agr_out = round(float(g), 4) if not (isinstance(g, float) and np.isnan(g)) else np.nan
         rows.append({"rater": rater,
                      "n_evaluations": n_ev,

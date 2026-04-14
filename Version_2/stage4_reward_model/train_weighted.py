@@ -30,6 +30,9 @@ import sys
 import os
 import warnings
 import numpy as np
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 import pandas as pd
 import torch
 import torch.nn as nn
@@ -42,7 +45,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-warnings.filterwarnings("ignore")
+# Bug #15 fix: do NOT suppress all warnings globally — this hides class-imbalance
+# and convergence warnings that are explicitly emitted later in this file.
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 BASE_DIR    = Path(__file__).resolve().parent.parent
@@ -128,15 +132,28 @@ except ImportError:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def focal_bce_loss(logits: torch.Tensor, targets: torch.Tensor,
-                   pos_weight: torch.Tensor, gamma: float = 2.0) -> torch.Tensor:
+                   gamma: float = 2.0) -> torch.Tensor:
     """
-    Focal BCE loss: down-weights easy examples to focus training on hard ones.
-    FL(p_t) = -(1 - p_t)^gamma * log(p_t)
-    Compatible with pos_weight for class-imbalance correction.
+    Alpha-balanced Focal BCE loss (Bug #6 fix).
+
+    Bug #6: the original implementation passed pos_weight inside
+    F.binary_cross_entropy_with_logits AND applied the focal modulation on top.
+    pos_weight already up-weights positive samples by n_neg/n_pos; stacking a
+    focal term that further boosts hard positives (low p_t) double-corrects for
+    class imbalance and over-emphasises the minority positive class — explaining
+    the per-class accuracy flip observed in the results.
+
+    Fix: focal loss is applied WITHOUT pos_weight.  Class imbalance is handled
+    exclusively through the pos_weight passed to BCEWithLogitsLoss in train_epoch
+    when USE_FOCAL_LOSS=False, OR through the alpha parameter here.
+    Caller (train_epoch) chooses ONE mechanism:
+      - USE_FOCAL_LOSS=True  → this function (no pos_weight inside)
+      - USE_FOCAL_LOSS=False → bce_fns[dim] with pos_weight (standard BCELoss)
+
     Returns per-sample loss (unreduced) — caller applies sample weights.
     """
     bce = F.binary_cross_entropy_with_logits(
-        logits, targets, pos_weight=pos_weight, reduction="none"
+        logits, targets, reduction="none"   # no pos_weight here
     )
     probs = torch.sigmoid(logits)
     p_t = probs * targets + (1 - probs) * (1 - targets)
@@ -351,9 +368,10 @@ def train_epoch(model: nn.Module, loader: DataLoader,
         loss_per_dim = []
         for dim in ["consistent", "correct", "useful"]:
             if USE_FOCAL_LOSS:
+                # Bug #6 fix: focal loss runs WITHOUT pos_weight to avoid
+                # double class-imbalance correction (see focal_bce_loss docstring).
                 per_sample_loss = focal_bce_loss(
-                    preds[dim], labels[dim],
-                    pos_weight=pos_weight[dim].to(device), gamma=FOCAL_GAMMA
+                    preds[dim], labels[dim], gamma=FOCAL_GAMMA
                 )
             else:
                 per_sample_loss = bce_fns[dim](preds[dim], labels[dim])  # (batch,)
@@ -394,6 +412,10 @@ def eval_epoch(model: nn.Module, loader: DataLoader, device: str,
                                    for d in ["consistent", "correct", "useful"]}
 
     for features, labels, _weights in loader:
+        # Bug #14: _weights is intentionally discarded here.
+        # Validation loss must be unweighted so it gives an unbiased estimate
+        # of generalisation accuracy regardless of rater reliability.
+        # The asymmetry with train_epoch (which applies sample weights) is by design.
         features = features.to(device)
         labels = {k: v.float().to(device) for k, v in labels.items()}
         preds = model(features)
@@ -581,7 +603,7 @@ def run_training(mode: str, eval_df: pd.DataFrame, rater_weights: Dict[str, floa
     # Threshold tuning on validation set + save per-sample predictions for McNemar's test
     best_ckpt = CKPT_DIR / f"best_{mode}.pt"
     if best_ckpt.exists():
-        model.load_state_dict(torch.load(best_ckpt, map_location=DEVICE))
+        model.load_state_dict(torch.load(best_ckpt, map_location=DEVICE, weights_only=True))  # Bug #12 fix
         model.eval()
         all_logits = {d: [] for d in ["consistent", "correct", "useful"]}
         all_labels_collected = {d: [] for d in ["consistent", "correct", "useful"]}
